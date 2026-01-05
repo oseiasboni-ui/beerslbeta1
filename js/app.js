@@ -3,6 +3,7 @@ import { Sidebar } from './components/Sidebar.js';
 import { Grid } from './components/Grid.js';
 import { Modal } from './components/Modal.js';
 import { ReferenceRulers } from './components/ReferenceRulers.js';
+import { Footer } from './components/Footer.js';
 import { i18n } from './i18n/i18n.js';
 import { beers } from './data/beers.js';
 
@@ -28,13 +29,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize Modal
     new Modal('modal-container');
 
+    // Initialize Footer with language switcher
+    const footer = new Footer('main-footer');
+    footer.render();
+
     // Hide filters bar
     const filtersBar = document.getElementById('filters-bar');
     if (filtersBar) {
         filtersBar.style.display = 'none';
     }
 
-    // Translate static HTML elements (footer)
+    // Translate static HTML elements
     i18n.translatePage();
 
     // Re-translate on language change

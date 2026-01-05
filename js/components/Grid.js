@@ -20,20 +20,18 @@ export class Grid {
     }
 
     createCard(beer) {
+        // Try to get translation for beer name, fallback to original name
+        const translationKey = `beer.${beer.id}`;
+        const translatedName = i18n.t(translationKey);
+        const displayName = translatedName !== translationKey ? translatedName : beer.name;
+
         return `
             <div class="beer-card" data-id="${beer.id}">
                 <div class="card-header" style="background-color: ${beer.appearance?.colorHex || '#34495e'}">
-                    <span class="origin-flag">${beer.origin || 'ALEMÃ'}</span>
                     <span class="beer-glass-icon">🍺</span>
                 </div>
                 <div class="card-body">
-                    <h3>${beer.name}</h3>
-                    <p class="family">${beer.family}</p>
-                    <span class="tag-pill">${beer.tags?.[0] || 'Maltada'}</span>
-                    <div class="card-footer">
-                        <span>${i18n.t('card.abv')}: ${beer.abv || '5.5'}%</span>
-                        <span class="rating">★ ${beer.rating || '5'}</span>
-                    </div>
+                    <h3>${displayName}</h3>
                 </div>
             </div>
         `;

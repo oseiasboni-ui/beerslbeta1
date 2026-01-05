@@ -20,37 +20,25 @@
 
 <body>
     <div class="app-container">
-        <!-- Header -->
+        <!-- Header (Sticky) -->
         <header id="main-header" class="main-header"></header>
 
         <div class="main-layout">
-            <!-- Sidebar -->
+            <!-- Sidebar (Sticky) -->
             <aside id="sidebar" class="sidebar"></aside>
 
-            <!-- Main Content -->
+            <!-- Main Content (Scrollable) -->
             <main class="content-area">
+                <!-- Rulers (Sticky within content) -->
                 <div id="reference-rulers"></div>
                 <div id="filters-bar" class="filters-bar"></div>
+                <!-- Grid (Scrollable) -->
                 <div id="beer-grid" class="beer-grid"></div>
             </main>
         </div>
 
-        <!-- Footer -->
-        <footer class="main-footer">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="footer-logo"><strong>Beer</strong>SL</span>
-                    <span class="footer-tagline" data-i18n="footer.tagline">Sua biblioteca de estilos de cerveja</span>
-                </div>
-                <nav class="footer-nav">
-                    <a href="#sobre" data-i18n="footer.about">Sobre</a>
-                    <a href="#contato" data-i18n="footer.contact">Contato</a>
-                </nav>
-                <div class="footer-copy" data-i18n="footer.copyright">
-                    © 2026 BeerStylesLibrary. Todos os direitos reservados.
-                </div>
-            </div>
-        </footer>
+        <!-- Footer (Scrollable, contains language switcher) -->
+        <footer id="main-footer" class="main-footer"></footer>
     </div>
 
     <!-- Modal Container -->

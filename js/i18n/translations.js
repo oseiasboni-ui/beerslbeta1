@@ -4,8 +4,8 @@
 export const translations = {
     "pt-BR": {
         // Header
-        "header.site_name": "BeerStylesLibrary",
-        "header.subtitle": "BeerSL",
+        "header.site_name": "BeerSL",
+        "header.subtitle": "Biblioteca de Estilos de Cerveja",
         "header.search_placeholder": "Buscar estilos...",
 
         // Sidebar - Fermentation
@@ -31,6 +31,24 @@ export const translations = {
         "ruler.clarity_scale": "Escala de",
         "ruler.clarity": "Claridade",
         "ruler.clarity_suffix": "",
+
+        // Colors
+        "color.straw": "Palha",
+        "color.yellow": "Amarelo",
+        "color.gold": "Dourado",
+        "color.amber": "Âmbar",
+        "color.copper": "Cobre / Âmbar Escuro",
+        "color.brown": "Marrom",
+        "color.dark_brown": "Marrom Escuro",
+        "color.black": "Preto",
+
+        // Clarity Levels
+        "clarity.brilliant": "Brilhante",
+        "clarity.almost_brilliant": "Quase Brilhante",
+        "clarity.very_slightly_hazy": "Muito Levemente Turva",
+        "clarity.slightly_hazy": "Levemente Turva",
+        "clarity.hazy": "Turva",
+        "clarity.opaque": "Opaca / Turvação Intensa",
 
         // Footer
         "footer.tagline": "Sua biblioteca de estilos de cerveja",
@@ -68,8 +86,8 @@ export const translations = {
 
     "en": {
         // Header
-        "header.site_name": "BeerStylesLibrary",
-        "header.subtitle": "BeerSL",
+        "header.site_name": "BeerSL",
+        "header.subtitle": "Beer Style Library",
         "header.search_placeholder": "Search styles...",
 
         // Sidebar - Fermentation
@@ -95,6 +113,24 @@ export const translations = {
         "ruler.clarity_scale": "The",
         "ruler.clarity": "Clarity",
         "ruler.clarity_suffix": "Scale",
+
+        // Colors
+        "color.straw": "Straw",
+        "color.yellow": "Yellow",
+        "color.gold": "Gold",
+        "color.amber": "Amber",
+        "color.copper": "Copper / Deep Amber",
+        "color.brown": "Brown",
+        "color.dark_brown": "Dark Brown",
+        "color.black": "Black",
+
+        // Clarity Levels
+        "clarity.brilliant": "Brilliant",
+        "clarity.almost_brilliant": "Almost Brilliant",
+        "clarity.very_slightly_hazy": "Very Slightly Hazy",
+        "clarity.slightly_hazy": "Slightly Hazy",
+        "clarity.hazy": "Hazy",
+        "clarity.opaque": "Turbid / Opaque",
 
         // Footer
         "footer.tagline": "Your beer styles library",
@@ -132,8 +168,8 @@ export const translations = {
 
     "de": {
         // Header
-        "header.site_name": "BeerStylesLibrary",
-        "header.subtitle": "BeerSL",
+        "header.site_name": "BeerSL",
+        "header.subtitle": "Bierstil-Bibliothek",
         "header.search_placeholder": "Stile suchen...",
 
         // Sidebar - Fermentation
@@ -155,10 +191,28 @@ export const translations = {
         // Rulers
         "ruler.color_scale": "Die",
         "ruler.color": "Farb",
-        "ruler.color_suffix": "Skala",
+        "ruler.color_suffix": "skala",
         "ruler.clarity_scale": "Die",
         "ruler.clarity": "Klarheits",
-        "ruler.clarity_suffix": "Skala",
+        "ruler.clarity_suffix": "skala",
+
+        // Colors
+        "color.straw": "Strohgelb",
+        "color.yellow": "Gelb",
+        "color.gold": "Gold / Goldgelb",
+        "color.amber": "Bernstein",
+        "color.copper": "Kupfer / Dunkelbernstein",
+        "color.brown": "Braun",
+        "color.dark_brown": "Dunkelbraun",
+        "color.black": "Schwarz",
+
+        // Clarity Levels
+        "clarity.brilliant": "Glanzfein",
+        "clarity.almost_brilliant": "Fast glanzfein",
+        "clarity.very_slightly_hazy": "Ganz leicht trüb",
+        "clarity.slightly_hazy": "Leicht trüb",
+        "clarity.hazy": "Trüb / Naturtrüb",
+        "clarity.opaque": "Sehr trüb / Blickdicht",
 
         // Footer
         "footer.tagline": "Ihre Bierstil-Bibliothek",
