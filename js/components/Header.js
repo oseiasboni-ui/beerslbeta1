@@ -51,7 +51,7 @@ export class Header {
 
     startRotation() {
         if (this.rotationTimer) clearTimeout(this.rotationTimer);
-        if (this.hideTimer) clearTimeout(this.hideTimer);
+        // hideTimer no longer needed in No-Fade version
 
         this.runCycle();
     }
@@ -70,23 +70,15 @@ export class Header {
 
         titleEl.textContent = titleText || "Start Advertising";
         subtitleEl.textContent = subtitleText || "Grow your brand today.";
-        container.style.color = phrase.color;
 
-        // 2. Fade In
-        // Force reflow to ensure transition plays if we just removed class
-        void container.offsetWidth;
-        container.classList.add('visible');
+        // Apply color to Title only (Subtitle is gray via CSS)
+        titleEl.style.color = phrase.color;
 
-        // 3. Schedule Fade Out (after 1.5s in + 6s visible = 7.5s)
-        this.hideTimer = setTimeout(() => {
-            container.classList.remove('visible');
-        }, 7500);
-
-        // 4. Schedule Next Cycle (after 7.5s + 1.5s out = 9s)
+        // 2. Schedule Next Cycle (Simple 6s rotation, no fade)
         this.rotationTimer = setTimeout(() => {
             this.currentIndex = (this.currentIndex + 1) % this.phrases.length;
             this.runCycle();
-        }, 9000);
+        }, 6000);
     }
 
     // Explicit update for language change

@@ -1,5 +1,6 @@
 import { Header } from './components/Header.js';
 import { Sidebar } from './components/Sidebar.js';
+import { Hero } from './components/Hero.js';
 import { Grid } from './components/Grid.js';
 import { Modal } from './components/Modal.js';
 import { ReferenceRulers } from './components/ReferenceRulers.js';
@@ -19,6 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('sidebar')) {
         const sidebar = new Sidebar('sidebar');
         sidebar.render();
+    }
+
+    // Initialize Hero (if exists)
+    if (document.getElementById('hero-section')) {
+        const hero = new Hero('hero-section');
+        hero.render();
     }
 
     // Initialize Reference Rulers (if exists)

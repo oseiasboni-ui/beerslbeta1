@@ -20,11 +20,9 @@ export const translations = {
         "banner.phrase5.title": "Promova sua marca hoje",
         "banner.phrase5.subtitle": "Rápido. Direcionado. Eficaz.",
 
-        // About Page
-        "about.title": "O Infinito Universo num Copo",
-        "about.p1": "Acreditar que existe apenas um gosto para a cerveja é olhar para o oceano e ver apenas água. A verdade é que a cerveja não é uma só; ela é um idioma universal falado em mil dialetos sensoriais.",
-        "about.p2": "Neste espaço, celebramos a diversidade sem fronteiras. Viajamos da disciplina cristalina das Lagers ao caos criativo das fermentações selvagens. Caminhamos pelo espectro de cores como quem atravessa as estações do ano: do amarelo palha que lembra o sol da manhã, passando pelo âmbar do outono, até o preto profundo e aveludado das noites de inverno.",
-        "about.p3": "Cada estilo é um mapa cultural. Há a precisão alemã, a elegância inglesa, a ousadia americana e a alma belga. Há o amargo que desperta, o doce que conforta e a acidez que arrepia. O nosso convite é para que você perca o medo de explorar. Esqueça o 'eu gosto' ou 'eu não gosto' e abrace a descoberta. Porque, na vasta biblioteca de estilos que o mundo oferece, sempre existe uma cerveja perfeita esperando para ser lida pelo seu paladar.",
+        "hero.word1": "ANUNCIE",
+        "hero.word2": "COM A",
+        "hero.word3": "GENTE",
 
         // Sidebar - Fermentation
         "sidebar.clear_filters": "Limpar Filtros",
@@ -121,11 +119,9 @@ export const translations = {
         "banner.phrase5.title": "Promote your brand today",
         "banner.phrase5.subtitle": "Fast. Targeted. Effective.",
 
-        // About Page
-        "about.title": "The Boundless Horizon of Taste",
-        "about.p1": "To think of beer as a single flavor is to look at a forest and see only wood. The reality is that beer is not a monologue; it is a vast, complex symphony performed by nature and guided by human hands.",
-        "about.p2": "Here, we honor the infinite spectrum of brewing. We journey from the crisp, brilliant discipline of a Lager to the untamed complexity of a Wild Ale. We traverse the colors like an artist painting a canvas: from the palest straw of dawn, through the burnished copper of twilight, to the absolute, starless black of a heavy Stout.",
-        "about.p3": "Every style tells the story of its origin. We find the precision of tradition, the rebellion of the modern craft, and the subtle alchemy of time. There is bitterness to awaken the senses, malt to soothe the soul, and tartness to spark the imagination. Our invitation is simple: explore without boundaries. In this grand library of liquid culture, there is no wrong turn—only endless varieties waiting to be discovered.",
+        "hero.word1": "ADVERTISE",
+        "hero.word2": "WITH",
+        "hero.word3": "US",
 
         // Sidebar - Fermentation
         "sidebar.clear_filters": "Clear Filters",
@@ -222,11 +218,9 @@ export const translations = {
         "banner.phrase5.title": "Bewerben Sie Ihre Marke heute",
         "banner.phrase5.subtitle": "Schnell. Zielgerichtet. Effektiv.",
 
-        // About Page
-        "about.title": "Die Unendliche Vielfalt der Braukunst",
-        "about.p1": "Bier auf einen einzigen Geschmack zu reduzieren, wäre wie Musik nur auf eine einzige Note zu beschränken. Denn Bier ist kein starres Getränk, sondern eine lebendige Welt, die in tausend verschiedenen Facetten schimmert.",
-        "about.p2": "Auf dieser Seite zelebrieren wir die grenzenlose Vielfalt. Wir reisen von der glanzfeinen Klarheit traditioneller Lagers bis zur geheimnisvollen Trübung wilder Gärungen. Wir durchwandern das Farbspektrum wie die Jahreszeiten: vom hellen Strohgelb des Frühlingslichts über das warme Bernsteinrot des Herbstes bis hin zum tiefen, undurchdringlichen Schwarz des Winters.",
-        "about.p3": "Jeder Bierstil ist ein kulturelles Erbe. Hier trifft deutsche Präzision auf belgische Leidenschaft und internationale Kreativität. Es gibt das Herbe, das belebt; das Malzige, das wärmt; und das Säuerliche, das erfrischt. Wir laden Sie ein, Ihre Gewohnheiten hinter sich zu lassen. Tauchen Sie ein in diesen Ozean der Möglichkeiten, denn in der unendlichen Geschichte des Brauens gibt es immer ein neues Kapitel, das nur darauf wartet, von Ihnen gekostet zu werden.",
+        "hero.word1": "WERBEN",
+        "hero.word2": "SIE",
+        "hero.word3": "BEI UNS",
 
         // Sidebar - Fermentation
         "sidebar.clear_filters": "Filter löschen",

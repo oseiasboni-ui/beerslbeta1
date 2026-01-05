@@ -1000,83 +1000,125 @@
 }
 
 
-/* Rotating Banner Revisions */
-.rotating-text {
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
-    width: 100%;
-}
-
-.rotating-text.visible {
-    opacity: 1;
-}
-
-
-/* Rotating Banner Fixed Box Styles */
+/* Rotating Banner Styles (White BG, No Fade) */
 .rotating-banner-container {
+    flex: 1;
+    display: flex;
     justify-content: center;
-    /* Ensures the box itself is centered in the flex space */
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
 }
 
-#rotating-text {
-    background-color: #ffffff;
-    width: 600px;
-    /* Fixed width */
-    height: 60px;
-    /* Fixed height */
-    border-radius: 8px;
-    /* Slight rounding */
+.rotating-text {
+    background-color: white;
+    padding: 6px 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Ensure no padding transition causes jumps */
-    padding: 0 10px;
+    text-align: center;
+    width: auto;
+    min-width: 320px;
+    max-width: 500px;
+    /* Static visibility */
+    opacity: 1;
+    transition: none;
 }
 
-/* Override previous opacity logic to apply to children or keep container visible? */
-/* User wants background white. If container fades out, background fades out. */
-/* The user said "fundo branco... nao ficar acompanhando o tamanho". */
-/* This implies the white box stays, and text inside fades? */
-/* Or the whole box fades? */
-/* Usually "banner" implies the box is the banner. */
-/* If the box fades, the header looks empty between cycles. */
-/* But the text rotation logic I wrote fades the whole #rotating-text container. */
-/* I should change logic: Fade CONTENT, keep BOX. */
+.banner-line.title {
+    font-size: 0.95rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
 
-/* I will modify CSS so that #rotating-text is the BOX (always visible) and inner content fades. */
-/* But my JS toggles .visible on #rotating-text. */
-/* I need to update JS or CSS. */
-/* Easiest: modifying CSS to target children of .visible ?? */
-/* No, JS toggles opacity of #rotating-text. */
-
-/* I will update JS to toggle opacity of .banner-content wrapper inside, or just target children. */
-/* Or simply: The user might be fine with the box fading if the whole thing is the "banner". */
-/* But "fundo branco" usually suggests a card-like permanent element. */
-
-/* Let"s assume the box should stay and text fades. */
-/* I will update JS to target a new inner wrapper or children. */
-/* Actually, Header.js structure: 
-   <div id="rotating-text" ...> <div class="title"></div> ... </div>
-*/
-/* I will add a wrapper in JS or just style the text elements to transition? */
-/* Easier: Target .banner-line inside #rotating-text for opacity transition. */
-/* And remove transition from #rotating-text itself. */
+.banner-line.subtitle {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #555;
+    /* Dark gray for subtitle on white */
+}
 
 
-
-/* Rotating Banner Wrapper Transition */
-.banner-fade-wrapper {
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Hero Section */
+.hero-section {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
     width: 100%;
 }
 
-.banner-fade-wrapper.visible {
+.hero-image-container {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 450px;
+}
+
+/* Hero Animated Text Overlay */
+.hero-text-overlay {
+    position: absolute;
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.hero-word-1 {
+    top: 15%;
+    left: 5%;
+    color: #f1c40f;
+    /* Yellow */
+    font-size: clamp(2rem, 6vw, 4.5rem);
+}
+
+.hero-word-2 {
+    top: 45%;
+    right: 35%;
+    /* Center-ish */
+    color: #f1c40f;
+    /* Yellow */
+    font-size: clamp(2rem, 6vw, 4.5rem);
+}
+
+.hero-word-3 {
+    bottom: 5%;
+    right: 5%;
+    color: #ff4757;
+    /* Red */
+    font-size: clamp(3rem, 8vw, 6rem);
+}
+
+.hero-beersl {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: clamp(4rem, 12vw, 8rem);
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.hero-text-overlay.visible {
     opacity: 1;
 }
 
