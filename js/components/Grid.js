@@ -39,10 +39,20 @@ export class Grid {
         const hasCustomImage = beer.image && !beer.image.includes('placeholder');
         const imageUrl = hasCustomImage ? beer.image : null;
 
+        // Get fermentation type (Ale, Lager, Hybrid, Wild) from category
+        const getFermentationType = (category) => {
+            if (!category) return 'Ale';
+            const cat = category.toLowerCase();
+            if (cat.includes('lager') || cat.includes('pilsner') || cat.includes('bock')) return 'Lager';
+            if (cat.includes('hybrid') || cat.includes('steam') || cat.includes('kölsch')) return 'Hybrid';
+            if (cat.includes('wild') || cat.includes('sour') || cat.includes('lambic')) return 'Wild';
+            return 'Ale';
+        };
+        const fermentationType = getFermentationType(beer.category);
+
         return `
                 <div class="beer-card" data-id="${beer.id}">
                     <div class="card-header" style="background-color: ${beer.appearance?.colorHex || '#34495e'}">
-                        <span class="origin-flag">${beer.origin || '🌍'}</span>
                         ${imageUrl ? `
                             <img src="${imageUrl}" alt="${displayName}" class="card-beer-image" style="width: 100%; height: 100%; object-fit: cover;">
                     ` : `
@@ -50,8 +60,11 @@ export class Grid {
                     `}
                 </div>
                 <div class="card-body">
-                    <h3>${displayName}</h3>
-                    <div class="family">${beer.family || beer.category || 'Ale'}</div>
+                    <div class="card-body-header">
+                        <h3>${displayName}</h3>
+                        <span class="card-origin-flag">${beer.origin || '🌍'}</span>
+                    </div>
+                    <div class="family">${fermentationType}</div>
                     <div class="card-stats">
                         <span class="stat-badge">ABV: ${beer.abv || '?'}</span>
                         <span class="stat-badge">IBU: ${beer.specs?.ibu || '?'}</span>

@@ -351,6 +351,7 @@ export const translations = {
         "sidebar.ale": "Ale",
         "sidebar.lager": "Lager",
         "sidebar.hybrid": "Híbrida",
+        "sidebar.wild": "Selvagem",
 
         // Sidebar - ABV
         "sidebar.abv": "TEOR ALCOÓLICO (ABV)",
@@ -771,6 +772,7 @@ export const translations = {
         "sidebar.ale": "Ale",
         "sidebar.lager": "Lager",
         "sidebar.hybrid": "Hybrid",
+        "sidebar.wild": "Wild",
 
         // Sidebar - ABV
         "sidebar.abv": "ALCOHOL BY VOLUME (ABV)",
@@ -914,7 +916,7 @@ export const translations = {
         "beer.altbier.ingredients.malts": "Deutsches Pilsner, Münchner, Carafa Special (für Farbe)",
         "beer.altbier.ingredients.hops": "Spalt, Tettnanger, Saaz (deutsche Edelhopfen)",
         "beer.altbier.ingredients.yeast": "Deutsche Ale-Hefe (saubere Gärung, geringe Esterproduktion)",
-        "beer.altbier.ingredients.adjuncts": "Keine (deutsches Reinheitsgebot)",
+        "beer.altbier.ingredients.adjuncts": "Keine (Deutsches Reinheitsgebot)",
 
         // ========== BRITISH ALES: DE ==========
         // Beer: Ordinary Bitter
@@ -1186,11 +1188,12 @@ export const translations = {
         "contact.send_btn": "Nachricht senden",
 
         // Sidebar - Fermentation
-        "sidebar.clear_filters": "Filter löschen",
+        "sidebar.clear_filters": "Filter zurücksetzen",
         "sidebar.fermentation": "GÄRUNG",
         "sidebar.ale": "Ale",
         "sidebar.lager": "Lager",
         "sidebar.hybrid": "Hybrid",
+        "sidebar.wild": "Wildgärung",
 
         // Sidebar - ABV
         "sidebar.abv": "ALKOHOLGEHALT (ABV)",

@@ -35,14 +35,23 @@ export class Modal {
     async open(beer) {
         if (!beer) return;
 
-
-
         // Determine image URL
         const hasCustomImage = beer.image && !beer.image.includes('placeholder');
         const imageUrl = hasCustomImage ? beer.image : null;
 
+        // Determine fermentation type (Ale, Lager, Hybrid, Wild)
+        const getFermentationType = (category) => {
+            if (!category) return 'Ale';
+            const cat = category.toLowerCase();
+            if (cat.includes('lager') || cat.includes('pilsner') || cat.includes('bock')) return 'Lager';
+            if (cat.includes('hybrid') || cat.includes('steam') || cat.includes('kölsch')) return 'Hybrid';
+            if (cat.includes('wild') || cat.includes('sour') || cat.includes('lambic')) return 'Wild';
+            return 'Ale';
+        };
+        const fermentationType = getFermentationType(beer.category);
+
         const leftContent = `
-            <div class="modal-info-tag">${beer.category || 'Ale'}</div>
+            <div class="modal-info-tag">${fermentationType}</div>
             
             ${imageUrl ? `
                 <div style="text-align: center; margin: 2rem 0;">

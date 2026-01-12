@@ -26,6 +26,7 @@ export class Sidebar {
                     <li><label><input type="checkbox" value="ale"> <span data-i18n="sidebar.ale">${i18n.t('sidebar.ale')}</span></label></li>
                     <li><label><input type="checkbox" value="lager"> <span data-i18n="sidebar.lager">${i18n.t('sidebar.lager')}</span></label></li>
                     <li><label><input type="checkbox" value="hibrida"> <span data-i18n="sidebar.hybrid">${i18n.t('sidebar.hybrid')}</span></label></li>
+                    <li><label><input type="checkbox" value="wild"> <span data-i18n="sidebar.wild">${i18n.t('sidebar.wild')}</span></label></li>
                 </ul>
             </div>
             
