@@ -24,6 +24,12 @@ export const translations = {
         "hero.word2": "COM A",
         "hero.word3": "GENTE",
 
+        // About Page
+        "about.title": "O Códice do Malte: Uma Antologia Líquida",
+        "about.p1": "A água nasce pura, o papel em branco de cada criação, onde o malte escreve histórias de terra, fogo e pão. Do ouro pálido ao ébano profundo, ele dita o tom e o calor, enquanto o lúpulo, em flores, derrama seu nobre amargor. É o perfume das florestas, o frescor que o vento traz, equilibrando a doçura com uma força audaz.",
+        "about.p2": "Nesta dança de estilos, a levedura é o sopro vital, tecendo a leveza da Lager ou o abraço da Stout ancestral. Seja o cravo da Weiss ou a resina da IPA a vibrar, há um universo inteiro em cada copo a se revelar. Cada gole é um capítulo, uma rima de sabor e tradição, guardada com o rigor de quem faz da cerveja uma religião.",
+        "about.p3": "Não guardamos apenas rótulos, guardamos a memória dos sentidos, um acervo de experiências para os paladares mais destemidos. Somos a biblioteca de aromas, estilos e saberes; somos BeerSL",
+
         // Modal Translations
         "modal.general_impression": "Impressão Geral",
         "modal.appearance": "Aparência",
@@ -433,6 +439,12 @@ export const translations = {
         "hero.word2": "WITH",
         "hero.word3": "US",
 
+        // About Page
+        "about.title": "The Liquid Archive: An Anthology of Craft",
+        "about.p1": "It begins with water, the silent crystal of the earth, preparing the stage for the malt’s golden birth. From sun-drenched fields of barley to the kiln's warm fire, the grain provides the body, the sweetness, the desire. Then comes the hop, the green crown of the wild, with citrus whispers and bitterness, fierce yet mild. In the shadows, the yeast weaves its invisible thread, turning ancient secrets into the foam we spread.",
+        "about.p2": "From the crisp, clear Lager to the Stout’s velvet night, every style is a verse, a discovery, a light. Whether the floral IPA or the Weiss with its hazy grace, every glass is a journey through time and space. We don’t just pour a drink; we curate a legacy of taste, where no aroma is forgotten and no story goes to waste.",
+        "about.p3": "We are the library of essences, hops, and dreams; we are BeerSL.",
+
         // Modal
         "modal.general_impression": "General Impression",
         "modal.appearance": "Appearance",
@@ -841,6 +853,12 @@ export const translations = {
         "hero.word1": "WERBEN",
         "hero.word2": "SIE",
         "hero.word3": "BEI UNS",
+
+        // About Page
+        "about.title": "Das flüssige Vermächtnis: Eine Hymne an die Braukunst",
+        "about.p1": "Klares Wasser bricht das Licht, der Ursprung aller Kraft, wenn das Malz aus vollen Ähren tiefe goldene Körper schafft. Vom sanften Karamell bis hin zur Röstung, dunkel und schwer, bringt das Korn die Seele, wie ein weites, wogendes Meer. Doch erst der Hopfen schenkt den Geist, das grüne Gold der Au, mit Herbe und mit Frische, glitzernd wie der Morgentau. Die Hefe wacht im Stillen, vollbringt das Wunder ganz sacht, bis im Glase schließlich die lebendige Vielfalt erwacht.",
+        "about.p2": "Ob das kühle Blonde oder ein Doppelbock, mächtig und dicht, jeder Stil schreibt seine Zeilen, rückt den Genuss ins rechte Licht. Vom fruchtigen Ale bis zum Weizen, so trüb und so rein, lädt jeder Schluck dazu ein, ein Kenner der Schöpfung zu sein. Wir hüten das Wissen, die Tradition und die Leidenschaft, die aus Wasser und Ähren wahre Wunder erschafft.",
+        "about.p3": "Wir sind die Bibliothek der Aromen und der Brautradition; wir sind BeerSL.",
 
         // Modal
         "modal.general_impression": "Gesamteindruck",
