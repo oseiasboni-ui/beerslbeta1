@@ -4496,20 +4496,20 @@ export const beers = [
         family: 'beer.witbier.family',
         tag: 'beer.witbier.tag',
         abv: '5.0%',
-        rating: 4.3,
+        rating: 4.5,
         image: 'assets/beer-placeholder.png',
         description: 'beer.witbier.description',
-        category: 'Belgian Ale',
+        category: 'Belgian Wheat Beer',
         appearance: {
             color: 'beer.witbier.appearance.color',
-            colorHex: '#F9F1A5', // Pale straw to deep yellow
+            colorHex: '#F8F4A8',
             clarity: 'beer.witbier.appearance.clarity',
             foam: 'beer.witbier.appearance.foam'
         },
         sensory: {
             malte: 30,
-            lupulo: 15,
-            levedura: 60
+            lupulo: 10,
+            levedura: 70
         },
         mouthfeel: {
             body: 'beer.witbier.mouthfeel.body',
@@ -4527,22 +4527,24 @@ export const beers = [
         },
         specs: {
             abvRange: '4.5–5.5%',
-            ibu: '10–20',
+            ibu: '8–20',
             srm: '2–4',
             og: '1.044–1.052',
-            fg: '1.006–1.012'
+            fg: '1.008–1.012'
         },
-        variations: [],
+        variations: ['Grand Cru Witbier'],
         examples: [
             { brand: 'Hoegaarden', name: 'Wit' },
-            { brand: 'St. Bernardus', name: 'Wit' }
+            { brand: 'St. Bernardus', name: 'Wit' },
+            { brand: 'Allagash', name: 'White' },
+            { brand: 'Celis', name: 'White' }
         ],
         service: {
-            temperature: '4–7°C',
-            glass: 'Tumbler',
-            validity: '6–12 meses'
+            temperature: '3–6°C',
+            glass: 'Tumbler / Goblet',
+            validity: '3–6 meses'
         },
-        pairing: ['Mexilhões ao vapor', 'Salada Caprese', 'Queijo de cabra']
+        pairing: ['Mexilhões ao vapor', 'Saladas frescas', 'Queijo de cabra', 'Peixes leves']
     },
     {
         id: 'belgian-pale-ale',
@@ -4550,21 +4552,21 @@ export const beers = [
         origin: '🇧🇪',
         family: 'beer.belgian-pale-ale.family',
         tag: 'beer.belgian-pale-ale.tag',
-        abv: '5.3%',
-        rating: 4.1,
+        abv: '5.2%',
+        rating: 4.2,
         image: 'assets/beer-placeholder.png',
         description: 'beer.belgian-pale-ale.description',
         category: 'Belgian Ale',
         appearance: {
             color: 'beer.belgian-pale-ale.appearance.color',
-            colorHex: '#C67A38', // Amber to copper
+            colorHex: '#C67A38',
             clarity: 'beer.belgian-pale-ale.appearance.clarity',
             foam: 'beer.belgian-pale-ale.appearance.foam'
         },
         sensory: {
-            malte: 60,
-            lupulo: 30,
-            levedura: 40
+            malte: 55,
+            lupulo: 35,
+            levedura: 45
         },
         mouthfeel: {
             body: 'beer.belgian-pale-ale.mouthfeel.body',
@@ -4587,17 +4589,19 @@ export const beers = [
             og: '1.048–1.054',
             fg: '1.010–1.014'
         },
-        variations: [],
+        variations: ['Speciale Belge'],
         examples: [
             { brand: 'De Koninck', name: 'Bolleke' },
-            { brand: 'Palm', name: 'Speciale' }
+            { brand: 'Palm', name: 'Speciale' },
+            { brand: 'Dobble Palm', name: 'Amber' },
+            { brand: 'Op-Ale', name: 'Original' }
         ],
         service: {
             temperature: '8–12°C',
-            glass: 'Tulipa',
+            glass: 'Tulipa / Bolleke',
             validity: '6–12 meses'
         },
-        pairing: ['Frango assado', 'Batata frita', 'Queijos semiduros']
+        pairing: ['Frango assado', 'Batata frita belga', 'Queijos semiduros', 'Salsicha grelhada']
     },
     {
         id: 'biere-de-garde',
@@ -4605,21 +4609,21 @@ export const beers = [
         origin: '🇫🇷',
         family: 'beer.biere-de-garde.family',
         tag: 'beer.biere-de-garde.tag',
-        abv: '7.5%',
+        abv: '7.0%',
         rating: 4.4,
         image: 'assets/beer-placeholder.png',
         description: 'beer.biere-de-garde.description',
-        category: 'Farmhouse Ale',
+        category: 'French Farmhouse Ale',
         appearance: {
             color: 'beer.biere-de-garde.appearance.color',
-            colorHex: '#BF7836', // Variável (ambrée é comum)
+            colorHex: '#BF7836',
             clarity: 'beer.biere-de-garde.appearance.clarity',
             foam: 'beer.biere-de-garde.appearance.foam'
         },
         sensory: {
             malte: 70,
-            lupulo: 15,
-            levedura: 40
+            lupulo: 20,
+            levedura: 35
         },
         mouthfeel: {
             body: 'beer.biere-de-garde.mouthfeel.body',
@@ -4645,14 +4649,16 @@ export const beers = [
         variations: ['Blonde', 'Ambrée', 'Brune'],
         examples: [
             { brand: 'Jenlain', name: 'Ambrée' },
-            { brand: 'Ch’Ti', name: 'Blonde' }
+            { brand: 'Ch\'Ti', name: 'Blonde' },
+            { brand: '3 Monts', name: 'Flanders Golden Ale' },
+            { brand: 'La Choulette', name: 'Bière des Sans Culottes' }
         ],
         service: {
-            temperature: '10–12°C',
-            glass: 'Tulipa ou Taça',
+            temperature: '10–14°C',
+            glass: 'Tulipa / Taça de Vinho',
             validity: '1–3 anos'
         },
-        pairing: ['Coelho estufado', 'Queijos de casca lavada (Maroilles)', 'Terrine']
+        pairing: ['Coelho estufado', 'Queijo Maroilles', 'Carneiro assado', 'Terrine de pato']
     },
     {
         id: 'belgian-blond-ale',
@@ -4660,20 +4666,20 @@ export const beers = [
         origin: '🇧🇪',
         family: 'beer.belgian-blond-ale.family',
         tag: 'beer.belgian-blond-ale.tag',
-        abv: '6.8%',
-        rating: 4.3,
+        abv: '6.5%',
+        rating: 4.4,
         image: 'assets/beer-placeholder.png',
         description: 'beer.belgian-blond-ale.description',
         category: 'Belgian Ale',
         appearance: {
             color: 'beer.belgian-blond-ale.appearance.color',
-            colorHex: '#F4C430', // Deep gold
+            colorHex: '#F4C430',
             clarity: 'beer.belgian-blond-ale.appearance.clarity',
             foam: 'beer.belgian-blond-ale.appearance.foam'
         },
         sensory: {
-            malte: 40,
-            lupulo: 20,
+            malte: 45,
+            lupulo: 25,
             levedura: 60
         },
         mouthfeel: {
@@ -4693,21 +4699,23 @@ export const beers = [
         specs: {
             abvRange: '6.0–7.5%',
             ibu: '15–30',
-            srm: '4–7',
+            srm: '4–6',
             og: '1.062–1.075',
-            fg: '1.008–1.015'
+            fg: '1.008–1.018'
         },
-        variations: [],
+        variations: ['Abbey Blonde'],
         examples: [
             { brand: 'Leffe', name: 'Blonde' },
-            { brand: 'Affligem', name: 'Blonde' }
+            { brand: 'Affligem', name: 'Blonde' },
+            { brand: 'Grimbergen', name: 'Blonde' },
+            { brand: 'Val-Dieu', name: 'Blonde' }
         ],
         service: {
             temperature: '6–10°C',
-            glass: 'Tulipa',
+            glass: 'Tulipa / Goblet',
             validity: '1–2 anos'
         },
-        pairing: ['Frango grelhado', 'Queijo Brie', 'Massas leves']
+        pairing: ['Frango grelhado', 'Queijo Brie', 'Massas cremosas', 'Peixe ao molho branco']
     },
     {
         id: 'saison',
@@ -4719,17 +4727,17 @@ export const beers = [
         rating: 4.6,
         image: 'assets/beer-placeholder.png',
         description: 'beer.saison.description',
-        category: 'Farmhouse Ale',
+        category: 'Belgian Farmhouse Ale',
         appearance: {
             color: 'beer.saison.appearance.color',
-            colorHex: '#F3A346', // Deep gold to light amber
+            colorHex: '#F3A346',
             clarity: 'beer.saison.appearance.clarity',
             foam: 'beer.saison.appearance.foam'
         },
         sensory: {
-            malte: 30,
-            lupulo: 40,
-            levedura: 100
+            malte: 25,
+            lupulo: 45,
+            levedura: 90
         },
         mouthfeel: {
             body: 'beer.saison.mouthfeel.body',
@@ -4746,7 +4754,7 @@ export const beers = [
             adjuncts: 'beer.saison.ingredients.adjuncts'
         },
         specs: {
-            abvRange: '5.0–9.5%',
+            abvRange: '5.0–7.0%',
             ibu: '20–35',
             srm: '5–14',
             og: '1.048–1.065',
@@ -4755,14 +4763,16 @@ export const beers = [
         variations: ['Table Saison', 'Super Saison', 'Dark Saison'],
         examples: [
             { brand: 'Saison Dupont', name: 'Vieille Provision' },
-            { brand: 'Fantôme', name: 'Saison' }
+            { brand: 'Fantôme', name: 'Saison' },
+            { brand: 'Brasserie de Blaugies', name: 'Saison d\'Epeautre' },
+            { brand: 'St. Feuillien', name: 'Saison' }
         ],
         service: {
             temperature: '8–12°C',
-            glass: 'Tulipa ou Goblet',
+            glass: 'Tulipa / Goblet',
             validity: '1–3 anos'
         },
-        pairing: ['Salmão fumado', 'Aspargos', 'Queijos de cabra frescos']
+        pairing: ['Salmão defumado', 'Aspargos grelhados', 'Queijo de cabra fresco', 'Frutos do mar']
     },
     {
         id: 'belgian-golden-strong-ale',
@@ -4774,17 +4784,17 @@ export const beers = [
         rating: 4.7,
         image: 'assets/beer-placeholder.png',
         description: 'beer.belgian-golden-strong-ale.description',
-        category: 'Strong Ale',
+        category: 'Belgian Strong Ale',
         appearance: {
             color: 'beer.belgian-golden-strong-ale.appearance.color',
-            colorHex: '#F6E58D', // Yellow to gold (very pale)
+            colorHex: '#F6E58D',
             clarity: 'beer.belgian-golden-strong-ale.appearance.clarity',
             foam: 'beer.belgian-golden-strong-ale.appearance.foam'
         },
         sensory: {
-            malte: 25,
-            lupulo: 30,
-            levedura: 85
+            malte: 30,
+            lupulo: 35,
+            levedura: 80
         },
         mouthfeel: {
             body: 'beer.belgian-golden-strong-ale.mouthfeel.body',
@@ -4807,17 +4817,19 @@ export const beers = [
             og: '1.070–1.095',
             fg: '1.005–1.016'
         },
-        variations: [],
+        variations: ['Belgian Tripel-style Golden'],
         examples: [
             { brand: 'Duvel', name: 'Original' },
-            { brand: 'Delirium Tremens', name: 'Huyghe' }
+            { brand: 'Delirium Tremens', name: '' },
+            { brand: 'Piraat', name: '' },
+            { brand: 'Brigand', name: '' }
         ],
         service: {
-            temperature: '5–10°C',
-            glass: 'Tulipa',
-            validity: '1–3 anos'
+            temperature: '6–10°C',
+            glass: 'Tulipa / Taça Duvel',
+            validity: '2–5 anos'
         },
-        pairing: ['Peixe e batata frita', 'Queijos fortes', 'Sobremesas de limão']
+        pairing: ['Lagosta', 'Queijos fortes (Roquefort)', 'Sobremesas de limão', 'Chocolate branco']
     },
     {
         id: 'belgian-single',
@@ -5038,5 +5050,1667 @@ export const beers = [
             validity: '5–20 anos (guarda)'
         },
         pairing: ['Churrasco', 'Queijo Azul Forte', 'Chocolate Amargo']
+    },
+    {
+        id: 'kellerbier',
+        name: 'Kellerbier',
+        origin: '🇩🇪',
+        family: 'beer.kellerbier.family',
+        tag: 'beer.kellerbier.tag',
+        abv: '5.3%',
+        rating: 4.5,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.kellerbier.description',
+        category: 'Pale Bitter European Beer',
+        appearance: {
+            color: 'beer.kellerbier.appearance.color',
+            colorHex: '#C5962B',
+            clarity: 'beer.kellerbier.appearance.clarity',
+            foam: 'beer.kellerbier.appearance.foam'
+        },
+        sensory: {
+            malte: 50,
+            lupulo: 45,
+            levedura: 60
+        },
+        mouthfeel: {
+            body: 'beer.kellerbier.mouthfeel.body',
+            carbonation: 'beer.kellerbier.mouthfeel.carbonation',
+            texture: 'beer.kellerbier.mouthfeel.texture',
+            finish: 'beer.kellerbier.mouthfeel.finish'
+        },
+        history: 'beer.kellerbier.history',
+        comparison: 'beer.kellerbier.comparison',
+        ingredients: {
+            malts: 'beer.kellerbier.ingredients.malts',
+            hops: 'beer.kellerbier.ingredients.hops',
+            yeast: 'beer.kellerbier.ingredients.yeast',
+            adjuncts: 'beer.kellerbier.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '4.7–5.4%',
+            ibu: '25–40',
+            srm: '3–17',
+            og: '1.045–1.051',
+            fg: '1.008–1.012'
+        },
+        variations: ['Pale Kellerbier', 'Amber Kellerbier'],
+        examples: [
+            { brand: 'Paulaner', name: 'Zwickl' },
+            { brand: 'Ayinger', name: 'Kellerbier' },
+            { brand: 'Weihenstephaner', name: '1516' },
+            { brand: 'Mahr\'s', name: 'Ungespundet-Hefetrüb' }
+        ],
+        service: {
+            temperature: '5–8°C',
+            glass: 'Caneca de Cerâmica (Steinkrug)',
+            validity: '3–6 meses (fresco)'
+        },
+        pairing: ['Salsichas alemãs', 'Pretzel', 'Queijos semiduros']
+    },
+    {
+        id: 'kentucky-common',
+        name: 'Kentucky Common',
+        origin: '🇺🇸',
+        family: 'beer.kentucky-common.family',
+        tag: 'beer.kentucky-common.tag',
+        abv: '4.8%',
+        rating: 4.1,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.kentucky-common.description',
+        category: 'American Historical Beer',
+        appearance: {
+            color: 'beer.kentucky-common.appearance.color',
+            colorHex: '#8B4513',
+            clarity: 'beer.kentucky-common.appearance.clarity',
+            foam: 'beer.kentucky-common.appearance.foam'
+        },
+        sensory: {
+            malte: 55,
+            lupulo: 25,
+            levedura: 20
+        },
+        mouthfeel: {
+            body: 'beer.kentucky-common.mouthfeel.body',
+            carbonation: 'beer.kentucky-common.mouthfeel.carbonation',
+            texture: 'beer.kentucky-common.mouthfeel.texture',
+            finish: 'beer.kentucky-common.mouthfeel.finish'
+        },
+        history: 'beer.kentucky-common.history',
+        comparison: 'beer.kentucky-common.comparison',
+        ingredients: {
+            malts: 'beer.kentucky-common.ingredients.malts',
+            hops: 'beer.kentucky-common.ingredients.hops',
+            yeast: 'beer.kentucky-common.ingredients.yeast',
+            adjuncts: 'beer.kentucky-common.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '4.0–5.5%',
+            ibu: '15–30',
+            srm: '11–20',
+            og: '1.044–1.055',
+            fg: '1.010–1.018'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Urban Chestnut', name: 'Forest Park' },
+            { brand: 'Fall City', name: 'Kentucky Common' }
+        ],
+        service: {
+            temperature: '7–10°C',
+            glass: 'Pint',
+            validity: '3–6 meses'
+        },
+        pairing: ['Costeletas de porco', 'Frango frito', 'Queijo Cheddar']
+    },
+    {
+        id: 'lichtenhainer',
+        name: 'Lichtenhainer',
+        origin: '🇩🇪',
+        family: 'beer.lichtenhainer.family',
+        tag: 'beer.lichtenhainer.tag',
+        abv: '4.0%',
+        rating: 4.3,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.lichtenhainer.description',
+        category: 'Smoked Soured Beer',
+        appearance: {
+            color: 'beer.lichtenhainer.appearance.color',
+            colorHex: '#E6C665',
+            clarity: 'beer.lichtenhainer.appearance.clarity',
+            foam: 'beer.lichtenhainer.appearance.foam'
+        },
+        sensory: {
+            malte: 35,
+            lupulo: 10,
+            levedura: 85
+        },
+        mouthfeel: {
+            body: 'beer.lichtenhainer.mouthfeel.body',
+            carbonation: 'beer.lichtenhainer.mouthfeel.carbonation',
+            texture: 'beer.lichtenhainer.mouthfeel.texture',
+            finish: 'beer.lichtenhainer.mouthfeel.finish'
+        },
+        history: 'beer.lichtenhainer.history',
+        comparison: 'beer.lichtenhainer.comparison',
+        ingredients: {
+            malts: 'beer.lichtenhainer.ingredients.malts',
+            hops: 'beer.lichtenhainer.ingredients.hops',
+            yeast: 'beer.lichtenhainer.ingredients.yeast',
+            adjuncts: 'beer.lichtenhainer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '3.5–4.7%',
+            ibu: '5–12',
+            srm: '3–6',
+            og: '1.032–1.040',
+            fg: '1.004–1.008'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Live Oak', name: 'Lichtenhainer' },
+            { brand: 'Wöllnitzer', name: 'Weissbier' }
+        ],
+        service: {
+            temperature: '6–9°C',
+            glass: 'Copo Stange / Weizen',
+            validity: '6–12 meses'
+        },
+        pairing: ['Salsichas defumadas', 'Chucrute', 'Queijo de cabra']
+    },
+    {
+        id: 'london-brown-ale',
+        name: 'London Brown Ale',
+        origin: '🇬🇧',
+        family: 'beer.london-brown-ale.family',
+        tag: 'beer.london-brown-ale.tag',
+        abv: '3.3%',
+        rating: 4.0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.london-brown-ale.description',
+        category: 'Historical Brown Beer',
+        appearance: {
+            color: 'beer.london-brown-ale.appearance.color',
+            colorHex: '#4E2A14',
+            clarity: 'beer.london-brown-ale.appearance.clarity',
+            foam: 'beer.london-brown-ale.appearance.foam'
+        },
+        sensory: {
+            malte: 75,
+            lupulo: 15,
+            levedura: 25
+        },
+        mouthfeel: {
+            body: 'beer.london-brown-ale.mouthfeel.body',
+            carbonation: 'beer.london-brown-ale.mouthfeel.carbonation',
+            texture: 'beer.london-brown-ale.mouthfeel.texture',
+            finish: 'beer.london-brown-ale.mouthfeel.finish'
+        },
+        history: 'beer.london-brown-ale.history',
+        comparison: 'beer.london-brown-ale.comparison',
+        ingredients: {
+            malts: 'beer.london-brown-ale.ingredients.malts',
+            hops: 'beer.london-brown-ale.ingredients.hops',
+            yeast: 'beer.london-brown-ale.ingredients.yeast',
+            adjuncts: 'beer.london-brown-ale.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '2.8–3.6%',
+            ibu: '15–20',
+            srm: '22–35',
+            og: '1.033–1.038',
+            fg: '1.012–1.015'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Manns', name: 'Brown Ale' },
+            { brand: 'Harvey\'s', name: 'Bloomsbury Brown' }
+        ],
+        service: {
+            temperature: '10–13°C',
+            glass: 'Pint Inglês (Nonic)',
+            validity: '6–12 meses'
+        },
+        pairing: ['Sobremesas de caramelo', 'Pudim', 'Queijo Stilton']
+    },
+    {
+        id: 'piwo-grodziskie',
+        name: 'Piwo Grodziskie',
+        origin: '🇵🇱',
+        family: 'beer.piwo-grodziskie.family',
+        tag: 'beer.piwo-grodziskie.tag',
+        abv: '3.0%',
+        rating: 4.4,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.piwo-grodziskie.description',
+        category: 'Smoked Wheat Beer',
+        appearance: {
+            color: 'beer.piwo-grodziskie.appearance.color',
+            colorHex: '#EAE0A8',
+            clarity: 'beer.piwo-grodziskie.appearance.clarity',
+            foam: 'beer.piwo-grodziskie.appearance.foam'
+        },
+        sensory: {
+            malte: 40,
+            lupulo: 30,
+            levedura: 40
+        },
+        mouthfeel: {
+            body: 'beer.piwo-grodziskie.mouthfeel.body',
+            carbonation: 'beer.piwo-grodziskie.mouthfeel.carbonation',
+            texture: 'beer.piwo-grodziskie.mouthfeel.texture',
+            finish: 'beer.piwo-grodziskie.mouthfeel.finish'
+        },
+        history: 'beer.piwo-grodziskie.history',
+        comparison: 'beer.piwo-grodziskie.comparison',
+        ingredients: {
+            malts: 'beer.piwo-grodziskie.ingredients.malts',
+            hops: 'beer.piwo-grodziskie.ingredients.hops',
+            yeast: 'beer.piwo-grodziskie.ingredients.yeast',
+            adjuncts: 'beer.piwo-grodziskie.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '2.5–3.3%',
+            ibu: '20–30',
+            srm: '3–6',
+            og: '1.028–1.032',
+            fg: '1.006–1.012'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Browar Grodzisk', name: 'Piwo z Grodziska' },
+            { brand: 'Live Oak', name: 'Grodziskie' }
+        ],
+        service: {
+            temperature: '5–8°C',
+            glass: 'Copo Pokal / Taça',
+            validity: '6–12 meses'
+        },
+        pairing: ['Peixe defumado', 'Queijos leves', 'Saladas']
+    },
+    {
+        id: 'pre-prohibition-lager',
+        name: 'Pre-Prohibition Lager',
+        origin: '🇺🇸',
+        family: 'beer.pre-prohibition-lager.family',
+        tag: 'beer.pre-prohibition-lager.tag',
+        abv: '5.5%',
+        rating: 4.2,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.pre-prohibition-lager.description',
+        category: 'Historical American Lager',
+        appearance: {
+            color: 'beer.pre-prohibition-lager.appearance.color',
+            colorHex: '#F2C84B',
+            clarity: 'beer.pre-prohibition-lager.appearance.clarity',
+            foam: 'beer.pre-prohibition-lager.appearance.foam'
+        },
+        sensory: {
+            malte: 50,
+            lupulo: 40,
+            levedura: 10
+        },
+        mouthfeel: {
+            body: 'beer.pre-prohibition-lager.mouthfeel.body',
+            carbonation: 'beer.pre-prohibition-lager.mouthfeel.carbonation',
+            texture: 'beer.pre-prohibition-lager.mouthfeel.texture',
+            finish: 'beer.pre-prohibition-lager.mouthfeel.finish'
+        },
+        history: 'beer.pre-prohibition-lager.history',
+        comparison: 'beer.pre-prohibition-lager.comparison',
+        ingredients: {
+            malts: 'beer.pre-prohibition-lager.ingredients.malts',
+            hops: 'beer.pre-prohibition-lager.ingredients.hops',
+            yeast: 'beer.pre-prohibition-lager.ingredients.yeast',
+            adjuncts: 'beer.pre-prohibition-lager.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '4.5–6.0%',
+            ibu: '25–40',
+            srm: '3–6',
+            og: '1.044–1.060',
+            fg: '1.010–1.015'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Capital', name: 'Supper Club' },
+            { brand: 'Schell\'s', name: 'Deer Brand' }
+        ],
+        service: {
+            temperature: '4–7°C',
+            glass: 'Pilsner Flute',
+            validity: '3–6 meses'
+        },
+        pairing: ['Hambúrguer Clássico', 'Pizza', 'Milho cozido']
+    },
+    {
+        id: 'pre-prohibition-porter',
+        name: 'Pre-Prohibition Porter',
+        origin: '🇺🇸',
+        family: 'beer.pre-prohibition-porter.family',
+        tag: 'beer.pre-prohibition-porter.tag',
+        abv: '5.8%',
+        rating: 4.3,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.pre-prohibition-porter.description',
+        category: 'Historical American Porter',
+        appearance: {
+            color: 'beer.pre-prohibition-porter.appearance.color',
+            colorHex: '#3B2317',
+            clarity: 'beer.pre-prohibition-porter.appearance.clarity',
+            foam: 'beer.pre-prohibition-porter.appearance.foam'
+        },
+        sensory: {
+            malte: 65,
+            lupulo: 35,
+            levedura: 15
+        },
+        mouthfeel: {
+            body: 'beer.pre-prohibition-porter.mouthfeel.body',
+            carbonation: 'beer.pre-prohibition-porter.mouthfeel.carbonation',
+            texture: 'beer.pre-prohibition-porter.mouthfeel.texture',
+            finish: 'beer.pre-prohibition-porter.mouthfeel.finish'
+        },
+        history: 'beer.pre-prohibition-porter.history',
+        comparison: 'beer.pre-prohibition-porter.comparison',
+        ingredients: {
+            malts: 'beer.pre-prohibition-porter.ingredients.malts',
+            hops: 'beer.pre-prohibition-porter.ingredients.hops',
+            yeast: 'beer.pre-prohibition-porter.ingredients.yeast',
+            adjuncts: 'beer.pre-prohibition-porter.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '4.5–6.0%',
+            ibu: '20–30',
+            srm: '18–30',
+            og: '1.046–1.060',
+            fg: '1.010–1.016'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Yuengling', name: 'Porter' },
+            { brand: 'Stegmaier', name: 'Porter' }
+        ],
+        service: {
+            temperature: '8–12°C',
+            glass: 'Pint',
+            validity: '6–12 meses'
+        },
+        pairing: ['Churrasco americano', 'Feijão cozido', 'Brownie']
+    },
+    {
+        id: 'roggenbier',
+        name: 'Roggenbier',
+        origin: '🇩🇪',
+        family: 'beer.roggenbier.family',
+        tag: 'beer.roggenbier.tag',
+        abv: '5.0%',
+        rating: 4.2,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.roggenbier.description',
+        category: 'Historical Rye Beer',
+        appearance: {
+            color: 'beer.roggenbier.appearance.color',
+            colorHex: '#A0522D',
+            clarity: 'beer.roggenbier.appearance.clarity',
+            foam: 'beer.roggenbier.appearance.foam'
+        },
+        sensory: {
+            malte: 50,
+            lupulo: 15,
+            levedura: 60
+        },
+        mouthfeel: {
+            body: 'beer.roggenbier.mouthfeel.body',
+            carbonation: 'beer.roggenbier.mouthfeel.carbonation',
+            texture: 'beer.roggenbier.mouthfeel.texture',
+            finish: 'beer.roggenbier.mouthfeel.finish'
+        },
+        history: 'beer.roggenbier.history',
+        comparison: 'beer.roggenbier.comparison',
+        ingredients: {
+            malts: 'beer.roggenbier.ingredients.malts',
+            hops: 'beer.roggenbier.ingredients.hops',
+            yeast: 'beer.roggenbier.ingredients.yeast',
+            adjuncts: 'beer.roggenbier.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '4.5–6.0%',
+            ibu: '10–20',
+            srm: '14–19',
+            og: '1.046–1.056',
+            fg: '1.010–1.014'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Thurn und Taxis', name: 'Roggen' },
+            { brand: 'Paulaner', name: 'Roggen (historical)' }
+        ],
+        service: {
+            temperature: '6–9°C',
+            glass: 'Weizen Glass',
+            validity: '3–6 meses'
+        },
+        pairing: ['Pão de centeio', 'Presunto defumado', 'Bratwurst']
+    },
+    {
+        id: 'sahti',
+        name: 'Sahti',
+        origin: '🇫🇮',
+        family: 'beer.sahti.family',
+        tag: 'beer.sahti.tag',
+        abv: '8.0%',
+        rating: 4.6,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.sahti.description',
+        category: 'Traditional Farmhouse Ale',
+        appearance: {
+            color: 'beer.sahti.appearance.color',
+            colorHex: '#D2691E',
+            clarity: 'beer.sahti.appearance.clarity',
+            foam: 'beer.sahti.appearance.foam'
+        },
+        sensory: {
+            malte: 70,
+            lupulo: 5,
+            levedura: 65
+        },
+        mouthfeel: {
+            body: 'beer.sahti.mouthfeel.body',
+            carbonation: 'beer.sahti.mouthfeel.carbonation',
+            texture: 'beer.sahti.mouthfeel.texture',
+            finish: 'beer.sahti.mouthfeel.finish'
+        },
+        history: 'beer.sahti.history',
+        comparison: 'beer.sahti.comparison',
+        ingredients: {
+            malts: 'beer.sahti.ingredients.malts',
+            hops: 'beer.sahti.ingredients.hops',
+            yeast: 'beer.sahti.ingredients.yeast',
+            adjuncts: 'beer.sahti.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '7.0–11.0%',
+            ibu: '0–15',
+            srm: '4–22',
+            og: '1.060–1.090',
+            fg: '1.016–1.040'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Lammin', name: 'Sahti' },
+            { brand: 'Finlandia', name: 'Sahti' }
+        ],
+        service: {
+            temperature: '8–12°C',
+            glass: 'Caneca ou Copo de Madeira (Kuksa)',
+            validity: '1 mês (beber fresco)'
+        },
+        pairing: ['Comida finlandesa', 'Queijo azul', 'Carne de caça']
+    },
+    {
+        id: 'brett-beer',
+        name: 'Brett Beer',
+        origin: '🌎',
+        family: 'beer.brett-beer.family',
+        tag: 'beer.brett-beer.tag',
+        abv: 'Variable',
+        rating: 4.0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.brett-beer.description',
+        category: 'American Wild Ale',
+        appearance: {
+            color: 'beer.brett-beer.appearance.color',
+            colorHex: '#DAA520',
+            clarity: 'beer.brett-beer.appearance.clarity',
+            foam: 'beer.brett-beer.appearance.foam'
+        },
+        sensory: {
+            malte: 30,
+            lupulo: 20,
+            levedura: 90
+        },
+        mouthfeel: {
+            body: 'beer.brett-beer.mouthfeel.body',
+            carbonation: 'beer.brett-beer.mouthfeel.carbonation',
+            texture: 'beer.brett-beer.mouthfeel.texture',
+            finish: 'beer.brett-beer.mouthfeel.finish'
+        },
+        history: 'beer.brett-beer.history',
+        comparison: 'beer.brett-beer.comparison',
+        ingredients: {
+            malts: 'beer.brett-beer.ingredients.malts',
+            hops: 'beer.brett-beer.ingredients.hops',
+            yeast: 'beer.brett-beer.ingredients.yeast',
+            adjuncts: 'beer.brett-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: 'Variable',
+            ibu: 'Variable',
+            srm: 'Variable',
+            og: 'Variable',
+            fg: 'Variable'
+        },
+        variations: ['100% Brett', 'Mixed-Culture Brett'],
+        examples: [
+            { brand: 'Boulevard', name: 'Saison Brett' },
+            { brand: 'Hill Farmstead', name: 'Arthur' },
+            { brand: 'Russian River', name: 'Sanctification' },
+            { brand: 'Logsdon', name: 'Seizoen Bretta' }
+        ],
+        service: {
+            temperature: '7–10°C',
+            glass: 'Taça Tulipa',
+            validity: 'Variable'
+        },
+        pairing: ['Queijos funky', 'Frutos do mar', 'Pratos cítricos']
+    },
+    {
+        id: 'mixed-fermentation-sour-beer',
+        name: 'Mixed-Fermentation Sour Beer',
+        origin: '🌎',
+        family: 'beer.mixed-fermentation-sour-beer.family',
+        tag: 'beer.mixed-fermentation-sour-beer.tag',
+        abv: 'Variable',
+        rating: 4.2,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.mixed-fermentation-sour-beer.description',
+        category: 'American Wild Ale',
+        appearance: {
+            color: 'beer.mixed-fermentation-sour-beer.appearance.color',
+            colorHex: '#FFC0CB',
+            clarity: 'beer.mixed-fermentation-sour-beer.appearance.clarity',
+            foam: 'beer.mixed-fermentation-sour-beer.appearance.foam'
+        },
+        sensory: {
+            malte: 25,
+            lupulo: 10,
+            levedura: 95
+        },
+        mouthfeel: {
+            body: 'beer.mixed-fermentation-sour-beer.mouthfeel.body',
+            carbonation: 'beer.mixed-fermentation-sour-beer.mouthfeel.carbonation',
+            texture: 'beer.mixed-fermentation-sour-beer.mouthfeel.texture',
+            finish: 'beer.mixed-fermentation-sour-beer.mouthfeel.finish'
+        },
+        history: 'beer.mixed-fermentation-sour-beer.history',
+        comparison: 'beer.mixed-fermentation-sour-beer.comparison',
+        ingredients: {
+            malts: 'beer.mixed-fermentation-sour-beer.ingredients.malts',
+            hops: 'beer.mixed-fermentation-sour-beer.ingredients.hops',
+            yeast: 'beer.mixed-fermentation-sour-beer.ingredients.yeast',
+            adjuncts: 'beer.mixed-fermentation-sour-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '5.0–8.0%',
+            ibu: '8–15',
+            srm: '15–30',
+            og: '1.050–1.065',
+            fg: '1.002–1.012'
+        }, // Rodenbach Grand Cru profile
+        variations: [],
+        examples: [
+            { brand: 'Rodenbach', name: 'Grand Cru' },
+            { brand: 'Duchesse', name: 'de Bourgogne' },
+            { brand: 'New Belgium', name: 'La Folie' }
+        ],
+        service: {
+            temperature: '7–10°C',
+            glass: 'Taça Tulipa',
+            validity: 'Variable'
+        },
+        pairing: ['Queijos de cabra', 'Ceviche', 'Mexilhões']
+    },
+    {
+        id: 'wild-specialty-beer',
+        name: 'Wild Specialty Beer',
+        origin: '🌎',
+        family: 'beer.wild-specialty-beer.family',
+        tag: 'beer.wild-specialty-beer.tag',
+        abv: 'Variable',
+        rating: 4.3,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.wild-specialty-beer.description',
+        category: 'American Wild Ale',
+        appearance: {
+            color: 'beer.wild-specialty-beer.appearance.color',
+            colorHex: '#800080',
+            clarity: 'beer.wild-specialty-beer.appearance.clarity',
+            foam: 'beer.wild-specialty-beer.appearance.foam'
+        },
+        sensory: {
+            malte: 25,
+            lupulo: 10,
+            levedura: 90
+        },
+        mouthfeel: {
+            body: 'beer.wild-specialty-beer.mouthfeel.body',
+            carbonation: 'beer.wild-specialty-beer.mouthfeel.carbonation',
+            texture: 'beer.wild-specialty-beer.mouthfeel.texture',
+            finish: 'beer.wild-specialty-beer.mouthfeel.finish'
+        },
+        history: 'beer.wild-specialty-beer.history',
+        comparison: 'beer.wild-specialty-beer.comparison',
+        ingredients: {
+            malts: 'beer.wild-specialty-beer.ingredients.malts',
+            hops: 'beer.wild-specialty-beer.ingredients.hops',
+            yeast: 'beer.wild-specialty-beer.ingredients.yeast',
+            adjuncts: 'beer.wild-specialty-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '5.0–6.0%',
+            ibu: '0–10',
+            srm: 'Variable',
+            og: '1.045–1.055',
+            fg: '1.000–1.010'
+        }, // Cantillon Rose de Gambrinus profile
+        variations: [],
+        examples: [
+            { brand: 'Cantillon', name: 'Rosé de Gambrinus' },
+            { brand: 'Jester King', name: 'Atrial Rubicite' },
+            { brand: 'Cascade', name: 'Kriek' }
+        ],
+        service: {
+            temperature: '7–10°C',
+            glass: 'Taça Tulipa',
+            validity: 'Variable'
+        },
+        pairing: ['Sobremesas de frutas', 'Pato', 'Queijos fortes']
+    },
+    {
+        id: 'straight-sour-beer',
+        name: 'Straight Sour Beer',
+        origin: '🌎',
+        family: 'beer.straight-sour-beer.family',
+        tag: 'beer.straight-sour-beer.tag',
+        abv: 'Variable',
+        rating: 4.1,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.straight-sour-beer.description',
+        category: 'American Wild Ale',
+        appearance: {
+            color: 'beer.straight-sour-beer.appearance.color',
+            colorHex: '#FFFFE0',
+            clarity: 'beer.straight-sour-beer.appearance.clarity',
+            foam: 'beer.straight-sour-beer.appearance.foam'
+        },
+        sensory: {
+            malte: 35,
+            lupulo: 5,
+            levedura: 80
+        },
+        mouthfeel: {
+            body: 'beer.straight-sour-beer.mouthfeel.body',
+            carbonation: 'beer.straight-sour-beer.mouthfeel.carbonation',
+            texture: 'beer.straight-sour-beer.mouthfeel.texture',
+            finish: 'beer.straight-sour-beer.mouthfeel.finish'
+        },
+        history: 'beer.straight-sour-beer.history',
+        comparison: 'beer.straight-sour-beer.comparison',
+        ingredients: {
+            malts: 'beer.straight-sour-beer.ingredients.malts',
+            hops: 'beer.straight-sour-beer.ingredients.hops',
+            yeast: 'beer.straight-sour-beer.ingredients.yeast',
+            adjuncts: 'beer.straight-sour-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '3.8–7.0%',
+            ibu: '3–10',
+            srm: '2–5',
+            og: '1.035–1.065',
+            fg: '1.006–1.013'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Westbrook', name: 'Gose' },
+            { brand: 'Anderson Valley', name: 'The Kimmie, The Yink and The Holy Gose' },
+            { brand: 'Rare Barrel', name: 'Map of the Sun' }
+        ],
+        service: {
+            temperature: '4–7°C',
+            glass: 'Copo Tulipa',
+            validity: 'Variable'
+        },
+        pairing: ['Saladas frescas', 'Queijo de cabra', 'Ceviche']
+    },
+    {
+        id: 'fruit-beer',
+        name: 'Fruit Beer',
+        origin: '🌎',
+        family: 'beer.fruit-beer.family',
+        tag: 'beer.fruit-beer.tag',
+        abv: 'Variable',
+        rating: 4.0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.fruit-beer.description',
+        category: 'Fruit Beer',
+        appearance: {
+            color: 'beer.fruit-beer.appearance.color',
+            colorHex: '#FF69B4',
+            clarity: 'beer.fruit-beer.appearance.clarity',
+            foam: 'beer.fruit-beer.appearance.foam'
+        },
+        sensory: {
+            malte: 40,
+            lupulo: 15,
+            levedura: 45
+        },
+        mouthfeel: {
+            body: 'beer.fruit-beer.mouthfeel.body',
+            carbonation: 'beer.fruit-beer.mouthfeel.carbonation',
+            texture: 'beer.fruit-beer.mouthfeel.texture',
+            finish: 'beer.fruit-beer.mouthfeel.finish'
+        },
+        history: 'beer.fruit-beer.history',
+        comparison: 'beer.fruit-beer.comparison',
+        ingredients: {
+            malts: 'beer.fruit-beer.ingredients.malts',
+            hops: 'beer.fruit-beer.ingredients.hops',
+            yeast: 'beer.fruit-beer.ingredients.yeast',
+            adjuncts: 'beer.fruit-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '4.0–7.0%',
+            ibu: '10–25',
+            srm: 'Variable',
+            og: '1.040–1.070',
+            fg: '1.010–1.018'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Founders', name: 'Rubaeus' },
+            { brand: "Bell's", name: 'Cherry Stout' },
+            { brand: 'Dogfish Head', name: 'Aprihop' },
+            { brand: 'New Glarus', name: 'Raspberry Tart' }
+        ],
+        service: {
+            temperature: '4–7°C',
+            glass: 'Copo Flute ou Tulipa',
+            validity: 'Variable'
+        },
+        pairing: ['Saladas de frutas', 'Cheesecake', 'Sorvetes']
+    },
+    {
+        id: 'fruit-and-spice-beer',
+        name: 'Fruit and Spice Beer',
+        origin: '🌎',
+        family: 'beer.fruit-and-spice-beer.family',
+        tag: 'beer.fruit-and-spice-beer.tag',
+        abv: 'Variable',
+        rating: 4.1,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.fruit-and-spice-beer.description',
+        category: 'Fruit Beer',
+        appearance: {
+            color: 'beer.fruit-and-spice-beer.appearance.color',
+            colorHex: '#FF7F50',
+            clarity: 'beer.fruit-and-spice-beer.appearance.clarity',
+            foam: 'beer.fruit-and-spice-beer.appearance.foam'
+        },
+        sensory: {
+            malte: 35,
+            lupulo: 15,
+            levedura: 45
+        },
+        mouthfeel: {
+            body: 'beer.fruit-and-spice-beer.mouthfeel.body',
+            carbonation: 'beer.fruit-and-spice-beer.mouthfeel.carbonation',
+            texture: 'beer.fruit-and-spice-beer.mouthfeel.texture',
+            finish: 'beer.fruit-and-spice-beer.mouthfeel.finish'
+        },
+        history: 'beer.fruit-and-spice-beer.history',
+        comparison: 'beer.fruit-and-spice-beer.comparison',
+        ingredients: {
+            malts: 'beer.fruit-and-spice-beer.ingredients.malts',
+            hops: 'beer.fruit-and-spice-beer.ingredients.hops',
+            yeast: 'beer.fruit-and-spice-beer.ingredients.yeast',
+            adjuncts: 'beer.fruit-and-spice-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '4.0–10.0%',
+            ibu: '5–40',
+            srm: 'Variable',
+            og: '1.040–1.090',
+            fg: '1.005–1.020'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Cigar City', name: 'Margarita Gose' },
+            { brand: 'Dogfish Head', name: 'Festina Pêche' }
+        ],
+        service: {
+            temperature: '4–7°C',
+            glass: 'Copo Tulipa',
+            validity: 'Variable'
+        },
+        pairing: ['Culinária tailandesa', 'Sobremesas condimentadas', 'Queijo Brie']
+    },
+    {
+        id: 'specialty-fruit-beer',
+        name: 'Specialty Fruit Beer',
+        origin: '🌎',
+        family: 'beer.specialty-fruit-beer.family',
+        tag: 'beer.specialty-fruit-beer.tag',
+        abv: 'Variable',
+        rating: 4.2,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.specialty-fruit-beer.description',
+        category: 'Fruit Beer',
+        appearance: {
+            color: 'beer.specialty-fruit-beer.appearance.color',
+            colorHex: '#8B008B',
+            clarity: 'beer.specialty-fruit-beer.appearance.clarity',
+            foam: 'beer.specialty-fruit-beer.appearance.foam'
+        },
+        sensory: {
+            malte: 40,
+            lupulo: 10,
+            levedura: 50
+        },
+        mouthfeel: {
+            body: 'beer.specialty-fruit-beer.mouthfeel.body',
+            carbonation: 'beer.specialty-fruit-beer.mouthfeel.carbonation',
+            texture: 'beer.specialty-fruit-beer.mouthfeel.texture',
+            finish: 'beer.specialty-fruit-beer.mouthfeel.finish'
+        },
+        history: 'beer.specialty-fruit-beer.history',
+        comparison: 'beer.specialty-fruit-beer.comparison',
+        ingredients: {
+            malts: 'beer.specialty-fruit-beer.ingredients.malts',
+            hops: 'beer.specialty-fruit-beer.ingredients.hops',
+            yeast: 'beer.specialty-fruit-beer.ingredients.yeast',
+            adjuncts: 'beer.specialty-fruit-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '4.0–8.0%',
+            ibu: '5–30',
+            srm: 'Variable',
+            og: '1.045–1.080',
+            fg: '1.010–1.025'
+        },
+        variations: [],
+        examples: [
+            { brand: 'The Bruery', name: 'Fruited Sour' },
+            { brand: 'Funky Buddha', name: 'Maple Bacon Coffee Porter (with fruit?)' }
+        ],
+        service: {
+            temperature: '7–10°C',
+            glass: 'Taça Snifter',
+            validity: 'Variable'
+        },
+        pairing: ['Sobremesas complexas', 'Chocolate amargo', 'Charutos']
+    },
+    {
+        id: 'grape-ale',
+        name: 'Grape Ale',
+        origin: '🌎',
+        family: 'beer.grape-ale.family',
+        tag: 'beer.grape-ale.tag',
+        abv: 'Variable',
+        rating: 4.4,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.grape-ale.description',
+        category: 'Fruit Beer',
+        appearance: {
+            color: 'beer.grape-ale.appearance.color',
+            colorHex: '#800000',
+            clarity: 'beer.grape-ale.appearance.clarity',
+            foam: 'beer.grape-ale.appearance.foam'
+        },
+        sensory: {
+            malte: 35,
+            lupulo: 15,
+            levedura: 50
+        },
+        mouthfeel: {
+            body: 'beer.grape-ale.mouthfeel.body',
+            carbonation: 'beer.grape-ale.mouthfeel.carbonation',
+            texture: 'beer.grape-ale.mouthfeel.texture',
+            finish: 'beer.grape-ale.mouthfeel.finish'
+        },
+        history: 'beer.grape-ale.history',
+        comparison: 'beer.grape-ale.comparison',
+        ingredients: {
+            malts: 'beer.grape-ale.ingredients.malts',
+            hops: 'beer.grape-ale.ingredients.hops',
+            yeast: 'beer.grape-ale.ingredients.yeast',
+            adjuncts: 'beer.grape-ale.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '6.0–11.0%',
+            ibu: '10–30',
+            srm: 'Gold to Ruby',
+            og: '1.050–1.090',
+            fg: '1.005–1.015'
+        },
+        variations: ['Italian Grape Ale'],
+        examples: [
+            { brand: 'Birrificio Montegioco', name: 'Open Mind' },
+            { brand: 'Birrificio del Forte', name: 'Il Tralcio' },
+            { brand: 'Firestone Walker', name: 'Feral Vinifera' },
+            { brand: 'pFriem', name: 'Druif' }
+        ],
+        service: {
+            temperature: '10–12°C',
+            glass: 'Taça de Vinho',
+            validity: '1–5 anos'
+        },
+        pairing: ['Queijos curados', 'Carne vermelha', 'Massas']
+    },
+    {
+        id: 'autumn-seasonal-beer',
+        name: 'Autumn Seasonal Beer',
+        origin: '🌎', // Varies
+        family: 'beer.autumn-seasonal-beer.family',
+        tag: 'beer.autumn-seasonal-beer.tag',
+        abv: 'Variable',
+        rating: 0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.autumn-seasonal-beer.description',
+        category: 'Spiced Beer',
+        appearance: {
+            color: 'beer.autumn-seasonal-beer.appearance.color',
+            colorHex: '#C67728', // Amber/Copper generic
+            clarity: 'beer.autumn-seasonal-beer.appearance.clarity',
+            foam: 'beer.autumn-seasonal-beer.appearance.foam'
+        },
+        sensory: {
+            aroma: 'beer.autumn-seasonal-beer.sensory.aroma',
+            flavor: 'beer.autumn-seasonal-beer.sensory.flavor',
+            bitterness: 'beer.autumn-seasonal-beer.sensory.bitterness'
+        },
+        mouthfeel: {
+            body: 'beer.autumn-seasonal-beer.mouthfeel.body',
+            carbonation: 'beer.autumn-seasonal-beer.mouthfeel.carbonation',
+            texture: 'beer.autumn-seasonal-beer.mouthfeel.texture',
+            finish: 'beer.autumn-seasonal-beer.mouthfeel.finish'
+        },
+        history: 'beer.autumn-seasonal-beer.history',
+        comparison: 'beer.autumn-seasonal-beer.comparison',
+        ingredients: {
+            malts: 'beer.autumn-seasonal-beer.ingredients.malts',
+            hops: 'beer.autumn-seasonal-beer.ingredients.hops',
+            yeast: 'beer.autumn-seasonal-beer.ingredients.yeast',
+            adjuncts: 'beer.autumn-seasonal-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '5.0–9.5%',
+            ibu: '20–40',
+            srm: '7–20',
+            og: '1.050–1.090',
+            fg: '1.012–1.020'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Schlafly', name: 'Pumpkin Ale' },
+            { brand: 'Southern Tier', name: 'Pumking' },
+            { brand: 'Cigar City', name: 'Good Gourd' }
+        ],
+        service: {
+            temperature: "10-14°C",
+            glassware: "Nonic/Tulip",
+            validity: "Variable"
+        },
+        pairing: [
+            "Roasted poultry",
+            "Pumpkin pie",
+            "Autumn vegetable stews"
+        ]
+    },
+    {
+        id: 'winter-seasonal-beer',
+        name: 'Winter Seasonal Beer',
+        origin: '🌎', // Varies
+        family: 'beer.winter-seasonal-beer.family',
+        tag: 'beer.winter-seasonal-beer.tag',
+        abv: 'Variable',
+        rating: 0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.winter-seasonal-beer.description',
+        category: 'Spiced Beer',
+        appearance: {
+            color: 'beer.winter-seasonal-beer.appearance.color',
+            colorHex: '#421C02', // Darker generic
+            clarity: 'beer.winter-seasonal-beer.appearance.clarity',
+            foam: 'beer.winter-seasonal-beer.appearance.foam'
+        },
+        sensory: {
+            aroma: 'beer.winter-seasonal-beer.sensory.aroma',
+            flavor: 'beer.winter-seasonal-beer.sensory.flavor',
+            bitterness: 'beer.winter-seasonal-beer.sensory.bitterness'
+        },
+        mouthfeel: {
+            body: 'beer.winter-seasonal-beer.mouthfeel.body',
+            carbonation: 'beer.winter-seasonal-beer.mouthfeel.carbonation',
+            texture: 'beer.winter-seasonal-beer.mouthfeel.texture',
+            finish: 'beer.winter-seasonal-beer.mouthfeel.finish'
+        },
+        history: 'beer.winter-seasonal-beer.history',
+        comparison: 'beer.winter-seasonal-beer.comparison',
+        ingredients: {
+            malts: 'beer.winter-seasonal-beer.ingredients.malts',
+            hops: 'beer.winter-seasonal-beer.ingredients.hops',
+            yeast: 'beer.winter-seasonal-beer.ingredients.yeast',
+            adjuncts: 'beer.winter-seasonal-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '5.5–10.0%',
+            ibu: '20–50',
+            srm: 'Variable',
+            og: '1.055–1.100',
+            fg: '1.015–1.030'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Anchor', name: 'Christmas Ale' },
+            { brand: 'Harpoon', name: 'Winter Warmer' },
+            { brand: 'Great Lakes', name: 'Christmas Ale' },
+            { brand: "Troeg's", name: 'The Mad Elf' }
+        ],
+        service: {
+            temperature: "10-14°C",
+            glassware: "Snifter/Tulip",
+            validity: "Variable"
+        },
+        pairing: [
+            "Gingerbread",
+            "Roast beef",
+            "Fruit cake"
+        ]
+    },
+    {
+        id: 'specialty-spice-beer',
+        name: 'Specialty Spice Beer',
+        origin: '🌎', // Varies
+        family: 'beer.specialty-spice-beer.family',
+        tag: 'beer.specialty-spice-beer.tag',
+        abv: 'Variable',
+        rating: 0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.specialty-spice-beer.description',
+        category: 'Spiced Beer',
+        appearance: {
+            color: 'beer.specialty-spice-beer.appearance.color',
+            colorHex: '#DAA520', // Generic gold/amber
+            clarity: 'beer.specialty-spice-beer.appearance.clarity',
+            foam: 'beer.specialty-spice-beer.appearance.foam'
+        },
+        sensory: {
+            aroma: 'beer.specialty-spice-beer.sensory.aroma',
+            flavor: 'beer.specialty-spice-beer.sensory.flavor',
+            bitterness: 'beer.specialty-spice-beer.sensory.bitterness'
+        },
+        mouthfeel: {
+            body: 'beer.specialty-spice-beer.mouthfeel.body',
+            carbonation: 'beer.specialty-spice-beer.mouthfeel.carbonation',
+            texture: 'beer.specialty-spice-beer.mouthfeel.texture',
+            finish: 'beer.specialty-spice-beer.mouthfeel.finish'
+        },
+        history: 'beer.specialty-spice-beer.history',
+        comparison: 'beer.specialty-spice-beer.comparison',
+        ingredients: {
+            malts: 'beer.specialty-spice-beer.ingredients.malts',
+            hops: 'beer.specialty-spice-beer.ingredients.hops',
+            yeast: 'beer.specialty-spice-beer.ingredients.yeast',
+            adjuncts: 'beer.specialty-spice-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '5.0–9.0%',
+            ibu: '15–50',
+            srm: 'Variable',
+            og: '1.050–1.090',
+            fg: '1.010–1.025'
+        },
+        variations: [],
+        examples: [
+            "Beers with maple maple syrup AND spices",
+            "Unusual spice combinations"
+        ],
+        service: {
+            temperature: "8-12°C",
+            glassware: "Tulip",
+            validity: "Variable"
+        },
+        pairing: [
+            "Complex desserts",
+            "Spiced meats"
+        ]
+    },
+    {
+        id: 'alternative-grain-beer',
+        name: 'Alternative Grain Beer',
+        origin: '🌎', // Varies
+        family: 'beer.alternative-grain-beer.family',
+        tag: 'beer.alternative-grain-beer.tag',
+        abv: 'Variable',
+        rating: 0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.alternative-grain-beer.description',
+        category: 'Alternative Fermentables',
+        appearance: {
+            color: 'beer.alternative-grain-beer.appearance.color',
+            colorHex: '#F5DEB3', // Generic wheat color
+            clarity: 'beer.alternative-grain-beer.appearance.clarity',
+            foam: 'beer.alternative-grain-beer.appearance.foam'
+        },
+        sensory: {
+            aroma: 'beer.alternative-grain-beer.sensory.aroma',
+            flavor: 'beer.alternative-grain-beer.sensory.flavor',
+            bitterness: 'beer.alternative-grain-beer.sensory.bitterness'
+        },
+        mouthfeel: {
+            body: 'beer.alternative-grain-beer.mouthfeel.body',
+            carbonation: 'beer.alternative-grain-beer.mouthfeel.carbonation',
+            texture: 'beer.alternative-grain-beer.mouthfeel.texture',
+            finish: 'beer.alternative-grain-beer.mouthfeel.finish'
+        },
+        history: 'beer.alternative-grain-beer.history',
+        comparison: 'beer.alternative-grain-beer.comparison',
+        ingredients: {
+            malts: 'beer.alternative-grain-beer.ingredients.malts',
+            hops: 'beer.alternative-grain-beer.ingredients.hops',
+            yeast: 'beer.alternative-grain-beer.ingredients.yeast',
+            adjuncts: 'beer.alternative-grain-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '4.0–7.0%',
+            ibu: '15–35',
+            srm: 'Variable',
+            og: '1.040–1.070',
+            fg: '1.006–1.016'
+        },
+        variations: [],
+        examples: [
+            { brand: "Green's", name: 'Discovery Amber' },
+            { brand: 'Lakefront', name: 'New Grist' },
+            { brand: 'New Planet', name: 'Pale Ale' },
+            { brand: 'Rogue', name: 'Morimoto Soba Ale' }
+        ],
+        service: {
+            temperature: "6-10°C",
+            glassware: "Pint/Tulip",
+            validity: "Variable"
+        },
+        pairing: [
+            "Salads (if light)",
+            "Grain-based dishes",
+            "Sushi (rice lagers)"
+        ]
+    },
+    {
+        id: 'alternative-sugar-beer',
+        name: 'Alternative Sugar Beer',
+        origin: '🌎', // Varies
+        family: 'beer.alternative-sugar-beer.family',
+        tag: 'beer.alternative-sugar-beer.tag',
+        abv: 'Variable',
+        rating: 0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.alternative-sugar-beer.description',
+        category: 'Alternative Fermentables',
+        appearance: {
+            color: 'beer.alternative-sugar-beer.appearance.color',
+            colorHex: '#E2B062', // Honey-ish
+            clarity: 'beer.alternative-sugar-beer.appearance.clarity',
+            foam: 'beer.alternative-sugar-beer.appearance.foam'
+        },
+        sensory: {
+            aroma: 'beer.alternative-sugar-beer.sensory.aroma',
+            flavor: 'beer.alternative-sugar-beer.sensory.flavor',
+            bitterness: 'beer.alternative-sugar-beer.sensory.bitterness'
+        },
+        mouthfeel: {
+            body: 'beer.alternative-sugar-beer.mouthfeel.body',
+            carbonation: 'beer.alternative-sugar-beer.mouthfeel.carbonation',
+            texture: 'beer.alternative-sugar-beer.mouthfeel.texture',
+            finish: 'beer.alternative-sugar-beer.mouthfeel.finish'
+        },
+        history: 'beer.alternative-sugar-beer.history',
+        comparison: 'beer.alternative-sugar-beer.comparison',
+        ingredients: {
+            malts: 'beer.alternative-sugar-beer.ingredients.malts',
+            hops: 'beer.alternative-sugar-beer.ingredients.hops',
+            yeast: 'beer.alternative-sugar-beer.ingredients.yeast',
+            adjuncts: 'beer.alternative-sugar-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '4.5–8.0%',
+            ibu: '15–40',
+            srm: 'Variable',
+            og: '1.045–1.075',
+            fg: '1.008–1.020'
+        },
+        variations: [],
+        examples: [
+            "Honey beers",
+            "Maple syrup beers"
+        ],
+        service: {
+            temperature: "8-12°C",
+            glassware: "Tulip",
+            validity: "Variable"
+        },
+        pairing: [
+            "Desserts",
+            "Glazed meats",
+            "Cheeses"
+        ]
+    },
+    {
+        id: 'classic-style-smoked-beer',
+        name: 'Classic Style Smoked Beer',
+        origin: '🌎', // Varies
+        family: 'beer.classic-style-smoked-beer.family',
+        tag: 'beer.classic-style-smoked-beer.tag',
+        abv: 'Variable',
+        rating: 0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.classic-style-smoked-beer.description',
+        category: 'Smoked Beer',
+        appearance: {
+            color: 'beer.classic-style-smoked-beer.appearance.color',
+            colorHex: '#8B4513', // SaddleBrown
+            clarity: 'beer.classic-style-smoked-beer.appearance.clarity',
+            foam: 'beer.classic-style-smoked-beer.appearance.foam'
+        },
+        sensory: {
+            aroma: 'beer.classic-style-smoked-beer.sensory.aroma',
+            flavor: 'beer.classic-style-smoked-beer.sensory.flavor',
+            bitterness: 'beer.classic-style-smoked-beer.sensory.bitterness'
+        },
+        mouthfeel: {
+            body: 'beer.classic-style-smoked-beer.mouthfeel.body',
+            carbonation: 'beer.classic-style-smoked-beer.mouthfeel.carbonation',
+            texture: 'beer.classic-style-smoked-beer.mouthfeel.texture',
+            finish: 'beer.classic-style-smoked-beer.mouthfeel.finish'
+        },
+        history: 'beer.classic-style-smoked-beer.history',
+        comparison: 'beer.classic-style-smoked-beer.comparison',
+        ingredients: {
+            malts: 'beer.classic-style-smoked-beer.ingredients.malts',
+            hops: 'beer.classic-style-smoked-beer.ingredients.hops',
+            yeast: 'beer.classic-style-smoked-beer.ingredients.yeast',
+            adjuncts: 'beer.classic-style-smoked-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '4.8–6.0%',
+            ibu: '20–30',
+            srm: '12–30',
+            og: '1.050–1.057',
+            fg: '1.012–1.016'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Schlenkerla', name: 'Märzen' },
+            { brand: 'Spezial', name: 'Rauchbier Märzen' },
+            { brand: 'Goldwater', name: 'Smoke on the Lager' }
+        ],
+        service: {
+            temperature: "10-14°C",
+            glassware: "Pint/Mug",
+            validity: "Variable"
+        },
+        pairing: [
+            "BBQ",
+            "Smoked meats",
+            "Sharp cheddar"
+        ]
+    },
+    {
+        id: 'specialty-smoked-beer',
+        name: 'Specialty Smoked Beer',
+        origin: '🌎', // Varies
+        family: 'beer.specialty-smoked-beer.family',
+        tag: 'beer.specialty-smoked-beer.tag',
+        abv: 'Variable',
+        rating: 0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.specialty-smoked-beer.description',
+        category: 'Smoked Beer',
+        appearance: {
+            color: 'beer.specialty-smoked-beer.appearance.color',
+            colorHex: '#3B2F2F', // Dark smoky
+            clarity: 'beer.specialty-smoked-beer.appearance.clarity',
+            foam: 'beer.specialty-smoked-beer.appearance.foam'
+        },
+        sensory: {
+            aroma: 'beer.specialty-smoked-beer.sensory.aroma',
+            flavor: 'beer.specialty-smoked-beer.sensory.flavor',
+            bitterness: 'beer.specialty-smoked-beer.sensory.bitterness'
+        },
+        mouthfeel: {
+            body: 'beer.specialty-smoked-beer.mouthfeel.body',
+            carbonation: 'beer.specialty-smoked-beer.mouthfeel.carbonation',
+            texture: 'beer.specialty-smoked-beer.mouthfeel.texture',
+            finish: 'beer.specialty-smoked-beer.mouthfeel.finish'
+        },
+        history: 'beer.specialty-smoked-beer.history',
+        comparison: 'beer.specialty-smoked-beer.comparison',
+        ingredients: {
+            malts: 'beer.specialty-smoked-beer.ingredients.malts',
+            hops: 'beer.specialty-smoked-beer.ingredients.hops',
+            yeast: 'beer.specialty-smoked-beer.ingredients.yeast',
+            adjuncts: 'beer.specialty-smoked-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '5.5–7.0%',
+            ibu: '30–50',
+            srm: '20–50',
+            og: '1.055–1.070',
+            fg: '1.012–1.018'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Alaskan', name: 'Smoked Porter' },
+            { brand: 'Stone', name: 'Smoked Porter' },
+            { brand: 'Schlenkerla', name: 'Eiche' }
+        ],
+        service: {
+            temperature: "10-14°C",
+            glassware: "Snifter",
+            validity: "Variable"
+        },
+        pairing: [
+            "Roasted game",
+            "Smoked cheese",
+            "Dark chocolate"
+        ]
+    },
+    {
+        id: 'wood-aged-beer',
+        name: 'Wood-Aged Beer',
+        origin: '🌎', // Varies
+        family: 'beer.wood-aged-beer.family',
+        tag: 'beer.wood-aged-beer.tag',
+        abv: 'Variable',
+        rating: 0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.wood-aged-beer.description',
+        category: 'Wood Beer',
+        appearance: {
+            color: 'beer.wood-aged-beer.appearance.color',
+            colorHex: '#A0522D', // Sienna
+            clarity: 'beer.wood-aged-beer.appearance.clarity',
+            foam: 'beer.wood-aged-beer.appearance.foam'
+        },
+        sensory: {
+            aroma: 'beer.wood-aged-beer.sensory.aroma',
+            flavor: 'beer.wood-aged-beer.sensory.flavor',
+            bitterness: 'beer.wood-aged-beer.sensory.bitterness'
+        },
+        mouthfeel: {
+            body: 'beer.wood-aged-beer.mouthfeel.body',
+            carbonation: 'beer.wood-aged-beer.mouthfeel.carbonation',
+            texture: 'beer.wood-aged-beer.mouthfeel.texture',
+            finish: 'beer.wood-aged-beer.mouthfeel.finish'
+        },
+        history: 'beer.wood-aged-beer.history',
+        comparison: 'beer.wood-aged-beer.comparison',
+        ingredients: {
+            malts: 'beer.wood-aged-beer.ingredients.malts',
+            hops: 'beer.wood-aged-beer.ingredients.hops',
+            yeast: 'beer.wood-aged-beer.ingredients.yeast',
+            adjuncts: 'beer.wood-aged-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '4.5–5.5%',
+            ibu: '25–35',
+            srm: '10–25',
+            og: '1.045–1.055',
+            fg: '1.010–1.014'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Firestone Walker', name: 'Double Barrel Ale' },
+            { brand: 'Innis & Gunn', name: 'The Original' },
+            { brand: 'Great Divide', name: 'Oak Aged Yeti' }
+        ],
+        service: {
+            temperature: "10-14°C",
+            glassware: "Snifter",
+            validity: "Variable"
+        },
+        pairing: [
+            "Grilled steaks",
+            "Aged cheeses",
+            "Toffee desserts"
+        ]
+    },
+    {
+        id: 'specialty-wood-aged-beer',
+        name: 'Specialty Wood-Aged Beer',
+        origin: '🌎', // Varies
+        family: 'beer.specialty-wood-aged-beer.family',
+        tag: 'beer.specialty-wood-aged-beer.tag',
+        abv: 'Variable',
+        rating: 0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.specialty-wood-aged-beer.description',
+        category: 'Wood Beer',
+        appearance: {
+            color: 'beer.specialty-wood-aged-beer.appearance.color',
+            colorHex: '#522916', // Dark Brown
+            clarity: 'beer.specialty-wood-aged-beer.appearance.clarity',
+            foam: 'beer.specialty-wood-aged-beer.appearance.foam'
+        },
+        sensory: {
+            aroma: 'beer.specialty-wood-aged-beer.sensory.aroma',
+            flavor: 'beer.specialty-wood-aged-beer.sensory.flavor',
+            bitterness: 'beer.specialty-wood-aged-beer.sensory.bitterness'
+        },
+        mouthfeel: {
+            body: 'beer.specialty-wood-aged-beer.mouthfeel.body',
+            carbonation: 'beer.specialty-wood-aged-beer.mouthfeel.carbonation',
+            texture: 'beer.specialty-wood-aged-beer.mouthfeel.texture',
+            finish: 'beer.specialty-wood-aged-beer.mouthfeel.finish'
+        },
+        history: 'beer.specialty-wood-aged-beer.history',
+        comparison: 'beer.specialty-wood-aged-beer.comparison',
+        ingredients: {
+            malts: 'beer.specialty-wood-aged-beer.ingredients.malts',
+            hops: 'beer.specialty-wood-aged-beer.ingredients.hops',
+            yeast: 'beer.specialty-wood-aged-beer.ingredients.yeast',
+            adjuncts: 'beer.specialty-wood-aged-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '11.0–15.0%',
+            ibu: '50–70',
+            srm: '40–80',
+            og: '1.100–1.140',
+            fg: '1.020–1.040'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Goose Island', name: 'Bourbon County Stout' },
+            { brand: 'Founders', name: 'KBS' },
+            { brand: 'The Bruery', name: 'Black Tuesday' }
+        ],
+        service: {
+            temperature: "12-16°C",
+            glassware: "Snifter",
+            validity: "Many years"
+        },
+        pairing: [
+            "Dark chocolate truffles",
+            "Cigar",
+            "Rich stews"
+        ]
+    },
+    {
+        id: 'commercial-specialty-beer',
+        name: 'Commercial Specialty Beer',
+        origin: '🌎', // Varies
+        family: 'beer.commercial-specialty-beer.family',
+        tag: 'beer.commercial-specialty-beer.tag',
+        abv: 'Variable',
+        rating: 0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.commercial-specialty-beer.description',
+        category: 'Specialty Beer',
+        appearance: {
+            color: 'beer.commercial-specialty-beer.appearance.color',
+            colorHex: '#808080', // Variable
+            clarity: 'beer.commercial-specialty-beer.appearance.clarity',
+            foam: 'beer.commercial-specialty-beer.appearance.foam'
+        },
+        sensory: {
+            aroma: 'beer.commercial-specialty-beer.sensory.aroma',
+            flavor: 'beer.commercial-specialty-beer.sensory.flavor',
+            bitterness: 'beer.commercial-specialty-beer.sensory.bitterness'
+        },
+        mouthfeel: {
+            body: 'beer.commercial-specialty-beer.mouthfeel.body',
+            carbonation: 'beer.commercial-specialty-beer.mouthfeel.carbonation',
+            texture: 'beer.commercial-specialty-beer.mouthfeel.texture',
+            finish: 'beer.commercial-specialty-beer.mouthfeel.finish'
+        },
+        history: 'beer.commercial-specialty-beer.history',
+        comparison: 'beer.commercial-specialty-beer.comparison',
+        ingredients: {
+            malts: 'beer.commercial-specialty-beer.ingredients.malts',
+            hops: 'beer.commercial-specialty-beer.ingredients.hops',
+            yeast: 'beer.commercial-specialty-beer.ingredients.yeast',
+            adjuncts: 'beer.commercial-specialty-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: 'Variable',
+            ibu: 'Variable',
+            srm: 'Variable',
+            og: 'Variable',
+            fg: 'Variable'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Samuel Adams', name: 'Utopias' },
+            { brand: 'Dogfish Head', name: '120 Minute IPA' },
+            { brand: 'Any', name: 'Clone Beer' }
+        ],
+        service: {
+            temperature: "Variable",
+            glassware: "Variable",
+            validity: "Variable"
+        },
+        pairing: [
+            "Variable",
+            "Depends on specific beer"
+        ]
+    },
+    {
+        id: 'mixed-style-beer',
+        name: 'Mixed-Style Beer',
+        origin: '🌎', // Varies
+        family: 'beer.mixed-style-beer.family',
+        tag: 'beer.mixed-style-beer.tag',
+        abv: 'Variable',
+        rating: 0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.mixed-style-beer.description',
+        category: 'Specialty Beer',
+        appearance: {
+            color: 'beer.mixed-style-beer.appearance.color',
+            colorHex: '#A9A9A9', // Variable
+            clarity: 'beer.mixed-style-beer.appearance.clarity',
+            foam: 'beer.mixed-style-beer.appearance.foam'
+        },
+        sensory: {
+            aroma: 'beer.mixed-style-beer.sensory.aroma',
+            flavor: 'beer.mixed-style-beer.sensory.flavor',
+            bitterness: 'beer.mixed-style-beer.sensory.bitterness'
+        },
+        mouthfeel: {
+            body: 'beer.mixed-style-beer.mouthfeel.body',
+            carbonation: 'beer.mixed-style-beer.mouthfeel.carbonation',
+            texture: 'beer.mixed-style-beer.mouthfeel.texture',
+            finish: 'beer.mixed-style-beer.mouthfeel.finish'
+        },
+        history: 'beer.mixed-style-beer.history',
+        comparison: 'beer.mixed-style-beer.comparison',
+        ingredients: {
+            malts: 'beer.mixed-style-beer.ingredients.malts',
+            hops: 'beer.mixed-style-beer.ingredients.hops',
+            yeast: 'beer.mixed-style-beer.ingredients.yeast',
+            adjuncts: 'beer.mixed-style-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '8.0–8.5%',
+            ibu: '60–80',
+            srm: '35–50',
+            og: '1.075–1.085',
+            fg: '1.012–1.016'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Firestone Walker', name: 'Wookey Jack' },
+            { brand: 'Stone', name: 'Cali-Belgique' },
+            { brand: 'Sierra Nevada', name: 'Flipside' }
+        ],
+        service: {
+            temperature: "Variable",
+            glassware: "Variable",
+            validity: "Variable"
+        },
+        pairing: [
+            "Variable",
+            "Depends on mix"
+        ]
+    },
+    {
+        id: 'experimental-beer',
+        name: 'Experimental Beer',
+        origin: '🌎', // Varies
+        family: 'beer.experimental-beer.family',
+        tag: 'beer.experimental-beer.tag',
+        abv: 'Variable',
+        rating: 0,
+        image: 'assets/beer-placeholder.png',
+        description: 'beer.experimental-beer.description',
+        category: 'Specialty Beer',
+        appearance: {
+            color: 'beer.experimental-beer.appearance.color',
+            colorHex: '#FF00FF', // Wildcard
+            clarity: 'beer.experimental-beer.appearance.clarity',
+            foam: 'beer.experimental-beer.appearance.foam'
+        },
+        sensory: {
+            aroma: 'beer.experimental-beer.sensory.aroma',
+            flavor: 'beer.experimental-beer.sensory.flavor',
+            bitterness: 'beer.experimental-beer.sensory.bitterness'
+        },
+        mouthfeel: {
+            body: 'beer.experimental-beer.mouthfeel.body',
+            carbonation: 'beer.experimental-beer.mouthfeel.carbonation',
+            texture: 'beer.experimental-beer.mouthfeel.texture',
+            finish: 'beer.experimental-beer.mouthfeel.finish'
+        },
+        history: 'beer.experimental-beer.history',
+        comparison: 'beer.experimental-beer.comparison',
+        ingredients: {
+            malts: 'beer.experimental-beer.ingredients.malts',
+            hops: 'beer.experimental-beer.ingredients.hops',
+            yeast: 'beer.experimental-beer.ingredients.yeast',
+            adjuncts: 'beer.experimental-beer.ingredients.adjuncts'
+        },
+        specs: {
+            abvRange: '8.0–12.0%',
+            ibu: '40–100',
+            srm: '5–40',
+            og: '1.080–1.120',
+            fg: '1.010–1.030'
+        },
+        variations: [],
+        examples: [
+            { brand: 'Other Half', name: 'All Green Everything' },
+            { brand: 'Angry Chair', name: 'Imperial German Chocolate Cupcake Stout' },
+            { brand: 'Heineken', name: 'H41' }
+        ],
+        service: {
+            temperature: "Variable",
+            glassware: "Variable",
+            validity: "Variable"
+        },
+        pairing: [
+            "Experimental food",
+            "Whatever works"
+        ]
     }
 ];
