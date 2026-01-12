@@ -7,6 +7,11 @@ export const translations = {
         "header.site_name": "BeerSL",
         "header.subtitle": "Biblioteca de Estilos de Cerveja",
         "header.search_placeholder": "Buscar estilos...",
+        "header.encyclopedia": "Enciclopédia da Cerveja",
+        "menu.language": "Idioma",
+        "menu.theme": "Tema",
+        "theme.light": "Claro",
+        "theme.dark": "Escuro",
 
         // Rotating Banner
         "banner.phrase1.title": "Anuncie conosco",
@@ -422,6 +427,11 @@ export const translations = {
         "header.site_name": "BeerSL",
         "header.subtitle": "Beer Style Library",
         "header.search_placeholder": "Search styles...",
+        "header.encyclopedia": "The Beer Encyclopedia",
+        "menu.language": "Language",
+        "menu.theme": "Theme",
+        "theme.light": "Light",
+        "theme.dark": "Dark",
 
         // Rotating Banner
         "banner.phrase1.title": "Advertise with us",
@@ -837,6 +847,11 @@ export const translations = {
         "header.site_name": "BeerSL",
         "header.subtitle": "Bierstil-Bibliothek",
         "header.search_placeholder": "Stile suchen...",
+        "header.encyclopedia": "Bier-Enzyklopädie",
+        "menu.language": "Sprache",
+        "menu.theme": "Thema",
+        "theme.light": "Hell",
+        "theme.dark": "Dunkel",
 
         // Rotating Banner
         "banner.phrase1.title": "Werben Sie bei uns",

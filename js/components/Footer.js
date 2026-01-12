@@ -54,10 +54,10 @@ export class Footer {
                         <a href="contact.html" class="footer-contact-btn" data-i18n="footer.contact">${i18n.t('footer.contact')}</a>
                     </div>
                     <div class="theme-toggle">
-                        <span class="theme-label">Tema:</span>
-                        <button class="theme-btn-text ${currentTheme === 'light' ? 'active' : ''}" data-theme="light">Claro</button>
+                        <span class="theme-label" data-i18n="menu.theme">${i18n.t('menu.theme')}:</span>
+                        <button class="theme-btn-text ${currentTheme === 'light' ? 'active' : ''}" data-theme="light">${i18n.t('theme.light')}</button>
                         <span class="theme-divider">|</span>
-                        <button class="theme-btn-text ${currentTheme === 'dark' ? 'active' : ''}" data-theme="dark">Escuro</button>
+                        <button class="theme-btn-text ${currentTheme === 'dark' ? 'active' : ''}" data-theme="dark">${i18n.t('theme.dark')}</button>
                     </div>
                 </div>
             </div>
