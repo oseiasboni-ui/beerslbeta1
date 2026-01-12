@@ -22,10 +22,9 @@ export class Header {
     render() {
         this.target.innerHTML = `
             <a href="/" class="header-logo">
-                <div class="logo-container">
-                     <img src="img/logo.png" alt="BeerSL" class="site-logo">
-                     <span class="site-subtitle" data-i18n="header.subtitle">${i18n.t('header.subtitle')}</span>
-                </div>
+                     <div class="site-logo-text">
+                        <span class="logo-beer">Beer</span><span class="logo-sl">SL</span>
+                     </div>
             </a>
             
             <div class="rotating-banner-container">

@@ -42,7 +42,7 @@ export class Grid {
         return `
                 <div class="beer-card" data-id="${beer.id}">
                     <div class="card-header" style="background-color: ${beer.appearance?.colorHex || '#34495e'}">
-                        <span class="origin-flag">${beer.origin || '🇩🇪'}</span>
+                        <span class="origin-flag">${beer.origin || '🌍'}</span>
                         ${imageUrl ? `
                             <img src="${imageUrl}" alt="${displayName}" class="card-beer-image" style="width: 100%; height: 100%; object-fit: cover;">
                     ` : `

@@ -6,9 +6,7 @@ import { Modal } from './components/Modal.js';
 import { ReferenceRulers } from './components/ReferenceRulers.js';
 import { Footer } from './components/Footer.js';
 import { i18n } from './i18n/i18n.js';
-import { fetchAllBeers } from './services/supabase.js';
-// Keep fallback data import
-import { beers as fallbackBeers } from './data/beers.js';
+import { beers } from './data/beers.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     // Initialize i18n first
@@ -36,33 +34,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         rulers.render();
     }
 
-    // Initialize Grid with loading state (if exists)
+    // Initialize Grid with beer data
     if (document.getElementById('beer-grid')) {
-        const gridElement = document.getElementById('beer-grid');
-
-        // Show loading state
-        gridElement.innerHTML = '<div class="loading-message">🍺 Carregando cervejas...</div>';
-
-        try {
-            // Fetch beers from Supabase
-            const beers = await fetchAllBeers();
-
-            // Use fetched data if available, otherwise fallback
-            const beerData = beers.length > 0 ? beers : fallbackBeers;
-
-            // Initialize grid with data
-            const grid = new Grid('beer-grid', beerData);
-            grid.render();
-
-            if (beers.length === 0) {
-                console.warn('No beers loaded from Supabase, using fallback data');
-            }
-        } catch (error) {
-            console.error('Error loading beers:', error);
-            // Use fallback data on error
-            const grid = new Grid('beer-grid', fallbackBeers);
-            grid.render();
-        }
+        const grid = new Grid('beer-grid', beers);
+        grid.render();
     }
 
     // Initialize Modal

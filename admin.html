@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login | BeerStylesLibrary</title>
+    <title>Admin | BeerStylesLibrary</title>
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
@@ -16,66 +17,36 @@
             align-items: center;
             justify-content: center;
         }
-        
-        .login-container {
+
+        .admin-container {
             background: white;
             border-radius: 16px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
             padding: 3rem;
             width: 90%;
             max-width: 400px;
-        }
-        
-        .login-header {
             text-align: center;
-            margin-bottom: 2rem;
         }
-        
-        .login-header h1 {
+
+        .admin-header h1 {
             margin: 0 0 0.5rem 0;
             color: #2c3e50;
             font-size: 1.8rem;
         }
-        
-        .login-header .beer-icon {
+
+        .admin-header .beer-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
         }
-        
-        .login-header p {
-            margin: 0;
+
+        .admin-header p {
+            margin: 0 0 2rem 0;
             color: #7f8c8d;
             font-size: 0.9rem;
         }
-        
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #2c3e50;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-        
-        .form-group input {
-            width: 100%;
-            padding: 0.8rem 1rem;
-            border: 2px solid #ecf0f1;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border-color 0.2s;
-            box-sizing: border-box;
-        }
-        
-        .form-group input:focus {
-            outline: none;
-            border-color: var(--color-primary, #e67e22);
-        }
-        
-        .login-button {
+
+        .admin-button {
+            display: inline-block;
             width: 100%;
             padding: 1rem;
             background: var(--color-primary, #e67e22);
@@ -85,165 +56,47 @@
             font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
+            text-decoration: none;
             transition: background 0.2s;
+            box-sizing: border-box;
         }
-        
-        .login-button:hover {
+
+        .admin-button:hover {
             background: #d35400;
         }
-        
-        .login-button:disabled {
-            background: #bdc3c7;
-            cursor: not-allowed;
-        }
-        
-        .error-message {
-            background: #fee;
-            color: #c33;
-            padding: 0.8rem 1rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-            display: none;
-        }
-        
-        .error-message.show {
-            display: block;
-        }
-        
+
         .back-link {
-            text-align: center;
             margin-top: 1.5rem;
         }
-        
+
         .back-link a {
             color: #7f8c8d;
             text-decoration: none;
             font-size: 0.9rem;
         }
-        
+
         .back-link a:hover {
             color: var(--color-primary, #e67e22);
         }
-        
-        .loading {
-            display: none;
-            text-align: center;
-            margin-top: 1rem;
-            color: #7f8c8d;
-        }
-        
-        .loading.show {
-            display: block;
-        }
     </style>
 </head>
+
 <body>
-    <div class="login-container">
-        <div class="login-header">
+    <div class="admin-container">
+        <div class="admin-header">
             <div class="beer-icon">🍺</div>
-            <h1>Admin Login</h1>
-            <p>Acesse o painel administrativo</p>
+            <h1>Admin</h1>
+            <p>Gerenciar cervejas do catálogo</p>
         </div>
-        
-        <div class="error-message" id="error-message"></div>
-        
-        <form id="login-form">
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    placeholder="seu@email.com"
-                    required
-                    autocomplete="email"
-                >
-            </div>
-            
-            <div class="form-group">
-                <label for="password">Senha</label>
-                <input 
-                    type="password" 
-                    id="password" 
-                    name="password" 
-                    placeholder="••••••••"
-                    required
-                    autocomplete="current-password"
-                >
-            </div>
-            
-            <button type="submit" class="login-button" id="login-button">
-                Entrar
-            </button>
-            
-            <div class="loading" id="loading">
-                Fazendo login...
-            </div>
-        </form>
-        
+
+        <a href="admin-dashboard.html" class="admin-button">
+            Acessar Dashboard
+        </a>
+
         <div class="back-link">
             <a href="index.html">← Voltar para o site</a>
         </div>
     </div>
-    
-    <script type="module">
-        import { login, getRedirectAfterLogin } from './js/services/auth.js';
-        
-        const form = document.getElementById('login-form');
-        const emailInput = document.getElementById('email');
-        const passwordInput = document.getElementById('password');
-        const loginButton = document.getElementById('login-button');
-        const errorMessage = document.getElementById('error-message');
-        const loading = document.getElementById('loading');
-        
-        // Show error message
-        function showError(message) {
-            errorMessage.textContent = message;
-            errorMessage.classList.add('show');
-        }
-        
-        // Hide error message
-        function hideError() {
-            errorMessage.classList.remove('show');
-        }
-        
-        // Handle form submission
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            hideError();
-            
-            const email = emailInput.value.trim();
-            const password = passwordInput.value;
-            
-            if (!email || !password) {
-                showError('Por favor, preencha todos os campos');
-                return;
-            }
-            
-            // Disable button and show loading
-            loginButton.disabled = true;
-            loginButton.textContent = 'Entrando...';
-            loading.classList.add('show');
-            
-            try {
-                // Attempt login
-                await login(email, password);
-                
-                // Success! Redirect to dashboard or stored URL
-                const redirectUrl = getRedirectAfterLogin();
-                window.location.href = redirectUrl;
-            } catch (error) {
-                // Show error
-                console.error('Login failed:', error);
-                showError(error.message || 'Erro ao fazer login. Verifique suas credenciais.');
-                
-                // Re-enable button
-                loginButton.disabled = false;
-                loginButton.textContent = 'Entrar';
-                loading.classList.remove('show');
-            }
-        });
-    </script>
 </body>
+
 </html>

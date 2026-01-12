@@ -1,3 +1,13 @@
+/* Global Styles */
+html,
+body {
+    overflow-x: hidden;
+    /* Fix horizontal scroll */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* Main Layout */
 .app-container {
     display: flex;
@@ -29,36 +39,29 @@
     color: white;
 }
 
-.logo-icon {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    /* Circle container */
+.site-logo-text {
+    font-size: 2.5rem;
+    /* Big letters */
+    font-weight: 900;
+    letter-spacing: -2px;
+    /* Tight spacing/remove wingle space */
+    line-height: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 2px solid var(--color-primary);
-    color: var(--color-primary);
 }
 
-.logo-text h1 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin: 0;
-    line-height: 1.1;
+.logo-beer {
+    color: #000000;
+    /* Black */
+    /* Add text shadow for visibility on dark header */
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
-.logo-text .highlight {
-    color: var(--color-primary);
-}
-
-.logo-text .subtitle {
-    font-size: 0.65rem;
-    color: #95a5a6;
-    letter-spacing: 1px;
-    display: block;
-    text-transform: uppercase;
+.logo-sl {
+    color: #e67e22;
+    /* Orange */
+    /* Add text shadow for visibility on dark header */
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 .header-search {
