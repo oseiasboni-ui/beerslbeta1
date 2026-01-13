@@ -456,7 +456,33 @@ export const beerParentCompanies = {
     "Solera": { parent: "Polar", color: "#65a30d", region: "Latin America", origin: "Venezuela 🇻🇪", year: 1925 },
     "San Miguel (Spain)": { parent: "Mahou-San Miguel", color: "#65a30d", region: "Europe", origin: "Spain 🇪🇸", year: 1890 },
     "Bintang (Vietnam)": { parent: "Various", color: "#65a30d", region: "Asia", origin: "Vietnam 🇻🇳", year: 1993 },
-    "Stella Artois (Africa)": { parent: "AB InBev", color: "#3b82f6", region: "Africa", origin: "Belgium 🇧🇪", year: 1926 }
+    "Stella Artois (Africa)": { parent: "AB InBev", color: "#3b82f6", region: "Africa", origin: "Belgium 🇧🇪", year: 1926 },
+
+    // Fixes for missing/mismatched keys
+    "Alpha Beer": { parent: "Hellenic Breweries of Atalanti", color: "#6b7280", region: "Europe", origin: "Greece 🇬🇷", year: 1998 },
+    "Amstel Light": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Netherlands 🇳🇱", year: 1980 },
+    "Baltika": { parent: "Carlsberg", color: "#eab308", region: "Europe", origin: "Russia 🇷🇺", year: 1990 },
+    "Bavaria": { parent: "Bavaria N.V.", color: "#65a30d", region: "Europe", origin: "Netherlands 🇳🇱", year: 1719 },
+    "Cass": { parent: "Oriental Brewery", color: "#3b82f6", region: "Asia", origin: "South Korea 🇰🇷", year: 1994 },
+    "Chimay": { parent: "Bières de Chimay", color: "#92400e", region: "Europe", origin: "Belgium 🇧🇪", year: 1862 },
+    "Cristal": { parent: "CCU", color: "#65a30d", region: "Latin America", origin: "Chile 🇨🇱", year: 1850 },
+    "Crystal": { parent: "Grupo Petrópolis", color: "#65a30d", region: "Latin America", origin: "Brazil 🇧🇷", year: 2004 },
+    "Goldstar": { parent: "Tempo Beer Industries", color: "#65a30d", region: "Middle East", origin: "Israel 🇮🇱", year: 1950 },
+    "Harbin": { parent: "AB InBev", color: "#3b82f6", region: "Asia", origin: "China 🇨🇳", year: 1900 },
+    "Heineken Light": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Netherlands 🇳🇱", year: 2005 },
+    "Hite": { parent: "Hite Jinro", color: "#65a30d", region: "Asia", origin: "South Korea 🇰🇷", year: 1933 },
+    "Kilimanjaro": { parent: "Diageo", color: "#16a34a", region: "Africa", origin: "Tanzania 🇹🇿", year: 1960 },
+    "Oranjeboom": { parent: "United Dutch Breweries", color: "#f97316", region: "Europe", origin: "Netherlands 🇳🇱", year: 1671 },
+    "Poker": { parent: "Bavaria (AB InBev)", color: "#3b82f6", region: "Latin America", origin: "Colombia 🇨🇴", year: 1929 },
+    "Primus": { parent: "Haacht", color: "#ef4444", region: "Europe", origin: "Belgium 🇧🇪", year: 1924 },
+    "Qingdao": { parent: "Tsingtao Brewery", color: "#0ea5e9", region: "Asia", origin: "China 🇨🇳", year: 1903 },
+    "Rochefort": { parent: "Brasserie de Rochefort", color: "#92400e", region: "Europe", origin: "Belgium 🇧🇪", year: 1595 },
+    "Samuel Adams": { parent: "Boston Beer Company", color: "#65a30d", region: "North America", origin: "USA 🇺🇸", year: 1984 },
+    "Taedonggang": { parent: "Taedonggang Brewing", color: "#ef4444", region: "Asia", origin: "North Korea 🇰🇵", year: 2002 },
+    "Terra": { parent: "Hite Jinro", color: "#65a30d", region: "Asia", origin: "South Korea 🇰🇷", year: 2019 },
+    "Victoria": { parent: "Grupo Modelo (AB InBev)", color: "#3b82f6", region: "Latin America", origin: "Mexico 🇲🇽", year: 1865 },
+    "Victoria Bitter": { parent: "Asahi", color: "#7c3aed", region: "Oceania", origin: "Australia 🇦🇺", year: 1854 },
+    "Yuengling": { parent: "D.G. Yuengling & Son", color: "#65a30d", region: "North America", origin: "USA 🇺🇸", year: 1829 }
 
 };
 
