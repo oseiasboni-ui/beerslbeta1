@@ -1839,4 +1839,49 @@ html[lang="pt-BR"] .site-subtitle {
 .sidebar-nav a:hover, .sidebar-nav a.active {
     background: var(--surface-hover);
     color: var(--primary-color);
+}/* Founding Section Styles */
+.popup-founding-section {
+    background: #f8f9fa;
+    border-radius: 6px;
+    padding: 0.4rem 0.6rem;
+    margin-top: 0.5rem;
+    border: 1px solid #e5e7eb;
+}
+
+.popup-founding-section .popup-info-row.no-border {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 0.3rem;
+    border: none;
+}
+
+.popup-founding-note {
+    font-size: 0.75rem;
+    color: #4b5563;
+    line-height: 1.4;
+    padding-top: 0.4rem;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 0.2rem;
+    font-style: italic;
+}/* History Section Styles */
+.popup-history {
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.popup-history-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 0.4rem 0;
+}
+
+.popup-history-text {
+    font-size: 0.75rem;
+    color: #4b5563;
+    line-height: 1.5;
+    margin: 0;
+    text-align: justify;
 }

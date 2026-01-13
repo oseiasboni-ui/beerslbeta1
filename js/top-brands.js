@@ -236,13 +236,19 @@ function showPopup(beerName, targetElement) {
                     <span class="popup-info-label">Origin</span>
                     <span class="popup-info-value">${info.origin || 'Unknown'}</span>
                 </div>
-                ${info.year ? `
-                <div class="popup-info-row">
-                    <span class="popup-info-label">Founded</span>
-                    <span class="popup-info-value">${info.year}</span>
+                ${info.year || info.description ? `
+                <div class="popup-founding-section">
+                    <div class="popup-info-row no-border">
+                        <span class="popup-info-label">Founded</span>
+                        <span class="popup-info-value">${info.year || ''}</span>
+                    </div>
+                    ${info.description ? `<div class="popup-founding-note">${info.description}</div>` : ''}
                 </div>` : ''}
-                ${info.description ? `
-                <div class="popup-description">${info.description}</div>` : ''}
+                ${info.history ? `
+                <div class="popup-history">
+                    <h4 class="popup-history-title">History</h4>
+                    <p class="popup-history-text">${info.history}</p>
+                </div>` : ''}
             </div>
         </div>
     `;
@@ -279,33 +285,167 @@ function hidePopup() {
 }
 
 function adjustPopupPosition(popup, targetElement) {
-    const rect = popup.getBoundingClientRect();
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
+    // Reset styles to measure natural dimensions
+    popup.style.top = '';
+    popup.style.left = '';
+    popup.style.right = '';
+    popup.style.bottom = '';
+    popup.style.transform = '';
+    popup.style.marginTop = '';
+    popup.style.marginBottom = '';
+    popup.style.marginLeft = '';
+    popup.style.marginRight = '';
 
-    // Check right edge
-    if (rect.right > viewportWidth - 10) {
-        popup.style.left = 'auto';
-        popup.style.right = '0';
-        popup.style.transform = 'none';
+    const popupRect = popup.getBoundingClientRect();
+    const targetRect = targetElement.getBoundingClientRect();
+    const viewport = { w: window.innerWidth, h: window.innerHeight };
+    const margin = 10;
+
+    // Dimensions
+    const pW = popupRect.width;
+    const pH = popupRect.height;
+
+    // Determine preferred side based on screen position
+    const targetCenter = targetRect.left + (targetRect.width / 2);
+    const isLeftHalf = targetCenter < (viewport.w / 2);
+
+    // Define candidates with strict space checks and CSS overrides
+    const candidates = [
+        {
+            name: 'right',
+            available: (targetRect.right + pW + margin) <= viewport.w,
+            score: (viewport.w - (targetRect.right + pW)),
+            apply: () => {
+                popup.style.top = '50%';
+                popup.style.bottom = 'auto'; // Explicit override
+                popup.style.left = '100%';
+                popup.style.right = 'auto'; // Explicit override
+                popup.style.transform = 'translateY(-50%)';
+                popup.style.marginLeft = '8px';
+                popup.style.marginRight = '0';
+            }
+        },
+        {
+            name: 'left',
+            available: (targetRect.left - pW - margin) >= 0,
+            score: (targetRect.left - pW),
+            apply: () => {
+                popup.style.top = '50%';
+                popup.style.bottom = 'auto'; // Explicit override
+                popup.style.right = '100%';
+                popup.style.left = 'auto';   // CRITICAL: Override CSS left: 50%
+                popup.style.transform = 'translateY(-50%)';
+                popup.style.marginRight = '8px';
+                popup.style.marginLeft = '0';
+            }
+        },
+        {
+            name: 'bottom',
+            available: (targetRect.bottom + pH + margin) <= viewport.h,
+            score: (viewport.h - (targetRect.bottom + pH)),
+            apply: () => {
+                popup.style.top = '100%';
+                popup.style.bottom = 'auto'; // Explicit override
+                popup.style.left = '50%';
+                popup.style.right = 'auto';
+                popup.style.transform = 'translateX(-50%)';
+                popup.style.marginTop = '8px';
+                popup.style.marginBottom = '0';
+            }
+        },
+        {
+            name: 'top',
+            available: (targetRect.top - pH - margin) >= 0,
+            score: (targetRect.top - pH),
+            apply: () => {
+                popup.style.bottom = '100%';
+                popup.style.top = 'auto'; // CRITICAL: Override CSS top: 100%
+                popup.style.left = '50%';
+                popup.style.right = 'auto';
+                popup.style.transform = 'translateX(-50%)';
+                popup.style.marginBottom = '8px';
+                popup.style.marginTop = '0';
+            }
+        }
+    ];
+
+    // Priority Selection Logic
+    const isVeryTop = targetRect.top < (viewport.h * 0.25);
+    const isVeryBottom = targetRect.bottom > (viewport.h * 0.75);
+
+    let chosen = null;
+
+    // SCENARIO 1: Extreme Top - Force Bottom
+    if (isVeryTop) {
+        const bottomCand = candidates.find(c => c.name === 'bottom');
+        if (bottomCand.available) chosen = bottomCand;
     }
 
-    // Check left edge
-    if (rect.left < 10) {
-        popup.style.left = '0';
-        popup.style.right = 'auto';
-        popup.style.transform = 'none';
+    // SCENARIO 2: Extreme Bottom - Force Top
+    if (isVeryBottom && !chosen) {
+        const topCand = candidates.find(c => c.name === 'top');
+        if (topCand.available) chosen = topCand;
     }
 
-    // Check if popup goes below viewport - show above instead
-    if (rect.bottom > viewportHeight - 10) {
-        popup.style.top = 'auto';
-        popup.style.bottom = '100%';
-        popup.style.marginTop = '0';
-        popup.style.marginBottom = '8px';
+    // SCENARIO 3: Middle - Prefer Sides
+    if (!chosen) {
+        const preferredSide = isLeftHalf ? 'right' : 'left';
+        const sideCand = candidates.find(c => c.name === preferredSide);
+        if (sideCand && sideCand.available) {
+            chosen = sideCand;
+        } else {
+            // Try opposite side
+            const oppositeSide = isLeftHalf ? 'left' : 'right';
+            const oppCand = candidates.find(c => c.name === oppositeSide);
+            if (oppCand && oppCand.available) {
+                chosen = oppCand;
+            }
+        }
+    }
 
-        // Move arrow to bottom
-        popup.style.setProperty('--arrow-position', 'top');
+    // SCENARIO 4: Fallback
+    if (!chosen) {
+        // Find ANY available
+        const anyAvailable = candidates.filter(c => c.available).sort((a, b) => b.score - a.score)[0];
+        if (anyAvailable) {
+            chosen = anyAvailable;
+        } else {
+            // Nothing strictly fits, pick largest score
+            chosen = candidates.reduce((prev, current) => (prev.score > current.score) ? prev : current);
+        }
+    }
+
+    // Apply Choice
+    chosen.apply();
+
+    // FINAL CLAMPING
+    const finalRect = popup.getBoundingClientRect();
+
+    // Horizontal Clamp
+    if (finalRect.left < margin) {
+        if (chosen.name === 'top' || chosen.name === 'bottom') {
+            const shift = margin - finalRect.left;
+            popup.style.transform = `translateX(calc(-50% + ${shift}px))`;
+        } else {
+            popup.style.left = margin + 'px';
+            if (chosen.name === 'right') popup.style.transform = 'translateY(-50%)';
+        }
+    } else if (finalRect.right > viewport.w - margin) {
+        if (chosen.name === 'top' || chosen.name === 'bottom') {
+            const shift = finalRect.right - (viewport.w - margin);
+            popup.style.transform = `translateX(calc(-50% - ${shift}px))`;
+        }
+    }
+
+    // Vertical Clamp
+    if (chosen.name === 'left' || chosen.name === 'right') {
+        if (finalRect.top < margin) {
+            const shift = margin - finalRect.top;
+            popup.style.transform = `translateY(calc(-50% + ${shift}px))`;
+        } else if (finalRect.bottom > viewport.h - margin) {
+            const shift = finalRect.bottom - (viewport.h - margin);
+            popup.style.transform = `translateY(calc(-50% - ${shift}px))`;
+        }
     }
 }
 

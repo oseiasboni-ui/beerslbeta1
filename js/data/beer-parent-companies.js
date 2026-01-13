@@ -55,7 +55,15 @@ export const beerParentCompanies = {
     "Tiger Crystal": { parent: "Heineken", color: "#22c55e", region: "Asia", origin: "Singapore 🇸🇬", year: 2013 },
     "Birra Moretti": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Italy 🇮🇹", year: 1859, description: "Criada em Udine em 1859 por Luigi Moretti. O icônico rótulo \"L'Uomo Baffuto\" (O Homem do Bigode) surgiu em 1942, quando o então proprietário fotografou um senhor em uma trattoria local, sentindo que ele personificava os valores de tradição e autenticidade da marca." },
     "Red Stripe": { parent: "Heineken", color: "#22c55e", region: "Global", origin: "Jamaica 🇯🇲", year: 1928 },
-    "Affligem": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Belgium 🇧🇪", year: 1074, description: "Ano da abadia original; a marca cervejeira comercial é muito posterior." },
+    "Affligem": {
+        parent: "Heineken",
+        color: "#22c55e",
+        region: "Europe",
+        origin: "Belgium 🇧🇪",
+        year: 1074,
+        description: "Ano da abadia original; a marca cervejeira comercial é muito posterior.",
+        history: "Fundada em 1074, a Abadia de Affligem é uma das cervejarias mais antigas da Bélgica ainda em operação. Os monges beneditinos preservaram a receita 'Formula Antiqua Renovata' através de séculos de guerras e incêndios, mantendo a tradição de dupla fermentação na garrafa que confere seu sabor complexo e premiado globalmente."
+    },
     "Birra Messina": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Italy 🇮🇹", year: 1923 },
     "Ichnusa": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Italy 🇮🇹", year: 1912 },
     "Primus (Belgium)": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Belgium 🇧🇪", year: 1920 },
