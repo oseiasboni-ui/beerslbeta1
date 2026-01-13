@@ -1,17 +1,17 @@
 // Beer to Parent Company mapping
 export const beerParentCompanies = {
     // 🟦 AB InBev
-    "Budweiser": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "USA 🇺🇸", year: 1876, description: "O nome 'Budweiser' começou a ser usado em 1876; a empresa já existia antes." },
-    "Bud Light": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "USA 🇺🇸", year: 1982 },
-    "Michelob Ultra": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "USA 🇺🇸", year: 2002 },
-    "Michelob": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "USA 🇺🇸", year: 1896, description: "Marca criada após a fundação da Anheuser-Busch." },
-    "Stella Artois": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Belgium 🇧🇪", year: 1366, description: "Ano da cervejaria Den Hoorn; a marca 'Stella Artois' como tal surgiu séculos depois." },
-    "Corona Extra": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Mexico 🇲🇽", year: 1925 },
+    "Budweiser": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "USA 🇺🇸", year: 1876, description: "Introduzida em 1876 por Adolphus Busch em St. Louis, Missouri, a marca revolucionou o mercado norte-americano ao adotar a pasteurização, permitindo o transporte a longa distância. Sua fórmula, composta por uma proporção de até 30% de arroz além do malte de cevada, foi inspirada nas técnicas de fabricação da região da Boêmia (atual Chéquia)." },
+    "Bud Light": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "USA 🇺🇸", year: 1982, description: "O lançamento ocorreu em 1982 sob a denominação \"Budweiser Light\". Desenvolvida para competir no segmento de baixas calorias que ganhava força na década de 80, a marca passou por um reposicionamento de identidade visual e nome simplificado em 1984, consolidando-se como uma das light lagers de maior volume de produção global." },
+    "Michelob Ultra": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "USA 🇺🇸", year: 2002, description: "Lançada em 2002 pela Anheuser-Busch, esta marca foi pioneira ao segmentar o mercado com foco em consumidores que priorizam o bem-estar e o baixo teor de carboidratos (2.6g por garrafa). Seu posicionamento técnico e comercial foca na interseção entre a vida social e o desempenho atlético." },
+    "Michelob": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "USA 🇺🇸", year: 1896, description: "Originalmente concebida em 1896 como uma \"cerveja de rascunho\" (draft) destinada exclusivamente à elite, a Michelob é uma lager premium. No final do século XX, a marca ganhou notoriedade por sua garrafa em formato de gota, premiada por seu design industrial, embora posteriormente tenha retornado a formatos mais tradicionais." },
+    "Stella Artois": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Belgium 🇧🇪", year: 1366, description: "A história remonta a 1366 na cervejaria Den Hoorn em Leuven, Bélgica. O nome \"Stella\" (estrela em latim) foi adotado em 1926 quando uma edição especial de Natal foi lançada. A marca é reconhecida pelo uso do \"Chalice\", um cálice de vidro desenhado para manter a temperatura e a espuma." },
+    "Corona Extra": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Mexico 🇲🇽", year: 1925, description: "Fabricada pela primeira vez em 1925 pelo Grupo Modelo no México, a Corona tornou-se um fenômeno de exportação. Sua garrafa transparente de 355ml e a prática de consumo com uma fatia de limão tornaram-se marcos culturais, embora tecnicamente a garrafa transparente exija cuidados extras contra a fotoxidação dos lúpulos." },
     "Corona Light": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Mexico 🇲🇽", year: 1989 },
     "Modelo Especial": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Mexico 🇲🇽", year: 1925 },
     "Negra Modelo": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Mexico 🇲🇽", year: 1926 },
     "Modelo Negra": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Mexico 🇲🇽", year: 1926 },
-    "Beck's": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Germany 🇩🇪", year: 1873 },
+    "Beck's": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Germany 🇩🇪", year: 1873, description: "Fundada em 1873 na cidade portuária de Bremen. Foi a primeira cervejaria alemã a utilizar garrafas verdes para proteção contra luz e facilitar a exportação. Segue rigorosamente a Reinheitsgebot (Lei de Pureza Alemã de 1516), utilizando apenas água, malte e lúpulo." },
     "Hoegaarden": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Belgium 🇧🇪", year: 1445, description: "Ano da tradição cervejeira em Hoegaarden; a marca moderna foi relançada em 1966." },
     "Hoegaarden Wit": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Belgium 🇧🇪", year: 1966 },
     "Hoegaarden Grand Cru": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Belgium 🇧🇪", year: 1989 },
@@ -20,11 +20,11 @@ export const beerParentCompanies = {
     "Franziskaner": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Germany 🇩🇪", year: 1363, description: "Ano da cervejaria original; marca comercial formalizada posteriormente." },
     "Löwenbräu": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Germany 🇩🇪", year: 1383, description: "Ano da cervejaria; marca formalizada mais tarde." },
     "Spaten": { parent: "AB InBev", color: "#3b82f6", region: "Global", origin: "Germany 🇩🇪", year: 1397, description: "Ano da primeira cervejaria documentada; a marca moderna consolidada séculos depois." },
-    "Busch": { parent: "AB InBev", color: "#3b82f6", region: "North America", origin: "USA 🇺🇸", year: 1955 },
-    "Busch Light": { parent: "AB InBev", color: "#3b82f6", region: "North America", origin: "USA 🇺🇸", year: 1989 },
-    "Natural Light": { parent: "AB InBev", color: "#3b82f6", region: "North America", origin: "USA 🇺🇸", year: 1977 },
-    "Keystone Light": { parent: "AB InBev", color: "#3b82f6", region: "North America", origin: "USA 🇺🇸", year: 1989 },
-    "Rolling Rock": { parent: "AB InBev", color: "#3b82f6", region: "North America", origin: "USA 🇺🇸", year: 1939 },
+    "Busch": { parent: "AB InBev", color: "#3b82f6", region: "North America", origin: "USA 🇺🇸", year: 1955, description: "Lançada originalmente em 1955 como \"Busch Bavarian Beer\", foi a primeira nova marca da Anheuser-Busch após o fim da Lei Seca. Ela representa o legado da família Busch, focando em uma receita que prioriza a suavidade e o equilíbrio entre o malte e o lúpulo." },
+    "Busch Light": { parent: "AB InBev", color: "#3b82f6", region: "North America", origin: "USA 🇺🇸", year: 1989, description: "Esta variante foi introduzida em 1989. Diferencia-se da versão original por um processo de fermentação mais longo, que resulta em menos calorias e um corpo mais leve. É historicamente ligada a patrocínios em categorias de esportes de aventura e NASCAR nos Estados Unidos." },
+    "Natural Light": { parent: "AB InBev", color: "#3b82f6", region: "North America", origin: "USA 🇺🇸", year: 1977, description: "Criada em 1977, foi a primeira incursão da Anheuser-Busch no mercado de cervejas light. Conhecida tecnicamente por sua estabilidade de sabor e baixo custo de produção em larga escala, tornou-se um marco no segmento de valor (economy segment) no mercado norte-americano." },
+    "Keystone Light": { parent: "AB InBev", color: "#3b82f6", region: "North America", origin: "USA 🇺🇸", year: 1989, description: "Esta extensão de linha tornou-se mais popular que a versão original devido ao seu perfil \"triple filtered\" (filtragem tripla). A narrativa técnica da marca foca na remoção de impurezas para garantir uma finalização sem amargor residual, visando o público jovem adulto." },
+    "Rolling Rock": { parent: "AB InBev", color: "#3b82f6", region: "North America", origin: "USA 🇺🇸", year: 1939, description: "Fundada em 1939 em Latrobe, Pensilvânia. A marca é famosa pelo uso de garrafas verdes de pescoço longo e pelo número \"33\" impresso no rótulo. Existem diversas teorias sobre o significado do número, variando desde o número de palavras no rótulo até o ano em que a Lei Seca foi revogada." },
     "Brahma": { parent: "AB InBev", color: "#3b82f6", region: "Latin America", origin: "Brazil 🇧🇷", year: 1888 },
     "Brahma Extra": { parent: "AB InBev", color: "#3b82f6", region: "Latin America", origin: "Brazil 🇧🇷", year: 2001 },
     "Skol": { parent: "AB InBev", color: "#3b82f6", region: "Latin America", origin: "Brazil 🇧🇷", year: 1959, description: "Criação da marca na Europa; expansão internacional posterior." },
@@ -44,8 +44,8 @@ export const beerParentCompanies = {
 
 
     // 🟩 Heineken Group
-    "Heineken": { parent: "Heineken", color: "#22c55e", region: "Global", origin: "Netherlands 🇳🇱", year: 1864 },
-    "Amstel": { parent: "Heineken", color: "#22c55e", region: "Global", origin: "Netherlands 🇳🇱", year: 1870 },
+    "Heineken": { parent: "Heineken", color: "#22c55e", region: "Global", origin: "Netherlands 🇳🇱", year: 1873, description: "A empresa foi fundada em 1873 por Gerard Adriaan Heineken em Amsterdã. O diferencial biotecnológico da marca é a \"Levedura A\", descoberta no final do século XIX por um aluno de Louis Pasteur, que confere o sabor característico e frutado que se mantém consistente em todas as suas fábricas globais." },
+    "Amstel": { parent: "Heineken", color: "#22c55e", region: "Global", origin: "Netherlands 🇳🇱", year: 1870, description: "Originária de Amsterdã (1870), seu nome deriva do Rio Amstel, cujas águas eram utilizadas para o resfriamento das instalações. Em 1968, foi adquirida pela Heineken, tornando-se uma marca estratégica para o segmento de lagers acessíveis e de alta circulação internacional." },
     "Sol": { parent: "Heineken", color: "#22c55e", region: "Global", origin: "Mexico 🇲🇽", year: 1899 },
     "Dos Equis": { parent: "Heineken", color: "#22c55e", region: "Global", origin: "Mexico 🇲🇽", year: 1897, description: "Lançada como 'Siglo XX'; o nome Dos Equis veio depois." },
     "Tecate (Heineken)": { parent: "Heineken", color: "#22c55e", region: "Global", origin: "Mexico 🇲🇽", year: 1944 },
@@ -53,7 +53,7 @@ export const beerParentCompanies = {
     "Tecate Light": { parent: "Heineken", color: "#22c55e", region: "Global", origin: "Mexico 🇲🇽", year: 1992 },
     "Tiger Beer": { parent: "Heineken", color: "#22c55e", region: "Global", origin: "Singapore 🇸🇬", year: 1932 },
     "Tiger Crystal": { parent: "Heineken", color: "#22c55e", region: "Asia", origin: "Singapore 🇸🇬", year: 2013 },
-    "Birra Moretti": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Italy 🇮🇹", year: 1859 },
+    "Birra Moretti": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Italy 🇮🇹", year: 1859, description: "Criada em Udine em 1859 por Luigi Moretti. O icônico rótulo \"L'Uomo Baffuto\" (O Homem do Bigode) surgiu em 1942, quando o então proprietário fotografou um senhor em uma trattoria local, sentindo que ele personificava os valores de tradição e autenticidade da marca." },
     "Red Stripe": { parent: "Heineken", color: "#22c55e", region: "Global", origin: "Jamaica 🇯🇲", year: 1928 },
     "Affligem": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Belgium 🇧🇪", year: 1074, description: "Ano da abadia original; a marca cervejeira comercial é muito posterior." },
     "Birra Messina": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Italy 🇮🇹", year: 1923 },
@@ -71,13 +71,13 @@ export const beerParentCompanies = {
     "Almaza": { parent: "Heineken", color: "#22c55e", region: "Middle East", origin: "Lebanon 🇱🇧", year: 1933 },
 
     // 🟥 Molson Coors
-    "Coors Light": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1978 },
-    "Coors Banquet": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1873 },
-    "Miller Lite": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1975 },
+    "Coors Light": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1978, description: "Produzida pela primeira vez em 1978, a variante light da Coors focou seu diferencial técnico no processo de \"maturação a frio\" (cold-stage filtered). A marca é reconhecida por suas inovações em embalagens, incluindo latas com indicadores térmicos sensíveis à temperatura, reforçando o conceito de refrescância extrema." },
+    "Coors Banquet": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1873, description: "A fundação da empresa remonta a 1873, quando os imigrantes alemães Adolph Coors e Jacob Schueler estabeleceram a cervejaria em Golden, Colorado. A escolha do local foi estratégica devido à pureza das águas das montanhas rochosas. Durante grande parte do século XX, a marca manteve uma aura de exclusividade por ser distribuída apenas no oeste dos EUA e não ser pasteurizada." },
+    "Miller Lite": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1975, description: "Pioneira na categoria, a Miller Lite foi lançada nacionalmente em 1975 após a Miller Brewing Company adquirir os direitos de uma receita desenvolvida pela Rheingold Brewery. Sua campanha de marketing histórica focou em desmistificar que cervejas de baixa caloria possuíam menos sabor, alterando permanentemente a indústria cervejeira." },
     "Miller High Life": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1855, description: "Fundação da cervejaria Miller." },
     "Miller Genuine Draft": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1985 },
-    "Keystone": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1989 },
-    "Blue Moon": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1995, description: "Ano de criação da marca; não corresponde à fundação de uma cervejaria independente." },
+    "Keystone": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1989, description: "A linha Keystone foi apresentada ao mercado em 1989 pela Coors. Ela nasceu da necessidade de oferecer uma alternativa competitiva no segmento de preço baixo, mantendo os padrões de controle de qualidade da planta industrial de Golden." },
+    "Blue Moon": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1995, description: "Lançada em 1995 como uma marca de nicho da Coors (produzida na SandLot Brewery), esta é uma witbier estilo belga. Sua história é marcada pela defesa do \"ritual de servir\" com uma rodela de laranja, uma estratégia de diferenciação para destacar as notas cítricas de sua composição que leva semente de coentro e casca de laranja." },
     "Molson Canadian": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "Canada 🇨🇦", year: 1959, description: "Marca criada posteriormente; Molson foi fundada em 1786." },
     "Molson Export": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "Canada 🇨🇦", year: 1903 },
     "Carling": { parent: "Molson Coors", color: "#ef4444", region: "Europe", origin: "Canada 🇨🇦", year: 1840, description: "Ano da cervejaria Carling; a marca específica Black Label surgiu depois." },
@@ -87,8 +87,8 @@ export const beerParentCompanies = {
     "Cobra Beer": { parent: "Molson Coors", color: "#ef4444", region: "Asia", origin: "India 🇮🇳", year: 1989 },
 
     // 🟨 Carlsberg Group
-    "Carlsberg": { parent: "Carlsberg", color: "#eab308", region: "Global", origin: "Denmark 🇩🇰", year: 1847 },
-    "Tuborg": { parent: "Carlsberg", color: "#eab308", region: "Global", origin: "Denmark 🇩🇰", year: 1873 },
+    "Carlsberg": { parent: "Carlsberg", color: "#eab308", region: "Global", origin: "Denmark 🇩🇰", year: 1847, description: "J.C. Jacobsen fundou a cervejaria em Copenhague em 1847. A marca é indissociável da história da ciência cervejeira: em 1883, seu laboratório isolou pela primeira vez a Saccharomyces carlsbergensis, a levedura pura para lagers, compartilhando a descoberta gratuitamente com a indústria." },
+    "Tuborg": { parent: "Carlsberg", color: "#eab308", region: "Global", origin: "Denmark 🇩🇰", year: 1873, description: "Estabelecida em 1873 por Philip Heyman em Hellerup, Dinamarca. A marca fundiu-se com a Carlsberg em 1970. É historicamente reconhecida pela introdução de inovações no mercado dinamarquês, como a primeira cerveja engarrafada e a tampa tipo \"pull-off\"." },
     "Kronenbourg 1664": { parent: "Carlsberg", color: "#eab308", region: "Global", origin: "France 🇫🇷", year: 1664, description: "Ano de fundação da cervejaria; a marca 1664 é uma homenagem a esta data." },
     "1664 Blanc": { parent: "Carlsberg", color: "#eab308", region: "Global", origin: "France 🇫🇷", year: 2006, description: "Variante da Kronenbourg 1664 lançada em 2006." },
     "Baltika (various)": { parent: "Carlsberg", color: "#eab308", region: "Europe", origin: "Russia 🇷🇺", year: 1990 },
@@ -142,7 +142,7 @@ export const beerParentCompanies = {
     "Gold Star Beer": { parent: "San Miguel", color: "#dc2626", region: "Philippines", origin: "Philippines 🇵🇭", year: 1950, description: "Ano da cervejaria nacional de Israel; a marca foi consolidada posteriormente." },
 
     // 🟩 Diageo
-    "Guinness": { parent: "Diageo", color: "#16a34a", region: "Global", origin: "Ireland 🇮🇪", year: 1759, description: "Ano do contrato de arrendamento da cervejaria; amplamente aceito, mas tecnicamente não é um 'ato formal de fundação'." },
+    "Guinness": { parent: "Diageo", color: "#16a34a", region: "Global", origin: "Ireland 🇮🇪", year: 1759, description: "Em 1759, Arthur Guinness assinou um contrato de arrendamento de 9.000 anos para a cervejaria em St. James's Gate, Dublin. A marca definiu o estilo \"Irish Dry Stout\" e é mundialmente famosa pelo uso de nitrogênio para criar uma textura cremosa e uma espuma persistente." },
     "Guinness Foreign Extra": { parent: "Diageo", color: "#16a34a", region: "Africa", origin: "Ireland 🇮🇪", year: 1801 },
     "Malta Guinness": { parent: "Diageo", color: "#16a34a", region: "Africa", origin: "Nigeria 🇳🇬", year: 1990 },
     "Tusker": { parent: "Diageo", color: "#16a34a", region: "Africa", origin: "Kenya 🇰🇪", year: 1922 },
@@ -329,8 +329,8 @@ export const beerParentCompanies = {
     "Kingfisher Premium": { parent: "United Breweries", color: "#65a30d", region: "India", origin: "India 🇮🇳", year: 1978 },
     "Haywards 5000": { parent: "SABMiller (AB InBev)", color: "#3b82f6", region: "India", origin: "India 🇮🇳", year: 1983 },
     "Royal Challenge Beer": { parent: "United Breweries", color: "#65a30d", region: "India", origin: "India 🇮🇳", year: 1993 },
-    "Pabst Blue Ribbon": { parent: "Pabst Brewing", color: "#65a30d", region: "USA", origin: "USA 🇺🇸", year: 1844, description: "1844 refere-se à fundação da cervejaria; o nome 'Pabst Blue Ribbon' foi adotado décadas depois." },
-    "Old Milwaukee": { parent: "Pabst Brewing", color: "#65a30d", region: "USA", origin: "USA 🇺🇸", year: 1934 },
+    "Pabst Blue Ribbon": { parent: "Pabst Brewing", color: "#65a30d", region: "USA", origin: "USA 🇺🇸", year: 1844, description: "Fundada em Milwaukee em 1844. O nome atual foi adotado oficialmente após a cerveja ganhar o prêmio de \"Melhor Cerveja Americana\" na Exposição Mundial de Chicago em 1893. Entre 1882 e 1916, a empresa amarrava fitas de seda azul reais nos gargalos das garrafas como prova de sua qualidade premiada." },
+    "Old Milwaukee": { parent: "Pabst Brewing", color: "#65a30d", region: "USA", origin: "USA 🇺🇸", year: 1849, description: "Introduzida pela Schlitz Brewing Company em 1849, esta marca posicionou-se historicamente como uma opção de alto valor agregado com custo acessível. Em 2011, a marca ganhou notoriedade global por campanhas de marketing minimalistas e experimentais que reforçavam sua herança de classe trabalhadora." },
     "Yuengling Traditional Lager": { parent: "D.G. Yuengling & Son", color: "#65a30d", region: "USA", origin: "USA 🇺🇸", year: 1829 },
     "Samuel Adams Boston Lager": { parent: "Boston Beer Company", color: "#65a30d", region: "USA", origin: "USA 🇺🇸", year: 1984, description: "Marca moderna; o nome remete a uma figura histórica." },
     "Shiner Bock": { parent: "Spoetzl Brewery", color: "#65a30d", region: "USA", origin: "USA 🇺🇸", year: 1909 },
@@ -388,7 +388,7 @@ export const beerParentCompanies = {
     "Qingdao Draft": { parent: "Tsingtao", color: "#0ea5e9", region: "China", origin: "China 🇨🇳", year: 1991 },
     "Jinshi": { parent: "AB InBev", color: "#3b82f6", region: "China", origin: "China 🇨🇳", year: 1995 },
     "Fischer": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "France 🇫🇷", year: 1821 },
-    "Peroni": { parent: "Asahi", color: "#f97316", region: "Heineken", origin: "Italy 🇮🇹", year: 1846 },
+    "Peroni": { parent: "Asahi", color: "#f97316", region: "Heineken", origin: "Italy 🇮🇹", year: 1846, description: "Francesco Peroni fundou sua primeira cervejaria em 1846 em Vigevano, Itália. A marca consolidou-se como um símbolo da industrialização italiana. Sua variante mais famosa, a Nastro Azzurro, foi lançada em 1963 em homenagem ao prêmio ganho pelo transatlântico italiano Rex." },
     "Moretti": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Italy 🇮🇹", year: 1859 },
     "Dreher": { parent: "Asahi", color: "#f97316", region: "Europe", origin: "Hungary 🇭🇺", year: 1857 },
     "Karhu": { parent: "Sinebrychoff (Carlsberg)", color: "#eab308", region: "Europe", origin: "Finland 🇫🇮", year: 1929 },
@@ -433,8 +433,8 @@ export const beerParentCompanies = {
     "Laško": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Slovenia 🇸🇮", year: 1825 },
 
     // Additional beers from user's list
-    "Coors": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1873 },
-    "Miller": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1855 },
+    "Coors": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1873, description: "A fundação da empresa remonta a 1873, quando os imigrantes alemães Adolph Coors e Jacob Schueler estabeleceram a cervejaria em Golden, Colorado. A escolha do local foi estratégica devido à pureza das águas das montanhas rochosas. Durante grande parte do século XX, a marca manteve uma aura de exclusividade por ser distribuída apenas no oeste dos EUA e não ser pasteurizada." },
+    "Miller": { parent: "Molson Coors", color: "#ef4444", region: "North America", origin: "USA 🇺🇸", year: 1855, description: "Frederick Miller adquiriu a Plank Road Brewery em 1855 após emigrar da Alemanha. A empresa destacou-se pela introdução da \"Miller High Life\" em 1903, que utilizava garrafas de vidro transparente para exibir a limpidez da bebida, uma inovação visual para a época que visava elevar o status do produto perante os consumidores." },
     "Aass": { parent: "Aass Brewery", color: "#65a30d", region: "Europe", origin: "Norway 🇳🇴", year: 1834 },
     "Flying Horse": { parent: "United Breweries", color: "#65a30d", region: "India", origin: "India 🇮🇳", year: 1963 },
     "Pilsen Callao": { parent: "Backus (AB InBev)", color: "#3b82f6", region: "Latin America", origin: "Peru 🇵🇪", year: 1863 },
@@ -469,7 +469,7 @@ export const beerParentCompanies = {
     "Crystal": { parent: "Grupo Petrópolis", color: "#65a30d", region: "Latin America", origin: "Brazil 🇧🇷", year: 2004 },
     "Goldstar": { parent: "Tempo Beer Industries", color: "#65a30d", region: "Middle East", origin: "Israel 🇮🇱", year: 1950 },
     "Harbin": { parent: "AB InBev", color: "#3b82f6", region: "Asia", origin: "China 🇨🇳", year: 1900 },
-    "Heineken Light": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Netherlands 🇳🇱", year: 2005 },
+    "Heineken Light": { parent: "Heineken", color: "#22c55e", region: "Europe", origin: "Netherlands 🇳🇱", year: 2006, description: "Desenvolvida em 2006, esta cerveja foi formulada para manter as características organolépticas da Heineken original, mas com menor densidade calórica. Em 2013, a receita foi reformulada para incluir lúpulo Cascade, visando um aroma mais floral e sofisticado." },
     "Hite": { parent: "Hite Jinro", color: "#65a30d", region: "Asia", origin: "South Korea 🇰🇷", year: 1933 },
     "Kilimanjaro": { parent: "Diageo", color: "#16a34a", region: "Africa", origin: "Tanzania 🇹🇿", year: 1960 },
     "Oranjeboom": { parent: "United Dutch Breweries", color: "#f97316", region: "Europe", origin: "Netherlands 🇳🇱", year: 1671 },
@@ -477,12 +477,12 @@ export const beerParentCompanies = {
     "Primus": { parent: "Haacht", color: "#ef4444", region: "Europe", origin: "Belgium 🇧🇪", year: 1924 },
     "Qingdao": { parent: "Tsingtao Brewery", color: "#0ea5e9", region: "Asia", origin: "China 🇨🇳", year: 1903 },
     "Rochefort": { parent: "Brasserie de Rochefort", color: "#92400e", region: "Europe", origin: "Belgium 🇧🇪", year: 1595 },
-    "Samuel Adams": { parent: "Boston Beer Company", color: "#65a30d", region: "North America", origin: "USA 🇺🇸", year: 1984 },
+    "Samuel Adams": { parent: "Boston Beer Company", color: "#65a30d", region: "North America", origin: "USA 🇺🇸", year: 1984, description: "O nome homenageia o líder revolucionário americano Samuel Adams. Lançada em 1984, a marca é o pilar da Boston Beer Company. A receita da \"Boston Lager\" foi baseada em uma fórmula familiar de 1860, sendo fundamental para o início do movimento de microcervejarias nos EUA." },
     "Taedonggang": { parent: "Taedonggang Brewing", color: "#ef4444", region: "Asia", origin: "North Korea 🇰🇵", year: 2002 },
     "Terra": { parent: "Hite Jinro", color: "#65a30d", region: "Asia", origin: "South Korea 🇰🇷", year: 2019 },
     "Victoria": { parent: "Grupo Modelo (AB InBev)", color: "#3b82f6", region: "Latin America", origin: "Mexico 🇲🇽", year: 1865 },
     "Victoria Bitter": { parent: "Asahi", color: "#7c3aed", region: "Oceania", origin: "Australia 🇦🇺", year: 1854 },
-    "Yuengling": { parent: "D.G. Yuengling & Son", color: "#65a30d", region: "North America", origin: "USA 🇺🇸", year: 1829 }
+    "Yuengling": { parent: "D.G. Yuengling & Son", color: "#65a30d", region: "North America", origin: "USA 🇺🇸", year: 1829, description: "A D.G. Yuengling & Son é a cervejaria mais antiga dos EUA, fundada em 1829 por David Yuengling em Pottsville. A empresa sobreviveu à Lei Seca (1920-1933) diversificando sua produção para sorvetes e \"cervejas próximas\" (com menos de 0.5% de álcool), mantendo a gestão familiar por seis gerações." }
 
 };
 
