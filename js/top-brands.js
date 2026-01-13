@@ -1,6 +1,9 @@
 import { top250Beers } from './data/top-250-beers.js';
 import { getBeerInfo } from './data/beer-parent-companies.js';
 
+// Cache busting for data updates
+const v = new Date().getTime();
+
 function renderGrid() {
     const mainContainer = document.querySelector('.top-brands-container');
     if (!mainContainer) return;
@@ -54,12 +57,16 @@ function showModal(beerName) {
             <div class="beer-modal-body">
                 <div class="beer-modal-info">
                     <div class="info-row">
-                        <span class="info-label">Parent Company</span>
+                        <span class="info-label">Parent Company / Owner</span>
                         <span class="info-value">${info.parent}</span>
                     </div>
                     <div class="info-row">
-                        <span class="info-label">Region</span>
+                        <span class="info-label">Current HQ / Main Region</span>
                         <span class="info-value">${info.region}</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Country of Origin (Birthplace)</span>
+                        <span class="info-value">${info.origin}</span>
                     </div>
                 </div>
             </div>
@@ -80,5 +87,6 @@ function showModal(beerName) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Force module reload if needed, but import updates usually handle it
     renderGrid();
 });
