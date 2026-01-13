@@ -1,12 +1,13 @@
 import { top250Beers } from './data/top-250-beers.js';
 import { getBeerInfo } from './data/beer-parent-companies.js';
+import { popularityRanking } from './data/ranking.js';
 
 // Cache busting for data updates
 const v = new Date().getTime();
 
 let hoverTimeout = null;
 let currentPopup = null;
-let currentFilters = { country: 'all', parent: 'all', search: '' };
+let currentFilters = { country: 'all', parent: 'all', search: '', sort: 'alphabetical' };
 
 function getUniqueValues() {
     const countries = new Set();
@@ -68,11 +69,22 @@ function populateFilters() {
     const clearBtn = document.getElementById('clear-filters');
     if (clearBtn) {
         clearBtn.addEventListener('click', () => {
-            currentFilters = { country: 'all', parent: 'all', search: '' };
+            currentFilters = { country: 'all', parent: 'all', search: '', sort: 'alphabetical' };
             if (countrySelect) countrySelect.value = 'all';
             if (parentSelect) parentSelect.value = 'all';
+            const sortSelect = document.getElementById('sort-filter');
+            if (sortSelect) sortSelect.value = 'alphabetical';
             const searchInput = document.getElementById('search-filter');
             if (searchInput) searchInput.value = '';
+            renderGrid();
+        });
+    }
+
+    // Sort selector
+    const sortSelect = document.getElementById('sort-filter');
+    if (sortSelect) {
+        sortSelect.addEventListener('change', (e) => {
+            currentFilters.sort = e.target.value;
             renderGrid();
         });
     }
@@ -121,7 +133,27 @@ function getFilteredBeers() {
         }
 
         return true;
-    }).sort((a, b) => a.localeCompare(b, 'pt-BR'));
+    }).sort((a, b) => {
+        if (currentFilters.sort === 'popularity') {
+            // Find index in ranking list
+            // Normalize for loose matching? The user list seems exact enough but let's be safe
+            // Actually user list has things like "Snow" and our list has "Snow Beer"
+            // Let's rely on loose matching if exact fails?
+            // For now, strict match per the user's list.
+
+            const indexA = popularityRanking.indexOf(a);
+            const indexB = popularityRanking.indexOf(b);
+
+            // Handle items not in ranking (put them at bottom)
+            if (indexA === -1 && indexB === -1) return a.localeCompare(b, 'pt-BR');
+            if (indexA === -1) return 1;
+            if (indexB === -1) return -1;
+
+            return indexA - indexB;
+        } else {
+            return a.localeCompare(b, 'pt-BR');
+        }
+    });
 }
 
 function renderGrid() {
