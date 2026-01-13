@@ -66,8 +66,18 @@ function showModal(beerName) {
                     </div>
                     <div class="info-row">
                         <span class="info-label">Country of Origin (Birthplace)</span>
-                        <span class="info-value">${info.origin}</span>
+                        <span class="info-value">${info.origin || 'Unknown'}</span>
                     </div>
+                    ${info.year ? `
+                    <div class="info-row">
+                        <span class="info-label">Founding Year / Created</span>
+                        <span class="info-value">${info.year}</span>
+                    </div>` : ''}
+                    ${info.description ? `
+                    <div class="info-row" style="flex-direction: column; align-items: flex-start; gap: 8px;">
+                        <span class="info-label">History / Notes</span>
+                        <span class="info-value" style="font-weight: 400; line-height: 1.5; text-align: left; font-size: 0.9em;">${info.description}</span>
+                    </div>` : ''}
                 </div>
             </div>
         </div>
