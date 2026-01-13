@@ -174,7 +174,7 @@ function renderGrid() {
     // Update count
     const countEl = document.getElementById('filter-count');
     if (countEl) {
-        countEl.textContent = `${filteredBeers.length} beers`;
+        countEl.textContent = `${filteredBeers.length} cervejas`;
     }
 
     // Only beer name with hover handler for popup
@@ -189,7 +189,7 @@ function renderGrid() {
 
     // Show message if no results
     if (filteredBeers.length === 0) {
-        grid.innerHTML = '<div class="no-results" style="grid-column: 1/-1; text-align: center; padding: 2rem; color: #6b7280;">No beers match the selected filters.</div>';
+        grid.innerHTML = '<div class="no-results" style="grid-column: 1/-1; text-align: center; padding: 2rem; color: #6b7280;">Nenhuma cerveja encontrada com os filtros selecionados.</div>';
     }
 
     // Add hover handlers with 500ms delay
@@ -257,28 +257,28 @@ function showPopup(beerName, targetElement) {
         <div class="beer-popup-body">
             <div class="beer-popup-info">
                 <div class="popup-info-row">
-                    <span class="popup-info-label">Parent Company</span>
+                    <span class="popup-info-label">Empresa Mãe</span>
                     <span class="popup-info-value">${info.parent}</span>
                 </div>
                 <div class="popup-info-row">
-                    <span class="popup-info-label">Region</span>
+                    <span class="popup-info-label">Região</span>
                     <span class="popup-info-value">${info.region}</span>
                 </div>
                 <div class="popup-info-row">
-                    <span class="popup-info-label">Origin</span>
-                    <span class="popup-info-value">${info.origin || 'Unknown'}</span>
+                    <span class="popup-info-label">Origem</span>
+                    <span class="popup-info-value">${info.origin || 'Desconhecida'}</span>
                 </div>
                 ${info.year || info.description ? `
                 <div class="popup-founding-section">
                     <div class="popup-info-row no-border">
-                        <span class="popup-info-label">Founded</span>
+                        <span class="popup-info-label">Fundação</span>
                         <span class="popup-info-value">${info.year || ''}</span>
                     </div>
                     ${info.description ? `<div class="popup-founding-note">${info.description}</div>` : ''}
                 </div>` : ''}
                 ${info.history ? `
                 <div class="popup-history">
-                    <h4 class="popup-history-title">History</h4>
+                    <h4 class="popup-history-title">História</h4>
                     <p class="popup-history-text">${info.history}</p>
                 </div>` : ''}
             </div>
