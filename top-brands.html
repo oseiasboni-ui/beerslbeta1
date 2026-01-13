@@ -319,8 +319,8 @@
         }
     </style>
 
-    <script type="module" src="js/app.js" defer></script>
-    <script type="module" src="js/top-brands.js" defer></script>
+    <script type="module" src="js/app.js?v=30" defer></script>
+    <script type="module" src="js/top-brands.js?v=30" defer></script>
 </head>
 
 <body>
@@ -336,29 +336,31 @@
                 <!-- Filter Controls -->
                 <div class="filter-controls">
                     <div class="filter-group search-group">
-                        <label class="filter-label">🔍 Buscar</label>
-                        <input type="text" id="search-filter" class="filter-search" placeholder="Buscar cervejas...">
+                        <label class="filter-label" data-i18n="filters.search_label">🔍 Buscar</label>
+                        <input type="text" id="search-filter" class="filter-search" placeholder="Buscar cervejas..."
+                            data-i18n-placeholder="filters.search_placeholder">
                     </div>
                     <div class="filter-group">
-                        <label class="filter-label">🏷️ Ordenar</label>
+                        <label class="filter-label" data-i18n="filters.order_label">🏷️ Ordenar</label>
                         <select id="sort-filter" class="filter-select">
-                            <option value="alphabetical">A-Z</option>
-                            <option value="popularity">Popularidade</option>
+                            <option value="alphabetical" data-i18n="filters.order_az">A-Z</option>
+                            <option value="popularity" data-i18n="filters.order_pop">Popularidade</option>
                         </select>
                     </div>
                     <div class="filter-group">
-                        <label class="filter-label">🌍 País de Origem</label>
+                        <label class="filter-label" data-i18n="filters.country_label">🌍 País de Origem</label>
                         <select id="country-filter" class="filter-select">
-                            <option value="all">Todos os Países</option>
+                            <option value="all" data-i18n="filters.country_all">Todos os Países</option>
                         </select>
                     </div>
                     <div class="filter-group">
-                        <label class="filter-label">🏢 Empresa Mãe</label>
+                        <label class="filter-label" data-i18n="filters.parent_label">🏢 Empresa Mãe</label>
                         <select id="parent-filter" class="filter-select">
-                            <option value="all">Todas as Empresas</option>
+                            <option value="all" data-i18n="filters.parent_all">Todas as Empresas</option>
                         </select>
                     </div>
-                    <button id="clear-filters" class="clear-filters-btn">Limpar Filtros</button>
+                    <button id="clear-filters" class="clear-filters-btn" data-i18n="filters.clear">Limpar
+                        Filtros</button>
                     <span id="filter-count" class="filter-count">250 cervejas</span>
                 </div>
 

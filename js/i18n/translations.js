@@ -22,6 +22,30 @@ export const translations = {
         "footer.top_brands": "Top Marcas de Cerveja",
         "top_brands.content_placeholder": "Conteúdo em breve...",
 
+
+
+        // Top Brands Filters & UI
+        "filters.search_label": "Buscar",
+        "filters.search_placeholder": "Buscar cervejas...",
+        "filters.order_label": "Ordenar",
+        "filters.order_az": "A-Z",
+        "filters.order_pop": "Popularidade",
+        "filters.country_label": "País de Origem",
+        "filters.country_all": "Todos os Países",
+        "filters.parent_label": "Empresa Mãe",
+        "filters.parent_all": "Todas as Empresas",
+        "filters.clear": "Limpar Filtros",
+        "brands.count_suffix": "cervejas",
+        "brands.no_results": "Nenhuma cerveja encontrada com os filtros selecionados.",
+
+        // Popup Details
+        "popup.parent": "Empresa Mãe",
+        "popup.region": "Região",
+        "popup.origin": "Origem",
+        "popup.founded": "Fundação",
+        "popup.history": "História",
+        "popup.unknown": "Desconhecida",
+
         // Brand Descriptions (PT)
         "brand.weihenstephaner.description": "A cervejaria mais antiga do mundo ainda em operação. Referência absoluta em estilos de trigo (Weissbier).",
         "brand.guinness.description": "Ícone irlandês. Famosa por sua Stout cremosa e nitrogenada.",
@@ -2695,6 +2719,28 @@ export const translations = {
         "footer.rights": "All rights reserved.",
         "footer.top_brands": "Top Beer Brands",
         "top_brands.content_placeholder": "Content coming soon...",
+
+        // Top Brands Filters & UI
+        "filters.search_label": "Search",
+        "filters.search_placeholder": "Search beers...",
+        "filters.order_label": "Sort By",
+        "filters.order_az": "A-Z",
+        "filters.order_pop": "Popularity",
+        "filters.country_label": "Country of Origin",
+        "filters.country_all": "All Countries",
+        "filters.parent_label": "Parent Company",
+        "filters.parent_all": "All Companies",
+        "filters.clear": "Clear Filters",
+        "brands.count_suffix": "beers",
+        "brands.no_results": "No beers match the selected filters.",
+
+        // Popup Details
+        "popup.parent": "Parent Company",
+        "popup.region": "Region",
+        "popup.origin": "Origin",
+        "popup.founded": "Founded",
+        "popup.history": "History",
+        "popup.unknown": "Unknown",
 
         // Brand Descriptions (EN)
         "brand.weihenstephaner.description": "The oldest brewery in the world still in operation. Absolute reference in wheat styles (Weissbier).",

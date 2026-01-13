@@ -1,6 +1,9 @@
 import { top250Beers } from './data/top-250-beers.js';
 import { getBeerInfo } from './data/beer-parent-companies.js';
 import { popularityRanking } from './data/ranking.js';
+import { i18n } from './i18n/i18n.js';
+import { beerHistoriesEn } from './data/beer-histories-en.js';
+import { translateRegion, translateOrigin } from './i18n/data-translations.js';
 
 // Cache busting for data updates
 const v = new Date().getTime();
@@ -41,7 +44,7 @@ function populateFilters() {
         countries.forEach(country => {
             const option = document.createElement('option');
             option.value = country;
-            option.textContent = country;
+            option.textContent = translateOrigin(country, i18n.currentLang);
             countrySelect.appendChild(option);
         });
 
@@ -174,7 +177,7 @@ function renderGrid() {
     // Update count
     const countEl = document.getElementById('filter-count');
     if (countEl) {
-        countEl.textContent = `${filteredBeers.length} cervejas`;
+        countEl.textContent = `${filteredBeers.length} ${i18n.t('brands.count_suffix')}`;
     }
 
     // Only beer name with hover handler for popup
@@ -189,7 +192,7 @@ function renderGrid() {
 
     // Show message if no results
     if (filteredBeers.length === 0) {
-        grid.innerHTML = '<div class="no-results" style="grid-column: 1/-1; text-align: center; padding: 2rem; color: #6b7280;">Nenhuma cerveja encontrada com os filtros selecionados.</div>';
+        grid.innerHTML = `<div class="no-results" style="grid-column: 1/-1; text-align: center; padding: 2rem; color: #6b7280;">${i18n.t('brands.no_results')}</div>`;
     }
 
     // Add hover handlers with 500ms delay
@@ -247,6 +250,12 @@ function showPopup(beerName, targetElement) {
     // Remove any existing popup
     hidePopup();
 
+    // Determine history text based on language
+    let historyText = info.history; // Default to existing (Portuguese)
+    if (i18n.currentLang === 'en' && beerHistoriesEn[beerName]) {
+        historyText = beerHistoriesEn[beerName];
+    }
+
     // Create popup
     const popup = document.createElement('div');
     popup.className = 'beer-popup';
@@ -257,29 +266,29 @@ function showPopup(beerName, targetElement) {
         <div class="beer-popup-body">
             <div class="beer-popup-info">
                 <div class="popup-info-row">
-                    <span class="popup-info-label">Empresa Mãe</span>
+                    <span class="popup-info-label">${i18n.t('popup.parent')}</span>
                     <span class="popup-info-value">${info.parent}</span>
                 </div>
                 <div class="popup-info-row">
-                    <span class="popup-info-label">Região</span>
-                    <span class="popup-info-value">${info.region}</span>
+                    <span class="popup-info-label">${i18n.t('popup.region')}</span>
+                    <span class="popup-info-value">${translateRegion(info.region, i18n.currentLang)}</span>
                 </div>
                 <div class="popup-info-row">
-                    <span class="popup-info-label">Origem</span>
-                    <span class="popup-info-value">${info.origin || 'Desconhecida'}</span>
+                    <span class="popup-info-label">${i18n.t('popup.origin')}</span>
+                    <span class="popup-info-value">${info.origin ? translateOrigin(info.origin, i18n.currentLang) : i18n.t('popup.unknown')}</span>
                 </div>
                 ${info.year || info.description ? `
                 <div class="popup-founding-section">
                     <div class="popup-info-row no-border">
-                        <span class="popup-info-label">Fundação</span>
+                        <span class="popup-info-label">${i18n.t('popup.founded')}</span>
                         <span class="popup-info-value">${info.year || ''}</span>
                     </div>
                     ${info.description ? `<div class="popup-founding-note">${info.description}</div>` : ''}
                 </div>` : ''}
-                ${info.history ? `
+                ${historyText ? `
                 <div class="popup-history">
-                    <h4 class="popup-history-title">História</h4>
-                    <p class="popup-history-text">${info.history}</p>
+                    <h4 class="popup-history-title">${i18n.t('popup.history')}</h4>
+                    <p class="popup-history-text">${historyText}</p>
                 </div>` : ''}
             </div>
         </div>
@@ -480,6 +489,12 @@ function adjustPopupPosition(popup, targetElement) {
         }
     }
 }
+
+// Re-render on language change
+window.addEventListener('languageChanged', (e) => {
+    populateFilters();
+    renderGrid();
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     populateFilters();
