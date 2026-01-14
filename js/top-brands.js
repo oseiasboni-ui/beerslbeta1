@@ -1,10 +1,10 @@
-import { top250Beers } from './data/top-250-beers.js';
-import { getBeerInfo } from './data/beer-parent-companies.js';
-import { popularityRanking } from './data/ranking.js';
-import { i18n } from './i18n/i18n.js';
-import { beerHistoriesEn } from './data/beer-histories-en.js';
-import { beerHistoriesDe } from './data/beer-histories-de.js';
-import { translateRegion, translateOrigin } from './i18n/data-translations.js';
+import { top250Beers } from './data/top-250-beers.js?v=38';
+import { getBeerInfo } from './data/beer-parent-companies.js?v=38';
+import { popularityRanking } from './data/ranking.js?v=38';
+import { i18n } from './i18n/i18n.js?v=38';
+import { beerHistoriesEn } from './data/beer-histories-en.js?v=38';
+import { beerHistoriesDe } from './data/beer-histories-de.js?v=38';
+import { translateRegion, translateOrigin } from './i18n/data-translations.js?v=38';
 
 // Cache busting for data updates
 const v = new Date().getTime();
@@ -508,7 +508,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function initHeroCarousel() {
     const slides = document.querySelectorAll('.hero-slide');
     const dots = document.querySelectorAll('.hero-dot');
-    
+
     if (slides.length === 0) return;
 
     let currentSlide = 0;
