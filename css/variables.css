@@ -1,120 +1,200 @@
 :root {
-    /* Colors - Light Theme (Ice White) */
+    /* 
+     * Default Theme: Original (BeerSL)
+     * Base variables that can be overridden by specific themes
+     */
     --color-primary: #e67e22;
+    /* Orange */
     --color-primary-hover: #d35400;
-
-    --color-bg-dark: #2c3e50;
-    --color-bg-darker: #1a252f;
-
-    --color-text-main: #34495e;
-    --color-text-light: #7f8c8d;
-    --color-text-white: #ffffff;
+    --color-secondary: #2c3e50;
+    /* Dark Blue */
+    --color-accent: #e67e22;
+    /* Same as primary for default */
 
     --color-bg-light: #f8f9fa;
+    /* Page Background */
     --color-bg-white: #ffffff;
+    /* Card/content Background */
+
+    --color-text-main: #34495e;
+    /* Main Text */
+    --color-text-light: #7f8c8d;
+    /* Muted Text */
+    --color-text-inverse: #ffffff;
 
     --color-border: #ecf0f1;
 
-    /* Layout */
+    /* Theme Specific Mappings */
+    --theme-header-bg: #f8f9fa;
+    --theme-header-text: #1a1a1a;
+    --theme-sidebar-bg: #ffffff;
+    --theme-sidebar-text: #34495e;
+    --theme-footer-bg: #f9fafb;
+    --theme-footer-text: #111827;
+    --theme-card-bg: #ffffff;
+    --theme-content-bg: #fdfdfd;
+
+    /* Layout & Typo */
     --header-height: 55px;
     --sidebar-width: 250px;
-
-    /* Typography */
     --font-family: 'Inter', sans-serif;
 
     /* Shadows */
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    --shadow-lg: 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
 
-    /* Theme-specific */
-    --theme-header-bg: #f8f9fa;
-    --theme-header-text: #1a1a1a;
-    --theme-footer-bg: #f8f9fa;
-    --theme-footer-text: #1a1a1a;
-    --theme-content-bg: #f8f9fa;
-    --theme-card-bg: #ffffff;
-    --theme-card-text: #34495e;
+/* 1. Clássico Premium */
+html[data-theme="classic"] {
+    --color-primary: #0F172A;
+    /* Azul-marinho */
+    --color-primary-hover: #1e293b;
+    --color-secondary: #D4AF37;
+    /* Dourado */
+    --color-accent: #D4AF37;
+
+    --color-bg-light: #F5F5F5;
+    --color-bg-white: #ffffff;
+    --color-text-main: #111827;
+    --color-text-light: #4b5563;
+
+    --theme-header-bg: #0F172A;
+    --theme-header-text: #ffffff;
     --theme-sidebar-bg: #ffffff;
-    --theme-sidebar-text: #34495e;
-    --theme-footer-text: #2c3e50;
+    --theme-footer-bg: #0F172A;
+    --theme-footer-text: #ffffff;
 }
 
-/* Dark Theme (Matte Black) */
+/* 2. Beer / Craft / Tradicional */
+html[data-theme="craft"] {
+    --color-primary: #F2A900;
+    /* Âmbar (used as primary for visibility) */
+    --color-primary-hover: #d49000;
+    --color-secondary: #3A1F04;
+    /* Marrom escuro */
+    --color-accent: #D64500;
+    /* Laranja queimado */
+
+    --color-bg-light: #FAF7F2;
+    --color-bg-white: #ffffff;
+    --color-text-main: #3A1F04;
+    --color-text-light: #5d4a36;
+
+    --theme-header-bg: #3A1F04;
+    --theme-header-text: #FAF7F2;
+    --theme-sidebar-bg: #FAF7F2;
+    --theme-footer-bg: #3A1F04;
+    --theme-footer-text: #FAF7F2;
+}
+
+/* 3. Moderna & Natural */
+html[data-theme="modern"] {
+    --color-primary: #1F7A63;
+    /* Verde petróleo */
+    --color-primary-hover: #166350;
+    --color-secondary: #A7C7A5;
+    /* Verde claro */
+    --color-accent: #F2E8CF;
+    /* Beige */
+
+    --color-bg-light: #ffffff;
+    --color-bg-white: #fcfcfc;
+    --color-text-main: #1A1A1A;
+    --color-text-light: #4a4a4a;
+
+    --theme-header-bg: #1F7A63;
+    --theme-header-text: #ffffff;
+    --theme-sidebar-bg: #A7C7A5;
+    --theme-footer-bg: #1F7A63;
+    --theme-footer-text: #ffffff;
+}
+
+/* 4. Dark Mode Premium */
 html[data-theme="dark"] {
-    --theme-header-bg: #1a1a1a;
-    --theme-header-text: #f8f9fa;
-    --theme-footer-bg: #1a1a1a;
-    --theme-footer-text: #f8f9fa;
-    --theme-content-bg: #2d2d2d;
-    --theme-card-bg: #3d3d3d;
-    --theme-card-text: #f8f9fa;
-    --theme-sidebar-bg: #1a1a1a;
-    --theme-sidebar-text: #e0e0e0;
-    --color-bg-light: #2d2d2d;
-    --color-bg-white: #2a2a2a;
-    --color-text-main: #f8f9fa;
-    --color-text-light: #b0b0b0;
-    --color-border: #4d4d4d;
+    --color-primary: #FBBF24;
+    /* Amarelo quente (Accent as primary for contrast) */
+    --color-primary-hover: #d9a21b;
+    --color-secondary: #1F2937;
+    /* Cinza escuro */
+    --color-accent: #FBBF24;
+
+    --color-bg-light: #0B0B0B;
+    --color-bg-white: #1F2937;
+    /* Card BG */
+    --color-text-main: #E5E7EB;
+    --color-text-light: #9ca3af;
+    --color-border: #374151;
+
+    --theme-header-bg: #0B0B0B;
+    --theme-header-text: #E5E7EB;
+    --theme-sidebar-bg: #0B0B0B;
+    --theme-sidebar-text: #E5E7EB;
+    --theme-footer-bg: #0B0B0B;
+    --theme-footer-text: #E5E7EB;
+    --theme-card-bg: #1F2937;
+    --theme-content-bg: #0B0B0B;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* 5. Clean Profissional */
+html[data-theme="professional"] {
+    --color-primary: #2563EB;
+    /* Azul */
+    --color-primary-hover: #1d4ed8;
+    --color-secondary: #64748B;
+    /* Cinza */
+    --color-accent: #22C55E;
+    /* Verde */
+
+    --color-bg-light: #F8FAFC;
+    --color-bg-white: #ffffff;
+    --color-text-main: #0f172a;
+    --color-text-light: #475569;
+
+    --theme-header-bg: #ffffff;
+    --theme-header-text: #0f172a;
+    --theme-sidebar-bg: #F8FAFC;
 }
 
-body {
-    font-family: var(--font-family);
-    background-color: var(--color-bg-light);
-    color: var(--color-text-main);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+/* 6. Energético / Jovem */
+html[data-theme="energetic"] {
+    --color-primary: #FF6B00;
+    /* Laranja */
+    --color-primary-hover: #e65e00;
+    --color-secondary: #1E293B;
+    /* Azul escuro */
+    --color-accent: #FF6B00;
+
+    --color-bg-light: #ffffff;
+    --color-bg-white: #f8fafc;
+    --color-text-main: #1E293B;
+    --color-text-light: #475569;
+
+    --theme-header-bg: #FF6B00;
+    --theme-header-text: #ffffff;
+    --theme-sidebar-bg: #ffffff;
 }
 
-.hidden {
-    display: none !important;
-}
+/* 7. Luxo Escuro */
+html[data-theme="luxury"] {
+    --color-primary: #EAB308;
+    /* Ouro (accent as primary) */
+    --color-primary-hover: #ca9a04;
+    --color-secondary: #7C2D12;
+    /* Vinho */
+    --color-accent: #EAB308;
 
-/* Theme Toggle Button */
-.theme-toggle {
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-    margin-top: 0.5rem;
-    font-size: 0.75rem;
-}
+    --color-bg-light: #1C1917;
+    --color-bg-white: #292524;
+    --color-text-main: #FAFAFA;
+    --color-text-light: #a8a29e;
+    --color-border: #44403c;
 
-.theme-label {
-    color: var(--color-text-light);
-    margin-right: 0.25rem;
-}
-
-.theme-btn-text {
-    background: none;
-    border: none;
-    color: var(--color-text-light);
-    cursor: pointer;
-    font-size: 0.75rem;
-    padding: 0;
-    transition: color 0.2s ease;
-}
-
-.theme-btn-text:hover {
-    color: var(--color-primary);
-}
-
-.theme-btn-text.active {
-    color: var(--color-primary);
-    font-weight: 600;
-}
-
-.theme-divider {
-    color: var(--color-text-light);
-    font-size: 0.7rem;
-}
-
-.footer-right {
-    text-align: right;
+    --theme-header-bg: #1C1917;
+    --theme-header-text: #FAFAFA;
+    --theme-sidebar-bg: #1C1917;
+    --theme-footer-bg: #000000;
+    --theme-footer-text: #d6d3d1;
+    --theme-card-bg: #292524;
+    --theme-content-bg: #1C1917;
 }

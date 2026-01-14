@@ -16,8 +16,8 @@
 
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/variables.css?v=28">
-    <link rel="stylesheet" href="css/styles.css?v=28">
+    <link rel="stylesheet" href="css/variables.css?v=46">
+    <link rel="stylesheet" href="css/styles.css?v=46">
     <style>
         /* Embedded CSS for About Page Specifics */
         .about-main {
@@ -79,26 +79,7 @@
             margin-bottom: 0;
         }
 
-        /* Sticky Footer for About Page */
-        .app-container {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .about-main {
-            flex: 1;
-            padding-bottom: 180px;
-            /* Space for fixed footer */
-        }
-
-        .main-footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 50;
-        }
+        /* Footer styles removed (moved to global styles) */
     </style>
 
     <script type="module" src="js/app.js" defer></script>
@@ -107,7 +88,37 @@
 <body>
     <div class="app-container">
         <!-- Header (Sticky) -->
-        <header id="main-header" class="main-header"></header>
+        <!-- Unified Header -->
+        <header id="main-header" class="main-header">
+            <div class="header-left">
+                <a href="index.html" class="header-logo">
+                    <span class="logo-text">Beer<span class="logo-accent">SL</span></span>
+                </a>
+            </div>
+            <div class="header-nav-pills">
+                <nav class="nav-pills">
+                    <a href="index.html" class="nav-pill">
+                        📊 <span data-i18n="nav.styles">Estilos</span>
+                    </a>
+                    <a href="top-brands.html" class="nav-pill">
+                        🍺 <span data-i18n="nav.brands">Top Brands</span>
+                    </a>
+                    <a href="about.html" class="nav-pill active">
+                        ℹ️ <span data-i18n="nav.about">Sobre</span>
+                    </a>
+                    <a href="contact.html" class="nav-pill">
+                        📧 <span data-i18n="nav.contact">Contato</span>
+                    </a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <button class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
 
         <!-- Main Content -->
         <main class="about-main">
@@ -120,11 +131,122 @@
         </main>
 
         <!-- Footer -->
-        <footer id="main-footer" class="main-footer"></footer>
+        <!-- Unified Footer -->
+        <footer id="main-footer" class="main-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Beer<span class="logo-accent">SL</span></span>
+                    <p class="footer-tagline">Sua enciclopédia definitiva de cervejas.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html" data-i18n="nav.styles">Estilos</a>
+                    <a href="top-brands.html" data-i18n="nav.brands">Top Brands</a>
+                    <a href="about.html" data-i18n="nav.about">Sobre</a>
+                    <a href="contact.html" data-i18n="nav.contact">Contato</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2024 BeerSL. Todos os direitos reservados.
+                </div>
+            </div>
+        </footer>
     </div>
 
     <!-- Empty Modal Container just in case app.js references it -->
     <div id="modal-container" class="modal-container hidden"></div>
+    <!-- Mobile Sidebar -->
+    <aside id="mobile-sidebar" class="mobile-sidebar"
+        style="position: fixed; top: 0; right: -300px; width: 300px; height: 100vh; background: var(--theme-sidebar-bg); box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1); z-index: 2000; transition: right 0.3s ease; display: flex; flex-direction: column;">
+        <div class="sidebar-header">
+            <span class="sidebar-title">Menu</span>
+            <button class="sidebar-close" id="sidebar-close">✕</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="sidebar-link">📊 <span data-i18n="nav.styles">Estilos</span></a>
+            <a href="top-brands.html" class="sidebar-link">🍺 <span data-i18n="nav.brands">Top Brands</span></a>
+            <a href="about.html" class="sidebar-link active">ℹ️ <span data-i18n="nav.about">Sobre</span></a>
+            <a href="contact.html" class="sidebar-link">📧 <span data-i18n="nav.contact">Contato</span></a>
+        </nav>
+        <div class="sidebar-lang">
+            <p class="sidebar-lang-label">Idioma</p>
+            <div class="sidebar-lang-btns">
+                <button class="lang-btn-sidebar" data-lang="pt-BR">🇧🇷 Português</button>
+                <button class="lang-btn-sidebar" data-lang="en">🇺🇸 English</button>
+                <button class="lang-btn-sidebar" data-lang="de">🇩🇪 Deutsch</button>
+            </div>
+        </div>
+        <!-- Theme menu removed -->
+    </aside>
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <script type="module">
+        import { i18n } from './js/i18n/i18n.js?v=100';
+
+        // Execute immediately
+        (function () {
+            // Remove any legacy theme
+            document.documentElement.removeAttribute('data-theme');
+
+            // Menu Toggle (Delegation for robustness)
+            document.body.addEventListener('click', (e) => {
+                const toggleBtn = e.target.closest('#menu-toggle');
+                const closeBtn = e.target.closest('#sidebar-close');
+                const overlay = e.target.id === 'sidebar-overlay';
+
+                if (toggleBtn) {
+                    e.stopPropagation();
+                    toggleSidebar(true);
+                } else if (closeBtn || overlay) {
+                    e.stopPropagation();
+                    toggleSidebar(false);
+                }
+            });
+
+            function toggleSidebar(open) {
+                const sidebar = document.getElementById('mobile-sidebar');
+                const overlay = document.getElementById('sidebar-overlay');
+                if (!sidebar || !overlay) return;
+
+                if (open) {
+                    sidebar.classList.add('open');
+                    overlay.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    sidebar.classList.remove('open');
+                    overlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            }
+
+            // Language Buttons
+            const sidebarLangBtns = document.querySelectorAll('.lang-btn-sidebar');
+            if (sidebarLangBtns.length > 0) {
+                sidebarLangBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const lang = btn.dataset.lang;
+                        i18n.setLang(lang);
+                        updateActiveFlags(lang);
+                        toggleSidebar(false);
+                    });
+                });
+
+                // Init active flag
+                const currentLang = localStorage.getItem('beersl-lang') || 'pt-BR';
+                updateActiveFlags(currentLang);
+            }
+
+            function updateActiveFlags(lang) {
+                const allLangBtns = document.querySelectorAll('.lang-btn-sidebar');
+                allLangBtns.forEach(btn => {
+                    const isActive = btn.dataset.lang === lang || (lang.startsWith('pt') && btn.dataset.lang === 'pt-BR');
+                    if (isActive) btn.classList.add('active');
+                    else btn.classList.remove('active');
+                });
+            }
+
+            // Init Translations
+            i18n.init();
+        })();
+    </script>
 </body>
 
 </html>

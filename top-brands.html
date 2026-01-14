@@ -14,8 +14,8 @@
         rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/variables.css?v=36">
-    <link rel="stylesheet" href="css/styles.css?v=36">
+    <link rel="stylesheet" href="css/variables.css?v=46">
+    <link rel="stylesheet" href="css/styles.css?v=46">
     <style>
         /* ========================================
            MODERN DASHBOARD DESIGN - Top Brands
@@ -25,7 +25,7 @@
         .top-brands-main {
             flex: 1;
             padding: 0;
-            background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+            background: var(--color-bg-light);
             position: relative;
             width: 100%;
         }
@@ -51,7 +51,7 @@
            NEW HERO SECTION - Greeting Style
            ======================================== */
         .dashboard-hero {
-            background: linear-gradient(135deg, #ffffff 0%, #fff7ed 50%, #ffedd5 100%);
+            background: var(--color-bg-light);
             padding: 3rem 2rem;
             position: relative;
             overflow: hidden;
@@ -97,7 +97,7 @@
         .hero-greeting {
             font-size: 2.75rem;
             font-weight: 800;
-            color: #1f2937;
+            color: var(--color-text-main);
             margin: 0 0 0.5rem 0;
             line-height: 1.2;
         }
@@ -131,9 +131,9 @@
             align-items: center;
             justify-content: space-between;
             padding: 0.75rem 2rem;
-            background: rgba(255, 255, 255, 0.95);
+            background: var(--theme-header-bg);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid #e5e7eb;
+            border-bottom: 1px solid var(--color-border);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -150,11 +150,11 @@
         .logo-text {
             font-size: 2rem;
             font-weight: 800;
-            color: #374151;
+            color: var(--theme-header-text);
         }
 
         .logo-accent {
-            color: #f97316;
+            color: var(--color-accent);
         }
 
         .header-nav-pills {
@@ -187,14 +187,15 @@
             display: block;
             width: 22px;
             height: 2px;
-            background: #374151;
+            background: var(--theme-header-text);
             border-radius: 2px;
         }
 
         .nav-pills {
             display: flex;
             gap: 0.5rem;
-            background: #f3f4f6;
+            background: rgba(0, 0, 0, 0.05);
+            /* Adaptive transparent bg */
             padding: 5px;
             border-radius: 30px;
             box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03);
@@ -1237,78 +1238,12 @@
         /* ========================================
            INLINE FOOTER STYLES
            ======================================== */
-        .main-footer {
-            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-            color: #fff;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-
-        .footer-content {
-            max-width: 1600px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .footer-brand {
-            margin-bottom: 1.5rem;
-        }
-
-        .footer-logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: #fff;
-        }
-
-        .footer-tagline {
-            color: #9ca3af;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-bottom: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        .footer-links a {
-            color: #d1d5db;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .footer-links a:hover {
-            color: #f97316;
-        }
-
-        .footer-copyright {
-            color: #6b7280;
-            font-size: 0.85rem;
-        }
+        /* Footer Styles moved to styles.css */
 
         /* ========================================
            SIDEBAR MENU STYLES
            ======================================== */
-        .sidebar {
-            position: fixed;
-            top: 0;
-            right: -300px;
-            width: 300px;
-            height: 100vh;
-            background: #fff;
-            box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
-            z-index: 2000;
-            transition: right 0.3s ease;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .sidebar.open {
-            right: 0;
-        }
+        /* Sidebar Styles moved to styles.css (renamed to .mobile-sidebar) */
 
         .sidebar-header {
             display: flex;
@@ -1408,7 +1343,7 @@
 
     <!-- app.js commented out - using custom unified header -->
     <!-- <script type="module" src="js/app.js?v=36" defer></script> -->
-    <script type="module" src="js/top-brands.js?v=38" defer></script>
+    <script type="module" src="js/top-brands.js?v=40" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
@@ -1436,10 +1371,11 @@
             </div>
             <nav class="header-nav-pills">
                 <div class="nav-pills">
-                    <a href="index.html" class="nav-pill">📊 Estilos</a>
-                    <a href="top-brands.html" class="nav-pill active">🍺 Top Brands <span class="badge">250+</span></a>
-                    <a href="about.html" class="nav-pill">ℹ️ Sobre</a>
-                    <a href="contact.html" class="nav-pill">📧 Contato</a>
+                    <a href="index.html" class="nav-pill">📊 <span data-i18n="nav.styles">Estilos</span></a>
+                    <a href="top-brands.html" class="nav-pill active">🍺 <span data-i18n="nav.brands">Top Brands</span>
+                        <span class="badge">250+</span></a>
+                    <a href="about.html" class="nav-pill">ℹ️ <span data-i18n="nav.about">Sobre</span></a>
+                    <a href="contact.html" class="nav-pill">📧 <span data-i18n="nav.contact">Contato</span></a>
                 </div>
             </nav>
             <div class="header-right">
@@ -1547,14 +1483,15 @@
                 <footer id="main-footer" class="main-footer">
                     <div class="footer-content">
                         <div class="footer-brand">
-                            <span class="footer-logo">Beer<span class="logo-accent">SL</span></span>
-                            <p class="footer-tagline">Enciclopédia de Cervejas do Mundo</p>
+                            <span class="footer-logo" style="font-size: 2.5rem; font-weight: 800;">Beer<span
+                                    class="logo-accent">SL</span></span>
+                            <p class="footer-tagline" style="color: #4b5563;">Enciclopédia de Cervejas do Mundo</p>
                         </div>
                         <div class="footer-links">
-                            <a href="index.html">Home</a>
-                            <a href="top-brands.html">Top Brands</a>
-                            <a href="brands.html">Estilos</a>
-                            <a href="about.html">Sobre</a>
+                            <a href="index.html" data-i18n="nav.styles">Estilos</a>
+                            <a href="top-brands.html" data-i18n="nav.brands">Top Brands</a>
+                            <a href="about.html" data-i18n="nav.about">Sobre</a>
+                            <a href="contact.html" data-i18n="nav.contact">Contato</a>
                         </div>
                         <p class="footer-copyright">© 2024 BeerSL. Todos os direitos reservados.</p>
                     </div>
@@ -1562,16 +1499,17 @@
             </div>
 
             <!-- Sidebar Navigation -->
-            <aside id="sidebar" class="sidebar">
+            <aside id="mobile-sidebar" class="mobile-sidebar">
                 <div class="sidebar-header">
                     <span class="sidebar-title">Menu</span>
                     <button class="sidebar-close" id="sidebar-close">✕</button>
                 </div>
                 <nav class="sidebar-nav">
-                    <a href="index.html" class="sidebar-link">🏠 Home</a>
-                    <a href="top-brands.html" class="sidebar-link active">🍺 Top Brands</a>
-                    <a href="brands.html" class="sidebar-link">📊 Estilos</a>
-                    <a href="about.html" class="sidebar-link">ℹ️ Sobre</a>
+                    <a href="index.html" class="sidebar-link">📊 <span data-i18n="nav.styles">Estilos</span></a>
+                    <a href="top-brands.html" class="sidebar-link active">🍺 <span data-i18n="nav.brands">Top
+                            Brands</span></a>
+                    <a href="about.html" class="sidebar-link">ℹ️ <span data-i18n="nav.about">Sobre</span></a>
+                    <a href="contact.html" class="sidebar-link">📧 <span data-i18n="nav.contact">Contato</span></a>
                 </nav>
                 <div class="sidebar-lang">
                     <p class="sidebar-lang-label">Idioma</p>
@@ -1581,20 +1519,23 @@
                         <button class="lang-btn-sidebar" data-lang="de">🇩🇪 Deutsch</button>
                     </div>
                 </div>
+                <div id="theme-menu-container" style="padding: 0 1.5rem; margin-bottom: 2rem;"></div>
             </aside>
             <div id="sidebar-overlay" class="sidebar-overlay"></div>
 
 
             <!-- Language and Menu Logic -->
             <script type="module">
-                import { i18n } from './js/i18n/i18n.js?v=38';
+                import { i18n } from './js/i18n/i18n.js?v=42';
+                import { themeManager } from './js/theme-manager.js?v=42';
 
                 document.addEventListener('DOMContentLoaded', () => {
+                    themeManager.renderThemeMenu('#theme-menu-container');
                     // ========================================
                     // MENU TOGGLE FUNCTIONALITY
                     // ========================================
                     const menuToggle = document.getElementById('menu-toggle');
-                    const sidebar = document.getElementById('sidebar');
+                    const sidebar = document.getElementById('mobile-sidebar');
                     const sidebarClose = document.getElementById('sidebar-close');
                     const sidebarOverlay = document.getElementById('sidebar-overlay');
 

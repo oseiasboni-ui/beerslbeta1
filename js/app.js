@@ -1,10 +1,10 @@
-import { Header } from './components/Header.js';
+// import { Header } from './components/Header.js';
 import { Sidebar } from './components/Sidebar.js';
 import { Hero } from './components/Hero.js';
 import { Grid } from './components/Grid.js';
 import { Modal } from './components/Modal.js';
 import { ReferenceRulers } from './components/ReferenceRulers.js';
-import { Footer } from './components/Footer.js';
+// import { Footer } from './components/Footer.js';
 import { i18n } from './i18n/i18n.js';
 import { beers } from './data/beers.js';
 
@@ -13,8 +13,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     i18n.init();
 
     // Initialize Components
-    const header = new Header('main-header');
-    header.render();
+    // Initialize Components
+    // const header = new Header('main-header');
+    // header.render();
 
     // Initialize Sidebar (if exists)
     if (document.getElementById('sidebar')) {
@@ -44,8 +45,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     new Modal('modal-container');
 
     // Initialize Footer with language switcher
-    const footer = new Footer('main-footer');
-    footer.render();
+    // Initialize Footer with language switcher
+    // const footer = new Footer('main-footer');
+    // footer.render();
 
     // Hide filters bar
     const filtersBar = document.getElementById('filters-bar');

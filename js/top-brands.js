@@ -1,10 +1,10 @@
-import { top250Beers } from './data/top-250-beers.js?v=38';
-import { getBeerInfo } from './data/beer-parent-companies.js?v=38';
-import { popularityRanking } from './data/ranking.js?v=38';
-import { i18n } from './i18n/i18n.js?v=38';
-import { beerHistoriesEn } from './data/beer-histories-en.js?v=38';
-import { beerHistoriesDe } from './data/beer-histories-de.js?v=38';
-import { translateRegion, translateOrigin } from './i18n/data-translations.js?v=38';
+import { top250Beers } from './data/top-250-beers.js?v=40';
+import { getBeerInfo } from './data/beer-parent-companies.js?v=40';
+import { popularityRanking } from './data/ranking.js?v=40';
+import { i18n } from './i18n/i18n.js?v=40';
+import { beerHistoriesEn } from './data/beer-histories-en.js?v=40';
+import { beerHistoriesDe } from './data/beer-histories-de.js?v=40';
+import { translateRegion, translateOrigin } from './i18n/data-translations.js?v=40';
 
 // Cache busting for data updates
 const v = new Date().getTime();
