@@ -836,14 +836,65 @@
             pointer-events: auto;
         }
 
+        /* Arrow Base */
         .beer-popup::before {
             content: '';
             position: absolute;
+            width: 0;
+            height: 0;
+            border: 8px solid transparent;
+        }
+
+        /* Position: BOTTOM (Popup is below item, arrow points UP) */
+        /* Default or data-position="bottom" */
+        .beer-popup[data-position="bottom"]::before,
+        .beer-popup:not([data-position])::before {
             bottom: 100%;
             left: 50%;
             transform: translateX(-50%);
-            border: 8px solid transparent;
             border-bottom-color: white;
+            /* Matches header if we could, but white is safer default */
+            /* If we want to match colored header: we'd need JS to set border-color. 
+               For now, let's keep it white to match the body or generic look.
+               Actually, if it's on top of a colored header, white looks like a cut-out. 
+               Let's try to make it look part of the popup. 
+            */
+            border-bottom-color: inherit;
+            /* Inherit doesn't work well for border-color on transparent borders */
+        }
+
+        /* FIX: Ensure arrow matches header color if possible. 
+           Since header color is inline style on an inner element, CSS can't grasp it easily on pseudo.
+           However, most headers are dark/colored. White arrow looks "okay" as a pointer. 
+        */
+        .beer-popup[data-position="bottom"]::before,
+        .beer-popup:not([data-position])::before {
+            border-bottom-color: white;
+        }
+
+
+        /* Position: TOP (Popup is above item, arrow points DOWN) */
+        .beer-popup[data-position="top"]::before {
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-top-color: white;
+        }
+
+        /* Position: LEFT (Popup is left of item, arrow points RIGHT) */
+        .beer-popup[data-position="left"]::before {
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            border-left-color: white;
+        }
+
+        /* Position: RIGHT (Popup is right of item, arrow points LEFT) */
+        .beer-popup[data-position="right"]::before {
+            right: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            border-right-color: white;
         }
 
         .beer-popup-header {

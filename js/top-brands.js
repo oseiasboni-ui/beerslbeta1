@@ -421,6 +421,9 @@ function showPopup(beerName, targetElement) {
     // Create popup
     const popup = document.createElement('div');
     popup.className = 'beer-popup';
+    // Add arrow element inside to style it with JS color if needed, or stick to CSS
+    // For now we use CSS pseudo element, but we need to know the position.
+
     popup.innerHTML = `
         <div class="beer-popup-header" style="background: ${info.color};">
             <h3 class="beer-popup-title">${beerName}</h3>
@@ -620,6 +623,7 @@ function adjustPopupPosition(popup, targetElement) {
 
     // Apply Choice
     chosen.apply();
+    popup.dataset.position = chosen.name;
 
     // FINAL CLAMPING
     const finalRect = popup.getBoundingClientRect();
