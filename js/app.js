@@ -157,7 +157,85 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (currentFermentationFilters.length > 0) {
             filteredBeers = filteredBeers.filter(beer => {
                 const category = (beer.category || '').toLowerCase();
-                return currentFermentationFilters.some(f => category.includes(f));
+                const name = (beer.name || '').toLowerCase();
+                const id = (beer.id || '').toLowerCase();
+
+                return currentFermentationFilters.some(f => {
+                    // Handle Hybrid (Híbrida)
+                    if (f === 'hibrida') {
+                        const hybridIds = [
+                            'cream-ale',
+                            'kolsch',
+                            'california-common',
+                            'altbier'
+                        ];
+                        // Also check category keywords for future proofing
+                        return hybridIds.includes(id) ||
+                            category.includes('hybrid') ||
+                            category.includes('cream ale') ||
+                            category.includes('steam beer');
+                    }
+
+                    // Handle Wild/Sour (Selvagem)
+                    if (f === 'wild') {
+                        const wildIds = [
+                            'berliner-weisse',
+                            'flanders-red-ale',
+                            'oud-bruin',
+                            'lambic',
+                            'gueuze',
+                            'fruit-lambic',
+                            'gose',
+                            'lichtenhainer',
+                            'brett-beer',
+                            'mixed-fermentation-sour-beer',
+                            'wild-specialty-beer',
+                            'straight-sour-beer'
+                        ];
+
+                        return wildIds.includes(id) ||
+                            category.includes('wild') ||
+                            category.includes('sour') ||
+                            category.includes('lambic') ||
+                            category.includes('gueuze') ||
+                            category.includes('brett');
+                    }
+
+                    // Handle Ale (Generic fallback if category contains ale but exclude if user isn't specific? No, keep broad)
+                    if (f === 'ale') {
+                        // Include all top-fermented
+                        return category.includes('ale') ||
+                            category.includes('stout') ||
+                            category.includes('porter') ||
+                            category.includes('ipa') ||
+                            category.includes('wheat') ||
+                            category.includes('wit') ||
+                            category.includes('trappist') ||
+                            category.includes('dubbel') ||
+                            category.includes('tripel') ||
+                            category.includes('quadrupel') ||
+                            category.includes('saison') ||
+                            category.includes('biere de garde');
+                    }
+
+                    // Handle Lager
+                    if (f === 'lager') {
+                        return category.includes('lager') ||
+                            category.includes('pilsner') ||
+                            category.includes('bock') ||
+                            category.includes('doppelbock') ||
+                            category.includes('eisbock') ||
+                            category.includes('schwarzbier') ||
+                            category.includes('marzen') ||
+                            category.includes('märzen') ||
+                            category.includes('helles') ||
+                            category.includes('dunkel') ||
+                            category.includes('vienna');
+                    }
+
+                    // Default text match
+                    return category.includes(f);
+                });
             });
         }
 

@@ -371,7 +371,7 @@ export const beers = [
             adjuncts: 'beer.international-amber-lager.ingredients.adjuncts'
         },
         specs: {
-            abvRange: '4.5–6.0%',
+            abvRange: '4.6–6.0%',
             ibu: '8–25',
             srm: '6–14',
             og: '1.042–1.055',
@@ -1514,7 +1514,7 @@ export const beers = [
         rating: 4.6,
         image: 'assets/beer-placeholder.png',
         description: 'beer.baltic-porter.description',
-        category: 'Porters / Strong',
+        category: 'Porters / Strong Lager',
         appearance: {
             color: 'beer.baltic-porter.appearance.color',
             colorHex: '#251610', // Dark reddish copper to opaque dark brown
@@ -2488,7 +2488,7 @@ export const beers = [
             adjuncts: 'beer.irish-stout.ingredients.adjuncts'
         },
         specs: {
-            abvRange: '3.8–5.0%',
+            abvRange: '4.0–4.5%',
             ibu: '25–45',
             srm: '25–40+',
             og: '1.036–1.044',
@@ -2545,7 +2545,7 @@ export const beers = [
         },
         specs: {
             abvRange: '5.5–6.5%',
-            ibu: '30–50',
+            ibu: '35–50',
             srm: '30–40+',
             og: '1.052–1.062',
             fg: '1.010–1.014'
@@ -3537,7 +3537,7 @@ export const beers = [
         },
         specs: {
             abvRange: '6.0–9.0%',
-            ibu: '25–60',
+            ibu: '25–70',
             srm: '3–7',
             og: '1.060–1.085',
             fg: '1.010–1.015'
@@ -3812,7 +3812,7 @@ export const beers = [
         },
         specs: {
             abvRange: '6.2–9.5%',
-            ibu: '50–100',
+            ibu: '50–90',
             srm: '5–8',
             og: '1.058–1.080',
             fg: '1.008–1.016'
@@ -3867,7 +3867,7 @@ export const beers = [
         },
         specs: {
             abvRange: '6.0–7.5%',
-            ibu: '20–40',
+            ibu: '20–50',
             srm: '2–4',
             og: '1.045–1.060',
             fg: '0.990–1.004'
@@ -5061,7 +5061,7 @@ export const beers = [
         rating: 4.5,
         image: 'assets/beer-placeholder.png',
         description: 'beer.kellerbier.description',
-        category: 'Pale Bitter European Beer',
+        category: 'Pale Bitter European Beer / Lager',
         appearance: {
             color: 'beer.kellerbier.appearance.color',
             colorHex: '#C5962B',

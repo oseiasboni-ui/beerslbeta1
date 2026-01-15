@@ -20,6 +20,7 @@ export class Sidebar {
                 this.rulerState.ftuLabel = e.detail.ftuLabel;
                 // Re-emit checkbox filters to trigger update with current state including ruler
                 this.emitCheckboxFilters();
+                this.checkClearButtonVisibility(); // Fix: Update button visibility
             }
         });
     }
