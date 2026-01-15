@@ -67,45 +67,57 @@ document.addEventListener('DOMContentLoaded', async () => {
     let currentIbuFilters = [];
 
     // Classify beer clarity based on category/style
+    // Classify beer clarity based on category/style/description
     function getBeerClarityLevel(beer) {
+        // Safe access to translated text or original data
+        // We use the beer object directly, but we can also look up translations if needed.
+        // For consistent logic, we'll check the 'category' and 'name' properties (English keys usually)
+        // AND also check specific keywords if we had access to the full description text.
+
+        // Since we don't have the full description text easily accessible here without i18n lookup 
+        // (which might vary by language), we will stick to the robust category/name mapping 
+        // PLUS potentially checking the 'specs.clarity' if it existed, but it doesn't.
+        // However, we can use the translation keys logic if we want to be very precise, 
+        // but simple category mapping is safer and faster.
+
         const category = (beer.category || '').toLowerCase();
         const name = (beer.name || '').toLowerCase();
 
-        // Brilliant (0-35 FTU): Lagers, Pilsners, filtered beers
-        if (category.includes('lager') || category.includes('pilsner') ||
-            category.includes('munich') || category.includes('bock') ||
-            name.includes('lager') || name.includes('pilsner')) {
-            return { min: 0, max: 35 };
+        // Level 1: Crystal (Cristalina) - 0-20
+        // Lagers, Pilsners (Industrial/Premium)
+        if ((category.includes('lager') && !category.includes('amber') && !category.includes('dark')) ||
+            category.includes('pilsner') || category.includes('light lager') ||
+            category.includes('helles') || category.includes('kolsch') || category.includes('kölsch')) {
+            return 1;
         }
 
-        // Almost Brilliant (35-69 FTU): Light ales, pale ales
-        if (category.includes('pale ale') || category.includes('ipa') ||
-            category.includes('amber') || category.includes('blonde')) {
-            return { min: 35, max: 69 };
-        }
-
-        // Slightly Hazy (69-138 FTU): Some ales, kellerbier
-        if (category.includes('ale') || category.includes('keller') ||
-            category.includes('bitter')) {
-            return { min: 69, max: 138 };
-        }
-
-        // Hazy (138-276 FTU): Wheat beers, hefeweizen, witbier
+        // Level 4: Cloudy (Turva) - Wheat beers
         if (category.includes('wheat') || category.includes('weizen') ||
             category.includes('wit') || name.includes('hefe') ||
-            name.includes('weiss') || name.includes('wheat')) {
-            return { min: 138, max: 276 };
+            name.includes('weiss')) {
+            return 4;
         }
 
-        // Opaque (>276 FTU): Stouts, porters, dark beers
+        // Level 5: Opaque (Opaca) - Stouts, Porters
         if (category.includes('stout') || category.includes('porter') ||
-            category.includes('dark') || category.includes('black') ||
-            name.includes('stout') || name.includes('porter')) {
-            return { min: 276, max: 500 };
+            category.includes('schwarzbier') || category.includes('dunkel') ||
+            category.includes('bock')) { // Bocks are often dark/clear but treated as opaque/dark contextually or check SRM
+            // Actually Bocks can be clear (Level 2/3) or Dark... 
+            // Let's refine:
+            if (category.includes('bock') && !category.includes('doppel')) return 2; // Maibock/Helles Bock
+            return 5;
         }
 
-        // Default: show in all clarity filters
-        return { min: 0, max: 500 };
+        // Level 3: Foggy (Velada) - IPAs, Pale Ales (The "Craft" look)
+        if (category.includes('ipa') || category.includes('pale ale') ||
+            category.includes('bitter') || category.includes('amber') ||
+            (category.includes('ale') && !category.includes('dark'))) {
+            return 3;
+        }
+
+        // Level 2: Brilliant (Brilhante) - Default fallback for "Good Clarity"
+        // Blonde Ales, Cream Ales, etc.
+        return 2;
     }
 
     // Combined filter function
@@ -134,10 +146,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
 
         // Apply Clarity/FTU filter
-        if (currentFtuFilter.min > 0 || currentFtuFilter.max < 500) {
+        if (currentFtuFilter && currentFtuFilter.level) {
             filteredBeers = filteredBeers.filter(beer => {
-                const beerClarity = getBeerClarityLevel(beer);
-                return ReferenceRulers.rangesOverlap(beerClarity, currentFtuFilter);
+                const beerLevel = getBeerClarityLevel(beer);
+                return beerLevel === currentFtuFilter.level;
             });
         }
 
@@ -205,15 +217,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         const sidebarBadgesHtml = Array.from(existingSidebarBadges).map(b => b.outerHTML).join('');
 
         let badges = [];
-        const hasActiveFilters = srmFilter.min > 1 || srmFilter.max < 100 ||
-            ftuFilter.min > 0 || ftuFilter.max < 500;
+        const hasActiveFilters = (srmFilter.min > 1 || srmFilter.max < 100) ||
+            (ftuFilter && ftuFilter.level);
 
         if (srmFilter.min > 1 || srmFilter.max < 100) {
             badges.push(`<span class="active-filter-badge ruler-badge"><strong>SRM:</strong> ${srmLabel || `${srmFilter.min}-${srmFilter.max}`}</span>`);
         }
 
-        if (ftuFilter.min > 0 || ftuFilter.max < 500) {
-            badges.push(`<span class="active-filter-badge ruler-badge"><strong>FTU:</strong> ${ftuLabel || `${ftuFilter.min}-${ftuFilter.max}`}</span>`);
+        if (ftuFilter && ftuFilter.level) {
+            badges.push(`<span class="active-filter-badge ruler-badge"><strong>FTU:</strong> ${ftuLabel}</span>`);
         }
 
         container.innerHTML = badges.join('') + sidebarBadgesHtml;

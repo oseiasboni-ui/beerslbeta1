@@ -2668,22 +2668,26 @@ export const translations = {
         "ruler.clarity_suffix": "",
 
         // Colors
+        "color.pale": "Pálida",
         "color.straw": "Palha",
         "color.yellow": "Amarelo",
         "color.gold": "Dourado",
+        "color.deep_gold": "Dourado Profundo",
         "color.amber": "Âmbar",
-        "color.copper": "Cobre / Âmbar Escuro",
+        "color.deep_amber": "Âmbar Profundo",
+        "color.copper": "Cobre / Vermelho",
+        "color.deep_copper": "Cobre Profundo",
         "color.brown": "Marrom",
         "color.dark_brown": "Marrom Escuro",
+        "color.dark": "Escura / Preta",
         "color.black": "Preto",
 
         // Clarity Levels
+        "clarity.crystal": "Cristalina",
         "clarity.brilliant": "Brilhante",
-        "clarity.almost_brilliant": "Quase Brilhante",
-        "clarity.very_slightly_hazy": "Muito Levemente Turva",
-        "clarity.slightly_hazy": "Levemente Turva",
-        "clarity.hazy": "Turva",
-        "clarity.opaque": "Opaca / Turvação Intensa",
+        "clarity.foggy": "Velada",
+        "clarity.cloudy": "Turva",
+        "clarity.opaque": "Opaca",
 
         // Footer
         "footer.tagline": "Sua biblioteca de estilos de cerveja",
@@ -5377,22 +5381,26 @@ export const translations = {
         "ruler.clarity_suffix": "Scale",
 
         // Colors
+        "color.pale": "Pale",
         "color.straw": "Straw",
         "color.yellow": "Yellow",
         "color.gold": "Gold",
+        "color.deep_gold": "Deep Gold",
         "color.amber": "Amber",
-        "color.copper": "Copper / Deep Amber",
+        "color.deep_amber": "Deep Amber",
+        "color.copper": "Copper / Red",
+        "color.deep_copper": "Deep Copper",
         "color.brown": "Brown",
         "color.dark_brown": "Dark Brown",
+        "color.dark": "Dark / Black",
         "color.black": "Black",
 
         // Clarity Levels
+        "clarity.crystal": "Crystal",
         "clarity.brilliant": "Brilliant",
-        "clarity.almost_brilliant": "Almost Brilliant",
-        "clarity.very_slightly_hazy": "Very Slightly Hazy",
-        "clarity.slightly_hazy": "Slightly Hazy",
-        "clarity.hazy": "Hazy",
-        "clarity.opaque": "Turbid / Opaque",
+        "clarity.foggy": "Foggy",
+        "clarity.cloudy": "Cloudy",
+        "clarity.opaque": "Opaque",
 
         // Footer
         "footer.tagline": "Your beer styles library",
@@ -8139,22 +8147,26 @@ export const translations = {
         "ruler.clarity_suffix": "skala",
 
         // Colors
+        "color.pale": "Blass",
         "color.straw": "Strohgelb",
         "color.yellow": "Gelb",
-        "color.gold": "Gold / Goldgelb",
+        "color.gold": "Gold",
+        "color.deep_gold": "Tiefgold",
         "color.amber": "Bernstein",
-        "color.copper": "Kupfer / Dunkelbernstein",
+        "color.deep_amber": "Tiefbernstein",
+        "color.copper": "Kupfer / Rot",
+        "color.deep_copper": "Tiefkupfer",
         "color.brown": "Braun",
         "color.dark_brown": "Dunkelbraun",
+        "color.dark": "Dunkel / Schwarz",
         "color.black": "Schwarz",
 
         // Clarity Levels
-        "clarity.brilliant": "Glanzfein",
-        "clarity.almost_brilliant": "Fast glanzfein",
-        "clarity.very_slightly_hazy": "Ganz leicht trüb",
-        "clarity.slightly_hazy": "Leicht trüb",
-        "clarity.hazy": "Trüb / Naturtrüb",
-        "clarity.opaque": "Sehr trüb / Blickdicht",
+        "clarity.crystal": "Kristallklar",
+        "clarity.brilliant": "Brillant",
+        "clarity.foggy": "Verschleiert",
+        "clarity.cloudy": "Trüb",
+        "clarity.opaque": "Blickdicht",
 
         // Footer
         "footer.tagline": "Ihre Bierstil-Bibliothek",
