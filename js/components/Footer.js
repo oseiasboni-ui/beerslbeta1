@@ -39,10 +39,6 @@ export class Footer {
                         <a href="contact.html" data-i18n="footer.contact">${i18n.t('footer.contact')}</a>
                         <a href="top-brands.html" data-i18n="footer.top_brands">${i18n.t('footer.top_brands')}</a>
                     </div>
-                    <div class="footer-column">
-                        <h4>Admin</h4>
-                        <a href="admin.html">🔐 Painel</a>
-                    </div>
                 </div>
 
                 <div class="footer-right-section">

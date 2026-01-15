@@ -52,22 +52,22 @@ export class Grid {
 
         return `
                 <div class="beer-card" data-id="${beer.id}">
-                    <div class="card-header" style="background-color: ${beer.appearance?.colorHex || '#34495e'}">
+                    <div class="card-header" style="background-color: #ffffff;">
                         ${imageUrl ? `
                             <img src="${imageUrl}" alt="${displayName}" class="card-beer-image" style="width: 100%; height: 100%; object-fit: cover;">
                     ` : `
                         <span class="beer-glass-icon">🍺</span>
                     `}
                 </div>
-                <div class="card-body">
+                <div class="card-body" style="background-color: ${beer.appearance?.colorHex || '#34495e'}">
                     <div class="card-body-header">
-                        <h3>${displayName}</h3>
+                        <h3 style="color: white; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">${displayName}</h3>
                         <span class="card-origin-flag">${beer.origin || '🌍'}</span>
                     </div>
-                    <div class="family">${i18n.t('sidebar.' + fermentationType.toLowerCase())}</div>
+                    <div class="family" style="color: rgba(255,255,255,0.9);">${i18n.t('sidebar.' + fermentationType.toLowerCase())}</div>
                     <div class="card-stats">
-                        <span class="stat-badge">ABV: ${beer.abv || '?'}</span>
-                        <span class="stat-badge">IBU: ${beer.specs?.ibu || '?'}</span>
+                        <span class="stat-badge" style="background: rgba(255,255,255,0.2); color: white;">ABV: ${beer.abv || '?'}</span>
+                        <span class="stat-badge" style="background: rgba(255,255,255,0.2); color: white;">IBU: ${beer.specs?.ibu || '?'}</span>
                     </div>
                 </div>
             </div>
