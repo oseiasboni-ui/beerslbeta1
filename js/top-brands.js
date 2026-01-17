@@ -69,7 +69,7 @@ function populateFilters() {
             </div>
             <div class="dropdown-menu" id="country-menu">
                 <div class="dropdown-search-wrapper">
-                    <input type="text" class="dropdown-search" id="country-search" placeholder="${i18n.t('filters.search_country') || 'Pesquisar país...'}" autocomplete="off">
+                    <input type="text" class="dropdown-search" id="country-search" placeholder="" autocomplete="off">
                 </div>
                 <div class="dropdown-list" id="country-list">
                     <div class="dropdown-item selected" data-value="all">${i18n.t('filters.country_all') || 'Todos os Países'}</div>
@@ -151,7 +151,7 @@ function populateFilters() {
             </div>
             <div class="dropdown-menu" id="parent-menu">
                 <div class="dropdown-search-wrapper">
-                    <input type="text" class="dropdown-search" id="parent-search" placeholder="${i18n.t('filters.search_parent') || 'Pesquisar empresa...'}" autocomplete="off">
+                    <input type="text" class="dropdown-search" id="parent-search" placeholder="" autocomplete="off">
                 </div>
                 <div class="dropdown-list" id="parent-list">
                     <div class="dropdown-item selected" data-value="all">${i18n.t('filters.parent_all') || 'Todas as Empresas'}</div>
@@ -426,7 +426,9 @@ function initializeInteractions() {
         mainContainer.addEventListener('click', (e) => {
             const btn = e.target.closest('.edit-image-btn');
             if (btn) {
-                const beerName = btn.dataset.beer;
+                // Get beer name from parent .brand-item to avoid escaping issues
+                const brandItem = btn.closest('.brand-item');
+                const beerName = brandItem ? brandItem.dataset.beer : btn.dataset.beer;
                 currentUploadBeer = beerName;
 
                 const fileInput = document.getElementById('brand-image-input');
