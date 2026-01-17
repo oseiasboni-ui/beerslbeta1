@@ -33,11 +33,13 @@
            ======================================== */
         .dashboard-hero {
             background: linear-gradient(120deg, #fff7ed 0%, #ffffff 60%, #fff7ed 100%);
-            padding: 4rem 2rem;
+            padding: 1.5rem 2rem;
             position: relative;
             overflow: hidden;
             border-bottom: 1px solid rgba(253, 186, 116, 0.3);
-            min-height: 700px;
+            min-height: auto;
+            height: auto;
+            flex-shrink: 0;
             display: flex;
             align-items: center;
         }
@@ -187,7 +189,7 @@
             .hero-content {
                 flex-direction: column;
                 text-align: center;
-                padding: 2rem 0;
+                padding: 1.5rem 0;
             }
 
             .hero-text {
