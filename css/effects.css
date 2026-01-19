@@ -1,0 +1,491 @@
+/* =========================================
+   MODERN VISUAL EFFECTS SYSTEM
+   ========================================= */
+
+:root {
+    --cursor-size: 20px;
+    --cursor-hover-size: 60px;
+    --color-primary-glow: rgba(230, 126, 34, 0.6);
+    --color-secondary-glow: rgba(52, 152, 219, 0.6);
+    --ease-elastic: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    --ease-expo: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* 1. SMOOTH SCROLL & SELECTION */
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: var(--color-primary);
+    color: #fff;
+    text-shadow: 0 0 10px rgba(230, 126, 34, 0.5);
+}
+
+/* 2. NOISE OVERLAY */
+.noise-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    mix-blend-mode: overlay;
+}
+
+/* 3. CUSTOM CURSOR - DISABLED
+@media (pointer: fine) {
+    body {
+        cursor: none;
+    }
+
+    .custom-cursor {
+        position: fixed;
+        width: var(--cursor-size);
+        height: var(--cursor-size);
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 10000;
+        transform: translate(-50%, -50%);
+        transition: width 0.3s var(--ease-expo),
+            height 0.3s var(--ease-expo),
+            background-color 0.3s var(--ease-expo),
+            mix-blend-mode 0.3s;
+        mix-blend-mode: difference;
+    }
+
+    .custom-cursor.hovered {
+        width: var(--cursor-hover-size);
+        height: var(--cursor-hover-size);
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        mix-blend-mode: normal;
+        backdrop-filter: blur(2px);
+    }
+
+    .custom-cursor.text-mode {
+        width: 4px;
+        height: 30px;
+        border-radius: 2px;
+        background: var(--color-primary);
+        mix-blend-mode: normal;
+    }
+}
+*/
+
+/* 4. SCROLL REVEAL UTILITIES */
+/* 4. SCROLL REVEAL & ANIMATIONS (User Specs) */
+:root {
+    --anim-duration: 1000ms;
+    --anim-ease: cubic-bezier(0.5, 0, 0, 1);
+    --anim-distance: 60px;
+    --anim-distance-long: 100px;
+}
+
+/* Base Reveal Class */
+.reveal-base {
+    opacity: 0;
+    transition: opacity var(--anim-duration) ease, transform var(--anim-duration) var(--anim-ease);
+    will-change: opacity, transform;
+}
+
+.revealed {
+    opacity: 1 !important;
+    transform: translate(0, 0) scale(1) rotate(0) !important;
+}
+
+/* Fade Up (Hero Title, Subtitle, Cards) */
+.fade-up {
+    opacity: 0;
+    transform: translateY(var(--anim-distance));
+}
+
+/* Fade Down (Section Titles) */
+.fade-down {
+    opacity: 0;
+    transform: translateY(calc(var(--anim-distance) * -1));
+}
+
+/* Fade Right (Text Left -> Right) */
+.fade-right {
+    opacity: 0;
+    transform: translateX(calc(var(--anim-distance) * -1));
+}
+
+/* Fade Left (Text Right -> Left) */
+.fade-left {
+    opacity: 0;
+    transform: translateX(var(--anim-distance));
+}
+
+/* Long Fade Right (Images) */
+.fade-right-long {
+    opacity: 0;
+    transform: translateX(calc(var(--anim-distance-long) * -1));
+}
+
+/* Long Fade Left (Images) */
+.fade-left-long {
+    opacity: 0;
+    transform: translateX(var(--anim-distance-long));
+}
+
+/* Swing (Badges) */
+.swing-in {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+    /* Start hinged back */
+}
+
+.swing-in.revealed {
+    animation: swingDrop var(--anim-duration) var(--anim-ease) forwards;
+}
+
+@keyframes swingDrop {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+
+    40% {
+        opacity: 1;
+        transform: rotateX(20deg);
+    }
+
+    60% {
+        transform: rotateX(-10deg);
+    }
+
+    80% {
+        transform: rotateX(5deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+/* Zoom In (Machines - Steps 10 & 12) */
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.85);
+}
+
+/* Bounce Infinite (Scroll Icon) - DISABLED */
+.bounce-infinite {
+    /* animation: bounce 2s infinite; */
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* 5. ADVANCED PHYSICS ANIMATIONS (Menu) */
+
+/* 1. Pendulum Swing (Badges) */
+.swing-pendulum {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateZ(25deg);
+    transition: opacity 1.5s ease-out, transform 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 2. Elastic Slide Up (Important Titles) */
+.elastic-slide-up {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 1.1s ease-out, transform 1.1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* 3. 3D Perspective Tilt (Machine Images) */
+.tilt-3d {
+    opacity: 0;
+    transform-origin: bottom center;
+    transform: perspective(1000px) rotateX(60deg) scale(0.9);
+    transition: opacity 1.2s ease, transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* 4. Horizontal Snap (Aggressive Zig-Zag) */
+.snap-right {
+    opacity: 0;
+    transform: translateX(-150px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.snap-left {
+    opacity: 0;
+    transform: translateX(150px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* 5. Zoom Out Reveal (Final Section) */
+.zoom-out-reveal {
+    opacity: 0;
+    transform: scale(1.2);
+    transition: opacity 1.4s ease-in-out, transform 1.4s ease-in-out;
+}
+
+/* Utilities */
+.delay-200 {
+    transition-delay: 200ms;
+    animation-delay: 200ms;
+}
+
+
+/* Stagger delays */
+.delay-100 {
+    transition-delay: 0.1s;
+}
+
+.delay-200 {
+    transition-delay: 0.2s;
+}
+
+.delay-300 {
+    transition-delay: 0.3s;
+}
+
+.delay-400 {
+    transition-delay: 0.4s;
+}
+
+/* Staggered Children Animation */
+.stagger-container .stagger-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s var(--ease-expo);
+}
+
+.stagger-container.revealed .stagger-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stagger-container.revealed .stagger-1 {
+    transition-delay: 0.1s;
+}
+
+.stagger-container.revealed .stagger-2 {
+    transition-delay: 0.2s;
+}
+
+.stagger-container.revealed .stagger-3 {
+    transition-delay: 0.3s;
+}
+
+.stagger-container.revealed .stagger-4 {
+    transition-delay: 0.4s;
+}
+
+
+/* 5. PARALLAX & HERO FX */
+.parallax-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.parallax-layer {
+    will-change: transform;
+}
+
+/* 6. GLASSMORPHISM ENHANCED */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* 7. MICRO-INTERACTIONS */
+/* Ripple Effect */
+.btn-ripple {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Magnetic Button (Structure) */
+.magnetic-wrap {
+    display: inline-block;
+    position: relative;
+}
+
+.magnetic-area {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    z-index: 10;
+}
+
+/* 8. 3D TILT EFFECT */
+.tilt-card {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.tilt-inner {
+    transform: translateZ(20px);
+}
+
+/* 9. PAGE TRANSITIONS */
+.page-transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0f0f0f;
+    z-index: 99999;
+    transform: scaleY(0);
+    transform-origin: top;
+    pointer-events: none;
+    transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.page-transition-overlay.active {
+    transform: scaleY(1);
+}
+
+/* 10. ANIMATED GRADIENTS */
+.animated-gradient-text {
+    background: linear-gradient(270deg, #e67e22, #f1c40f, #e74c3c, #e67e22);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-flow 6s ease infinite;
+}
+
+@keyframes gradient-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* 11. PARTICLES (ATMOSPHERIC) */
+.particle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.particle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    bottom: -10px;
+    animation: rise 4s infinite ease-in;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(-100px) scale(0);
+        opacity: 0;
+    }
+}
+
+/* Steam Effect specific */
+.steam-particle {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, transparent 70%);
+    filter: blur(5px);
+    animation: steam-rise 3s infinite linear;
+}
+
+@keyframes steam-rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateY(-150px) scale(3);
+        opacity: 0;
+    }
+}
+
+/* Bubble Effect specific */
+.bubble-particle {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: radial-gradient(circleAt 30% 30%, rgba(255, 255, 255, 0.8), transparent);
+    animation: bubble-rise 5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes bubble-rise {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(-300px) translateX(20px);
+        opacity: 0;
+    }
+}

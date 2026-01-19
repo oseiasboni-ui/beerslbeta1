@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeerStylesLibrary | Produção de Cerveja</title>
+    <meta name="description"
+        content="Guia completo sobre o processo de produção de cerveja, desde os ingredientes até o controle de qualidade.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css?v=46">
+    <link rel="stylesheet" href="css/styles.css?v=46">
+    <link rel="stylesheet" href="css/effects.css?v=1">
+
+    <link rel="stylesheet" href="css/producao.css?v=1">
+
+    <script type="module" src="js/app.js" defer></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header moved outside for sticky behavior -->
+        <header id="main-header" class="main-header">
+            <div class="header-left">
+                <a href="index.html" class="header-logo">
+                    <span class="logo-text">Beer<span class="logo-accent">SL</span></span>
+                </a>
+            </div>
+            <div class="header-nav-pills">
+                <nav class="nav-pills">
+                    <a href="index.html" class="nav-pill">
+                        📊 <span data-i18n="nav.styles">Estilos</span>
+                    </a>
+                    <a href="top-brands.html" class="nav-pill">
+                        🍺 <span data-i18n="nav.brands">Top Brands</span>
+                    </a>
+                    <a href="producao.html" class="nav-pill active">
+                        🏭 <span data-i18n="nav.production">Produção</span>
+                    </a>
+                    <a href="about.html" class="nav-pill">
+                        ℹ️ <span data-i18n="nav.about">Sobre</span>
+                    </a>
+                    <a href="contact.html" class="nav-pill">
+                        📧 <span data-i18n="nav.contact">Contato</span>
+                    </a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <button class="menu-toggle" id="menu-toggle" onclick="window.beerslOpenMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <div class="app-container">
+            <!-- Header was here -->
+
+            <!-- Main Content -->
+            <main class="producao-main">
+                <!-- Hero Section - Editorial/Historical -->
+                <section class="producao-hero">
+                    <div class="hero-content">
+                        <h1 class="hero-title" data-i18n="production.hero.title">A História da Cerveja</h1>
+                        <p id="text-carousel" class="hero-dynamic-text">Onde tradição e ciência se encontram para criar
+                            sabores inesquecíveis.</p>
+                    </div>
+                    <!-- Scroll Indicator -->
+                    <div class="scroll-indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="7 13 12 18 17 13"></polyline>
+                            <polyline points="7 6 12 11 17 6"></polyline>
+                        </svg>
+                    </div>
+                </section>
+
+                <div class="producao-sections">
+                    <section class="ingredientes-section">
+                        <div class="ingredientes-header">
+                            <div class="ingredientes-header-left">
+                                <span class="section-number reveal-base fade-down"
+                                    data-i18n="production.step1.label">Etapa
+                                    1</span>
+                                <h3 class="reveal-base fade-down delay-200" data-i18n="production.step1.title">Os 4
+                                    Elementos
+                                    Fundamentais: A Química da Cerveja Explicada</h3>
+                            </div>
+                            <p class="ingredientes-intro reveal-up delay-200" data-i18n="production.step1.intro">A
+                                produção
+                                da cerveja se baseia em quatro ingredientes fundamentais. Embora simples em aparência,
+                                cada
+                                um possui funções específicas e influencia diretamente o perfil sensorial, a
+                                estabilidade e
+                                a identidade da cerveja final.</p>
+                        </div>
+
+                        <div class="ingredientes-grid">
+                            <!-- Malte Card -->
+                            <div class="ingrediente-card">
+                                <div class="ingrediente-card-image">
+                                    <img src="img/producao/new_malt.jpg?v=2" alt="Grãos de malte dourados"
+                                        loading="lazy">
+                                    <div class="ingrediente-card-overlay"></div>
+                                </div>
+                                <div class="ingrediente-card-content">
+                                    <div class="ingrediente-icon">🌾</div>
+                                    <h4 data-i18n="production.ing.malt.title">Malte</h4>
+                                    <p class="ingrediente-subtitle" data-i18n="production.ing.malt.subtitle">A Fonte dos
+                                        Açúcares</p>
+                                    <ul class="ingrediente-details">
+                                        <li><strong data-i18n="label.origin">Origem</strong>: <span
+                                                data-i18n="production.ing.malt.origin">Cevada maltada</span></li>
+                                        <li><strong data-i18n="label.function">Função</strong>: <span
+                                                data-i18n="production.ing.malt.function">Açúcares fermentáveis</span>
+                                        </li>
+                                        <li><strong data-i18n="label.contributes">Contribui</strong>: <span
+                                                data-i18n="production.ing.malt.contributes">Cor, corpo, aromas</span>
+                                        </li>
+                                        <li><strong data-i18n="label.profile">Perfil</strong>: <span
+                                                data-i18n="production.ing.malt.profile">Pão, biscoito, caramelo,
+                                                café</span>
+                                        </li>
+                                    </ul>
+                                    <p class="ingrediente-desc" data-i18n="production.ing.malt.desc">Define a estrutura
+                                        da
+                                        cerveja. Dependendo do grau de torra, varia de notas suaves de pão até intensos
+                                        tons
+                                        de café e chocolate.</p>
+                                </div>
+                                <div class="ingrediente-glow"></div>
+                            </div>
+
+                            <!-- Lúpulo Card -->
+                            <div class="ingrediente-card">
+                                <div class="ingrediente-card-image">
+                                    <img src="img/producao/new_hops.jpg?v=2" alt="Cones de lúpulo verde" loading="lazy">
+                                    <div class="ingrediente-card-overlay lupulo-overlay"></div>
+                                </div>
+                                <div class="ingrediente-card-content">
+                                    <div class="ingrediente-icon">🌿</div>
+                                    <h4 data-i18n="production.ing.hops.title">Lúpulo</h4>
+                                    <p class="ingrediente-subtitle" data-i18n="production.ing.hops.subtitle">O
+                                        Equilíbrio
+                                        Aromático</p>
+                                    <ul class="ingrediente-details">
+                                        <li><strong data-i18n="label.origin">Origem</strong>: <span
+                                                data-i18n="production.ing.hops.origin">Flores de Humulus lupulus</span>
+                                        </li>
+                                        <li><strong data-i18n="label.function">Função</strong>: <span
+                                                data-i18n="production.ing.hops.function">Amargor e aroma</span></li>
+                                        <li><strong data-i18n="label.contributes">Contribui</strong>: <span
+                                                data-i18n="production.ing.hops.contributes">Preservação natural</span>
+                                        </li>
+                                        <li><strong data-i18n="label.profile">Perfil</strong>: <span
+                                                data-i18n="production.ing.hops.profile">Floral, cítrico, herbal,
+                                                resinoso</span></li>
+                                    </ul>
+                                    <p class="ingrediente-desc" data-i18n="production.ing.hops.desc">Seus ácidos alfa
+                                        fornecem amargor, enquanto óleos essenciais definem aromas únicos. Também possui
+                                        propriedades antimicrobianas.</p>
+                                </div>
+                                <div class="ingrediente-glow lupulo-glow"></div>
+                            </div>
+
+                            <!-- Levedura Card -->
+                            <div class="ingrediente-card">
+                                <div class="ingrediente-card-image">
+                                    <img src="img/producao/new_yeast.jpg?v=2" alt="Processo de fermentação"
+                                        loading="lazy">
+                                    <div class="ingrediente-card-overlay levedura-overlay"></div>
+                                </div>
+                                <div class="ingrediente-card-content">
+                                    <div class="ingrediente-icon">🧬</div>
+                                    <h4 data-i18n="production.ing.yeast.title">Levedura</h4>
+                                    <p class="ingrediente-subtitle" data-i18n="production.ing.yeast.subtitle">O Agente
+                                        Vivo
+                                    </p>
+                                    <ul class="ingrediente-details">
+                                        <li><strong data-i18n="label.origin">Origem</strong>: <span
+                                                data-i18n="production.ing.yeast.origin">Saccharomyces cerevisiae</span>
+                                        </li>
+                                        <li><strong data-i18n="label.function">Função</strong>: <span
+                                                data-i18n="production.ing.yeast.function">Fermentação</span></li>
+                                        <li><strong data-i18n="label.contributes">Contribui</strong>: <span
+                                                data-i18n="production.ing.yeast.contributes">Álcool, CO₂, aromas</span>
+                                        </li>
+                                        <li><strong data-i18n="label.types">Tipos</strong>: <span
+                                                data-i18n="production.ing.yeast.types">Ale (alta) | Lager (baixa)</span>
+                                        </li>
+                                    </ul>
+                                    <p class="ingrediente-desc" data-i18n="production.ing.yeast.desc">Microrganismo vivo
+                                        que
+                                        converte açúcares em álcool e CO₂, produzindo ésteres e fenóis que moldam o
+                                        perfil
+                                        aromático.</p>
+                                </div>
+                                <div class="ingrediente-glow levedura-glow"></div>
+                            </div>
+
+                            <!-- Água Card -->
+                            <div class="ingrediente-card">
+                                <div class="ingrediente-card-image">
+                                    <img src="img/producao/new_water.jpg?v=2" alt="Água cristalina" loading="lazy">
+                                    <div class="ingrediente-card-overlay agua-overlay"></div>
+                                </div>
+                                <div class="ingrediente-card-content">
+                                    <div class="ingrediente-icon">💧</div>
+                                    <h4 data-i18n="production.ing.water.title">Água</h4>
+                                    <p class="ingrediente-subtitle" data-i18n="production.ing.water.subtitle">A Base
+                                        Essencial</p>
+                                    <ul class="ingrediente-details">
+                                        <li><strong data-i18n="label.composition">Composição</strong>: <span
+                                                data-i18n="production.ing.water.composition">+90% da cerveja</span></li>
+                                        <li><strong data-i18n="label.function">Função</strong>: <span
+                                                data-i18n="production.ing.water.function">Meio de reação</span></li>
+                                        <li><strong data-i18n="label.contributes">Contribui</strong>: <span
+                                                data-i18n="production.ing.water.contributes">pH e perfil mineral</span>
+                                        </li>
+                                        <li><strong data-i18n="label.influence">Influência</strong>: <span
+                                                data-i18n="production.ing.water.influence">Textura e percepção</span>
+                                        </li>
+                                    </ul>
+                                    <p class="ingrediente-desc" data-i18n="production.ing.water.desc">Influencia o pH, a
+                                        eficiência das reações químicas e a percepção de sabor por meio de sua
+                                        composição
+                                        mineral única.</p>
+                                </div>
+                                <div class="ingrediente-glow agua-glow"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 2: Moagem -->
+                    <section class="producao-section reverse">
+                        <div class="section-image reveal-base fade-left-long delay-200">
+                            <img src="img/producao/moagem.png"
+                                alt="Grãos de malte moídos com casca intacta e interior exposto" loading="lazy">
+                        </div>
+                        <div class="section-content">
+                            <span class="section-number swing-pendulum reveal-base"
+                                data-i18n="production.step2.label">Etapa
+                                2</span>
+                            <div class="reveal-base fade-right">
+                                <h3 data-i18n="production.step2.title">Moagem — Preparação do
+                                    Malte</h3>
+                                <p data-i18n="production.step2.p1">A moagem é o pilar inicial da eficiência cervejeira.
+                                    A
+                                    meta é expor o endosperma rico em amido do grão sem pulverizar a casca. Se os grãos
+                                    forem quebrados muito finos, formam-se gomas que entopem o sistema; se muito
+                                    grossos, o
+                                    rendimento cai drasticamente.</p>
+                                <p data-i18n="production.step2.p2">A preservação da casca é vital, pois ela formará o
+                                    leito
+                                    filtrante natural nas etapas seguintes, garantindo um mosto límpido e fluido. O
+                                    ajuste
+                                    milimétrico dos rolos do moinho define o sucesso de toda a brassagem, equilibrando
+                                    extração máxima com fluidez operacional.</p>
+                                <p data-i18n="production.step2.p3">Apesar de parecer mecânico, este ajuste define
+                                    diretamente a clareza, a eficiência e a estabilidade sensorial da cerveja final.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 3: Mosturação -->
+                    <section class="producao-section">
+                        <div class="section-image reveal-base fade-right-long">
+                            <img src="img/producao/mosturacao.png"
+                                alt="Tina de mosturação em aço inox com vapor e termômetro" loading="lazy">
+                        </div>
+                        <div class="section-content">
+                            <span class="section-number swing-pendulum reveal-base"
+                                data-i18n="production.step3.label">Etapa
+                                3</span>
+                            <div class="reveal-base fade-left delay-200">
+                                <h3 data-i18n="production.step3.title">Mosturação — Conversão de Amido em Açúcar</h3>
+                                <p data-i18n="production.step3.p1">Aqui ocorre a mágica bioquímica: a mistura de malte e
+                                    água é mantida em temperaturas precisas para ativar enzimas específicas. As
+                                    alfa-amilases criam açúcares complexos (dextrinas) que dão corpo à cerveja, enquanto
+                                    as
+                                    beta-amilases produzem maltose fermentável para o álcool.</p>
+                                <p data-i18n="production.step3.p2">O controle de pH e a proporção água/grão também são
+                                    críticos. É neste estágio que o cervejeiro define se a cerveja será encorpada e doce
+                                    ou
+                                    seca e alcoólica, manipulando apenas o termômetro. Rampas de temperatura escalonadas
+                                    permitem ativar múltiplas enzimas sequencialmente para refinar o perfil do mosto.
+                                </p>
+                                <p data-i18n="production.step3.p3">Essa etapa define a "assinatura" estrutural da
+                                    cerveja,
+                                    exigindo precisão absoluta, pois erros de temperatura aqui são irreversíveis no
+                                    produto
+                                    final.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 4: Clarificação -->
+                    <section class="producao-section reverse">
+                        <div class="section-image reveal-base fade-left-long delay-200">
+                            <img src="img/producao/clarificacao.png" alt="Mosto dourado sendo drenado lentamente"
+                                loading="lazy">
+                        </div>
+                        <div class="section-content">
+                            <span class="section-number swing-pendulum reveal-base"
+                                data-i18n="production.step4.label">Etapa
+                                4</span>
+                            <div class="reveal-base fade-right">
+                                <h3 data-i18n="production.step4.title">Clarificação — Separação do Mosto</h3>
+                                <p data-i18n="production.step4.p1">Após a conversão, é necessário separar o mosto doce
+                                    do
+                                    bagaço exaurido. O processo, chamado de recirculação ou vorlauf, utiliza a própria
+                                    camada de cascas como filtro. O mosto é drenado e devolvido ao topo até que saia
+                                    cristalino e brilhante.</p>
+                                <p data-i18n="production.step4.p2">Em seguida, água quente é aspergida (sparging) sobre
+                                    os
+                                    grãos para "lavar" e extrair os açúcares residuais. Essa lavagem deve ser
+                                    interrompida
+                                    no momento exato e com pH controlado para evitar a extração de taninos da casca, que
+                                    causariam uma adstringência áspera e indesejada na cerveja.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Pipeline SVG Container -->
+                <div id="production-pipeline-container" class="production-pipeline-svg">
+                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                        <path id="pipeline-path" d="" stroke="#e67e22" stroke-width="4" fill="none"
+                            stroke-dasharray="10 10" opacity="0.3" />
+                        <path id="pipeline-path-fill" d="" stroke="#e67e22" stroke-width="4" fill="none"
+                            stroke-dasharray="0" opacity="1" />
+                    </svg>
+                </div>
+
+                <div class="producao-sections">
+                    <!-- Section 5: Fervura -->
+                    <section class="producao-section" id="step-fervura">
+                        <div class="section-image reveal-base fade-right-long">
+                            <img src="img/producao/fervura.png" alt="Caldeira em fervura intensa com vapor abundante"
+                                loading="lazy">
+                        </div>
+                        <div class="section-content">
+                            <span class="section-number swing-pendulum reveal-base"
+                                data-i18n="production.step5.label">Etapa
+                                5</span>
+                            <div class="reveal-base fade-left delay-200">
+                                <h3 data-i18n="production.step5.title">Fervura — Esterilização e Lupulagem</h3>
+                                <p data-i18n="production.step5.p1">O mosto ferve vigorosamente, processo vital para
+                                    esterilização e estabilização. Além de isomerizar os alfa-ácidos do lúpulo para
+                                    gerar
+                                    amargor, a fervura provoca a coagulação de proteínas indesejadas (trub quente) e
+                                    evapora
+                                    compostos voláteis nocivos como o DMS (aroma de milho).</p>
+                                <p data-i18n="production.step5.p2">É um processo de concentração e alquimia. O momento
+                                    da
+                                    adição do lúpulo é calculado: no início para amargor, no meio para sabor e no final
+                                    para
+                                    aroma. Adições tardias preservam óleos essenciais delicados que se perderiam com o
+                                    calor
+                                    excessivo, definindo o perfil aromático.</p>
+                                <p data-i18n="production.step5.p3">A vigorosidade da fervura também garante a
+                                    precipitação
+                                    correta de complexos proteína-polifenol, essencial para a estabilidade coloidal
+                                    futura.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 6: Resfriamento -->
+                    <section class="producao-section reverse">
+                        <div class="section-image reveal-base fade-left-long delay-200">
+                            <img src="img/producao/resfriamento.png" alt="Trocador de calor industrial em aço inox"
+                                loading="lazy">
+                        </div>
+                        <div class="section-content">
+                            <span class="section-number swing-pendulum reveal-base"
+                                data-i18n="production.step6.label">Etapa
+                                6</span>
+                            <div class="reveal-base fade-right">
+                                <h3 data-i18n="production.step6.title">Resfriamento — Choque Térmico</h3>
+                                <p data-i18n="production.step6.p1">Encerrada a fervura, o mosto torna-se um meio de
+                                    cultura
+                                    perfeito e altamente vulnerável. O resfriamento deve ser brutalmente rápido,
+                                    descendo de
+                                    100°C para temperaturas de fermentação (10-20°C) em poucos minutos usando trocadores
+                                    de
+                                    calor de alta eficiência.</p>
+                                <p data-i18n="production.step6.p2">Esse choque térmico força a precipitação de mais
+                                    proteínas (trub frio), clareando a cerveja. Imediatamente após, o mosto frio deve
+                                    ser
+                                    oxigenado propositalmente — a única vez que o oxigênio é bem-vindo — para garantir a
+                                    saúde, a reprodução celular e a vitalidade inicial da levedura.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 7: Fermentação -->
+                    <section class="producao-section" id="step-fermentacao">
+                        <div class="section-image reveal-base fade-right-long">
+                            <img src="img/producao/fermentacao.png" alt="Tanques de fermentação em inox alinhados"
+                                loading="lazy">
+                        </div>
+                        <div class="section-content">
+                            <span class="section-number swing-pendulum reveal-base"
+                                data-i18n="production.step7.label">Etapa
+                                7</span>
+                            <div class="reveal-base fade-left delay-200">
+                                <h3 data-i18n="production.step7.title">Fermentação — A Alma da Cerveja</h3>
+                                <p data-i18n="production.step7.p1">No tanque, a levedura assume o comando. Durante dias,
+                                    ela
+                                    consome os açúcares, liberando álcool, CO₂ e calor. Mas sua contribuição vai além:
+                                    ela
+                                    esculpe o perfil sensorial definitivo, produzindo ésteres (frutados) e fenóis
+                                    (condimentados) que caracterizam cada estilo.</p>
+                                <p data-i18n="production.step7.p2">As Ales trabalham no topo, em temperaturas altas,
+                                    criando
+                                    sabores complexos. As Lagers trabalham no fundo, lentamente e no frio, resultando em
+                                    perfis limpos. O cervejeiro monitora a 'atenuação' diariamente; quando a densidade
+                                    estabiliza, a cerveja 'nasceu', mas ainda é jovem e 'verde'.</p>
+                                <p data-i18n="production.step7.p3">O controle preciso de temperatura nesta fase é o
+                                    maior
+                                    diferencial entre uma cerveja caseira amadora e uma profissional de alta qualidade.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 8: Maturação -->
+                    <section class="producao-section reverse">
+                        <div class="section-image reveal-base fade-left-long delay-200">
+                            <img src="img/producao/maturacao.png"
+                                alt="Tanque frio com condensação em atmosfera controlada" loading="lazy">
+                        </div>
+                        <div class="section-content">
+                            <span class="section-number swing-pendulum reveal-base"
+                                data-i18n="production.step8.label">Etapa
+                                8</span>
+                            <div class="reveal-base fade-right">
+                                <h3 data-i18n="production.step8.title">Maturação — Refinamento e Lagering</h3>
+                                <p data-i18n="production.step8.p1">A cerveja verde possui compostos imaturos como
+                                    acetaldeído (maçã verde) e diacetil (manteiga). Na maturação a frio, a levedura
+                                    remanescente reabsorve esses subprodutos, limpando o paladar. Sabores ásperos se
+                                    arredondam e partículas em suspensão decantam.</p>
+                                <p data-i18n="production.step8.p2">É um teste de paciência: apressar essa etapa resulta
+                                    em
+                                    cervejas desequilibradas. O "cold crash" (resfriamento súbito perto de 0°C) finaliza
+                                    o
+                                    processo, aglutinando proteínas e clarificando a bebida. O tempo é o ingrediente
+                                    secreto
+                                    que transforma uma cerveja boa em excepcional.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 9: Filtragem -->
+                    <section class="producao-section">
+                        <div class="section-image reveal-base fade-right-long">
+                            <img src="img/producao/filtragem.jpg" alt="Sistema de filtragem de cerveja industrial"
+                                loading="lazy">
+                        </div>
+                        <div class="section-content">
+                            <span class="section-number swing-pendulum reveal-base"
+                                data-i18n="production.step9.label">Etapa
+                                9</span>
+                            <div class="reveal-base fade-left delay-200">
+                                <h3 data-i18n="production.step9.title">Filtragem — Polimento e Brilho</h3>
+                                <p data-i18n="production.step9.p1">Para garantir brilho e estabilidade, muitas cervejas
+                                    passam por filtragem fina ou centrifugação. Isso remove as últimas células de
+                                    levedura e
+                                    proteínas turvas, resultando em um produto límpido e dourado, essencial para estilos
+                                    como Pilsners internacionais.</p>
+                                <p data-i18n="production.step9.p2">Porém, a filtragem é uma escolha estilística. Estilos
+                                    modernos como Hazy IPAs ou tradicionais como Weissbier e Kellerbier pulam esta etapa
+                                    propositalmente, valorizando a textura aveludada, o corpo denso e a complexidade
+                                    aromática que as proteínas e leveduras em suspensão proporcionam.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 10: Carbonatação -->
+                    <section class="producao-section reverse" id="step-carbonatacao">
+                        <!-- Special Zoom In for Carbonation Machine -->
+                        <div class="section-image reveal-base zoom-in delay-200">
+                            <img src="img/producao/carbonatacao.jpg" alt="Painel de controle de carbonatação forçada"
+                                loading="lazy">
+                        </div>
+                        <div class="section-content">
+                            <span class="section-number swing-pendulum reveal-base"
+                                data-i18n="production.step10.label">Etapa
+                                10</span>
+                            <div class="reveal-base fade-right">
+                                <h3 data-i18n="production.step10.title">Carbonatação — A Vida da Cerveja</h3>
+                                <p data-i18n="production.step10.p1">O gás é o que dá vida e textura à cerveja. Pode ser
+                                    obtido por refermentação na garrafa (método tradicional), onde açúcar extra alimenta
+                                    a
+                                    levedura residual, ou por carbonatação forçada em tanques de pressão (método
+                                    industrial), injetando CO₂ purificado a baixas temperaturas.</p>
+                                <p data-i18n="production.step10.p2">A quantidade de CO₂ dissolvido define o "perlage" e
+                                    a
+                                    persistência da espuma. Uma carbonatação adequada não apenas refresca e limpa o
+                                    paladar,
+                                    mas também volatiliza os aromas, empurrando-os para o nariz a cada gole, sendo vital
+                                    para a experiência sensorial completa.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 11: Envase -->
+                    <section class="producao-section">
+                        <div class="section-image reveal-base fade-right-long">
+                            <img src="img/producao/envase.png"
+                                alt="Linha de envase moderna em ambiente limpo e industrial" loading="lazy">
+                        </div>
+                        <div class="section-content">
+                            <span class="section-number swing-pendulum reveal-base"
+                                data-i18n="production.step11.label">Etapa
+                                11</span>
+                            <div class="reveal-base fade-left delay-200">
+                                <h3 data-i18n="production.step11.title">Envase — A Corrida Contra o Oxigênio</h3>
+                                <p data-i18n="production.step11.p1">A etapa final é crítica. Sistemas modernos de envase
+                                    realizam uma "pré-evacuação" do ar e purgam as garrafas ou latas com CO₂ antes do
+                                    enchimento. O objetivo é evitar qualquer contato com oxigênio, que oxidaria a
+                                    cerveja
+                                    (gosto de papelão) em poucos dias.</p>
+                                <p data-i18n="production.step11.p2">O envase em latas ganhou popularidade por bloquear
+                                    100%
+                                    da luz UV, prevenindo o "lightstruck" (aroma de gambá). Seja em barril, garrafa ou
+                                    lata,
+                                    o objetivo supremo é entregar a cerveja ao copo do consumidor com o mesmo frescor e
+                                    perfil sensorial que o mestre cervejeiro aprovou no tanque.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 12: Controle de Qualidade -->
+                    <section class="producao-section reverse">
+                        <!-- Special Zoom In for Quality Control Machine -->
+                        <div class="section-image reveal-base zoom-in delay-200">
+                            <img src="img/producao/controle-qualidade.png"
+                                alt="Laboratório cervejeiro com equipamentos de análise" loading="lazy">
+                        </div>
+                        <div class="section-content">
+                            <span class="section-number swing-pendulum reveal-base"
+                                data-i18n="production.step12.label">Etapa
+                                12</span>
+                            <div class="reveal-base fade-right">
+                                <h3 data-i18n="production.step12.title">Controle de Qualidade — A Garantia</h3>
+                                <p data-i18n="production.step12.p1">Antes de sair da fábrica, a cerveja enfrenta seu
+                                    júri
+                                    final. Testes de laboratório verificam consistência de cor, álcool, amargor e
+                                    microbiologia, enquanto painéis de degustação treinados buscam incansavelmente por
+                                    defeitos sensoriais (off-flavors).</p>
+                                <p data-i18n="production.step12.p2">A rastreabilidade é total: cada lote recebe um
+                                    número
+                                    único que permite auditar todo o histórico de produção. Este rigor obsessivo garante
+                                    que
+                                    a experiência do consumidor seja segura, prazerosa e consistente, mantendo a
+                                    reputação
+                                    da cervejaria intacta em um mercado cada dia mais exigente.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- ==========================================
+                 NEW ENRICHED SECTIONS
+                 ========================================== -->
+
+                <!-- COMBINED TIME + COMPARISON SECTION -->
+                <section class="time-comparison-section">
+                    <div class="time-comparison-grid">
+
+                        <!-- Left: Time Infographic -->
+                        <div class="time-column">
+                            <h3>⏱️ Tempo por Etapa</h3>
+                            <div class="time-list">
+                                <div class="time-item active"><span class="time-label"
+                                        style="color: #e67e22; font-weight: 800;">🚀 A Jornada Começa</span></div>
+                                <div class="time-item"><span class="time-label">Moagem</span><span
+                                        class="time-value">15-30
+                                        min</span></div>
+                                <div class="time-item"><span class="time-label">Mosturação</span><span
+                                        class="time-value">60-90 min</span></div>
+                                <div class="time-item"><span class="time-label">Fervura</span><span
+                                        class="time-value">60-90
+                                        min</span></div>
+                                <div class="time-item"><span class="time-label">Fermentação</span><span
+                                        class="time-value">7-14 dias</span></div>
+                                <div class="time-item"><span class="time-label">Maturação</span><span
+                                        class="time-value">2-8
+                                        sem</span></div>
+                                <div class="time-item"><span class="time-label">Carbonatação</span><span
+                                        class="time-value">1-2 sem</span></div>
+                                <div class="time-item active"><span class="time-label"
+                                        style="color: #2e7d32; font-weight: 800;">🍻 Saúde! Fim</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Right: Comparison Table -->
+                        <div class="comparison-column">
+                            <h3>📊 Lager vs Ale vs Stout</h3>
+                            <table class="mini-comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Lager</th>
+                                        <th>Ale</th>
+                                        <th>Stout</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Temp.</td>
+                                        <td>8-14°C</td>
+                                        <td>15-24°C</td>
+                                        <td>18-22°C</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tempo</td>
+                                        <td>4-8 sem</td>
+                                        <td>2-3 sem</td>
+                                        <td>2-4 sem</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sabor</td>
+                                        <td>Limpo</td>
+                                        <td>Frutado</td>
+                                        <td>Torrado</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cor SRM</td>
+                                        <td>2-6</td>
+                                        <td>4-14</td>
+                                        <td>25-40+</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- GLOSSARY SECTION -->
+                <section class="glossary-section">
+                    <div class="section-header-centered">
+                        <h2>📖 Glossário Cervejeiro</h2>
+                        <p>Termos técnicos que todo apreciador de cerveja deve conhecer</p>
+                    </div>
+                    <div class="glossary-grid">
+                        <dl class="glossary-term">
+                            <dt>IBU (International Bitterness Units)</dt>
+                            <dd>Escala que mede o amargor da cerveja, baseada na concentração de iso-alfa-ácidos do
+                                lúpulo.
+                                Varia de 5 (leve) a 100+ (extremo).</dd>
+                        </dl>
+                        <dl class="glossary-term">
+                            <dt>SRM (Standard Reference Method)</dt>
+                            <dd>Sistema de medição de cor da cerveja. Quanto maior o número, mais escura. Uma Pilsner
+                                tem ~3
+                                SRM, uma Stout ~40 SRM.</dd>
+                        </dl>
+                        <dl class="glossary-term">
+                            <dt>ABV (Alcohol By Volume)</dt>
+                            <dd>Percentual de álcool em relação ao volume total. Uma cerveja standard tem 4-6% ABV,
+                                enquanto
+                                IPAs podem chegar a 7-9%.</dd>
+                        </dl>
+                        <dl class="glossary-term">
+                            <dt>OG/FG (Original/Final Gravity)</dt>
+                            <dd>Densidade do mosto antes (OG) e depois (FG) da fermentação. A diferença entre ambos
+                                indica o
+                                teor alcoólico.</dd>
+                        </dl>
+                        <dl class="glossary-term">
+                            <dt>Atenuação</dt>
+                            <dd>Percentual de açúcar convertido em álcool pela levedura. Alta atenuação = cerveja mais
+                                seca.
+                                Baixa = mais doce.</dd>
+                        </dl>
+                        <dl class="glossary-term">
+                            <dt>Dry Hopping</dt>
+                            <dd>Técnica de adicionar lúpulo durante ou após a fermentação (sem calor), para maximizar
+                                aromas
+                                sem adicionar amargor.</dd>
+                        </dl>
+                        <dl class="glossary-term">
+                            <dt>Mash (Mosturação)</dt>
+                            <dd>Processo de misturar malte moído com água quente para converter amidos em açúcares
+                                fermentáveis através de ação enzimática.</dd>
+                        </dl>
+                        <dl class="glossary-term">
+                            <dt>Wort (Mosto)</dt>
+                            <dd>Líquido açucarado extraído da mosturação, antes da fermentação. É a "base" da cerveja,
+                                pronto para receber levedura.</dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <!-- MYTHS VS REALITY -->
+                <section class="myths-section">
+                    <div class="section-header-centered">
+                        <h2>🧪 Mitos vs Realidade</h2>
+                        <p>Desfazendo equívocos comuns sobre a produção de cerveja</p>
+                    </div>
+                    <div class="myths-grid">
+                        <div class="myth-card">
+                            <div class="myth-header">Mito</div>
+                            <div class="myth-content">
+                                <p class="myth-text">"Cerveja escura é mais forte que cerveja clara."</p>
+                                <p class="reality-header">Realidade</p>
+                                <p class="reality-text">A cor vem do tipo de malte usado, não do teor alcoólico. Uma
+                                    Stout
+                                    pode ter 4% ABV, enquanto uma Belgian Tripel clara pode ter 9%.</p>
+                            </div>
+                        </div>
+                        <div class="myth-card">
+                            <div class="myth-header">Mito</div>
+                            <div class="myth-content">
+                                <p class="myth-text">"Cerveja artesanal é sempre melhor que industrial."</p>
+                                <p class="reality-header">Realidade</p>
+                                <p class="reality-text">Qualidade depende do processo, não da escala. Cervejarias
+                                    industriais têm controle de qualidade rigoroso, enquanto algumas artesanais podem
+                                    ter
+                                    problemas de consistência.</p>
+                            </div>
+                        </div>
+                        <div class="myth-card">
+                            <div class="myth-header">Mito</div>
+                            <div class="myth-content">
+                                <p class="myth-text">"A espuma da cerveja é só estética."</p>
+                                <p class="reality-header">Realidade</p>
+                                <p class="reality-text">A espuma protege a cerveja da oxidação, libera aromas e indica a
+                                    qualidade das proteínas do malte. Uma boa espuma é sinal de processo bem executado.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="myth-card">
+                            <div class="myth-header">Mito</div>
+                            <div class="myth-content">
+                                <p class="myth-text">"Cerveja deve ser servida gelada para mascarar sabores."</p>
+                                <p class="reality-header">Realidade</p>
+                                <p class="reality-text">A temperatura ideal varia por estilo. Lagers ficam melhores a
+                                    4-7°C,
+                                    mas Ales complexas revelam seus aromas a 10-14°C. Muito frio anestesia o paladar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- INTERACTIVE TOOLS - 3 Column Layout -->
+                <section class="interactive-tools-section">
+                    <div class="interactive-tools-grid">
+
+                        <!-- FAQ Column -->
+                        <div class="tool-column faq-column">
+                            <h3>❓ FAQ</h3>
+                            <div class="faq-mini">
+                                <details class="faq-mini-item">
+                                    <summary>Ale vs Lager?</summary>
+                                    <p>Ales: levedura alta (15-24°C), frutadas. Lagers: levedura baixa (8-14°C), limpas.
+                                    </p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Por que amarga?</summary>
+                                    <p>Alfa-ácidos do lúpulo. Mais lúpulo + mais tempo = mais IBU.</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Validade?</summary>
+                                    <p>IPAs: 3 meses. Stouts: anos. Armazene em local fresco e escuro.</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Puro malte?</summary>
+                                    <p>100% malte de cevada, sem milho/arroz/açúcar (lei alemã 1516).</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Fazer em casa?</summary>
+                                    <p>Sim! Kits ~R$500. Processo igual, escala menor (20L).</p>
+                                </details>
+
+                                <!-- New FAQs -->
+                                <details class="faq-mini-item">
+                                    <summary>O que é mosto?</summary>
+                                    <p>É o "chá" de malte açucarado antes de virar cerveja pela fermentação.</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Trigo ou Cevada?</summary>
+                                    <p>Maioria usa cevada. Weissbier usa ~50% de trigo maltado.</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Chopp vs Cerveja?</summary>
+                                    <p>Mesma bebida! Chopp não é pasteurizado, tem validade curta.</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Cerveja congela?</summary>
+                                    <p>Sim, e pode estourar a garrafa. Álcool baixa o ponto de fusão, mas congela.</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>O que é IBU?</summary>
+                                    <p>International Bitterness Unit. Mede apenas o amargor do lúpulo.</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Lata ou Garrafa?</summary>
+                                    <p>Lata é melhor! Protege totalmente da luz (UV) e veda melhor o oxigênio.</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Espuma importa?</summary>
+                                    <p>Sim! Mantém a temperatura e preserva os aromas voláteis no copo.</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Cerveja engorda?</summary>
+                                    <p>Moderadamente. Tem calorias (álcool + açúcar residual), similar a suco de
+                                        laranja.
+                                    </p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>IPA é forte?</summary>
+                                    <p>Tem mais lúpulo e álcool que Lagers comuns, mas varia muito.</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Trapista?</summary>
+                                    <p>Cerveja feita por monges trapistas dentro do mosteiro. Selo de autenticidade.</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Glúten?</summary>
+                                    <p>Sim, cevada e trigo têm glúten. Existem cervejas "Gluten Free" enzimáticas.</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Cerveja quente?</summary>
+                                    <p>Ingleses bebem a temp. de adega (12-14°C), não "quente". Realça sabores.</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Mosturação?</summary>
+                                    <p>Cozimento do malte em água quente para converter amido em açúcar fermentável.</p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>Dry Hopping?</summary>
+                                    <p>Adição de lúpulo frio na fermentação ou maturação. Aumenta aroma, não amargor.
+                                    </p>
+                                </details>
+                                <details class="faq-mini-item">
+                                    <summary>ABV?</summary>
+                                    <p>Alcohol By Volume. Porcentagem de volume da bebida que é álcool puro.</p>
+                                </details>
+                            </div>
+                        </div>
+
+                        <!-- Quiz Column -->
+                        <div class="tool-column quiz-column">
+                            <h3>🎯 Quiz</h3>
+                            <div id="quiz-mini-content">
+                                <p class="quiz-mini-question" id="quiz-question">1. Qual a função da mosturação?</p>
+                                <div class="quiz-mini-options" id="quiz-options"></div>
+                                <button id="quiz-next" class="quiz-mini-btn" style="display: none;">Próxima →</button>
+                            </div>
+                            <div class="quiz-mini-score" id="quiz-score" style="display: none;">
+                                <span id="score-number">0/5</span>
+                                <button onclick="startQuiz()" class="quiz-mini-btn">↻ Repetir</button>
+                            </div>
+                        </div>
+
+                        <!-- Calculator Column -->
+                        <div class="tool-column calc-column">
+                            <h3>🧮 Calculadora de Receita</h3>
+                            <div class="calc-mini">
+                                <div class="calc-mini-row">
+                                    <label>Volume (L)</label>
+                                    <input type="number" id="batch-size" value="20" min="5" max="100"
+                                        onchange="calculateRecipe()">
+                                </div>
+                                <div class="calc-mini-row">
+                                    <label>ABV %</label>
+                                    <input type="number" id="target-abv" value="5" min="3" max="12" step="0.5"
+                                        onchange="calculateRecipe()">
+                                </div>
+                                <div class="calc-mini-row">
+                                    <label>IBU</label>
+                                    <input type="number" id="target-ibu" value="30" min="5" max="100"
+                                        onchange="calculateRecipe()">
+                                </div>
+                                <div class="calc-mini-results calc-success">
+                                    <div class="calc-result-title">📋 Ingredientes Estimados:</div>
+                                    <div><span>🌾 Malte Base:</span> <strong id="result-malt">4 kg</strong></div>
+                                    <div><span>🌿 Lúpulo (60 min):</span> <strong id="result-hops">60 g</strong></div>
+                                    <div><span>🧫 Levedura:</span> <strong id="result-yeast">1 pacote</strong></div>
+                                    <div><span>💧 Água Total:</span> <strong id="result-water">28 L</strong></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+    </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">Beer<span class="logo-accent">SL</span></span>
+                <p class="footer-tagline">Sua enciclopédia definitiva de cervejas.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html" data-i18n="nav.styles">Estilos</a>
+                <a href="top-brands.html" data-i18n="nav.brands">Top Brands</a>
+                <a href="producao.html" data-i18n="nav.production">Produção</a>
+                <a href="about.html" data-i18n="nav.about">Sobre</a>
+                <a href="contact.html" data-i18n="nav.contact">Contato</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2024 BeerSL. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <!-- Modal Container -->
+    <div id="modal-container" class="modal-container hidden"></div>
+
+    <!-- Mobile Sidebar -->
+    <aside id="mobile-sidebar" class="mobile-sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-title">Menu</span>
+            <button class="sidebar-close" id="sidebar-close" onclick="window.beerslCloseMenu()">✕</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="sidebar-link">📊 <span data-i18n="nav.styles">Estilos</span></a>
+            <a href="top-brands.html" class="sidebar-link">🍺 <span data-i18n="nav.brands">Top Brands</span></a>
+            <a href="producao.html" class="sidebar-link active">🏭 <span data-i18n="nav.production">Produção</span></a>
+            <a href="about.html" class="sidebar-link">ℹ️ <span data-i18n="nav.about">Sobre</span></a>
+            <a href="contact.html" class="sidebar-link">📧 <span data-i18n="nav.contact">Contato</span></a>
+        </nav>
+        <div class="sidebar-lang">
+            <p class="sidebar-lang-label">Idioma</p>
+            <div class="sidebar-lang-btns">
+                <button class="lang-btn-sidebar" data-lang="pt-BR">🇧🇷 Português</button>
+                <button class="lang-btn-sidebar" data-lang="en">🇺🇸 English</button>
+                <button class="lang-btn-sidebar" data-lang="de">🇩🇪 Deutsch</button>
+            </div>
+        </div>
+    </aside>
+    <div id="sidebar-overlay" class="sidebar-overlay" onclick="window.beerslCloseMenu()"></div>
+
+    <script type="module">
+        import { i18n } from './js/i18n/i18n.js?v=101';
+
+        // Define Globals immediately
+        window.beerslOpenMenu = function () {
+            const sidebar = document.getElementById('mobile-sidebar');
+            const overlay = document.getElementById('sidebar-overlay');
+            if (sidebar) sidebar.classList.add('open');
+            if (overlay) overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        };
+
+        window.beerslCloseMenu = function () {
+            const sidebar = document.getElementById('mobile-sidebar');
+            const overlay = document.getElementById('sidebar-overlay');
+            if (sidebar) sidebar.classList.remove('open');
+            if (overlay) overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        // Execute initialization
+        (function () {
+            document.documentElement.removeAttribute('data-theme');
+
+            // Language Buttons
+            const sidebarLangBtns = document.querySelectorAll('.lang-btn-sidebar');
+            if (sidebarLangBtns.length > 0) {
+                sidebarLangBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const lang = btn.dataset.lang;
+                        i18n.setLang(lang);
+                        updateActiveFlags(lang);
+                        window.beerslCloseMenu();
+                    });
+                });
+                const currentLang = localStorage.getItem('beersl-lang') || 'pt-BR';
+                updateActiveFlags(currentLang);
+            }
+
+            function updateActiveFlags(lang) {
+                const allLangBtns = document.querySelectorAll('.lang-btn-sidebar');
+                allLangBtns.forEach(btn => {
+                    const isActive = btn.dataset.lang === lang || (lang.startsWith('pt') && btn.dataset.lang === 'pt-BR');
+                    if (isActive) btn.classList.add('active');
+                    else btn.classList.remove('active');
+                });
+            }
+
+            i18n.init();
+        })();
+    </script>
+
+    <!-- Text Carousel Script - Smooth Version -->
+    <script>
+        const phrases = [
+            "Uma jornada onde a tradição encontra a inovação para criar sabores inesquecíveis.",
+            "Desvende os segredos da fermentação, maturação e o equilíbrio perfeito dos ingredientes.",
+            "Ciência, arte e paixão em cada gota.",
+            "Navegue abaixo e conheça os detalhes que definem a qualidade da sua cerveja favorita."
+        ];
+
+        let currentIndex = 0;
+        const textElement = document.getElementById("text-carousel");
+
+        function changeText() {
+            if (!textElement) return;
+
+            // 1. Fade Out + Slide Down
+            textElement.classList.add("fade-out");
+
+            // 2. Wait for animation to finish (1s), then swap text
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % phrases.length;
+                textElement.textContent = phrases[currentIndex];
+
+                // 3. Fade In + Slide Up
+                textElement.classList.remove("fade-out");
+            }, 1000);
+        }
+
+        // Change text every 5 seconds
+        setInterval(changeText, 5000);
+    </script>
+
+    <script src="js/effects.js" defer></script>
+    <script src="js/producao.js" defer></script>
+</body>
+
+</html>

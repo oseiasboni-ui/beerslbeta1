@@ -40,12 +40,31 @@ class I18n {
         return key;
     }
 
+    // Get translation by key (silent mode - no warning if missing)
+    getTranslation(key) {
+        const langData = this.translations[this.currentLang];
+        if (langData && langData[key] !== undefined) {
+            return langData[key];
+        }
+        // Fallback to English
+        if (this.translations['en'] && this.translations['en'][key] !== undefined) {
+            return this.translations['en'][key];
+        }
+        // Return key if not found (no warning)
+        return key;
+    }
+
     // Translate entire page by scanning data-i18n attributes
     translatePage() {
         // Translate elements with data-i18n attribute
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
-            el.textContent = this.t(key);
+            const translation = this.getTranslation(key);
+            // Only update if translation exists (not the key itself)
+            if (translation !== key) {
+                el.textContent = translation;
+            }
+            // Otherwise, keep original content as fallback
         });
 
         // Translate placeholders

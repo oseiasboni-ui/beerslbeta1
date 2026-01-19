@@ -48,13 +48,30 @@ function getUniqueValues() {
 function populateFilters() {
     const { countries, parents } = getUniqueValues();
 
-    const countryFilterGroup = document.querySelector('#country-filter')?.closest('.filter-group');
+    // Find group via ID or existing dropdown
+    let countryFilterGroup = document.querySelector('#country-filter')?.closest('.filter-group');
+    if (!countryFilterGroup) {
+        countryFilterGroup = document.querySelector('#country-dropdown')?.closest('.filter-group');
+    }
+
     const parentSelect = document.getElementById('parent-filter');
 
     // Custom Country Dropdown with Search
     if (countryFilterGroup) {
+        // Cleanup old elements
         const oldSelect = document.getElementById('country-filter');
         if (oldSelect) oldSelect.remove();
+        const existingDropdown = document.getElementById('country-dropdown');
+        if (existingDropdown) existingDropdown.remove();
+
+        // Determine current label
+        let currentLabel = i18n.t('filters.country_all') || 'Todos os Países';
+        if (currentFilters.country !== 'all') {
+            const found = countries.find(c => c.name === currentFilters.country);
+            if (found) {
+                currentLabel = translateOrigin(found.name, i18n.currentLang);
+            }
+        }
 
         // Create custom dropdown structure
         const dropdown = document.createElement('div');
@@ -62,7 +79,7 @@ function populateFilters() {
         dropdown.id = 'country-dropdown';
         dropdown.innerHTML = `
             <div class="dropdown-selected" id="country-selected">
-                <span class="dropdown-selected-text">${i18n.t('filters.country_all') || 'Todos os Países'}</span>
+                <span class="dropdown-selected-text">${currentLabel}</span>
                 <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M6 9l6 6 6-6"/>
                 </svg>
@@ -72,9 +89,9 @@ function populateFilters() {
                     <input type="text" class="dropdown-search" id="country-search" placeholder="" autocomplete="off">
                 </div>
                 <div class="dropdown-list" id="country-list">
-                    <div class="dropdown-item selected" data-value="all">${i18n.t('filters.country_all') || 'Todos os Países'}</div>
+                    <div class="dropdown-item ${currentFilters.country === 'all' ? 'selected' : ''}" data-value="all">${i18n.t('filters.country_all') || 'Todos os Países'}</div>
                     ${countries.map(c => `
-                        <div class="dropdown-item" data-value="${c.name}">
+                        <div class="dropdown-item ${currentFilters.country === c.name ? 'selected' : ''}" data-value="${c.name}">
                             <span class="country-name">${translateOrigin(c.name, i18n.currentLang)}</span>
                             <span class="country-count">${c.count}</span>
                         </div>
@@ -134,17 +151,30 @@ function populateFilters() {
     }
 
     // Custom Parent Company Dropdown with Search
-    const parentFilterGroup = document.querySelector('#parent-filter')?.closest('.filter-group');
+    let parentFilterGroup = document.querySelector('#parent-filter')?.closest('.filter-group');
+    if (!parentFilterGroup) {
+        parentFilterGroup = document.querySelector('#parent-dropdown')?.closest('.filter-group');
+    }
+
     if (parentFilterGroup) {
         const oldSelect = document.getElementById('parent-filter');
         if (oldSelect) oldSelect.remove();
+        const existingDropdown = document.getElementById('parent-dropdown');
+        if (existingDropdown) existingDropdown.remove();
+
+        // Determine current label
+        let currentLabel = i18n.t('filters.parent_all') || 'Todas as Empresas';
+        if (currentFilters.parent !== 'all') {
+            // Parent names are usually just names, no translation needed mostly, but we use the value directly
+            currentLabel = currentFilters.parent;
+        }
 
         const dropdown = document.createElement('div');
         dropdown.className = 'custom-dropdown';
         dropdown.id = 'parent-dropdown';
         dropdown.innerHTML = `
             <div class="dropdown-selected" id="parent-selected">
-                <span class="dropdown-selected-text">${i18n.t('filters.parent_all') || 'Todas as Empresas'}</span>
+                <span class="dropdown-selected-text">${currentLabel}</span>
                 <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M6 9l6 6 6-6"/>
                 </svg>
@@ -154,9 +184,9 @@ function populateFilters() {
                     <input type="text" class="dropdown-search" id="parent-search" placeholder="" autocomplete="off">
                 </div>
                 <div class="dropdown-list" id="parent-list">
-                    <div class="dropdown-item selected" data-value="all">${i18n.t('filters.parent_all') || 'Todas as Empresas'}</div>
+                    <div class="dropdown-item ${currentFilters.parent === 'all' ? 'selected' : ''}" data-value="all">${i18n.t('filters.parent_all') || 'Todas as Empresas'}</div>
                     ${parents.map(p => `
-                        <div class="dropdown-item" data-value="${p.name}">
+                        <div class="dropdown-item ${currentFilters.parent === p.name ? 'selected' : ''}" data-value="${p.name}">
                             <span class="country-name">${p.name}</span>
                             <span class="country-count">${p.count}</span>
                         </div>
@@ -769,12 +799,13 @@ function adjustPopupPosition(popup, targetElement) {
     }
 }
 
+
+
 // Re-render on language change
 window.addEventListener('languageChanged', (e) => {
     populateFilters();
     renderGrid();
 });
-
 document.addEventListener('DOMContentLoaded', () => {
     populateFilters();
     renderGrid();
