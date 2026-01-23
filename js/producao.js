@@ -6,7 +6,7 @@
 // =============================================
 // QUIZ SYSTEM
 // =============================================
-const quizQuestions = [
+const quizQuestionsPT = [
     {
         question: "Qual é a principal função da mosturação?",
         options: ["Adicionar lúpulo", "Converter amido em açúcar", "Resfriar mosto", "Fermentar"],
@@ -32,7 +32,6 @@ const quizQuestions = [
         options: ["Secar lúpulo", "Lúpulo pós-fermentação", "Lúpulo em pó", "Fervura longa"],
         correct: 1
     },
-    // Novas perguntas
     {
         question: "Qual cereal é a base da maioria das cervejas?",
         options: ["Trigo", "Cevada", "Milho", "Arroz"],
@@ -107,33 +106,221 @@ const quizQuestions = [
         question: "Qual país criou a Pilsner?",
         options: ["Alemanha", "Bélgica", "República Tcheca", "EUA"],
         correct: 2
-    },
-    {
-        question: "Trapista é feita por?",
-        options: ["Monges", "Fábricas gigantes", "Robôs", "Fazendeiros"],
-        correct: 0
-    },
-    {
-        question: "Qual destes é 'adjunto'?",
-        options: ["Cevada", "Água", "Milho", "Lúpulo"],
-        correct: 2
-    },
-    {
-        question: "Sour beers são?",
-        options: ["Doces", "Amargas", "Azedas", "Salgadas"],
-        correct: 2
-    },
-    {
-        question: "Growler serve para?",
-        options: ["Transportar chopp", "Ferver mosto", "Moer grãos", "Servir aperitivo"],
-        correct: 0
-    },
-    {
-        question: "Colarinho serve para?",
-        options: ["Estética apenas", "Preservar aroma/temp", "Atrapalhar", "Diluir o álcool"],
-        correct: 1
     }
 ];
+
+const quizQuestionsEN = [
+    {
+        question: "What is the main function of mashing?",
+        options: ["Adding hops", "Converting starch to sugar", "Cooling wort", "Fermenting"],
+        correct: 1
+    },
+    {
+        question: "What does IBU stand for?",
+        options: ["Beer Unit", "Bitterness Units", "Brewing Update", "Base Unit"],
+        correct: 1
+    },
+    {
+        question: "Main difference between Ale and Lager?",
+        options: ["Color", "Yeast type", "Hops", "Malt"],
+        correct: 1
+    },
+    {
+        question: "Ale fermentation lasts?",
+        options: ["1-2 days", "2-3 weeks", "3-4 months", "1 year"],
+        correct: 1
+    },
+    {
+        question: "What is dry hopping?",
+        options: ["Dying hops", "Post-fermentation hopping", "Powdered hops", "Long boil"],
+        correct: 1
+    },
+    {
+        question: "Which grain is the base of most beers?",
+        options: ["Wheat", "Barley", "Corn", "Rice"],
+        correct: 1
+    },
+    {
+        question: "What do hops provide to beer?",
+        options: ["Alcohol", "Color", "Bitterness/Aroma", "Carbonation"],
+        correct: 2
+    },
+    {
+        question: "Natural carbonation comes from?",
+        options: ["Boiling", "Fermentation", "Mashing", "Milling"],
+        correct: 1
+    },
+    {
+        question: "What is the German Purity Law?",
+        options: ["Reinheitsgebot", "Oktoberfest", "Prost", "Hefe"],
+        correct: 0
+    },
+    {
+        question: "IPA means?",
+        options: ["Imperial Pale Ale", "India Pale Ale", "International Premium Ale", "Irish Pale Ale"],
+        correct: 1
+    },
+    {
+        question: "Stout is known for being?",
+        options: ["Light", "Dark/Roasted", "Sour", "Very alcoholic"],
+        correct: 1
+    },
+    {
+        question: "Serving temperature for Lager?",
+        options: ["0-4°C", "10-12°C", "Room temp", "Frozen"],
+        correct: 0
+    },
+    {
+        question: "What is wort?",
+        options: ["Finished beer", "Sugary liquid before fermentation", "Hop residue", "Malt type"],
+        correct: 1
+    },
+    {
+        question: "Yeast converts sugar into?",
+        options: ["Alcohol & CO2", "Water & Malt", "Hops & Cream", "Protein & Fat"],
+        correct: 0
+    },
+    {
+        question: "Water makes up how much of beer?",
+        options: ["10-20%", "40-50%", "90-95%", "100%"],
+        correct: 2
+    },
+    {
+        question: "What is a 'gyle'?",
+        options: ["Cleaning tool", "Batch of beer", "Type of glass", "Famous brand"],
+        correct: 1
+    },
+    {
+        question: "Session Beer has...",
+        options: ["High alcohol", "Low alcohol (<5%)", "High hops", "No gas"],
+        correct: 1
+    },
+    {
+        question: "Weizen glass is for?",
+        options: ["IPA", "Wheat beer", "Stout", "Pilsner"],
+        correct: 1
+    },
+    {
+        question: "What is Trub?",
+        options: ["Unwanted sediment", "Best part of beer", "Hop type", "Liquid yeast"],
+        correct: 0
+    },
+    {
+        question: "Which country created Pilsner?",
+        options: ["Germany", "Belgium", "Czech Republic", "USA"],
+        correct: 2
+    }
+];
+
+const quizQuestionsDE = [
+    {
+        question: "Was ist die Hauptfunktion des Maischens?",
+        options: ["Hopfen hinzufügen", "Stärke in Zucker umwandeln", "Würze kühlen", "Fermentieren"],
+        correct: 1
+    },
+    {
+        question: "Was bedeutet IBU?",
+        options: ["Beer Unit", "Bitterness Units", "Brewing Update", "Base Unit"],
+        correct: 1
+    },
+    {
+        question: "Unterschied zwischen Ale und Lager?",
+        options: ["Farbe", "Hefetyp", "Hopfen", "Malz"],
+        correct: 1
+    },
+    {
+        question: "Ale-Gärung dauert?",
+        options: ["1-2 Tage", "2-3 Wochen", "3-4 Monate", "1 Jahr"],
+        correct: 1
+    },
+    {
+        question: "Was ist Dry Hopping?",
+        options: ["Hopfen trocknen", "Hopfung nach Gärung", "Hopfenpulver", "Langes Kochen"],
+        correct: 1
+    },
+    {
+        question: "Welches Getreide ist die Basis der meisten Biere?",
+        options: ["Weizen", "Gerste", "Mais", "Reis"],
+        correct: 1
+    },
+    {
+        question: "Was verleiht Hopfen dem Bier?",
+        options: ["Alkohol", "Farbe", "Bitterkeit/Aroma", "Karbonisierung"],
+        correct: 2
+    },
+    {
+        question: "Natürliche Kohlensäure kommt von?",
+        options: ["Kochen", "Gärung", "Maischen", "Schroten"],
+        correct: 1
+    },
+    {
+        question: "Was ist das deutsche Reinheitsgebot?",
+        options: ["Reinheitsgebot", "Oktoberfest", "Prost", "Hefe"],
+        correct: 0
+    },
+    {
+        question: "IPA bedeutet?",
+        options: ["Imperial Pale Ale", "India Pale Ale", "International Premium Ale", "Irish Pale Ale"],
+        correct: 1
+    },
+    {
+        question: "Stout ist bekannt dafür, ... zu sein?",
+        options: ["Hell", "Dunkel/Geröstet", "Sauer", "Sehr alkoholisch"],
+        correct: 1
+    },
+    {
+        question: "Serviertemperatur für Lager?",
+        options: ["0-4°C", "10-12°C", "Zimmertemperatur", "Gefroren"],
+        correct: 0
+    },
+    {
+        question: "Was ist Würze?",
+        options: ["Fertiges Bier", "Zuckerflüssigkeit vor Gärung", "Hopfenrest", "Malztyp"],
+        correct: 1
+    },
+    {
+        question: "Hefe wandelt Zucker um in?",
+        options: ["Alkohol & CO2", "Wasser & Malz", "Hopfen & Sahne", "Protein & Fett"],
+        correct: 0
+    },
+    {
+        question: "Wie viel Wasser enthält Bier?",
+        options: ["10-20%", "40-50%", "90-95%", "100%"],
+        correct: 2
+    },
+    {
+        question: "Was ist ein 'Sud'?",
+        options: ["Reinigungswerkzeug", "Charge Bier", "Glastyp", "Berühmte Marke"],
+        correct: 1
+    },
+    {
+        question: "Session Beer hat...",
+        options: ["Viel Alkohol", "Wenig Alkohol (<5%)", "Viel Hopfen", "Kein Gas"],
+        correct: 1
+    },
+    {
+        question: "Weizenglas ist für?",
+        options: ["IPA", "Weizenbier", "Stout", "Pilsner"],
+        correct: 1
+    },
+    {
+        question: "Was ist Trub?",
+        options: ["Unerwünschtes Sediment", "Bester Teil des Bieres", "Hopfentyp", "Flüssighefe"],
+        correct: 0
+    },
+    {
+        question: "Welches Land erfand das Pilsner?",
+        options: ["Deutschland", "Belgien", "Tschechische Republik", "USA"],
+        correct: 2
+    }
+];
+
+function getQuizQuestions() {
+    const lang = localStorage.getItem('beersl-lang') || 'pt-BR';
+    if (lang === 'en') return quizQuestionsEN;
+    if (lang === 'de') return quizQuestionsDE;
+    return quizQuestionsPT;
+}
 
 let currentQuestion = 0;
 let score = 0;
@@ -155,13 +342,18 @@ function startQuiz() {
     showQuestion();
 }
 
+// Expose to global scope for language switching
+window.updateQuizLanguage = startQuiz;
+
 function showQuestion() {
-    if (currentQuestion >= quizQuestions.length) {
+    const questions = getQuizQuestions();
+
+    if (currentQuestion >= questions.length) {
         showScore();
         return;
     }
 
-    const q = quizQuestions[currentQuestion];
+    const q = questions[currentQuestion];
     const questionEl = document.getElementById('quiz-question');
     const optionsEl = document.getElementById('quiz-options');
 
@@ -187,7 +379,8 @@ function selectOption(index) {
     if (answered) return;
     answered = true;
 
-    const q = quizQuestions[currentQuestion];
+    const questions = getQuizQuestions();
+    const q = questions[currentQuestion];
     const options = document.querySelectorAll('.quiz-option');
 
     options.forEach((opt, i) => {
@@ -208,13 +401,14 @@ function selectOption(index) {
 }
 
 function showScore() {
+    const questions = getQuizQuestions();
     const contentEl = document.getElementById('quiz-mini-content');
     const scoreEl = document.getElementById('quiz-score');
     const numberEl = document.getElementById('score-number');
 
     if (contentEl) contentEl.style.display = 'none';
     if (scoreEl) scoreEl.style.display = 'block';
-    if (numberEl) numberEl.textContent = `${score}/${quizQuestions.length}`;
+    if (numberEl) numberEl.textContent = `${score}/${questions.length}`;
 }
 
 // Quiz event listeners
@@ -246,7 +440,6 @@ function calculateRecipe() {
     const targetIBU = targetIBUEl ? parseFloat(targetIBUEl.value) || 30 : 30;
 
     // ====== BREWING FORMULAS ======
-
     // OG (Original Gravity) estimation based on ABV
     // Formula: ABV ≈ (OG - FG) × 131.25
     // Assuming 75% attenuation: FG ≈ OG - (OG-1)*0.75
@@ -260,7 +453,7 @@ function calculateRecipe() {
     const pointsNeeded = ogPoints * batchSize;
     const efficiency = 0.70;
     const extractYield = 36; // points per kg per liter
-    const maltKg = (pointsNeeded / (extractYield * efficiency)).toFixed(1);
+    const maltKg = (pointsNeeded / (extractYield * efficiency * batchSize)).toFixed(1);
 
     // Hops calculation (Tinseth formula simplified)
     // IBU = (AA% * Grams * Utilization) / (Volume * 1.34)
@@ -295,53 +488,31 @@ function calculateRecipe() {
         if (el) el.textContent = value;
     };
 
-    update('result-malt', `${maltKg} kg`);
-    update('result-hops', `${hopsG} g`);
-    update('result-yeast', `${yeastPackets} pacote${yeastPackets > 1 ? 's' : ''}`);
-    update('result-water', `${waterLiters} L`);
-    update('result-og', og);
-    update('result-temp', `${fermTempLow}-${fermTempHigh}°C`);
     update('result-time', `~${totalWeeks} semanas`);
 }
 
-// =============================================
-// SCROLL REVEAL ANIMATION SYSTEM
-// =============================================
+// Sticky Header "Unstick" Logic
+// When the footer becomes visible, we hide the sticky header to prevent overlap/clutter
 document.addEventListener('DOMContentLoaded', () => {
-    // Select all elements that need revealing
-    const revealElements = document.querySelectorAll('.reveal-base, .ingrediente-card');
+    const header = document.getElementById('main-header');
+    const footer = document.getElementById('main-footer');
 
-    // Create an intersection observer
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Add the revealed class to trigger CSS animation
-                entry.target.classList.add('revealed');
-
-                // For ingredient cards, add 'visible' (per legacy CSS)
-                if (entry.target.classList.contains('ingrediente-card')) {
-                    entry.target.classList.add('visible');
+    if (header && footer) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Footer is visible, hide header
+                    header.style.transform = 'translateY(-100%)';
+                } else {
+                    // Footer is not visible, show header
+                    header.style.transform = 'translateY(0)';
                 }
-
-                // Stop observing once revealed (optional, keeps it efficient)
-                observer.unobserve(entry.target);
-            }
+            });
+        }, {
+            root: null, // viewport
+            threshold: 0.1 // trigger when 10% of footer is visible
         });
-    }, {
-        root: null, // viewport
-        threshold: 0.15, // trigger when 15% visible
-        rootMargin: "0px 0px -50px 0px" // offset slightly
-    });
 
-    // Observe each element
-    revealElements.forEach(el => revealObserver.observe(el));
-
-    // Handle Parallax for Hero Text if sticking
-    const heroText = document.querySelector('.hero-dynamic-text');
-    if (heroText) {
-        setTimeout(() => {
-            heroText.style.opacity = '1';
-            heroText.style.transform = 'translateY(0)';
-        }, 500);
+        observer.observe(footer);
     }
 });

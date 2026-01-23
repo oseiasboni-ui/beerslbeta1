@@ -22,6 +22,283 @@ export const translations = {
         "nav.contact": "Contato",
         "nav.about": "Sobre",
         "nav.brands": "Top Marcas",
+        "nav.production": "Produção",
+
+        // Production Page - Portuguese
+        "production.hero.title": "Produção de Cerveja",
+        "production.step1.label": "Etapa 1",
+        "production.step1.title": "Os 4 Ingredientes Essenciais",
+        "production.step1.intro": "A produção de cerveja de qualidade exige o equilíbrio perfeito de quatro ingredientes fundamentais, cada um contribuindo com características únicas para o produto final.",
+
+        // Ingredients - Malt
+        "production.ing.malt.title": "Malte",
+        "production.ing.malt.subtitle": "A Fonte dos Açúcares",
+        "production.ing.malt.origin": "Cevada maltada",
+        "production.ing.malt.function": "Açúcares fermentáveis",
+        "production.ing.malt.contributes": "Cor, corpo, aromas",
+        "production.ing.malt.profile": "Pão, biscoito, caramelo, chocolate",
+        "production.ing.malt.desc": "Define a estrutura e a alma da cerveja. Seu nível de torra determina a cor (do claro ao escuro) e a complexidade aromática.",
+
+        // Ingredients - Hops
+        "production.ing.hops.title": "Lúpulo",
+        "production.ing.hops.subtitle": "O Agente Temperador",
+        "production.ing.hops.origin": "Flores de Humulus lupulus",
+        "production.ing.hops.function": "Amargor e aroma",
+        "production.ing.hops.contributes": "Preservação natural",
+        "production.ing.hops.profile": "Floral, cítrico, herbal, resinoso",
+        "production.ing.hops.desc": "Seus ácidos alfa equilibram a doçura do malte. Variedades aromáticas adicionam camadas de complexidade ao nariz e paladar.",
+
+        // Ingredients - Yeast
+        "production.ing.yeast.title": "Levedura",
+        "production.ing.yeast.subtitle": "O Agente Transformador",
+        "production.ing.yeast.origin": "Saccharomyces cerevisiae",
+        "production.ing.yeast.function": "Fermentação",
+        "production.ing.yeast.contributes": "Álcool, CO₂, aromas",
+        "production.ing.yeast.types": "Ale (alta) | Lager (baixa)",
+        "production.ing.yeast.desc": "Microrganismo vivo que transforma açúcar em álcool e CO₂, liberando aromas complexos que definem o estilo.",
+
+        // Ingredients - Water
+        "production.ing.water.title": "Água",
+        "production.ing.water.subtitle": "A Base Essencial",
+        "production.ing.water.composition": "+90% da cerveja",
+        "production.ing.water.function": "Meio de reação",
+        "production.ing.water.contributes": "pH e perfil mineral",
+        "production.ing.water.minerals": "Cálcio, Sulfatos, Cloretos",
+        "production.ing.water.desc": "Sua composição mineral influencia diretamente o sabor final. As famosas regiões cervejeiras (Pilsen, Burton) se distinguem por suas águas.",
+
+        // Labels
+        "label.origin": "Origem",
+        "label.function": "Função",
+        "label.contributes": "Contribui",
+        "label.profile": "Perfil",
+        "label.types": "Tipos",
+        "label.composition": "Composição",
+        "label.minerals": "Minerais",
+
+        // Step 2 - Production Process
+        "production.step2.label": "Etapa 2",
+        "production.step2.title": "O Processo de Produção",
+        "production.step2.intro": "Do grão cru ao copo, a cerveja passa por uma fascinante jornada de transformações químicas e biológicas.",
+
+        // Process Steps
+        "production.process.mashing.title": "Mostura",
+        "production.process.mashing.desc": "O grão maltado é misturado com água quente (62-72°C) para converter amidos em açúcares fermentáveis. Este processo leva 60-90 minutos.",
+
+        "production.process.boiling.title": "Fervura",
+        "production.process.boiling.desc": "O mosto é fervido por 60-90 minutos com lúpulo adicionado em intervalos específicos para amargor, sabor e aroma.",
+
+        "production.process.fermentation.title": "Fermentação",
+        "production.process.fermentation.desc": "A levedura converte açúcares em álcool e CO₂. Ales fermentam a 15-24°C (alta), Lagers a 7-13°C (baixa).",
+
+        "production.process.maturation.title": "Maturação",
+        "production.process.maturation.desc": "A cerveja descansa por semanas ou meses, desenvolvendo sabores complexos e clarificando naturalmente.",
+
+        // Step 2 - Moagem
+        "production.step2.label": "Etapa 2",
+        "production.step2.title": "Moagem — Preparação do Grão",
+        "production.step2.p1": "A moagem é o pilar inicial da eficiência cervejeira. A meta é expor o endosperma rico em amido do grão sem pulverizar a casca. Se os grãos forem quebrados muito finos, formam-se gomas que entopem o sistema; se muito grossos, o rendimento cai drasticamente.",
+        "production.step2.p2": "A preservação da casca é vital, pois ela formará o leito filtrante natural nas etapas seguintes, garantindo um mosto límpido e fluido. O ajuste milimétrico dos rolos do moinho define o sucesso de toda a brassagem.",
+        "production.step2.p3": "Apesar de parecer mecânico, este ajuste define diretamente a clareza, a eficiência e a estabilidade sensorial da cerveja final.",
+
+        // Step 3 - Mosturação
+        "production.step3.label": "Etapa 3",
+        "production.step3.title": "Mosturação — Conversão de Amido em Açúcar",
+        "production.step3.p1": "Aqui ocorre a mágica bioquímica: a mistura de malte e água é mantida em temperaturas precisas para ativar enzimas específicas. As alfa-amilases criam açúcares complexos (dextrinas) que dão corpo à cerveja, enquanto as beta-amilases produzem maltose fermentável para o álcool.",
+        "production.step3.p2": "O controle de pH e a proporção água/grão também são críticos. É neste estágio que o cervejeiro define se a cerveja será encorpada e doce ou seca e alcoólica, manipulando apenas o termômetro.",
+        "production.step3.p3": "Essa etapa define a \"assinatura\" estrutural da cerveja, exigindo precisão absoluta, pois erros de temperatura aqui são irreversíveis no produto final.",
+
+        // Step 4 - Clarificação
+        "production.step4.label": "Etapa 4",
+        "production.step4.title": "Clarificação — Separação do Mosto",
+        "production.step4.p1": "Após a conversão, é necessário separar o mosto doce do bagaço exaurido. O processo, chamado de recirculação ou vorlauf, utiliza a própria camada de cascas como filtro. O mosto é drenado e devolvido ao topo até que saia cristalino e brilhante.",
+        "production.step4.p2": "Em seguida, água quente é aspergida (sparging) sobre os grãos para \"lavar\" e extrair os açúcares residuais. Essa lavagem deve ser interrompida no momento exato e com pH controlado para evitar a extração de taninos da casca, que causariam uma adstringência áspera e indesejada na cerveja.",
+
+        // Step 5 - Fervura
+        "production.step5.label": "Etapa 5",
+        "production.step5.title": "Fervura — Esterilização e Lupulagem",
+        "production.step5.p1": "O mosto ferve vigorosamente, processo vital para esterilização e estabilização. Além de isomerizar os alfa-ácidos do lúpulo para gerar amargor, a fervura provoca a coagulação de proteínas indesejadas (trub quente) e evapora compostos voláteis nocivos como o DMS (aroma de milho).",
+        "production.step5.p2": "É um processo de concentração e alquimia. O momento da adição do lúpulo é calculado: no início para amargor, no meio para sabor e no final para aroma. Adições tardias preservam óleos essenciais delicados que se perderiam com o calor excessivo.",
+        "production.step5.p3": "A vigorosidade da fervura também garante a precipitação correta de complexos proteína-polifenol, essencial para a estabilidade coloidal futura.",
+
+        // Step 6 - Resfriamento
+        "production.step6.label": "Etapa 6",
+        "production.step6.title": "Resfriamento — Choque Térmico",
+        "production.step6.p1": "Encerrada a fervura, o mosto torna-se um meio de cultura perfeito e altamente vulnerável. O resfriamento deve ser brutalmente rápido, descendo de 100°C para temperaturas de fermentação (10-20°C) em poucos minutos usando trocadores de calor de alta eficiência.",
+        "production.step6.p2": "Esse choque térmico força a precipitação de mais proteínas (trub frio), clareando a cerveja. Imediatamente após, o mosto frio deve ser oxigenado propositalmente — a única vez que o oxigênio é bem-vindo — para garantir a saúde, a reprodução celular e a vitalidade inicial da levedura.",
+
+        // Step 7 - Fermentação
+        "production.step7.label": "Etapa 7",
+        "production.step7.title": "Fermentação — A Alma da Cerveja",
+        "production.step7.p1": "No tanque, a levedura assume o comando. Durante dias, ela consome os açúcares, liberando álcool, CO₂ e calor. Mas sua contribuição vai além: ela esculpe o perfil sensorial definitivo, produzindo ésteres (frutados) e fenóis (condimentados) que caracterizam cada estilo.",
+        "production.step7.p2": "As Ales trabalham no topo, em temperaturas altas, criando sabores complexos. As Lagers trabalham no fundo, lentamente e no frio, resultando em perfis limpos. O cervejeiro monitora a 'atenuação' diariamente; quando a densidade estabiliza, a cerveja 'nasceu', mas ainda é jovem e 'verde'.",
+        "production.step7.p3": "O controle preciso de temperatura nesta fase é o maior diferencial entre uma cerveja caseira amadora e uma profissional de alta qualidade.",
+
+        // Step 8 - Maturação
+        "production.step8.label": "Etapa 8",
+        "production.step8.title": "Maturação — Refinamento e Lagering",
+        "production.step8.p1": "A cerveja verde possui compostos imaturos como acetaldeído (maçã verde) e diacetil (manteiga). Na maturação a frio, a levedura remanescente reabsorve esses subprodutos, limpando o paladar. Sabores ásperos se arredondam e partículas em suspensão decantam.",
+        "production.step8.p2": "É um teste de paciência: apressar essa etapa resulta em cervejas desequilibradas. O \"cold crash\" (resfriamento súbito perto de 0°C) finaliza o processo, aglutinando proteínas e clarificando a bebida. O tempo é o ingrediente secreto que transforma uma cerveja boa em excepcional.",
+
+        // Step 9 - Filtragem
+        "production.step9.label": "Etapa 9",
+        "production.step9.title": "Filtragem — Polimento e Brilho",
+        "production.step9.p1": "Para garantir brilho e estabilidade, muitas cervejas passam por filtragem fina ou centrifugação. Isso remove as últimas células de levedura e proteínas turvas, resultando em um produto límpido e dourado, essencial para estilos como Pilsners internacionais.",
+        "production.step9.p2": "Porém, a filtragem é uma escolha estilística. Estilos modernos como Hazy IPAs ou tradicionais como Weissbier e Kellerbier pulam esta etapa propositalmente, valorizando a textura aveludada, o corpo denso e a complexidade aromática que as proteínas e leveduras em suspensão proporcionam.",
+
+        // Step 10 - Carbonatação
+        "production.step10.label": "Etapa 10",
+        "production.step10.title": "Carbonatação — A Vida da Cerveja",
+        "production.step10.p1": "O gás é o que dá vida e textura à cerveja. Pode ser obtido por refermentação na garrafa (método tradicional), onde açúcar extra alimenta a levedura residual, ou por carbonatação forçada em tanques de pressão (método industrial), injetando CO₂ purificado a baixas temperaturas.",
+        "production.step10.p2": "A quantidade de CO₂ dissolvido define o \"perlage\" e a persistência da espuma. Uma carbonatação adequada não apenas refresca e limpa o paladar, mas também volatiliza os aromas, empurrando-os para o nariz a cada gole, sendo vital para a experiência sensorial completa.",
+
+        // Step 11 - Envase
+        "production.step11.label": "Etapa 11",
+        "production.step11.title": "Envase — A Corrida Contra o Oxigênio",
+        "production.step11.p1": "A etapa final é crítica. Sistemas modernos de envase realizam uma \"pré-evacuação\" do ar e purgam as garrafas ou latas com CO₂ antes do enchimento. O objetivo é evitar qualquer contato com oxigênio, que oxidaria a cerveja (gosto de papelão) em poucos dias.",
+        "production.step11.p2": "O envase em latas ganhou popularidade por bloquear 100% da luz UV, prevenindo o \"lightstruck\" (aroma de gambá). Seja em barril, garrafa ou lata, o objetivo supremo é entregar a cerveja ao copo do consumidor com o mesmo frescor e perfil sensorial que o mestre cervejeiro aprovou no tanque.",
+
+        // Step 12 - Controle de Qualidade
+        "production.step12.label": "Etapa 12",
+        "production.step12.title": "Controle de Qualidade — A Garantia",
+        "production.step12.p1": "Antes de sair da fábrica, a cerveja enfrenta seu júri final. Testes de laboratório verificam consistência de cor, álcool, amargor e microbiologia, enquanto painéis de degustação treinados buscam incansavelmente por defeitos sensoriais (off-flavors).",
+        "production.step12.p2": "A rastreabilidade é total: cada lote recebe um número único que permite auditar todo o histórico de produção. Este rigor obsessivo garante que a experiência do consumidor seja segura, prazerosa e consistente, mantendo a reputação da cervejaria intacta em um mercado cada dia mais exigente.",
+
+        // Water influence
+        "production.ing.water.influence": "Textura e percepção",
+
+        // Glossary - Portuguese
+        "glossary.title": "📖 Glossário Cervejeiro",
+        "glossary.subtitle": "Termos técnicos que todo apreciador de cerveja deve conhecer",
+        "glossary.ibu.term": "IBU (International Bitterness Units)",
+        "glossary.ibu.def": "Escala que mede o amargor da cerveja, baseada na concentração de iso-alfa-ácidos do lúpulo. Varia de 5 (leve) a 100+ (extremo).",
+        "glossary.srm.term": "SRM (Standard Reference Method)",
+        "glossary.srm.def": "Sistema de medição de cor da cerveja. Quanto maior o número, mais escura. Uma Pilsner tem ~3 SRM, uma Stout ~40 SRM.",
+        "glossary.abv.term": "ABV (Alcohol By Volume)",
+        "glossary.abv.def": "Percentual de álcool em relação ao volume total. Uma cerveja standard tem 4-6% ABV, enquanto IPAs podem chegar a 7-9%.",
+        "glossary.ogfg.term": "OG/FG (Original/Final Gravity)",
+        "glossary.ogfg.def": "Densidade do mosto antes (OG) e depois (FG) da fermentação. A diferença entre ambos indica o teor alcoólico.",
+        "glossary.attenuation.term": "Atenuação",
+        "glossary.attenuation.def": "Percentual de açúcar convertido em álcool pela levedura. Alta atenuação = cerveja mais seca. Baixa = mais doce.",
+        "glossary.dryhopping.term": "Dry Hopping",
+        "glossary.dryhopping.def": "Técnica de adicionar lúpulo durante ou após a fermentação (sem calor), para maximizar aromas sem adicionar amargor.",
+        "glossary.mash.term": "Mash (Mosturação)",
+        "glossary.mash.def": "Processo de misturar malte moído com água quente para converter amidos em açúcares fermentáveis através de ação enzimática.",
+        "glossary.wort.term": "Wort (Mosto)",
+        "glossary.wort.def": "Líquido açucarado extraído da mosturação, antes da fermentação. É a \"base\" da cerveja, pronto para receber levedura.",
+
+        // Timeline - Portuguese
+        "timeline.title": "⏱️ Tempo por Etapa",
+        "timeline.start": "🚀 A Jornada Começa",
+        "timeline.milling": "Moagem",
+        "timeline.mashing": "Mosturação",
+        "timeline.boiling": "Fervura",
+        "timeline.fermentation": "Fermentação",
+        "timeline.ferm_time": "7-14 dias",
+        "timeline.maturation": "Maturação",
+        "timeline.mat_time": "2-8 sem",
+        "timeline.carbonation": "Carbonatação",
+        "timeline.carb_time": "1-2 sem",
+        "timeline.end": "🍻 Saúde! Fim",
+
+        // Comparison Table - Portuguese
+        "comparison.title": "📊 Lager vs Ale vs Stout",
+        "comparison.temp": "Temp.",
+        "comparison.time": "Tempo",
+        "comparison.flavor": "Sabor",
+        "comparison.color": "Cor SRM",
+        "comparison.lager_time": "4-8 sem",
+        "comparison.ale_time": "2-3 sem",
+        "comparison.stout_time": "2-4 sem",
+        "comparison.lager_flavor": "Limpo",
+        "comparison.ale_flavor": "Frutado",
+        "comparison.stout_flavor": "Torrado",
+
+        // Myths vs Reality - Portuguese
+        "myths.title": "🧪 Mitos vs Realidade",
+        "myths.subtitle": "Desfazendo equívocos comuns sobre a produção de cerveja",
+        "myths.myth_label": "Mito",
+        "myths.reality_label": "Realidade",
+        "myths.myth1.text": "\"Cerveja escura é mais forte que cerveja clara.\"",
+        "myths.myth1.reality": "A cor vem do tipo de malte usado, não do teor alcoólico. Uma Stout pode ter 4% ABV, enquanto uma Belgian Tripel clara pode ter 9%.",
+        "myths.myth2.text": "\"Cerveja artesanal é sempre melhor que industrial.\"",
+        "myths.myth2.reality": "Qualidade depende do processo, não da escala. Cervejarias industriais têm controle de qualidade rigoroso, enquanto algumas artesanais podem ter problemas de consistência.",
+        "myths.myth3.text": "\"A espuma da cerveja é só estética.\"",
+        "myths.myth3.reality": "A espuma protege a cerveja da oxidação, libera aromas e indica a qualidade das proteínas do malte. Uma boa espuma é sinal de processo bem executado.",
+        "myths.myth4.text": "\"Cerveja deve ser servida gelada para mascarar sabores.\"",
+        "myths.myth4.reality": "A temperatura ideal varia por estilo. Lagers ficam melhores a 4-7°C, mas Ales complexas revelam seus aromas a 10-14°C. Muito frio anestesia o paladar.",
+
+        // Hero Carousel
+        "hero.carousel.1": "Uma jornada onde a tradição encontra a inovação para criar sabores inesquecíveis.",
+        "hero.carousel.2": "Desvende os segredos da fermentação, maturação e o equilíbrio perfeito dos ingredientes.",
+        "hero.carousel.3": "Ciência, arte e paixão em cada gota.",
+        "hero.carousel.4": "Navegue abaixo e conheça os detalhes que definem a qualidade da sua cerveja favorita.",
+
+        // Footer
+        "footer.tagline": "Sua enciclopédia definitiva de cervejas.",
+        "footer.rights": "© 2024 BeerSL. Todos os direitos reservados.",
+
+        // Calculator - Portuguese
+        "calc.title": "🧮 Calculadora de Receita",
+        "calc.volume": "Volume (L)",
+        "calc.abv": "ABV %",
+        "calc.ibu": "IBU",
+        "calc.ingredients": "📋 Ingredientes Estimados:",
+        "calc.malt": "🌾 Malte Base:",
+        "calc.hops": "🌿 Lúpulo (60 min):",
+        "calc.yeast": "🧫 Levedura:",
+        "calc.water": "💧 Água Total:",
+
+        // Quiz - Portuguese
+        "quiz.title": "🎯 Quiz",
+        "quiz.next": "Próxima →",
+        "quiz.retry": "↻ Repetir",
+
+        // FAQ - Portuguese
+        "faq.title": "❓ FAQ",
+        "faq.q1.q": "Ale vs Lager?",
+        "faq.q1.a": "Ales: levedura alta (15-24°C), frutadas. Lagers: levedura baixa (8-14°C), limpas.",
+        "faq.q2.q": "Por que amarga?",
+        "faq.q2.a": "Alfa-ácidos do lúpulo. Mais lúpulo + mais tempo = mais IBU.",
+        "faq.q3.q": "Validade?",
+        "faq.q3.a": "IPAs: 3 meses. Stouts: anos. Armazene em local fresco e escuro.",
+        "faq.q4.q": "Puro malte?",
+        "faq.q4.a": "100% malte de cevada, sem milho/arroz/açúcar (lei alemã 1516).",
+        "faq.q5.q": "Fazer em casa?",
+        "faq.q5.a": "Sim! Kits ~R$500. Processo igual, escala menor (20L).",
+        "faq.q6.q": "O que é mosto?",
+        "faq.q6.a": "É o \"chá\" de malte açucarado antes de virar cerveja pela fermentação.",
+        "faq.q7.q": "Trigo ou Cevada?",
+        "faq.q7.a": "Maioria usa cevada. Weissbier usa ~50% de trigo maltado.",
+        "faq.q8.q": "Chopp vs Cerveja?",
+        "faq.q8.a": "Mesma bebida! Chopp não é pasteurizado, tem validade curta.",
+        "faq.q9.q": "Cerveja congela?",
+        "faq.q9.a": "Sim, e pode estourar a garrafa. Álcool baixa o ponto de fusão, mas congela.",
+        "faq.q10.q": "O que é IBU?",
+        "faq.q10.a": "International Bitterness Unit. Mede apenas o amargor do lúpulo.",
+        "faq.q11.q": "Lata ou Garrafa?",
+        "faq.q11.a": "Lata é melhor! Protege totalmente da luz (UV) e veda melhor o oxigênio.",
+        "faq.q12.q": "Espuma importa?",
+        "faq.q12.a": "Sim! Mantém a temperatura e preserva os aromas voláteis no copo.",
+        "faq.q13.q": "Cerveja engorda?",
+        "faq.q13.a": "Moderadamente. Tem calorias (álcool + açúcar residual), similar a suco de laranja.",
+        "faq.q14.q": "IPA é forte?",
+        "faq.q14.a": "Tem mais lúpulo e álcool que Lagers comuns, mas varia muito.",
+        "faq.q15.q": "Trapista?",
+        "faq.q15.a": "Cerveja feita por monges trapistas dentro do mosteiro. Selo de autenticidade.",
+        "faq.q16.q": "Glúten?",
+        "faq.q16.a": "Sim, cevada e trigo têm glúten. Existem cervejas \"Gluten Free\" enzimáticas.",
+        "faq.q17.q": "Cerveja quente?",
+        "faq.q17.a": "Ingleses bebem a temp. de adega (12-14°C), não \"quente\". Realça sabores.",
+        "faq.q18.q": "Mosturação?",
+        "faq.q18.a": "Cozimento do malte em água quente para converter amido em açúcar fermentável.",
+        "faq.q19.q": "Dry Hopping?",
+        "faq.q19.a": "Adição de lúpulo frio na fermentação ou maturação. Aumenta aroma, não amargor.",
+        "faq.q20.q": "ABV?",
+        "faq.q20.a": "Alcohol By Volume. Porcentagem de volume da bebida que é álcool puro.",
+
+        // Footer
+        "production.footer.text": "Cerveja: Uma combinação perfeita de ciência e arte.",
+
         "brands.hero.title": "Top Marcas de Cerveja",
         "brands.hero.subtitle": "Descubra as cervejarias que definem os estilos.",
         "brands.hero.greeting": "Olá! Explore as",
@@ -30,6 +307,8 @@ export const translations = {
         "brands.stats.cataloged": "Marcas catalogadas",
         "brands.stats.countries": "Países",
         "brands.stats.groups": "Grupos cervejeiros",
+        "brands.stats.history": "Origens",
+        "brands.stats.history_val": "Histórico",
         "brands.stats.history": "Histórico & Origens",
         "footer.rights": "Todos os direitos reservados.",
         "footer.tagline": "Sua enciclopédia definitiva de cervejas.",
@@ -2758,6 +3037,280 @@ export const translations = {
         "nav.contact": "Contact",
         "nav.about": "About",
         "nav.brands": "Top Brands",
+        "nav.production": "Production",
+
+        // Production Page - English
+        "production.hero.title": "Beer Production",
+        "production.step1.label": "Step 1",
+        "production.step1.title": "The 4 Essential Ingredients",
+        "production.step1.intro": "Producing quality beer requires the perfect balance of four fundamental ingredients, each contributing unique characteristics to the final product.",
+
+        // Ingredients - Malt
+        "production.ing.malt.title": "Malt",
+        "production.ing.malt.subtitle": "The Source of Sugars",
+        "production.ing.malt.origin": "Malted barley",
+        "production.ing.malt.function": "Fermentable sugars",
+        "production.ing.malt.contributes": "Color, body, aromas",
+        "production.ing.malt.profile": "Bread, biscuit, caramel, chocolate",
+        "production.ing.malt.desc": "Defines the structure and soul of the beer. Its level of roasting determines the color (from pale to dark) and aroma complexity.",
+
+        // Ingredients - Hops
+        "production.ing.hops.title": "Hops",
+        "production.ing.hops.subtitle": "The Tempering Agent",
+        "production.ing.hops.origin": "Humulus lupulus flowers",
+        "production.ing.hops.function": "Bitterness and aroma",
+        "production.ing.hops.contributes": "Natural preservation",
+        "production.ing.hops.profile": "Floral, citrus, herbal, resinous",
+        "production.ing.hops.desc": "Its alpha acids balance the sweetness of malt. Aromatic varieties add layers of complexity to the nose and palate.",
+
+        // Ingredients - Yeast
+        "production.ing.yeast.title": "Yeast",
+        "production.ing.yeast.subtitle": "The Transforming Agent",
+        "production.ing.yeast.origin": "Saccharomyces cerevisiae",
+        "production.ing.yeast.function": "Fermentation",
+        "production.ing.yeast.contributes": "Alcohol, CO₂, aromas",
+        "production.ing.yeast.types": "Ale (top) | Lager (bottom)",
+        "production.ing.yeast.desc": "A living microorganism that transforms sugar into alcohol and CO₂, releasing complex aromas that define the style.",
+
+        // Ingredients - Water
+        "production.ing.water.title": "Water",
+        "production.ing.water.subtitle": "The Essential Base",
+        "production.ing.water.composition": "+90% of beer",
+        "production.ing.water.function": "Reaction medium",
+        "production.ing.water.contributes": "pH and mineral profile",
+        "production.ing.water.minerals": "Calcium, Sulfates, Chlorides",
+        "production.ing.water.desc": "Its mineral composition directly influences the final taste. The famous brewing regions (Pilsen, Burton) are distinguished by their waters.",
+
+        // Labels
+        "label.origin": "Origin",
+        "label.function": "Function",
+        "label.contributes": "Contributes",
+        "label.profile": "Profile",
+        "label.types": "Types",
+        "label.composition": "Composition",
+        "label.minerals": "Minerals",
+
+        // Step 2 - Production Process
+        "production.step2.label": "Step 2",
+        "production.step2.title": "The Production Process",
+        "production.step2.intro": "From raw grain to glass, beer goes through a fascinating journey of chemical and biological transformations.",
+
+        // Process Steps
+        "production.process.mashing.title": "Mashing",
+        "production.process.mashing.desc": "The malted grain is mixed with hot water (62-72°C) to convert starches into fermentable sugars. This process takes 60-90 minutes.",
+
+        "production.process.boiling.title": "Boiling",
+        "production.process.boiling.desc": "The wort is boiled for 60-90 minutes with hops added at specific intervals for bitterness, flavor and aroma.",
+
+        "production.process.fermentation.title": "Fermentation",
+        "production.process.fermentation.desc": "Yeast converts sugars into alcohol and CO₂. Ales ferment at 15-24°C (top), Lagers at 7-13°C (bottom).",
+
+        "production.process.maturation.title": "Maturation",
+        "production.process.maturation.desc": "The beer rests for weeks or months, developing complex flavors and clarifying naturally.",
+
+        // Step 2 - Milling
+        "production.step2.label": "Step 2",
+        "production.step2.title": "Milling — Grain Preparation",
+        "production.step2.p1": "Milling is the initial pillar of brewing efficiency. The goal is to expose the starch-rich endosperm of the grain without pulverizing the husk. If grains are crushed too fine, gums form that clog the system; if too coarse, yield drops drastically.",
+        "production.step2.p2": "Husk preservation is vital, as it will form the natural filter bed in subsequent steps, ensuring a clear and fluid wort. The millimeter-precise adjustment of the mill rollers defines the success of the entire mashing process.",
+        "production.step2.p3": "Although it seems mechanical, this adjustment directly defines the clarity, efficiency, and sensory stability of the final beer.",
+
+        // Step 3 - Mashing
+        "production.step3.label": "Step 3",
+        "production.step3.title": "Mashing — Starch to Sugar Conversion",
+        "production.step3.p1": "Here the biochemical magic occurs: the malt and water mixture is maintained at precise temperatures to activate specific enzymes. Alpha-amylases create complex sugars (dextrins) that give the beer body, while beta-amylases produce fermentable maltose for alcohol.",
+        "production.step3.p2": "pH control and water/grain ratio are also critical. It is at this stage that the brewer defines whether the beer will be full-bodied and sweet or dry and alcoholic, manipulating only the thermometer.",
+        "production.step3.p3": "This step defines the structural 'signature' of the beer, requiring absolute precision, as temperature errors here are irreversible in the final product.",
+
+        // Step 4 - Lautering
+        "production.step4.label": "Step 4",
+        "production.step4.title": "Lautering — Wort Separation",
+        "production.step4.p1": "After conversion, it is necessary to separate the sweet wort from the spent grain. The process, called recirculation or vorlauf, uses the husk layer itself as a filter. The wort is drained and returned to the top until it comes out crystal clear and bright.",
+        "production.step4.p2": "Then, hot water is sprinkled (sparging) over the grains to 'wash' and extract residual sugars. This washing must be stopped at the exact moment and with controlled pH to avoid extracting tannins from the husk, which would cause harsh and unwanted astringency in the beer.",
+
+        // Step 5 - Boiling
+        "production.step5.label": "Step 5",
+        "production.step5.title": "Boiling — Sterilization and Hopping",
+        "production.step5.p1": "The wort boils vigorously, a vital process for sterilization and stabilization. Besides isomerizing the hop alpha acids to generate bitterness, boiling causes coagulation of unwanted proteins (hot trub) and evaporates harmful volatile compounds like DMS (corn aroma).",
+        "production.step5.p2": "It is a process of concentration and alchemy. The timing of hop addition is calculated: at the beginning for bitterness, in the middle for flavor, and at the end for aroma. Late additions preserve delicate essential oils that would be lost with excessive heat.",
+        "production.step5.p3": "The vigor of the boil also ensures correct precipitation of protein-polyphenol complexes, essential for future colloidal stability.",
+
+        // Step 6 - Cooling
+        "production.step6.label": "Step 6",
+        "production.step6.title": "Cooling — Thermal Shock",
+        "production.step6.p1": "Once boiling is finished, the wort becomes a perfect and highly vulnerable culture medium. Cooling must be brutally fast, going from 100°C to fermentation temperatures (10-20°C) in a few minutes using high-efficiency heat exchangers.",
+        "production.step6.p2": "This thermal shock forces the precipitation of more proteins (cold trub), clarifying the beer. Immediately after, the cold wort must be purposely oxygenated — the only time oxygen is welcome — to ensure the health, cell reproduction, and initial vitality of the yeast.",
+
+        // Step 7 - Fermentation
+        "production.step7.label": "Step 7",
+        "production.step7.title": "Fermentation — The Soul of Beer",
+        "production.step7.p1": "In the tank, yeast takes command. For days, it consumes sugars, releasing alcohol, CO₂, and heat. But its contribution goes beyond: it sculpts the definitive sensory profile, producing esters (fruity) and phenols (spicy) that characterize each style.",
+        "production.step7.p2": "Ales work at the top, at high temperatures, creating complex flavors. Lagers work at the bottom, slowly and cold, resulting in clean profiles. The brewer monitors 'attenuation' daily; when density stabilizes, the beer is 'born', but still young and 'green'.",
+        "production.step7.p3": "Precise temperature control in this phase is the biggest differentiator between an amateur homebrew and a high-quality professional beer.",
+
+        // Step 8 - Maturation
+        "production.step8.label": "Step 8",
+        "production.step8.title": "Maturation — Refinement and Lagering",
+        "production.step8.p1": "Green beer has immature compounds like acetaldehyde (green apple) and diacetyl (butter). In cold maturation, remaining yeast reabsorbs these byproducts, cleaning the palate. Harsh flavors round out and suspended particles settle.",
+        "production.step8.p2": "It is a test of patience: rushing this step results in unbalanced beers. The 'cold crash' (sudden cooling near 0°C) finalizes the process, agglutinating proteins and clarifying the drink. Time is the secret ingredient that transforms a good beer into an exceptional one.",
+
+        // Step 9 - Filtration
+        "production.step9.label": "Step 9",
+        "production.step9.title": "Filtration — Polish and Brilliance",
+        "production.step9.p1": "To ensure brilliance and stability, many beers undergo fine filtration or centrifugation. This removes the last yeast cells and hazy proteins, resulting in a clear and golden product, essential for styles like international Pilsners.",
+        "production.step9.p2": "However, filtration is a stylistic choice. Modern styles like Hazy IPAs or traditional ones like Weissbier and Kellerbier purposely skip this step, valuing the velvety texture, dense body, and aromatic complexity that suspended proteins and yeasts provide.",
+
+        // Step 10 - Carbonation
+        "production.step10.label": "Step 10",
+        "production.step10.title": "Carbonation — The Life of Beer",
+        "production.step10.p1": "The gas is what gives life and texture to beer. It can be obtained by bottle refermentation (traditional method), where extra sugar feeds residual yeast, or by forced carbonation in pressure tanks (industrial method), injecting purified CO₂ at low temperatures.",
+        "production.step10.p2": "The amount of dissolved CO₂ defines the 'perlage' and foam persistence. Adequate carbonation not only refreshes and cleans the palate, but also volatilizes aromas, pushing them to the nose with each sip, being vital for the complete sensory experience.",
+
+        // Step 11 - Packaging
+        "production.step11.label": "Step 11",
+        "production.step11.title": "Packaging — The Race Against Oxygen",
+        "production.step11.p1": "The final step is critical. Modern packaging systems perform a 'pre-evacuation' of air and purge bottles or cans with CO₂ before filling. The goal is to avoid any contact with oxygen, which would oxidize the beer (cardboard taste) in just a few days.",
+        "production.step11.p2": "Canning has gained popularity for blocking 100% of UV light, preventing 'lightstruck' (skunk aroma). Whether in keg, bottle, or can, the supreme goal is to deliver the beer to the consumer's glass with the same freshness and sensory profile that the master brewer approved in the tank.",
+
+        // Step 12 - Quality Control
+        "production.step12.label": "Step 12",
+        "production.step12.title": "Quality Control — The Guarantee",
+        "production.step12.p1": "Before leaving the factory, the beer faces its final jury. Laboratory tests verify consistency of color, alcohol, bitterness, and microbiology, while trained tasting panels tirelessly search for sensory defects (off-flavors).",
+        "production.step12.p2": "Traceability is total: each batch receives a unique number that allows auditing the entire production history. This obsessive rigor ensures that the consumer experience is safe, pleasant, and consistent, keeping the brewery's reputation intact in an increasingly demanding market.",
+
+        // Glossary - English
+        "glossary.title": "📖 Beer Glossary",
+        "glossary.subtitle": "Technical terms every beer enthusiast should know",
+        "glossary.ibu.term": "IBU (International Bitterness Units)",
+        "glossary.ibu.def": "Scale that measures the bitterness of beer, based on the concentration of iso-alpha acids from hops. Ranges from 5 (light) to 100+ (extreme).",
+        "glossary.srm.term": "SRM (Standard Reference Method)",
+        "glossary.srm.def": "Beer color measurement system. The higher the number, the darker. A Pilsner has ~3 SRM, a Stout ~40 SRM.",
+        "glossary.abv.term": "ABV (Alcohol By Volume)",
+        "glossary.abv.def": "Percentage of alcohol relative to total volume. A standard beer has 4-6% ABV, while IPAs can reach 7-9%.",
+        "glossary.ogfg.term": "OG/FG (Original/Final Gravity)",
+        "glossary.ogfg.def": "Wort density before (OG) and after (FG) fermentation. The difference between them indicates the alcohol content.",
+        "glossary.attenuation.term": "Attenuation",
+        "glossary.attenuation.def": "Percentage of sugar converted to alcohol by yeast. High attenuation = drier beer. Low = sweeter.",
+        "glossary.dryhopping.term": "Dry Hopping",
+        "glossary.dryhopping.def": "Technique of adding hops during or after fermentation (without heat), to maximize aromas without adding bitterness.",
+        "glossary.mash.term": "Mash (Mashing)",
+        "glossary.mash.def": "Process of mixing milled malt with hot water to convert starches into fermentable sugars through enzymatic action.",
+        "glossary.wort.term": "Wort",
+        "glossary.wort.def": "Sweet liquid extracted from mashing, before fermentation. It is the 'base' of beer, ready to receive yeast.",
+
+        // Timeline - English
+        "timeline.title": "⏱️ Time per Step",
+        "timeline.start": "🚀 The Journey Begins",
+        "timeline.milling": "Milling",
+        "timeline.mashing": "Mashing",
+        "timeline.boiling": "Boiling",
+        "timeline.fermentation": "Fermentation",
+        "timeline.ferm_time": "7-14 days",
+        "timeline.maturation": "Maturation",
+        "timeline.mat_time": "2-8 weeks",
+        "timeline.carbonation": "Carbonation",
+        "timeline.carb_time": "1-2 weeks",
+        "timeline.end": "🍻 Cheers! End",
+
+        // Comparison Table - English
+        "comparison.title": "📊 Lager vs Ale vs Stout",
+        "comparison.temp": "Temp.",
+        "comparison.time": "Time",
+        "comparison.flavor": "Flavor",
+        "comparison.color": "Color SRM",
+        "comparison.lager_time": "4-8 weeks",
+        "comparison.ale_time": "2-3 weeks",
+        "comparison.stout_time": "2-4 weeks",
+        "comparison.lager_flavor": "Clean",
+        "comparison.ale_flavor": "Fruity",
+        "comparison.stout_flavor": "Roasted",
+
+        // Myths vs Reality - English
+        "myths.title": "🧪 Myths vs Reality",
+        "myths.subtitle": "Debunking common misconceptions about beer production",
+        "myths.myth_label": "Myth",
+        "myths.reality_label": "Reality",
+        "myths.myth1.text": "\"Dark beer is stronger than light beer.\"",
+        "myths.myth1.reality": "Color comes from the type of malt used, not alcohol content. A Stout can have 4% ABV, while a light Belgian Tripel can have 9%.",
+        "myths.myth2.text": "\"Craft beer is always better than industrial.\"",
+        "myths.myth2.reality": "Quality depends on process, not scale. Industrial breweries have rigorous quality control, while some craft breweries may have consistency issues.",
+        "myths.myth3.text": "\"Beer foam is just aesthetic.\"",
+        "myths.myth3.reality": "Foam protects beer from oxidation, releases aromas, and indicates malt protein quality. Good foam is a sign of well-executed process.",
+        "myths.myth4.text": "\"Beer should be served ice cold to mask flavors.\"",
+        "myths.myth4.reality": "Ideal temperature varies by style. Lagers are best at 4-7°C, but complex Ales reveal their aromas at 10-14°C. Too cold numbs the palate.",
+
+        // Hero Carousel
+        "hero.carousel.1": "A journey where tradition meets innovation to create unforgettable flavors.",
+        "hero.carousel.2": "Unlock the secrets of fermentation, maturation, and the perfect balance of ingredients.",
+        "hero.carousel.3": "Science, art, and passion in every drop.",
+        "hero.carousel.4": "Scroll down and discover the details that define the quality of your favorite beer.",
+
+        // Footer
+        "footer.tagline": "Your definitive beer encyclopedia.",
+        "footer.rights": "© 2024 BeerSL. All rights reserved.",
+
+        // Calculator - English
+        "calc.title": "🧮 Recipe Calculator",
+        "calc.volume": "Volume (L)",
+        "calc.abv": "ABV %",
+        "calc.ibu": "IBU",
+        "calc.ingredients": "📋 Estimated Ingredients:",
+        "calc.malt": "🌾 Base Malt:",
+        "calc.hops": "🌿 Hops (60 min):",
+        "calc.yeast": "🧫 Yeast:",
+        "calc.water": "💧 Total Water:",
+
+        // Quiz - English
+        "quiz.title": "🎯 Quiz",
+        "quiz.next": "Next →",
+        "quiz.retry": "↻ Retry",
+
+        // FAQ - English
+        "faq.title": "❓ FAQ",
+        "faq.q1.q": "Ale vs Lager?",
+        "faq.q1.a": "Ales: top yeast (15-24°C), fruity. Lagers: bottom yeast (8-14°C), clean.",
+        "faq.q2.q": "Why bitter?",
+        "faq.q2.a": "Hops alpha-acids. More hops + more time = higher IBU.",
+        "faq.q3.q": "Validity?",
+        "faq.q3.a": "IPAs: 3 months. Stouts: years. Store in cool, dark place.",
+        "faq.q4.q": "Pure malt?",
+        "faq.q4.a": "100% barley malt, no corn/rice/sugar (German Law 1516).",
+        "faq.q5.q": "Homebrew?",
+        "faq.q5.a": "Yes! Kits ~$100. Same process, smaller scale (20L).",
+        "faq.q6.q": "What is wort?",
+        "faq.q6.a": "It is sugary malt \"tea\" before becoming beer via fermentation.",
+        "faq.q7.q": "Wheat or Barley?",
+        "faq.q7.a": "Most use barley. Weissbier uses ~50% malted wheat.",
+        "faq.q8.q": "Draft vs Beer?",
+        "faq.q8.a": "Same drink! Draft is unpasteurized, short shelf life.",
+        "faq.q9.q": "Does beer freeze?",
+        "faq.q9.a": "Yes, and bottles can burst. Alcohol lowers freezing point, but it freezes.",
+        "faq.q10.q": "What is IBU?",
+        "faq.q10.a": "International Bitterness Unit. Measures only hop bitterness.",
+        "faq.q11.q": "Can or Bottle?",
+        "faq.q11.a": "Can is better! Blocks 100% light (UV) and seals oxygen better.",
+        "faq.q12.q": "Does foam matter?",
+        "faq.q12.a": "Yes! Maintains temperature and preserves volatile aromas.",
+        "faq.q13.q": "Does beer fatten?",
+        "faq.q13.a": "Moderately. Has calories (alcohol + residual sugar), similar to orange juice.",
+        "faq.q14.q": "Is IPA strong?",
+        "faq.q14.a": "Has more hops and alcohol than standard Lagers, but varies.",
+        "faq.q15.q": "Trappist?",
+        "faq.q15.a": "Beer made by Trappist monks within the monastery. Authenticity seal.",
+        "faq.q16.q": "Gluten?",
+        "faq.q16.a": "Yes, barley and wheat have gluten. \"Gluten Free\" enzymatic beers exist.",
+        "faq.q17.q": "Warm beer?",
+        "faq.q17.a": "British drink at cellar temp (12-14°C), not \"warm\". Enhances flavors.",
+        "faq.q18.q": "Mashing?",
+        "faq.q18.a": "Cooking malt in hot water to convert starch to fermentable sugar.",
+        "faq.q19.q": "Dry Hopping?",
+        "faq.q19.a": "Adding cold hops during fermentation/maturation. Increases aroma, not bitterness.",
+        "faq.q20.q": "ABV?",
+        "faq.q20.a": "Alcohol By Volume. Percentage of volume that is pure alcohol.",
+
+        // Footer
+        "production.footer.text": "Beer: A perfect combination of science and art.",
+
         "brands.hero.title": "Top Beer Brands",
         "brands.hero.subtitle": "Discover the breweries that define the styles.",
         "brands.hero.greeting": "Hello! Explore the",
@@ -2766,6 +3319,8 @@ export const translations = {
         "brands.stats.cataloged": "Cataloged Brands",
         "brands.stats.countries": "Countries",
         "brands.stats.groups": "Brewing Groups",
+        "brands.stats.history": "Origins",
+        "brands.stats.history_val": "History",
         "brands.stats.history": "History & Origins",
         "footer.rights": "All rights reserved.",
         "footer.tagline": "Your definitive beer encyclopedia.",
@@ -5501,6 +6056,7 @@ export const translations = {
         "nav.contact": "Kontakt",
         "nav.about": "Über",
         "nav.brands": "Top Marken",
+        "nav.production": "Produktion",
         "brands.hero.title": "Top Biermarken",
         "brands.hero.subtitle": "Entdecken Sie die Brauereien, die die Stile definieren.",
         "brands.hero.greeting": "Hallo! Entdecken Sie die",
@@ -5510,6 +6066,7 @@ export const translations = {
         "brands.stats.countries": "Länder",
         "brands.stats.groups": "Brauereigruppen",
         "brands.stats.history": "Geschichte & Herkunft",
+        "brands.stats.history_val": "Geschichte",
         "footer.rights": "Alle Rechte vorbehalten.",
         "footer.tagline": "Ihre definitive Bier-Enzyklopädie.",
         "footer.top_brands": "Top Biermarken",
@@ -5547,6 +6104,211 @@ export const translations = {
         "brand.fullers.description": "Die Quintessenz britischer Ales. Bekannt für London Pride und ESB.",
         "brand.stone.description": "Arrogant und aggressiv. Berühmt für intensive IPAs, die den Gaumen herausfordern.",
 
+        // Production Page - German
+        "production.hero.title": "Bierproduktion",
+        "production.step1.label": "Schritt 1",
+        "production.step1.title": "Die 4 Wesentlichen Zutaten",
+        "production.step1.intro": "Die Herstellung von Qualitätsbier erfordert die perfekte Balance von vier grundlegenden Zutaten, die jeweils einzigartige Eigenschaften zum Endprodukt beitragen.",
+
+        // Ingredients - Malt
+        "production.ing.malt.title": "Malz",
+        "production.ing.malt.subtitle": "Die Zuckerquelle",
+        "production.ing.malt.origin": "Gerstenmalz",
+        "production.ing.malt.function": "Vergärbare Zucker",
+        "production.ing.malt.contributes": "Farbe, Körper, Aromen",
+        "production.ing.malt.profile": "Brot, Keks, Karamell, Schokolade",
+        "production.ing.malt.desc": "Definiert die Struktur und die Seele des Bieres. Sein Röstgrad bestimmt die Farbe (von blass bis dunkel) und die Aromakomplexität.",
+
+        // Ingredients - Hops
+        "production.ing.hops.title": "Hopfen",
+        "production.ing.hops.subtitle": "Das Würzmittel",
+        "production.ing.hops.origin": "Humulus lupulus Blüten",
+        "production.ing.hops.function": "Bitterkeit und Aroma",
+        "production.ing.hops.contributes": "Natürliche Konservierung",
+        "production.ing.hops.profile": "Blumig, Zitrus, Kräuter, Harzig",
+        "production.ing.hops.desc": "Seine Alphasäuren gleichen die Süße des Malzes aus. Aromatische Sorten fügen der Nase und dem Gaumen komplexe Schichten hinzu.",
+
+        // Ingredients - Yeast
+        "production.ing.yeast.title": "Hefe",
+        "production.ing.yeast.subtitle": "Der Verwandlungskünstler",
+        "production.ing.yeast.origin": "Saccharomyces cerevisiae",
+        "production.ing.yeast.function": "Gärung",
+        "production.ing.yeast.contributes": "Alkohol, CO₂, Aromen",
+        "production.ing.yeast.types": "Obergärig (Ale) | Untergärig (Lager)",
+        "production.ing.yeast.desc": "Ein lebender Mikroorganismus, der Zucker in Alkohol und CO₂ umwandelt und komplexe Aromen freisetzt, die den Stil definieren.",
+
+        // Ingredients - Water
+        "production.ing.water.title": "Wasser",
+        "production.ing.water.subtitle": "Die Essentielle Basis",
+        "production.ing.water.composition": "+90% des Bieres",
+        "production.ing.water.function": "Reaktionsmedium",
+        "production.ing.water.contributes": "pH-Wert und Mineralprofil",
+        "production.ing.water.minerals": "Kalzium, Sulfate, Chloride",
+        "production.ing.water.desc": "Seine mineralische Zusammensetzung beeinflusst direkt den endgültigen Geschmack. Berühmte Brauregionen (Pilsen, Burton) zeichnen sich durch ihr Wasser aus.",
+
+        // Labels
+        "label.origin": "Herkunft",
+        "label.function": "Funktion",
+        "label.contributes": "Trägt bei",
+        "label.profile": "Profil",
+        "label.types": "Typen",
+        "label.composition": "Zusammensetzung",
+        "label.minerals": "Mineralien",
+
+        // Step 2 - Production Process Overview
+        "production.step2.label": "Schritt 2",
+        "production.step2.title": "Der Produktionsprozess",
+        "production.step2.intro": "Vom rohen Korn bis ins Glas durchläuft das Bier eine faszinierende Reise chemischer und biologischer Transformationen.",
+
+        // Process Steps 
+        "production.process.mashing.title": "Maischen",
+        "production.process.mashing.desc": "Das geschrotete Malz wird mit heißem Wasser (62-72°C) vermischt, um Stärke in vergärbare Zucker umzuwandeln. Dieser Prozess dauert 60-90 Minuten.",
+
+        "production.process.boiling.title": "Kochen",
+        "production.process.boiling.desc": "Die Würze wird 60-90 Minuten lang gekocht, wobei Hopfen in bestimmten Intervallen für Bitterkeit, Geschmack und Aroma hinzugefügt wird.",
+
+        "production.process.fermentation.title": "Gärung",
+        "production.process.fermentation.desc": "Hefe wandelt Zucker in Alkohol und CO₂ um. Ales gären bei 15-24°C (obergärig), Lager bei 7-13°C (untergärig).",
+
+        "production.process.maturation.title": "Reifung",
+        "production.process.maturation.desc": "Das Bier ruht wochen- oder monatelang, entwickelt komplexe Aromen und klärt sich natürlich.",
+
+        // Step 2 - Milling
+        "production.step2.label": "Schritt 2",
+        "production.step2.title": "Schroten — Kornvorbereitung",
+        "production.step2.p1": "Das Schroten ist der erste Pfeiler der Braueffizienz. Ziel ist es, den stärkereichen Mehlkörper des Korns freizulegen, ohne die Spelze zu pulverisieren. Werden Körner zu fein zermahlen, entstehen Stoffe, die das System verstopfen; zu grob, sinkt die Ausbeute drastisch.",
+        "production.step2.p2": "Die Erhaltung der Spelze ist vital, da sie in den folgenden Schritten das natürliche Filterbett bildet und eine klare, flüssige Würze garantiert. Die millimetergenaue Einstellung der Walzenmühle definiert den Erfolg des gesamten Maischprozesses.",
+        "production.step2.p3": "Obwohl es mechanisch erscheint, definiert diese Einstellung direkt die Klarheit, Effizienz und sensorische Stabilität des fertigen Bieres.",
+
+        // Step 3 - Mashing
+        "production.step3.label": "Schritt 3",
+        "production.step3.title": "Maischen — Stärke zu Zucker",
+        "production.step3.p1": "Hier geschieht die biochemische Magie: Die Malz-Wasser-Mischung wird auf präzisen Temperaturen gehalten, um spezifische Enzyme zu aktivieren. Alpha-Amylasen erzeugen komplexe Zucker (Dextrine), die dem Bier Körper geben, während Beta-Amylasen vergärbare Maltose für Alkohol produzieren.",
+        "production.step3.p2": "pH-Kontrolle und Wasser/Korn-Verhältnis sind ebenfalls kritisch. In dieser Phase entscheidet der Brauer, ob das Bier vollmundig und süß oder trocken und alkoholisch wird, indem er nur das Thermometer manipuliert.",
+        "production.step3.p3": "Dieser Schritt definiert die strukturelle 'Signatur' des Bieres und erfordert absolute Präzision, da Temperaturfehler hier im Endprodukt irreversibel sind.",
+
+        // Step 4 - Lautering
+        "production.step4.label": "Schritt 4",
+        "production.step4.title": "Läutern — Würzetrennung",
+        "production.step4.p1": "Nach der Umwandlung muss die süße Würze vom Treber getrennt werden. Der Prozess, genannt Rezirkulation oder Vorlauf, nutzt die Spelzenschicht selbst als Filter. Die Würze wird abgelassen und wieder nach oben geführt, bis sie kristallklar und hell herauskommt.",
+        "production.step4.p2": "Dann wird heißes Wasser (Anschwänzen) über die Körner gesprüht, um Restsucker zu 'waschen' und zu extrahieren. Dieses Waschen muss im exakten Moment und mit kontrolliertem pH gestoppt werden, um das Auswaschen von Tanninen aus der Spelze zu vermeiden, die eine harsche und unerwünschte Adstringenz im Bier verursachen würden.",
+
+        // Step 5 - Boiling
+        "production.step5.label": "Schritt 5",
+        "production.step5.title": "Kochen — Sterilisation und Hopfung",
+        "production.step5.p1": "Die Würze kocht heftig, ein vitaler Prozess für Sterilisation und Stabilisierung. Neben der Isomerisierung der Hopfen-Alphasäuren zur Erzeugung von Bitterkeit bewirkt das Kochen die Koagulation unerwünschter Proteine (Heißtrub) und verdampft schädliche flüchtige Verbindungen wie DMS (Maisaroma).",
+        "production.step5.p2": "Es ist ein Prozess der Konzentration und Alchemie. Der Zeitpunkt der Hopfengabe ist berechnet: zu Beginn für Bitterkeit, in der Mitte für Geschmack und am Ende für Aroma. Späte Gaben bewahren empfindliche ätherische Öle, die bei übermäßiger Hitze verloren gingen.",
+        "production.step5.p3": "Die Heftigkeit des Kochens garantiert auch die korrekte Ausfällung von Protein-Polyphenol-Komplexen, essentiell für die künftige kolloidale Stabilität.",
+
+        // Step 6 - Cooling
+        "production.step6.label": "Schritt 6",
+        "production.step6.title": "Kühlen — Thermischer Schock",
+        "production.step6.p1": "Sobald das Kochen beendet ist, wird die Würze zu einem perfekten und hochanfälligen Nährboden. Das Kühlen muss brutal schnell erfolgen, von 100°C auf Gärtemperaturen (10-20°C) in wenigen Minuten mittels Hocheffizienzwärmetauschern.",
+        "production.step6.p2": "Dieser thermische Schock erzwingt die Ausfällung weiterer Proteine (Kalttrub), was das Bier klärt. Unmittelbar danach muss die kalte Würze gezielt mit Sauerstoff angereichert werden — das einzige Mal, dass Sauerstoff willkommen ist —, um die Gesundheit, Zellvermehrung und anfängliche Vitalität der Hefe zu gewährleisten.",
+
+        // Step 7 - Fermentation
+        "production.step7.label": "Schritt 7",
+        "production.step7.title": "Gärung — Die Seele des Bieres",
+        "production.step7.p1": "Im Tank übernimmt die Hefe das Kommando. Tagelang konsumiert sie Zucker und setzt Alkohol, CO₂ und Wärme frei. Aber ihr Beitrag geht weit darüber hinaus: Sie formt das definitive sensorische Profil und produziert Ester (fruchtig) und Phenole (würzig), die jeden Stil charakterisieren.",
+        "production.step7.p2": "Ales arbeiten oben bei hohen Temperaturen und erzeugen komplexe Aromen. Lager arbeiten unten, langsam und kalt, was zu sauberen Profilen führt. Der Brauer überwacht täglich den 'Vergärungsgrad'; wenn sich die Dichte stabilisiert, ist das Bier 'geboren', aber noch jung und 'grün'.",
+        "production.step7.p3": "Die präzise Temperaturkontrolle in dieser Phase ist das größte Unterscheidungsmerkmal zwischen einem Amateur-Heimbrau und einem hochwertigen Profibier.",
+
+        // Step 8 - Maturation
+        "production.step8.label": "Schritt 8",
+        "production.step8.title": "Reifung — Verfeinerung und Lagerung",
+        "production.step8.p1": "Grünbier besitzt unreife Verbindungen wie Acetaldehyd (grüner Apfel) und Diacetyl (Butter). In der Kaltreifung reabsorbiert die verbleibende Hefe diese Nebenprodukte und reinigt den Gaumen. Harsche Aromen runden sich ab und Schwebstoffe setzen sich ab.",
+        "production.step8.p2": "Es ist ein Geduldstest: Diesen Schritt zu überstürzen führt zu unausgewogenen Bieren. Der 'Cold Crash' (plötzliches Abkühlen auf fast 0°C) schließt den Prozess ab, agglutiniert Proteine und klärt das Getränk. Zeit ist die geheime Zutat, die ein gutes Bier in ein außergewöhnliches verwandelt.",
+
+        // Step 9 - Filtration
+        "production.step9.label": "Schritt 9",
+        "production.step9.title": "Filtration — Politur und Glanz",
+        "production.step9.p1": "Um Glanz und Stabilität zu garantieren, durchlaufen viele Biere eine Feinfiltration oder Zentrifugation. Dies entfernt die letzten Hefezellen und trüben Proteine, was zu einem klaren und goldenen Produkt führt, essentiell für Stile wie internationale Pilsner.",
+        "production.step9.p2": "Filtration ist jedoch eine stilistische Wahl. Moderne Stile wie Hazy IPAs oder traditionelle wie Weissbier und Kellerbier überspringen diesen Schritt absichtlich und schätzen die samtige Textur, den dichten Körper und die aromatische Komplexität, die suspendierte Proteine und Hefen bieten.",
+
+        // Step 10 - Carbonation
+        "production.step10.label": "Schritt 10",
+        "production.step10.title": "Karbonisierung — Das Leben des Bieres",
+        "production.step10.p1": "Das Gas gibt dem Bier Leben und Textur. Es kann durch Flaschengärung (traditionelle Methode), wo extra Zucker die Resthefe füttert, oder durch Zwangskarbonisierung in Drucktanks (industrielle Methode) durch Injektion von gereinigtem CO₂ bei niedrigen Temperaturen erreicht werden.",
+        "production.step10.p2": "Die Menge an gelöstem CO₂ definiert die 'Perlage' und die Schaumhaltbarkeit. Eine angemessene Karbonisierung erfrischt und reinigt nicht nur den Gaumen, sondern verflüchtigt auch Aromen und drückt sie mit jedem Schluck in die Nase, was für das vollständige sensorische Erlebnis vital ist.",
+
+        // Step 11 - Packaging
+        "production.step11.label": "Schritt 11",
+        "production.step11.title": "Abfüllung — Das Rennen gegen den Sauerstoff",
+        "production.step11.p1": "Der letzte Schritt ist kritisch. Moderne Abfüllsysteme führen eine 'Vorevakuierung' der Luft durch und spülen Flaschen oder Dosen mit CO₂, bevor sie gefüllt werden. Ziel ist es, jeglichen Kontakt mit Sauerstoff zu vermeiden, der das Bier in nur wenigen Tagen oxidieren (Pappgeschmack) würde.",
+        "production.step11.p2": "Dosen haben an Popularität gewonnen, da sie 100% des UV-Lichts blockieren und 'Lichtgeschmack' (Skunk-Aroma) verhindern. Ob im Fass, in der Flasche oder in der Dose, das oberste Ziel ist es, das Bier mit derselben Frische und demselben sensorischen Profil ins Glas des Verbrauchers zu liefern, das der Braumeister im Tank genehmigt hat.",
+
+        // Step 12 - Quality Control
+        "production.step12.label": "Schritt 12",
+        "production.step12.title": "Qualitätskontrolle — Die Garantie",
+        "production.step12.p1": "Bevor es die Fabrik verlässt, stellt sich das Bier seiner letzten Jury. Labortests verifizieren die Konsistenz von Farbe, Alkohol, Bitterkeit und Mikrobiologie, während geschulte Verkostungspanels unermüdlich nach sensorischen Defekten (Off-Flavors) suchen.",
+        "production.step12.p2": "Rückverfolgbarkeit ist total: Jede Charge erhält eine eindeutige Nummer, die die Auditierung der gesamten Produktionsgeschichte ermöglicht. Diese obsessive Strenge garantiert, dass das Verbrauchererlebnis sicher, angenehm und konsistent ist und den Ruf der Brauerei in einem zunehmend anspruchsvollen Markt intakt hält.",
+
+        // Glossary - German
+        "glossary.title": "📖 Bier-Glossar",
+        "glossary.subtitle": "Technische Begriffe, die jeder Bierliebhaber kennen sollte",
+        "glossary.ibu.term": "IBU (International Bitterness Units)",
+        "glossary.ibu.def": "Skala, die die Bitterkeit von Bier misst, basierend auf der Konzentration von Iso-Alphasäuren aus dem Hopfen. Reicht von 5 (leicht) bis 100+ (extrem).",
+        "glossary.srm.term": "SRM (Standard Reference Method)",
+        "glossary.srm.def": "System zur Messung der Bierfarbe. Je höher die Zahl, desto dunkler. Ein Pils hat ~3 SRM, ein Stout ~40 SRM.",
+        "glossary.abv.term": "ABV (Alcohol By Volume)",
+        "glossary.abv.def": "Prozentsatz des Alkohols im Verhältnis zum Gesamtvolumen. Ein Standardbier hat 4-6% ABV, während IPAs 7-9% erreichen können.",
+        "glossary.ogfg.term": "OG/FG (Stammwürze/Restextrakt)",
+        "glossary.ogfg.def": "Würzedichte vor (OG) und nach (FG) der Gärung. Die Differenz zwischen ihnen zeigt den Alkoholgehalt an.",
+        "glossary.attenuation.term": "Vergärungsgrad",
+        "glossary.attenuation.def": "Prozentsatz des von der Hefe in Alkohol umgewandelten Zuckers. Hohe Vergärung = trockeneres Bier. Niedrige = süßer.",
+        "glossary.dryhopping.term": "Dry Hopping (Stopfen)",
+        "glossary.dryhopping.def": "Technik der Hopfengabe während oder nach der Gärung (ohne Hitze), um Aromen zu maximieren, ohne Bitterkeit hinzuzufügen.",
+        "glossary.mash.term": "Maischen",
+        "glossary.mash.def": "Prozess des Mischens von geschrotetem Malz mit heißem Wasser, um Stärken durch enzymatische Wirkung in vergärbare Zucker umzuwandeln.",
+        "glossary.wort.term": "Würze",
+        "glossary.wort.def": "Süße Flüssigkeit, die aus dem Maischen extrahiert wird, vor der Gärung. Sie ist die 'Basis' des Bieres, bereit, Hefe aufzunehmen.",
+
+        // Timeline - German
+        "timeline.title": "⏱️ Zeit pro Schritt",
+        "timeline.start": "🚀 Die Reise beginnt",
+        "timeline.milling": "Schroten",
+        "timeline.mashing": "Maischen",
+        "timeline.boiling": "Kochen",
+        "timeline.fermentation": "Gärung",
+        "timeline.ferm_time": "7-14 Tage",
+        "timeline.maturation": "Reifung",
+        "timeline.mat_time": "2-8 Wochen",
+        "timeline.carbonation": "Karbonisierung",
+        "timeline.carb_time": "1-2 Wochen",
+        "timeline.end": "🍻 Prost! Ende",
+
+        // Comparison Table - German
+        "comparison.title": "📊 Lager vs Ale vs Stout",
+        "comparison.temp": "Temp.",
+        "comparison.time": "Zeit",
+        "comparison.flavor": "Geschmack",
+        "comparison.color": "Farbe SRM",
+        "comparison.lager_time": "4-8 Wochen",
+        "comparison.ale_time": "2-3 Wochen",
+        "comparison.stout_time": "2-4 Wochen",
+        "comparison.lager_flavor": "Sauber",
+        "comparison.ale_flavor": "Fruchtig",
+        "comparison.stout_flavor": "Geröstet",
+
+        // Myths vs Reality - German
+        "myths.title": "🧪 Mythen vs Realität",
+        "myths.subtitle": "Aufklärung häufiger Missverständnisse über die Bierproduktion",
+        "myths.myth_label": "Mythos",
+        "myths.reality_label": "Realität",
+        "myths.myth1.text": "\"Dunkles Bier ist stärker als helles Bier.\"",
+        "myths.myth1.reality": "Die Farbe kommt von der Art des verwendeten Malzes, nicht vom Alkoholgehalt. Ein Stout kann 4% ABV haben, während ein helles belgisches Tripel 9% haben kann.",
+        "myths.myth2.text": "\"Craft Beer ist immer besser als industrielles.\"",
+        "myths.myth2.reality": "Qualität hängt vom Prozess ab, nicht vom Maßstab. Industriebrauereien haben strenge Qualitätskontrollen, während einige Craft-Brauereien Konsistenzprobleme haben können.",
+        "myths.myth3.text": "\"Bierschaum ist nur ästhetisch.\"",
+        "myths.myth3.reality": "Schaum schützt das Bier vor Oxidation, setzt Aromen frei und zeigt die Qualität des Malzproteins an. Guter Schaum ist ein Zeichen für einen gut ausgeführten Prozess.",
+        "myths.myth4.text": "\"Bier sollte eiskalt serviert werden, um Aromen zu maskieren.\"",
+        "myths.myth4.reality": "Die ideale Temperatur variiert je nach Stil. Lager sind am besten bei 4-7°C, aber komplexe Ales offenbaren ihre Aromen bei 10-14°C. Zu kalt betäubt den Gaumen.",
+
+        // Hero Carousel
+        "hero.carousel.1": "Eine Reise, wo Tradition auf Innovation trifft, um unvergessliche Geschmäcker zu kreieren.",
+        "hero.carousel.2": "Entdecke die Geheimnisse der Gärung, Reifung und die perfekte Balance der Zutaten.",
+        "hero.carousel.3": "Wissenschaft, Kunst und Leidenschaft in jedem Tropfen.",
+
         // Rotating Banner
         "banner.phrase1.title": "Werben Sie bei uns",
         "banner.phrase1.subtitle": "Erreichen Sie heute das richtige Publikum.",
@@ -5562,6 +6324,65 @@ export const translations = {
         "hero.word1": "WERBEN",
         "hero.word2": "SIE",
         "hero.word3": "BEI UNS",
+
+        // Calculator - German
+        "calc.title": "🧮 Rezeptrechner",
+        "calc.volume": "Volumen (L)",
+        "calc.abv": "ABV %",
+        "calc.ibu": "IBU",
+        "calc.ingredients": "📋 Geschätzte Zutaten:",
+        "calc.malt": "🌾 Basismalz:",
+        "calc.hops": "🌿 Hopfen (60 Min):",
+        "calc.yeast": "🧫 Hefe:",
+        "calc.water": "💧 Gesamtwasser:",
+
+        // Quiz - German
+        "quiz.title": "🎯 Quiz",
+        "quiz.next": "Weiter →",
+        "quiz.retry": "↻ Wiederholen",
+
+        // FAQ - German
+        "faq.title": "❓ FAQ",
+        "faq.q1.q": "Ale vs Lager?",
+        "faq.q1.a": "Ales: obergärige Hefe (15-24°C), fruchtig. Lager: untergärige Hefe (8-14°C), sauber.",
+        "faq.q2.q": "Warum bitter?",
+        "faq.q2.a": "Alphasäuren des Hopfens. Mehr Hopfen + mehr Zeit = höherer IBU.",
+        "faq.q3.q": "Haltbarkeit?",
+        "faq.q3.a": "IPAs: 3 Monate. Stouts: Jahre. Kühl und dunkel lagern.",
+        "faq.q4.q": "Reinheitsgebot?",
+        "faq.q4.a": "100% Gerstenmalz, kein Mais/Reis/Zucker (Deutsches Gesetz 1516).",
+        "faq.q5.q": "Heimbrauen?",
+        "faq.q5.a": "Ja! Kits ~$100. Gleicher Prozess, kleinerer Maßstab (20L).",
+        "faq.q6.q": "Was ist Würze?",
+        "faq.q6.a": "Es ist der zuckerhaltige Malz-'Tee', bevor er durch Gärung zu Bier wird.",
+        "faq.q7.q": "Weizen oder Gerste?",
+        "faq.q7.a": "Die meisten nutzen Gerste. Weissbier nutzt ~50% Weizenmalz.",
+        "faq.q8.q": "Vom Fass vs Flasche?",
+        "faq.q8.a": "Das gleiche Getränk! Fassbier ist oft unpasteurisiert, kürzere Haltbarkeit.",
+        "faq.q9.q": "Gefriert Bier?",
+        "faq.q9.a": "Ja, und Flaschen können platzen. Alkohol senkt den Gefrierpunkt, aber es gefriert.",
+        "faq.q10.q": "Was ist IBU?",
+        "faq.q10.a": "International Bitterness Unit. Misst nur die Hopfenbittere.",
+        "faq.q11.q": "Dose oder Flasche?",
+        "faq.q11.a": "Dose ist besser! Blockiert 100% Licht (UV) und dichtet Sauerstoff besser ab.",
+        "faq.q12.q": "Ist Schaum wichtig?",
+        "faq.q12.a": "Ja! Hält Temperatur und bewahrt flüchtige Aromen.",
+        "faq.q13.q": "Macht Bier dick?",
+        "faq.q13.a": "Mäßig. Hat Kalorien (Alkohol + Restzucker), ähnlich wie Orangensaft.",
+        "faq.q14.q": "Ist IPA stark?",
+        "faq.q14.a": "Hat mehr Hopfen und Alkohol als Standard-Lager, variiert aber.",
+        "faq.q15.q": "Trappist?",
+        "faq.q15.a": "Bier, das von Trappistenmönchen im Kloster gebraut wird. Authentizitätssiegel.",
+        "faq.q16.q": "Gluten?",
+        "faq.q16.a": "Ja, Gerste und Weizen haben Gluten. Es gibt enzymatische 'Gluten Free' Biere.",
+        "faq.q17.q": "Warmes Bier?",
+        "faq.q17.a": "Briten trinken bei Kellertemperatur (12-14°C), nicht 'warm'. Betont Aromen.",
+        "faq.q18.q": "Maischen?",
+        "faq.q18.a": "Kochen von Malz in heißem Wasser, um Stärke in vergärbaren Zucker umzuwandeln.",
+        "faq.q19.q": "Dry Hopping?",
+        "faq.q19.a": "Zugabe von kaltem Hopfen während Gärung/Reifung. Erhöht Aroma, nicht Bitterkeit.",
+        "faq.q20.q": "ABV?",
+        "faq.q20.a": "Alcohol By Volume. Volumenprozentsatz, der reiner Alkohol ist.",
 
         // About Page
         "about.title": "Das flüssige Vermächtnis: Eine Hymne an die Braukunst",

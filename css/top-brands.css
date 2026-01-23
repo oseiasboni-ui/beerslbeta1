@@ -754,7 +754,7 @@
         /* 8 Column Grid Styles - 1:1 Aspect Ratio */
         .brands-grid-250 {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(8, 1fr);
             gap: 8px;
             margin-top: 2rem;
             width: 100%;

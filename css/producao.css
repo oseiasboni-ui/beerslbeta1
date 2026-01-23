@@ -204,9 +204,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    padding: 2rem 0;
-    /* Reduced padding for denser layout */
-    align-items: center;
+    padding: 8rem 0;
+    /* Increased padding for better scroll feel */
+    align-items: start;
     /* CHANGED from center to start for Sticky */
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -272,8 +272,8 @@
 /* Section Content - STICKY HEADER IMPLEMENTATION */
 .section-content {
     padding: 1rem;
-    position: relative;
-    top: 0;
+    position: sticky;
+    top: 30vh;
     /* Stick to top when scrolling */
     z-index: 10;
 }
@@ -412,7 +412,7 @@
    =========================================== */
 
 .ingredientes-section {
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
     background-color: #F8F8F8;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -469,87 +469,52 @@
     flex-direction: column;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
     /* Deeper shadow */
-    min-height: 320px;
-    /* Reduced height from 380px */
+    min-height: 450px;
+    /* Reduced height from 550px */
 
     /* Animation Start State */
     opacity: 0;
-    /* Transformation handled by animation */
-    will-change: transform, opacity;
+    transform: translateY(80px) scale(0.9) perspective(600px) rotateX(15deg);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-/* ===========================================
-   CARD ANIMATION - REFINED SWING
-   =========================================== */
-
-/* Keyframes - Left Swing (Rotate from left) */
-@keyframes swingInLeft {
+/* Animation Keyframes */
+@keyframes cardDeal {
     0% {
         opacity: 0;
-        transform: perspective(1000px) translateX(-80px) rotateY(-10deg);
+        transform: translateY(80px) scale(0.9) perspective(600px) rotateX(15deg);
     }
 
     100% {
         opacity: 1;
-        transform: perspective(1000px) translateX(0) rotateY(0);
+        transform: translateY(0) scale(1) perspective(600px) rotateX(0deg);
     }
 }
 
-/* Keyframes - Right Swing (Rotate from right) */
-@keyframes swingInRight {
-    0% {
-        opacity: 0;
-        transform: perspective(1000px) translateX(80px) rotateY(10deg);
-    }
-
-    100% {
-        opacity: 1;
-        transform: perspective(1000px) translateX(0) rotateY(0);
-    }
+.ingrediente-card.visible {
+    animation: cardDeal 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
-/* Trigger Animations when Visible */
-
-/* Cards 1 & 2: Come from LEFT */
-.ingrediente-card:nth-child(1).visible,
-.ingrediente-card:nth-child(2).visible {
-    animation: swingInLeft 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-}
-
-/* Cards 3 & 4: Come from RIGHT */
-.ingrediente-card:nth-child(3).visible,
-.ingrediente-card:nth-child(4).visible {
-    animation: swingInRight 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-}
-
-/* Stagger Delays */
+/* Staggering */
 .ingrediente-card:nth-child(1) {
-    animation-delay: 0.1s;
+    animation-delay: 0s;
 }
 
 .ingrediente-card:nth-child(2) {
-    animation-delay: 0.3s;
+    animation-delay: 0.15s;
 }
 
 .ingrediente-card:nth-child(3) {
-    animation-delay: 0.5s;
+    animation-delay: 0.3s;
 }
 
 .ingrediente-card:nth-child(4) {
-    animation-delay: 0.7s;
-}
-
-/* Apply transition only after visibility to avoid conflict with entry animation */
-.ingrediente-card.visible {
-    /* Ensure opacity stays 1 after animation */
-    opacity: 1;
-    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    animation-delay: 0.45s;
 }
 
 /* Hover Interaction */
 .ingrediente-card.visible:hover {
-    transform: translateY(-10px) scale(1.02);
-    /*Subtle lift*/
+    transform: translateY(-15px) scale(1.02);
     box-shadow: 0 30px 60px rgba(230, 126, 34, 0.25);
     border-color: rgba(230, 126, 34, 0.4);
     z-index: 10;
@@ -558,9 +523,9 @@
 /* Card Image Section - LARGE */
 .ingrediente-card-image {
     position: relative;
+    height: 220px;
+    /* Reduced height */
     width: 100%;
-    aspect-ratio: 1 / 1;
-    /* 1:1 Aspect Ratio */
     overflow: hidden;
     background: #fdfdfd;
     display: flex;
@@ -574,8 +539,6 @@
     height: 100%;
     max-width: none;
     object-fit: cover;
-    /* Full bleed - edge to edge */
-    padding: 0;
     transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -585,7 +548,7 @@
 
 /* Card Content */
 .ingrediente-card-content {
-    padding: 1.5rem;
+    padding: 2.5rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -599,19 +562,19 @@
 
 .ingrediente-card-content h4 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
     /* Larger Title */
     color: #2D2D2D;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
     font-weight: 700;
 }
 
 .ingrediente-subtitle {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #E67E22;
     /* Function highlighted in Orange */
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -630,7 +593,7 @@
     font-size: 0.85rem;
     color: #7F8C8D;
     /* Light Grey */
-    padding: 0.3rem 0px;
+    padding: 0.4rem 0px;
     border-bottom: 1px solid #f9f9f9;
 }
 
