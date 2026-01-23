@@ -75,93 +75,83 @@ export const translations = {
         "label.composition": "Composição",
         "label.minerals": "Minerais",
 
-        // Step 2 - Production Process
+
+
+        // Step 2 - Malteação (NEW)
         "production.step2.label": "Etapa 2",
-        "production.step2.title": "O Processo de Produção",
-        "production.step2.intro": "Do grão cru ao copo, a cerveja passa por uma fascinante jornada de transformações químicas e biológicas.",
+        "production.step2.title": "Malteação — O Despertar do Grão",
+        "production.step2.p1": "O processo começa na maltaria. A cevada crua é mergulhada em água para iniciar a germinação, ativando enzimas vitais que converterão amido em açúcar.",
+        "production.step2.p2": "Assim que o broto nasce, o grão é seco em fornos. A temperatura define a cor e o sabor: baixo calor cria maltes pálidos, alto calor cria maltes torrados.",
 
-        // Process Steps
-        "production.process.mashing.title": "Mostura",
-        "production.process.mashing.desc": "O grão maltado é misturado com água quente (62-72°C) para converter amidos em açúcares fermentáveis. Este processo leva 60-90 minutos.",
-
-        "production.process.boiling.title": "Fervura",
-        "production.process.boiling.desc": "O mosto é fervido por 60-90 minutos com lúpulo adicionado em intervalos específicos para amargor, sabor e aroma.",
-
-        "production.process.fermentation.title": "Fermentação",
-        "production.process.fermentation.desc": "A levedura converte açúcares em álcool e CO₂. Ales fermentam a 15-24°C (alta), Lagers a 7-13°C (baixa).",
-
-        "production.process.maturation.title": "Maturação",
-        "production.process.maturation.desc": "A cerveja descansa por semanas ou meses, desenvolvendo sabores complexos e clarificando naturalmente.",
-
-        // Step 2 - Moagem
-        "production.step2.label": "Etapa 2",
-        "production.step2.title": "Moagem — Preparação do Grão",
-        "production.step2.p1": "A moagem é o pilar inicial da eficiência cervejeira. A meta é expor o endosperma rico em amido do grão sem pulverizar a casca. Se os grãos forem quebrados muito finos, formam-se gomas que entopem o sistema; se muito grossos, o rendimento cai drasticamente.",
-        "production.step2.p2": "A preservação da casca é vital, pois ela formará o leito filtrante natural nas etapas seguintes, garantindo um mosto límpido e fluido. O ajuste milimétrico dos rolos do moinho define o sucesso de toda a brassagem.",
-        "production.step2.p3": "Apesar de parecer mecânico, este ajuste define diretamente a clareza, a eficiência e a estabilidade sensorial da cerveja final.",
-
-        // Step 3 - Mosturação
+        // Step 3 - Moagem
         "production.step3.label": "Etapa 3",
-        "production.step3.title": "Mosturação — Conversão de Amido em Açúcar",
-        "production.step3.p1": "Aqui ocorre a mágica bioquímica: a mistura de malte e água é mantida em temperaturas precisas para ativar enzimas específicas. As alfa-amilases criam açúcares complexos (dextrinas) que dão corpo à cerveja, enquanto as beta-amilases produzem maltose fermentável para o álcool.",
-        "production.step3.p2": "O controle de pH e a proporção água/grão também são críticos. É neste estágio que o cervejeiro define se a cerveja será encorpada e doce ou seca e alcoólica, manipulando apenas o termômetro.",
-        "production.step3.p3": "Essa etapa define a \"assinatura\" estrutural da cerveja, exigindo precisão absoluta, pois erros de temperatura aqui são irreversíveis no produto final.",
+        "production.step3.title": "Moagem — Preparação do Grão",
+        "production.step3.p1": "A moagem é o pilar inicial da eficiência cervejeira. A meta é expor o endosperma rico em amido do grão sem pulverizar a casca. Se os grãos forem quebrados muito finos, formam-se gomas que entopem o sistema; se muito grossos, o rendimento cai drasticamente.",
+        "production.step3.p2": "A preservação da casca é vital, pois ela formará o leito filtrante natural nas etapas seguintes, garantindo um mosto límpido e fluido. O ajuste milimétrico dos rolos do moinho define o sucesso de toda a brassagem.",
+        "production.step3.p3": "Apesar de parecer mecânico, este ajuste define diretamente a clareza, a eficiência e a estabilidade sensorial da cerveja final.",
 
-        // Step 4 - Clarificação
+        // Step 4 - Mosturação
         "production.step4.label": "Etapa 4",
-        "production.step4.title": "Clarificação — Separação do Mosto",
-        "production.step4.p1": "Após a conversão, é necessário separar o mosto doce do bagaço exaurido. O processo, chamado de recirculação ou vorlauf, utiliza a própria camada de cascas como filtro. O mosto é drenado e devolvido ao topo até que saia cristalino e brilhante.",
-        "production.step4.p2": "Em seguida, água quente é aspergida (sparging) sobre os grãos para \"lavar\" e extrair os açúcares residuais. Essa lavagem deve ser interrompida no momento exato e com pH controlado para evitar a extração de taninos da casca, que causariam uma adstringência áspera e indesejada na cerveja.",
+        "production.step4.title": "Mosturação — Conversão de Amido em Açúcar",
+        "production.step4.p1": "Aqui ocorre a mágica bioquímica: a mistura de malte e água é mantida em temperaturas precisas para ativar enzimas específicas. As alfa-amilases criam açúcares complexos (dextrinas) que dão corpo à cerveja, enquanto as beta-amilases produzem maltose fermentável para o álcool.",
+        "production.step4.p2": "O controle de pH e a proporção água/grão também são críticos. É neste estágio que o cervejeiro define se a cerveja será encorpada e doce ou seca e alcoólica, manipulando apenas o termômetro.",
+        "production.step4.p3": "Essa etapa define a \"assinatura\" estrutural da cerveja, exigindo precisão absoluta, pois erros de temperatura aqui são irreversíveis no produto final.",
 
-        // Step 5 - Fervura
+        // Step 5 - Clarificação
         "production.step5.label": "Etapa 5",
-        "production.step5.title": "Fervura — Esterilização e Lupulagem",
-        "production.step5.p1": "O mosto ferve vigorosamente, processo vital para esterilização e estabilização. Além de isomerizar os alfa-ácidos do lúpulo para gerar amargor, a fervura provoca a coagulação de proteínas indesejadas (trub quente) e evapora compostos voláteis nocivos como o DMS (aroma de milho).",
-        "production.step5.p2": "É um processo de concentração e alquimia. O momento da adição do lúpulo é calculado: no início para amargor, no meio para sabor e no final para aroma. Adições tardias preservam óleos essenciais delicados que se perderiam com o calor excessivo.",
-        "production.step5.p3": "A vigorosidade da fervura também garante a precipitação correta de complexos proteína-polifenol, essencial para a estabilidade coloidal futura.",
+        "production.step5.title": "Clarificação — Separação do Mosto",
+        "production.step5.p1": "Após a conversão, é necessário separar o mosto doce do bagaço exaurido. O processo, chamado de recirculação ou vorlauf, utiliza a própria camada de cascas como filtro. O mosto é drenado e devolvido ao topo até que saia cristalino e brilhante.",
+        "production.step5.p2": "Em seguida, água quente é aspergida (sparging) sobre os grãos para \"lavar\" e extrair os açúcares residuais. Essa lavagem deve ser interrompida no momento exato e com pH controlado para evitar a extração de taninos da casca, que causariam uma adstringência áspera e indesejada na cerveja.",
 
-        // Step 6 - Resfriamento
+        // Step 6 - Fervura
         "production.step6.label": "Etapa 6",
-        "production.step6.title": "Resfriamento — Choque Térmico",
-        "production.step6.p1": "Encerrada a fervura, o mosto torna-se um meio de cultura perfeito e altamente vulnerável. O resfriamento deve ser brutalmente rápido, descendo de 100°C para temperaturas de fermentação (10-20°C) em poucos minutos usando trocadores de calor de alta eficiência.",
-        "production.step6.p2": "Esse choque térmico força a precipitação de mais proteínas (trub frio), clareando a cerveja. Imediatamente após, o mosto frio deve ser oxigenado propositalmente — a única vez que o oxigênio é bem-vindo — para garantir a saúde, a reprodução celular e a vitalidade inicial da levedura.",
+        "production.step6.title": "Fervura — Esterilização e Lupulagem",
+        "production.step6.p1": "O mosto ferve vigorosamente, processo vital para esterilização e estabilização. Além de isomerizar os alfa-ácidos do lúpulo para gerar amargor, a fervura provoca a coagulação de proteínas indesejadas (trub quente) e evapora compostos voláteis nocivos como o DMS (aroma de milho).",
+        "production.step6.p2": "É um processo de concentração e alquimia. O momento da adição do lúpulo é calculado: no início para amargor, no meio para sabor e no final para aroma. Adições tardias preservam óleos essenciais delicados que se perderiam com o calor excessivo.",
+        "production.step6.p3": "A vigorosidade da fervura também garante a precipitação correta de complexos proteína-polifenol, essencial para a estabilidade coloidal futura.",
 
-        // Step 7 - Fermentação
+        // Step 7 - Resfriamento
         "production.step7.label": "Etapa 7",
-        "production.step7.title": "Fermentação — A Alma da Cerveja",
-        "production.step7.p1": "No tanque, a levedura assume o comando. Durante dias, ela consome os açúcares, liberando álcool, CO₂ e calor. Mas sua contribuição vai além: ela esculpe o perfil sensorial definitivo, produzindo ésteres (frutados) e fenóis (condimentados) que caracterizam cada estilo.",
-        "production.step7.p2": "As Ales trabalham no topo, em temperaturas altas, criando sabores complexos. As Lagers trabalham no fundo, lentamente e no frio, resultando em perfis limpos. O cervejeiro monitora a 'atenuação' diariamente; quando a densidade estabiliza, a cerveja 'nasceu', mas ainda é jovem e 'verde'.",
-        "production.step7.p3": "O controle preciso de temperatura nesta fase é o maior diferencial entre uma cerveja caseira amadora e uma profissional de alta qualidade.",
+        "production.step7.title": "Resfriamento — Choque Térmico",
+        "production.step7.p1": "Encerrada a fervura, o mosto torna-se um meio de cultura perfeito e altamente vulnerável. O resfriamento deve ser brutalmente rápido, descendo de 100°C para temperaturas de fermentação (10-20°C) em poucos minutos usando trocadores de calor de alta eficiência.",
+        "production.step7.p2": "Esse choque térmico força a precipitação de mais proteínas (trub frio), clareando a cerveja. Imediatamente após, o mosto frio deve ser oxigenado propositalmente — a única vez que o oxigênio é bem-vindo — para garantir a saúde, a reprodução celular e a vitalidade inicial da levedura.",
 
-        // Step 8 - Maturação
+        // Step 8 - Fermentação
         "production.step8.label": "Etapa 8",
-        "production.step8.title": "Maturação — Refinamento e Lagering",
-        "production.step8.p1": "A cerveja verde possui compostos imaturos como acetaldeído (maçã verde) e diacetil (manteiga). Na maturação a frio, a levedura remanescente reabsorve esses subprodutos, limpando o paladar. Sabores ásperos se arredondam e partículas em suspensão decantam.",
-        "production.step8.p2": "É um teste de paciência: apressar essa etapa resulta em cervejas desequilibradas. O \"cold crash\" (resfriamento súbito perto de 0°C) finaliza o processo, aglutinando proteínas e clarificando a bebida. O tempo é o ingrediente secreto que transforma uma cerveja boa em excepcional.",
+        "production.step8.title": "Fermentação — A Alma da Cerveja",
+        "production.step8.p1": "No tanque, a levedura assume o comando. Durante dias, ela consome os açúcares, liberando álcool, CO₂ e calor. Mas sua contribuição vai além: ela esculpe o perfil sensorial definitivo, produzindo ésteres (frutados) e fenóis (condimentados) que caracterizam cada estilo.",
+        "production.step8.p2": "As Ales trabalham no topo, em temperaturas altas, criando sabores complexos. As Lagers trabalham no fundo, lentamente e no frio, resultando em perfis limpos. O cervejeiro monitora a 'atenuação' diariamente; quando a densidade estabiliza, a cerveja 'nasceu', mas ainda é jovem e 'verde'.",
+        "production.step8.p3": "O controle preciso de temperatura nesta fase é o maior diferencial entre uma cerveja caseira amadora e uma profissional de alta qualidade.",
 
-        // Step 9 - Filtragem
+        // Step 9 - Maturação
         "production.step9.label": "Etapa 9",
-        "production.step9.title": "Filtragem — Polimento e Brilho",
-        "production.step9.p1": "Para garantir brilho e estabilidade, muitas cervejas passam por filtragem fina ou centrifugação. Isso remove as últimas células de levedura e proteínas turvas, resultando em um produto límpido e dourado, essencial para estilos como Pilsners internacionais.",
-        "production.step9.p2": "Porém, a filtragem é uma escolha estilística. Estilos modernos como Hazy IPAs ou tradicionais como Weissbier e Kellerbier pulam esta etapa propositalmente, valorizando a textura aveludada, o corpo denso e a complexidade aromática que as proteínas e leveduras em suspensão proporcionam.",
+        "production.step9.title": "Maturação — Refinamento e Lagering",
+        "production.step9.p1": "A cerveja verde possui compostos imaturos como acetaldeído (maçã verde) e diacetil (manteiga). Na maturação a frio, a levedura remanescente reabsorve esses subprodutos, limpando o paladar. Sabores ásperos se arredondam e partículas em suspensão decantam.",
+        "production.step9.p2": "É um teste de paciência: apressar essa etapa resulta em cervejas desequilibradas. O \"cold crash\" (resfriamento súbito perto de 0°C) finaliza o processo, aglutinando proteínas e clarificando a bebida. O tempo é o ingrediente secreto que transforma uma cerveja boa em excepcional.",
 
-        // Step 10 - Carbonatação
+        // Step 10 - Filtragem
         "production.step10.label": "Etapa 10",
-        "production.step10.title": "Carbonatação — A Vida da Cerveja",
-        "production.step10.p1": "O gás é o que dá vida e textura à cerveja. Pode ser obtido por refermentação na garrafa (método tradicional), onde açúcar extra alimenta a levedura residual, ou por carbonatação forçada em tanques de pressão (método industrial), injetando CO₂ purificado a baixas temperaturas.",
-        "production.step10.p2": "A quantidade de CO₂ dissolvido define o \"perlage\" e a persistência da espuma. Uma carbonatação adequada não apenas refresca e limpa o paladar, mas também volatiliza os aromas, empurrando-os para o nariz a cada gole, sendo vital para a experiência sensorial completa.",
+        "production.step10.title": "Filtragem — Polimento e Brilho",
+        "production.step10.p1": "Para garantir brilho e estabilidade, muitas cervejas passam por filtragem fina ou centrifugação. Isso remove as últimas células de levedura e proteínas turvas, resultando em um produto límpido e dourado, essencial para estilos como Pilsners internacionais.",
+        "production.step10.p2": "Porém, a filtragem é uma escolha estilística. Estilos modernos como Hazy IPAs ou tradicionais como Weissbier e Kellerbier pulam esta etapa propositalmente, valorizando a textura aveludada, o corpo denso e a complexidade aromática que as proteínas e leveduras em suspensão proporcionam.",
 
-        // Step 11 - Envase
+        // Step 11 - Carbonatação
         "production.step11.label": "Etapa 11",
-        "production.step11.title": "Envase — A Corrida Contra o Oxigênio",
-        "production.step11.p1": "A etapa final é crítica. Sistemas modernos de envase realizam uma \"pré-evacuação\" do ar e purgam as garrafas ou latas com CO₂ antes do enchimento. O objetivo é evitar qualquer contato com oxigênio, que oxidaria a cerveja (gosto de papelão) em poucos dias.",
-        "production.step11.p2": "O envase em latas ganhou popularidade por bloquear 100% da luz UV, prevenindo o \"lightstruck\" (aroma de gambá). Seja em barril, garrafa ou lata, o objetivo supremo é entregar a cerveja ao copo do consumidor com o mesmo frescor e perfil sensorial que o mestre cervejeiro aprovou no tanque.",
+        "production.step11.title": "Carbonatação — A Vida da Cerveja",
+        "production.step11.p1": "O gás é o que dá vida e textura à cerveja. Pode ser obtido por refermentação na garrafa (método tradicional), onde açúcar extra alimenta a levedura residual, ou por carbonatação forçada em tanques de pressão (método industrial), injetando CO₂ purificado a baixas temperaturas.",
+        "production.step11.p2": "A quantidade de CO₂ dissolvido define o \"perlage\" e a persistência da espuma. Uma carbonatação adequada não apenas refresca e limpa o paladar, mas também volatiliza os aromas, empurrando-os para o nariz a cada gole, sendo vital para a experiência sensorial completa.",
 
-        // Step 12 - Controle de Qualidade
+        // Step 12 - Envase
         "production.step12.label": "Etapa 12",
-        "production.step12.title": "Controle de Qualidade — A Garantia",
-        "production.step12.p1": "Antes de sair da fábrica, a cerveja enfrenta seu júri final. Testes de laboratório verificam consistência de cor, álcool, amargor e microbiologia, enquanto painéis de degustação treinados buscam incansavelmente por defeitos sensoriais (off-flavors).",
-        "production.step12.p2": "A rastreabilidade é total: cada lote recebe um número único que permite auditar todo o histórico de produção. Este rigor obsessivo garante que a experiência do consumidor seja segura, prazerosa e consistente, mantendo a reputação da cervejaria intacta em um mercado cada dia mais exigente.",
+        "production.step12.title": "Envase — A Corrida Contra o Oxigênio",
+        "production.step12.p1": "A etapa final é crítica. Sistemas modernos de envase realizam uma \"pré-evacuação\" do ar e purgam as garrafas ou latas com CO₂ antes do enchimento. O objetivo é evitar qualquer contato com oxigênio, que oxidaria a cerveja (gosto de papelão) em poucos dias.",
+        "production.step12.p2": "O envase em latas ganhou popularidade por bloquear 100% da luz UV, prevenindo o \"lightstruck\" (aroma de gambá). Seja em barril, garrafa ou lata, o objetivo supremo é entregar a cerveja ao copo do consumidor com o mesmo frescor e perfil sensorial que o mestre cervejeiro aprovou no tanque.",
+
+        // Step 13 - Controle de Qualidade
+        "production.step13.label": "Etapa 13",
+        "production.step13.title": "Controle de Qualidade — A Garantia",
+        "production.step13.p1": "Antes de sair da fábrica, a cerveja enfrenta seu júri final. Testes de laboratório verificam consistência de cor, álcool, amargor e microbiologia, enquanto painéis de degustação treinados buscam incansavelmente por defeitos sensoriais (off-flavors).",
+        "production.step13.p2": "A rastreabilidade é total: cada lote recebe um número único que permite auditar todo o histórico de produção. Este rigor obsessivo garante que a experiência do consumidor seja segura, prazerosa e consistente, mantendo a reputação da cervejaria intacta em um mercado cada dia mais exigente.",
 
         // Water influence
         "production.ing.water.influence": "Textura e percepção",
@@ -189,6 +179,8 @@ export const translations = {
         // Timeline - Portuguese
         "timeline.title": "⏱️ Tempo por Etapa",
         "timeline.start": "🚀 A Jornada Começa",
+        "timeline.malting": "Malteação",
+        "timeline.malting_time": "5-9 dias",
         "timeline.milling": "Moagem",
         "timeline.mashing": "Mosturação",
         "timeline.boiling": "Fervura",
@@ -3090,93 +3082,83 @@ export const translations = {
         "label.composition": "Composition",
         "label.minerals": "Minerals",
 
-        // Step 2 - Production Process
+
+
+        // Step 2 - Malting (NEW)
         "production.step2.label": "Step 2",
-        "production.step2.title": "The Production Process",
-        "production.step2.intro": "From raw grain to glass, beer goes through a fascinating journey of chemical and biological transformations.",
+        "production.step2.title": "Malting — Awakening the Grain",
+        "production.step2.p1": "The process begins at the malthouse. Raw barley is steeped in water to initiate germination, activating vital enzymes that will later convert starch into sugar.",
+        "production.step2.p2": "Once the sprout emerges, the grain is dried in kilns. The temperature helps define color and flavor: low heat creates pale malts, while high heat creates caramel or roasted malts.",
 
-        // Process Steps
-        "production.process.mashing.title": "Mashing",
-        "production.process.mashing.desc": "The malted grain is mixed with hot water (62-72°C) to convert starches into fermentable sugars. This process takes 60-90 minutes.",
-
-        "production.process.boiling.title": "Boiling",
-        "production.process.boiling.desc": "The wort is boiled for 60-90 minutes with hops added at specific intervals for bitterness, flavor and aroma.",
-
-        "production.process.fermentation.title": "Fermentation",
-        "production.process.fermentation.desc": "Yeast converts sugars into alcohol and CO₂. Ales ferment at 15-24°C (top), Lagers at 7-13°C (bottom).",
-
-        "production.process.maturation.title": "Maturation",
-        "production.process.maturation.desc": "The beer rests for weeks or months, developing complex flavors and clarifying naturally.",
-
-        // Step 2 - Milling
-        "production.step2.label": "Step 2",
-        "production.step2.title": "Milling — Grain Preparation",
-        "production.step2.p1": "Milling is the initial pillar of brewing efficiency. The goal is to expose the starch-rich endosperm of the grain without pulverizing the husk. If grains are crushed too fine, gums form that clog the system; if too coarse, yield drops drastically.",
-        "production.step2.p2": "Husk preservation is vital, as it will form the natural filter bed in subsequent steps, ensuring a clear and fluid wort. The millimeter-precise adjustment of the mill rollers defines the success of the entire mashing process.",
-        "production.step2.p3": "Although it seems mechanical, this adjustment directly defines the clarity, efficiency, and sensory stability of the final beer.",
-
-        // Step 3 - Mashing
+        // Step 3 - Milling
         "production.step3.label": "Step 3",
-        "production.step3.title": "Mashing — Starch to Sugar Conversion",
-        "production.step3.p1": "Here the biochemical magic occurs: the malt and water mixture is maintained at precise temperatures to activate specific enzymes. Alpha-amylases create complex sugars (dextrins) that give the beer body, while beta-amylases produce fermentable maltose for alcohol.",
-        "production.step3.p2": "pH control and water/grain ratio are also critical. It is at this stage that the brewer defines whether the beer will be full-bodied and sweet or dry and alcoholic, manipulating only the thermometer.",
-        "production.step3.p3": "This step defines the structural 'signature' of the beer, requiring absolute precision, as temperature errors here are irreversible in the final product.",
+        "production.step3.title": "Milling — Grain Preparation",
+        "production.step3.p1": "Milling is the initial pillar of brewing efficiency. The goal is to expose the starch-rich endosperm of the grain without pulverizing the husk. If grains are crushed too fine, gums form that clog the system; if too coarse, yield drops drastically.",
+        "production.step3.p2": "Husk preservation is vital, as it will form the natural filter bed in subsequent steps, ensuring a clear and fluid wort. The millimeter-precise adjustment of the mill rollers defines the success of the entire mashing process.",
+        "production.step3.p3": "Although it seems mechanical, this adjustment directly defines the clarity, efficiency, and sensory stability of the final beer.",
 
-        // Step 4 - Lautering
+        // Step 4 - Mashing
         "production.step4.label": "Step 4",
-        "production.step4.title": "Lautering — Wort Separation",
-        "production.step4.p1": "After conversion, it is necessary to separate the sweet wort from the spent grain. The process, called recirculation or vorlauf, uses the husk layer itself as a filter. The wort is drained and returned to the top until it comes out crystal clear and bright.",
-        "production.step4.p2": "Then, hot water is sprinkled (sparging) over the grains to 'wash' and extract residual sugars. This washing must be stopped at the exact moment and with controlled pH to avoid extracting tannins from the husk, which would cause harsh and unwanted astringency in the beer.",
+        "production.step4.title": "Mashing — Starch to Sugar Conversion",
+        "production.step4.p1": "Here the biochemical magic occurs: the malt and water mixture is maintained at precise temperatures to activate specific enzymes. Alpha-amylases create complex sugars (dextrins) that give the beer body, while beta-amylases produce fermentable maltose for alcohol.",
+        "production.step4.p2": "pH control and water/grain ratio are also critical. It is at this stage that the brewer defines whether the beer will be full-bodied and sweet or dry and alcoholic, manipulating only the thermometer.",
+        "production.step4.p3": "This step defines the structural 'signature' of the beer, requiring absolute precision, as temperature errors here are irreversible in the final product.",
 
-        // Step 5 - Boiling
+        // Step 5 - Lautering
         "production.step5.label": "Step 5",
-        "production.step5.title": "Boiling — Sterilization and Hopping",
-        "production.step5.p1": "The wort boils vigorously, a vital process for sterilization and stabilization. Besides isomerizing the hop alpha acids to generate bitterness, boiling causes coagulation of unwanted proteins (hot trub) and evaporates harmful volatile compounds like DMS (corn aroma).",
-        "production.step5.p2": "It is a process of concentration and alchemy. The timing of hop addition is calculated: at the beginning for bitterness, in the middle for flavor, and at the end for aroma. Late additions preserve delicate essential oils that would be lost with excessive heat.",
-        "production.step5.p3": "The vigor of the boil also ensures correct precipitation of protein-polyphenol complexes, essential for future colloidal stability.",
+        "production.step5.title": "Lautering — Wort Separation",
+        "production.step5.p1": "After conversion, it is necessary to separate the sweet wort from the spent grain. The process, called recirculation or vorlauf, uses the husk layer itself as a filter. The wort is drained and returned to the top until it comes out crystal clear and bright.",
+        "production.step5.p2": "Then, hot water is sprinkled (sparging) over the grains to 'wash' and extract residual sugars. This washing must be stopped at the exact moment and with controlled pH to avoid extracting tannins from the husk, which would cause harsh and unwanted astringency in the beer.",
 
-        // Step 6 - Cooling
+        // Step 6 - Boiling
         "production.step6.label": "Step 6",
-        "production.step6.title": "Cooling — Thermal Shock",
-        "production.step6.p1": "Once boiling is finished, the wort becomes a perfect and highly vulnerable culture medium. Cooling must be brutally fast, going from 100°C to fermentation temperatures (10-20°C) in a few minutes using high-efficiency heat exchangers.",
-        "production.step6.p2": "This thermal shock forces the precipitation of more proteins (cold trub), clarifying the beer. Immediately after, the cold wort must be purposely oxygenated — the only time oxygen is welcome — to ensure the health, cell reproduction, and initial vitality of the yeast.",
+        "production.step6.title": "Boiling — Sterilization and Hopping",
+        "production.step6.p1": "The wort boils vigorously, a vital process for sterilization and stabilization. Besides isomerizing the hop alpha acids to generate bitterness, boiling causes coagulation of unwanted proteins (hot trub) and evaporates harmful volatile compounds like DMS (corn aroma).",
+        "production.step6.p2": "It is a process of concentration and alchemy. The timing of hop addition is calculated: at the beginning for bitterness, in the middle for flavor, and at the end for aroma. Late additions preserve delicate essential oils that would be lost with excessive heat.",
+        "production.step6.p3": "The vigor of the boil also ensures correct precipitation of protein-polyphenol complexes, essential for future colloidal stability.",
 
-        // Step 7 - Fermentation
+        // Step 7 - Cooling
         "production.step7.label": "Step 7",
-        "production.step7.title": "Fermentation — The Soul of Beer",
-        "production.step7.p1": "In the tank, yeast takes command. For days, it consumes sugars, releasing alcohol, CO₂, and heat. But its contribution goes beyond: it sculpts the definitive sensory profile, producing esters (fruity) and phenols (spicy) that characterize each style.",
-        "production.step7.p2": "Ales work at the top, at high temperatures, creating complex flavors. Lagers work at the bottom, slowly and cold, resulting in clean profiles. The brewer monitors 'attenuation' daily; when density stabilizes, the beer is 'born', but still young and 'green'.",
-        "production.step7.p3": "Precise temperature control in this phase is the biggest differentiator between an amateur homebrew and a high-quality professional beer.",
+        "production.step7.title": "Cooling — Thermal Shock",
+        "production.step7.p1": "Once boiling is finished, the wort becomes a perfect and highly vulnerable culture medium. Cooling must be brutally fast, going from 100°C to fermentation temperatures (10-20°C) in a few minutes using high-efficiency heat exchangers.",
+        "production.step7.p2": "This thermal shock forces the precipitation of more proteins (cold trub), clarifying the beer. Immediately after, the cold wort must be purposely oxygenated — the only time oxygen is welcome — to ensure the health, cell reproduction, and initial vitality of the yeast.",
 
-        // Step 8 - Maturation
+        // Step 8 - Fermentation
         "production.step8.label": "Step 8",
-        "production.step8.title": "Maturation — Refinement and Lagering",
-        "production.step8.p1": "Green beer has immature compounds like acetaldehyde (green apple) and diacetyl (butter). In cold maturation, remaining yeast reabsorbs these byproducts, cleaning the palate. Harsh flavors round out and suspended particles settle.",
-        "production.step8.p2": "It is a test of patience: rushing this step results in unbalanced beers. The 'cold crash' (sudden cooling near 0°C) finalizes the process, agglutinating proteins and clarifying the drink. Time is the secret ingredient that transforms a good beer into an exceptional one.",
+        "production.step8.title": "Fermentation — The Soul of Beer",
+        "production.step8.p1": "In the tank, yeast takes command. For days, it consumes sugars, releasing alcohol, CO₂, and heat. But its contribution goes beyond: it sculpts the definitive sensory profile, producing esters (fruity) and phenols (spicy) that characterize each style.",
+        "production.step8.p2": "Ales work at the top, at high temperatures, creating complex flavors. Lagers work at the bottom, slowly and cold, resulting in clean profiles. The brewer monitors 'attenuation' daily; when density stabilizes, the beer is 'born', but still young and 'green'.",
+        "production.step8.p3": "Precise temperature control in this phase is the biggest differentiator between an amateur homebrew and a high-quality professional beer.",
 
-        // Step 9 - Filtration
+        // Step 9 - Maturation
         "production.step9.label": "Step 9",
-        "production.step9.title": "Filtration — Polish and Brilliance",
-        "production.step9.p1": "To ensure brilliance and stability, many beers undergo fine filtration or centrifugation. This removes the last yeast cells and hazy proteins, resulting in a clear and golden product, essential for styles like international Pilsners.",
-        "production.step9.p2": "However, filtration is a stylistic choice. Modern styles like Hazy IPAs or traditional ones like Weissbier and Kellerbier purposely skip this step, valuing the velvety texture, dense body, and aromatic complexity that suspended proteins and yeasts provide.",
+        "production.step9.title": "Maturation — Refinement and Lagering",
+        "production.step9.p1": "Green beer has immature compounds like acetaldehyde (green apple) and diacetyl (butter). In cold maturation, remaining yeast reabsorbs these byproducts, cleaning the palate. Harsh flavors round out and suspended particles settle.",
+        "production.step9.p2": "It is a test of patience: rushing this step results in unbalanced beers. The 'cold crash' (sudden cooling near 0°C) finalizes the process, agglutinating proteins and clarifying the drink. Time is the secret ingredient that transforms a good beer into an exceptional one.",
 
-        // Step 10 - Carbonation
+        // Step 10 - Filtration
         "production.step10.label": "Step 10",
-        "production.step10.title": "Carbonation — The Life of Beer",
-        "production.step10.p1": "The gas is what gives life and texture to beer. It can be obtained by bottle refermentation (traditional method), where extra sugar feeds residual yeast, or by forced carbonation in pressure tanks (industrial method), injecting purified CO₂ at low temperatures.",
-        "production.step10.p2": "The amount of dissolved CO₂ defines the 'perlage' and foam persistence. Adequate carbonation not only refreshes and cleans the palate, but also volatilizes aromas, pushing them to the nose with each sip, being vital for the complete sensory experience.",
+        "production.step10.title": "Filtration — Polish and Brilliance",
+        "production.step10.p1": "To ensure brilliance and stability, many beers undergo fine filtration or centrifugation. This removes the last yeast cells and hazy proteins, resulting in a clear and golden product, essential for styles like international Pilsners.",
+        "production.step10.p2": "However, filtration is a stylistic choice. Modern styles like Hazy IPAs or traditional ones like Weissbier and Kellerbier purposely skip this step, valuing the velvety texture, dense body, and aromatic complexity that suspended proteins and yeasts provide.",
 
-        // Step 11 - Packaging
+        // Step 11 - Carbonation
         "production.step11.label": "Step 11",
-        "production.step11.title": "Packaging — The Race Against Oxygen",
-        "production.step11.p1": "The final step is critical. Modern packaging systems perform a 'pre-evacuation' of air and purge bottles or cans with CO₂ before filling. The goal is to avoid any contact with oxygen, which would oxidize the beer (cardboard taste) in just a few days.",
-        "production.step11.p2": "Canning has gained popularity for blocking 100% of UV light, preventing 'lightstruck' (skunk aroma). Whether in keg, bottle, or can, the supreme goal is to deliver the beer to the consumer's glass with the same freshness and sensory profile that the master brewer approved in the tank.",
+        "production.step11.title": "Carbonation — The Life of Beer",
+        "production.step11.p1": "The gas is what gives life and texture to beer. It can be obtained by bottle refermentation (traditional method), where extra sugar feeds residual yeast, or by forced carbonation in pressure tanks (industrial method), injecting purified CO₂ at low temperatures.",
+        "production.step11.p2": "The amount of dissolved CO₂ defines the 'perlage' and foam persistence. Adequate carbonation not only refreshes and cleans the palate, but also volatilizes aromas, pushing them to the nose with each sip, being vital for the complete sensory experience.",
 
-        // Step 12 - Quality Control
+        // Step 12 - Packaging
         "production.step12.label": "Step 12",
-        "production.step12.title": "Quality Control — The Guarantee",
-        "production.step12.p1": "Before leaving the factory, the beer faces its final jury. Laboratory tests verify consistency of color, alcohol, bitterness, and microbiology, while trained tasting panels tirelessly search for sensory defects (off-flavors).",
-        "production.step12.p2": "Traceability is total: each batch receives a unique number that allows auditing the entire production history. This obsessive rigor ensures that the consumer experience is safe, pleasant, and consistent, keeping the brewery's reputation intact in an increasingly demanding market.",
+        "production.step12.title": "Packaging — The Race Against Oxygen",
+        "production.step12.p1": "The final step is critical. Modern packaging systems perform a 'pre-evacuation' of air and purge bottles or cans with CO₂ before filling. The goal is to avoid any contact with oxygen, which would oxidize the beer (cardboard taste) in just a few days.",
+        "production.step12.p2": "Canning has gained popularity for blocking 100% of UV light, preventing 'lightstruck' (skunk aroma). Whether in keg, bottle, or can, the supreme goal is to deliver the beer to the consumer's glass with the same freshness and sensory profile that the master brewer approved in the tank.",
+
+        // Step 13 - Quality Control
+        "production.step13.label": "Step 13",
+        "production.step13.title": "Quality Control — The Guarantee",
+        "production.step13.p1": "Before leaving the factory, the beer faces its final jury. Laboratory tests verify consistency of color, alcohol, bitterness, and microbiology, while trained tasting panels tirelessly search for sensory defects (off-flavors).",
+        "production.step13.p2": "Traceability is total: each batch receives a unique number that allows auditing the entire production history. This obsessive rigor ensures that the consumer experience is safe, pleasant, and consistent, keeping the brewery's reputation intact in an increasingly demanding market.",
 
         // Glossary - English
         "glossary.title": "📖 Beer Glossary",
@@ -3201,6 +3183,8 @@ export const translations = {
         // Timeline - English
         "timeline.title": "⏱️ Time per Step",
         "timeline.start": "🚀 The Journey Begins",
+        "timeline.malting": "Malting",
+        "timeline.malting_time": "5-9 days",
         "timeline.milling": "Milling",
         "timeline.mashing": "Mashing",
         "timeline.boiling": "Boiling",
@@ -6155,93 +6139,79 @@ export const translations = {
         "label.composition": "Zusammensetzung",
         "label.minerals": "Mineralien",
 
-        // Step 2 - Production Process Overview
+
+
+        // Step 2 - Mälzen (NEW)
         "production.step2.label": "Schritt 2",
-        "production.step2.title": "Der Produktionsprozess",
-        "production.step2.intro": "Vom rohen Korn bis ins Glas durchläuft das Bier eine faszinierende Reise chemischer und biologischer Transformationen.",
+        "production.step2.title": "Mälzen — Das Erwachen des Korns",
+        "production.step2.p1": "Der Prozess beginnt in der Mälzerei. Rohe Gerste wird in Wasser eingeweicht, um die Keimung zu initiieren, wodurch lebenswichtige Enzyme aktiviert werden, die später Stärke in Zucker umwandeln.",
+        "production.step2.p2": "Sobald der Keimling erscheint, wird das Korn in Darren getrocknet. Die Temperatur bestimmt Farbe und Geschmack: niedrige Hitze erzeugt helle Malze, hohe Hitze erzeugt Karamell- oder Röstmalze.",
 
-        // Process Steps 
-        "production.process.mashing.title": "Maischen",
-        "production.process.mashing.desc": "Das geschrotete Malz wird mit heißem Wasser (62-72°C) vermischt, um Stärke in vergärbare Zucker umzuwandeln. Dieser Prozess dauert 60-90 Minuten.",
-
-        "production.process.boiling.title": "Kochen",
-        "production.process.boiling.desc": "Die Würze wird 60-90 Minuten lang gekocht, wobei Hopfen in bestimmten Intervallen für Bitterkeit, Geschmack und Aroma hinzugefügt wird.",
-
-        "production.process.fermentation.title": "Gärung",
-        "production.process.fermentation.desc": "Hefe wandelt Zucker in Alkohol und CO₂ um. Ales gären bei 15-24°C (obergärig), Lager bei 7-13°C (untergärig).",
-
-        "production.process.maturation.title": "Reifung",
-        "production.process.maturation.desc": "Das Bier ruht wochen- oder monatelang, entwickelt komplexe Aromen und klärt sich natürlich.",
-
-        // Step 2 - Milling
-        "production.step2.label": "Schritt 2",
-        "production.step2.title": "Schroten — Kornvorbereitung",
-        "production.step2.p1": "Das Schroten ist der erste Pfeiler der Braueffizienz. Ziel ist es, den stärkereichen Mehlkörper des Korns freizulegen, ohne die Spelze zu pulverisieren. Werden Körner zu fein zermahlen, entstehen Stoffe, die das System verstopfen; zu grob, sinkt die Ausbeute drastisch.",
-        "production.step2.p2": "Die Erhaltung der Spelze ist vital, da sie in den folgenden Schritten das natürliche Filterbett bildet und eine klare, flüssige Würze garantiert. Die millimetergenaue Einstellung der Walzenmühle definiert den Erfolg des gesamten Maischprozesses.",
-        "production.step2.p3": "Obwohl es mechanisch erscheint, definiert diese Einstellung direkt die Klarheit, Effizienz und sensorische Stabilität des fertigen Bieres.",
-
-        // Step 3 - Mashing
+        // Step 3 - Schroten
         "production.step3.label": "Schritt 3",
-        "production.step3.title": "Maischen — Stärke zu Zucker",
-        "production.step3.p1": "Hier geschieht die biochemische Magie: Die Malz-Wasser-Mischung wird auf präzisen Temperaturen gehalten, um spezifische Enzyme zu aktivieren. Alpha-Amylasen erzeugen komplexe Zucker (Dextrine), die dem Bier Körper geben, während Beta-Amylasen vergärbare Maltose für Alkohol produzieren.",
-        "production.step3.p2": "pH-Kontrolle und Wasser/Korn-Verhältnis sind ebenfalls kritisch. In dieser Phase entscheidet der Brauer, ob das Bier vollmundig und süß oder trocken und alkoholisch wird, indem er nur das Thermometer manipuliert.",
-        "production.step3.p3": "Dieser Schritt definiert die strukturelle 'Signatur' des Bieres und erfordert absolute Präzision, da Temperaturfehler hier im Endprodukt irreversibel sind.",
+        "production.step3.title": "Schroten — Kornvorbereitung",
+        "production.step3.p1": "Das Schroten ist der erste Pfeiler der Braueffizienz. Ziel ist es, den stärkereichen Mehlkörper des Korns freizulegen, ohne die Spelze zu pulverisieren. Werden Körner zu fein zermahlen, entstehen Stoffe, die das System verstopfen; zu grob, sinkt die Ausbeute drastisch.",
+        "production.step3.p2": "Die Erhaltung der Spelze ist vital, da sie in den folgenden Schritten das natürliche Filterbett bildet und eine klare, flüssige Würze garantiert. Die millimetergenaue Einstellung der Walzenmühle definiert den Erfolg des gesamten Maischprozesses.",
 
-        // Step 4 - Lautering
+        // Step 4 - Maischen
         "production.step4.label": "Schritt 4",
-        "production.step4.title": "Läutern — Würzetrennung",
-        "production.step4.p1": "Nach der Umwandlung muss die süße Würze vom Treber getrennt werden. Der Prozess, genannt Rezirkulation oder Vorlauf, nutzt die Spelzenschicht selbst als Filter. Die Würze wird abgelassen und wieder nach oben geführt, bis sie kristallklar und hell herauskommt.",
-        "production.step4.p2": "Dann wird heißes Wasser (Anschwänzen) über die Körner gesprüht, um Restsucker zu 'waschen' und zu extrahieren. Dieses Waschen muss im exakten Moment und mit kontrolliertem pH gestoppt werden, um das Auswaschen von Tanninen aus der Spelze zu vermeiden, die eine harsche und unerwünschte Adstringenz im Bier verursachen würden.",
+        "production.step4.title": "Maischen — Stärke zu Zucker",
+        "production.step4.p1": "Hier geschieht die biochemische Magie: Die Malz-Wasser-Mischung wird auf präzisen Temperaturen gehalten, um spezifische Enzyme zu aktivieren. Alpha-Amylasen erzeugen komplexe Zucker (Dextrine), die dem Bier Körper geben, während Beta-Amylasen vergärbare Maltose für Alkohol produzieren.",
+        "production.step4.p2": "pH-Kontrolle und Wasser/Korn-Verhältnis sind ebenfalls kritisch. In dieser Phase entscheidet der Brauer, ob das Bier vollmundig und süß oder trocken und alkoholisch wird, indem er nur das Thermometer manipuliert.",
 
-        // Step 5 - Boiling
+        // Step 5 - Läutern
         "production.step5.label": "Schritt 5",
-        "production.step5.title": "Kochen — Sterilisation und Hopfung",
-        "production.step5.p1": "Die Würze kocht heftig, ein vitaler Prozess für Sterilisation und Stabilisierung. Neben der Isomerisierung der Hopfen-Alphasäuren zur Erzeugung von Bitterkeit bewirkt das Kochen die Koagulation unerwünschter Proteine (Heißtrub) und verdampft schädliche flüchtige Verbindungen wie DMS (Maisaroma).",
-        "production.step5.p2": "Es ist ein Prozess der Konzentration und Alchemie. Der Zeitpunkt der Hopfengabe ist berechnet: zu Beginn für Bitterkeit, in der Mitte für Geschmack und am Ende für Aroma. Späte Gaben bewahren empfindliche ätherische Öle, die bei übermäßiger Hitze verloren gingen.",
-        "production.step5.p3": "Die Heftigkeit des Kochens garantiert auch die korrekte Ausfällung von Protein-Polyphenol-Komplexen, essentiell für die künftige kolloidale Stabilität.",
+        "production.step5.title": "Läutern — Würzetrennung",
+        "production.step5.p1": "Nach der Umwandlung muss die süße Würze vom Treber getrennt werden. Der Prozess, genannt Rezirkulation oder Vorlauf, nutzt die Spelzenschicht selbst als Filter. Die Würze wird abgelassen und wieder nach oben geführt, bis sie kristallklar und hell herauskommt.",
+        "production.step5.p2": "Dann wird heißes Wasser (Anschwänzen) über die Körner gesprüht, um Restsucker zu 'waschen' und zu extrahieren. Dieses Waschen muss im exakten Moment und mit kontrolliertem pH gestoppt werden, um das Auswaschen von Tanninen aus der Spelze zu vermeiden, die eine harsche und unerwünschte Adstringenz im Bier verursachen würden.",
 
-        // Step 6 - Cooling
+        // Step 6 - Kochen
         "production.step6.label": "Schritt 6",
-        "production.step6.title": "Kühlen — Thermischer Schock",
-        "production.step6.p1": "Sobald das Kochen beendet ist, wird die Würze zu einem perfekten und hochanfälligen Nährboden. Das Kühlen muss brutal schnell erfolgen, von 100°C auf Gärtemperaturen (10-20°C) in wenigen Minuten mittels Hocheffizienzwärmetauschern.",
-        "production.step6.p2": "Dieser thermische Schock erzwingt die Ausfällung weiterer Proteine (Kalttrub), was das Bier klärt. Unmittelbar danach muss die kalte Würze gezielt mit Sauerstoff angereichert werden — das einzige Mal, dass Sauerstoff willkommen ist —, um die Gesundheit, Zellvermehrung und anfängliche Vitalität der Hefe zu gewährleisten.",
+        "production.step6.title": "Kochen — Sterilisation und Hopfung",
+        "production.step6.p1": "Die Würze kocht heftig, ein vitaler Prozess für Sterilisation und Stabilisierung. Neben der Isomerisierung der Hopfen-Alphasäuren zur Erzeugung von Bitterkeit bewirkt das Kochen die Koagulation unerwünschter Proteine (Heißtrub) und verdampft schädliche flüchtige Verbindungen wie DMS (Maisaroma).",
+        "production.step6.p2": "Es ist ein Prozess der Konzentration und Alchemie. Der Zeitpunkt der Hopfengabe ist berechnet: zu Beginn für Bitterkeit, in der Mitte für Geschmack und am Ende für Aroma. Späte Gaben bewahren empfindliche ätherische Öle, die bei übermäßiger Hitze verloren gingen.",
 
-        // Step 7 - Fermentation
+        // Step 7 - Kühlen
         "production.step7.label": "Schritt 7",
-        "production.step7.title": "Gärung — Die Seele des Bieres",
-        "production.step7.p1": "Im Tank übernimmt die Hefe das Kommando. Tagelang konsumiert sie Zucker und setzt Alkohol, CO₂ und Wärme frei. Aber ihr Beitrag geht weit darüber hinaus: Sie formt das definitive sensorische Profil und produziert Ester (fruchtig) und Phenole (würzig), die jeden Stil charakterisieren.",
-        "production.step7.p2": "Ales arbeiten oben bei hohen Temperaturen und erzeugen komplexe Aromen. Lager arbeiten unten, langsam und kalt, was zu sauberen Profilen führt. Der Brauer überwacht täglich den 'Vergärungsgrad'; wenn sich die Dichte stabilisiert, ist das Bier 'geboren', aber noch jung und 'grün'.",
-        "production.step7.p3": "Die präzise Temperaturkontrolle in dieser Phase ist das größte Unterscheidungsmerkmal zwischen einem Amateur-Heimbrau und einem hochwertigen Profibier.",
+        "production.step7.title": "Kühlen — Thermischer Schock",
+        "production.step7.p1": "Sobald das Kochen beendet ist, wird die Würze zu einem perfekten und hochanfälligen Nährboden. Das Kühlen muss brutal schnell erfolgen, von 100°C auf Gärtemperaturen (10-20°C) in wenigen Minuten mittels Hocheffizienzwärmetauschern.",
+        "production.step7.p2": "Dieser thermische Schock erzwingt die Ausfällung weiterer Proteine (Kalttrub), was das Bier klärt. Unmittelbar danach muss die kalte Würze gezielt mit Sauerstoff angereichert werden — das einzige Mal, dass Sauerstoff willkommen ist —, um die Gesundheit, Zellvermehrung und anfängliche Vitalität der Hefe zu gewährleisten.",
 
-        // Step 8 - Maturation
+        // Step 8 - Gärung
         "production.step8.label": "Schritt 8",
-        "production.step8.title": "Reifung — Verfeinerung und Lagerung",
-        "production.step8.p1": "Grünbier besitzt unreife Verbindungen wie Acetaldehyd (grüner Apfel) und Diacetyl (Butter). In der Kaltreifung reabsorbiert die verbleibende Hefe diese Nebenprodukte und reinigt den Gaumen. Harsche Aromen runden sich ab und Schwebstoffe setzen sich ab.",
-        "production.step8.p2": "Es ist ein Geduldstest: Diesen Schritt zu überstürzen führt zu unausgewogenen Bieren. Der 'Cold Crash' (plötzliches Abkühlen auf fast 0°C) schließt den Prozess ab, agglutiniert Proteine und klärt das Getränk. Zeit ist die geheime Zutat, die ein gutes Bier in ein außergewöhnliches verwandelt.",
+        "production.step8.title": "Gärung — Die Seele des Bieres",
+        "production.step8.p1": "Im Tank übernimmt die Hefe das Kommando. Tagelang konsumiert sie Zucker und setzt Alkohol, CO₂ und Wärme frei. Aber ihr Beitrag geht weit darüber hinaus: Sie formt das definitive sensorische Profil und produziert Ester (fruchtig) und Phenole (würzig), die jeden Stil charakterisieren.",
+        "production.step8.p2": "Ales arbeiten oben bei hohen Temperaturen und erzeugen komplexe Aromen. Lager arbeiten unten, langsam und kalt, was zu sauberen Profilen führt. Der Brauer überwacht täglich den 'Vergärungsgrad'; wenn sich die Dichte stabilisiert, ist das Bier 'geboren', aber noch jung und 'grün'.",
 
-        // Step 9 - Filtration
+        // Step 9 - Reifung
         "production.step9.label": "Schritt 9",
-        "production.step9.title": "Filtration — Politur und Glanz",
-        "production.step9.p1": "Um Glanz und Stabilität zu garantieren, durchlaufen viele Biere eine Feinfiltration oder Zentrifugation. Dies entfernt die letzten Hefezellen und trüben Proteine, was zu einem klaren und goldenen Produkt führt, essentiell für Stile wie internationale Pilsner.",
-        "production.step9.p2": "Filtration ist jedoch eine stilistische Wahl. Moderne Stile wie Hazy IPAs oder traditionelle wie Weissbier und Kellerbier überspringen diesen Schritt absichtlich und schätzen die samtige Textur, den dichten Körper und die aromatische Komplexität, die suspendierte Proteine und Hefen bieten.",
+        "production.step9.title": "Reifung — Verfeinerung und Lagerung",
+        "production.step9.p1": "Grünbier besitzt unreife Verbindungen wie Acetaldehyd (grüner Apfel) und Diacetyl (Butter). In der Kaltreifung reabsorbiert die verbleibende Hefe diese Nebenprodukte und reinigt den Gaumen. Harsche Aromen runden sich ab und Schwebstoffe setzen sich ab.",
+        "production.step9.p2": "Es ist ein Geduldstest: Diesen Schritt zu überstürzen führt zu unausgewogenen Bieren. Der 'Cold Crash' (plötzliches Abkühlen auf fast 0°C) schließt den Prozess ab, agglutiniert Proteine und klärt das Getränk. Zeit ist die geheime Zutat, die ein gutes Bier in ein außergewöhnliches verwandelt.",
 
-        // Step 10 - Carbonation
+        // Step 10 - Filtration
         "production.step10.label": "Schritt 10",
-        "production.step10.title": "Karbonisierung — Das Leben des Bieres",
-        "production.step10.p1": "Das Gas gibt dem Bier Leben und Textur. Es kann durch Flaschengärung (traditionelle Methode), wo extra Zucker die Resthefe füttert, oder durch Zwangskarbonisierung in Drucktanks (industrielle Methode) durch Injektion von gereinigtem CO₂ bei niedrigen Temperaturen erreicht werden.",
-        "production.step10.p2": "Die Menge an gelöstem CO₂ definiert die 'Perlage' und die Schaumhaltbarkeit. Eine angemessene Karbonisierung erfrischt und reinigt nicht nur den Gaumen, sondern verflüchtigt auch Aromen und drückt sie mit jedem Schluck in die Nase, was für das vollständige sensorische Erlebnis vital ist.",
+        "production.step10.title": "Filtration — Politur und Glanz",
+        "production.step10.p1": "Um Glanz und Stabilität zu garantieren, durchlaufen viele Biere eine Feinfiltration oder Zentrifugation. Dies entfernt die letzten Hefezellen und trüben Proteine, was zu einem klaren und goldenen Produkt führt, essentiell für Stile wie internationale Pilsner.",
+        "production.step10.p2": "Filtration ist jedoch eine stilistische Wahl. Moderne Stile wie Hazy IPAs oder traditionelle wie Weissbier und Kellerbier überspringen diesen Schritt absichtlich und schätzen die samtige Textur, den dichten Körper und die aromatische Komplexität, die suspendierte Proteine und Hefen bieten.",
 
-        // Step 11 - Packaging
+        // Step 11 - Karbonisierung
         "production.step11.label": "Schritt 11",
-        "production.step11.title": "Abfüllung — Das Rennen gegen den Sauerstoff",
-        "production.step11.p1": "Der letzte Schritt ist kritisch. Moderne Abfüllsysteme führen eine 'Vorevakuierung' der Luft durch und spülen Flaschen oder Dosen mit CO₂, bevor sie gefüllt werden. Ziel ist es, jeglichen Kontakt mit Sauerstoff zu vermeiden, der das Bier in nur wenigen Tagen oxidieren (Pappgeschmack) würde.",
-        "production.step11.p2": "Dosen haben an Popularität gewonnen, da sie 100% des UV-Lichts blockieren und 'Lichtgeschmack' (Skunk-Aroma) verhindern. Ob im Fass, in der Flasche oder in der Dose, das oberste Ziel ist es, das Bier mit derselben Frische und demselben sensorischen Profil ins Glas des Verbrauchers zu liefern, das der Braumeister im Tank genehmigt hat.",
+        "production.step11.title": "Karbonisierung — Das Leben des Bieres",
+        "production.step11.p1": "Das Gas gibt dem Bier Leben und Textur. Es kann durch Flaschengärung (traditionelle Methode), wo extra Zucker die Resthefe füttert, oder durch Zwangskarbonisierung in Drucktanks (industrielle Methode) durch Injektion von gereinigtem CO₂ bei niedrigen Temperaturen erreicht werden.",
+        "production.step11.p2": "Die Menge an gelöstem CO₂ definiert die 'Perlage' und die Schaumhaltbarkeit. Eine angemessene Karbonisierung erfrischt und reinigt nicht nur den Gaumen, sondern verflüchtigt auch Aromen und drückt sie mit jedem Schluck in die Nase, was für das vollständige sensorische Erlebnis vital ist.",
 
-        // Step 12 - Quality Control
+        // Step 12 - Abfüllung
         "production.step12.label": "Schritt 12",
-        "production.step12.title": "Qualitätskontrolle — Die Garantie",
-        "production.step12.p1": "Bevor es die Fabrik verlässt, stellt sich das Bier seiner letzten Jury. Labortests verifizieren die Konsistenz von Farbe, Alkohol, Bitterkeit und Mikrobiologie, während geschulte Verkostungspanels unermüdlich nach sensorischen Defekten (Off-Flavors) suchen.",
-        "production.step12.p2": "Rückverfolgbarkeit ist total: Jede Charge erhält eine eindeutige Nummer, die die Auditierung der gesamten Produktionsgeschichte ermöglicht. Diese obsessive Strenge garantiert, dass das Verbrauchererlebnis sicher, angenehm und konsistent ist und den Ruf der Brauerei in einem zunehmend anspruchsvollen Markt intakt hält.",
+        "production.step12.title": "Abfüllung — Das Rennen gegen den Sauerstoff",
+        "production.step12.p1": "Der letzte Schritt ist kritisch. Moderne Abfüllsysteme führen eine 'Vorevakuierung' der Luft durch und spülen Flaschen oder Dosen mit CO₂, bevor sie gefüllt werden. Ziel ist es, jeglichen Kontakt mit Sauerstoff zu vermeiden, der das Bier in nur wenigen Tagen oxidieren (Pappgeschmack) würde.",
+        "production.step12.p2": "Dosen haben an Popularität gewonnen, da sie 100% des UV-Lichts blockieren und 'Lichtgeschmack' (Skunk-Aroma) verhindern. Ob im Fass, in der Flasche oder in der Dose, das oberste Ziel ist es, das Bier mit derselben Frische und demselben sensorischen Profil ins Glas des Verbrauchers zu liefern, das der Braumeister im Tank genehmigt hat.",
+
+        // Step 13 - Qualitätskontrolle
+        "production.step13.label": "Schritt 13",
+        "production.step13.title": "Qualitätskontrolle — Die Garantie",
+        "production.step13.p1": "Bevor es die Fabrik verlässt, stellt sich das Bier seiner letzten Jury. Labortests verifizieren die Konsistenz von Farbe, Alkohol, Bitterkeit und Mikrobiologie, während geschulte Verkostungspanels unermüdlich nach sensorischen Defekten (Off-Flavors) suchen.",
+        "production.step13.p2": "Rückverfolgbarkeit ist total: Jede Charge erhält eine eindeutige Nummer, die die Auditierung der gesamten Produktionsgeschichte ermöglicht. Diese obsessive Strenge garantiert, dass das Verbrauchererlebnis sicher, angenehm und konsistent ist und den Ruf der Brauerei in einem zunehmend anspruchsvollen Markt intakt hält.",
 
         // Glossary - German
         "glossary.title": "📖 Bier-Glossar",
@@ -6266,6 +6236,8 @@ export const translations = {
         // Timeline - German
         "timeline.title": "⏱️ Zeit pro Schritt",
         "timeline.start": "🚀 Die Reise beginnt",
+        "timeline.malting": "Mälzen",
+        "timeline.malting_time": "5-9 Tage",
         "timeline.milling": "Schroten",
         "timeline.mashing": "Maischen",
         "timeline.boiling": "Kochen",
